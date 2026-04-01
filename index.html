@@ -453,143 +453,66 @@
       .about-img-wrap{ min-height:280px; }
     }
 
-    /* MEDIA GALLERY */
-    .media-gallery{
-      background:var(--black);
+    /* PHOTO GALLERY */
+    .photo-gallery{
+      background:var(--deep);
       padding:6rem 6%;
       border-top:1px solid var(--gold-line);
       border-bottom:1px solid var(--gold-line);
     }
-
-    /* VIDEO ROW */
-    .mg-video-row{
-      margin-bottom:5rem;
-    }
-    .mg-video-wrap{
+    .gallery-grid{
       display:grid;
-      grid-template-columns:320px 1fr;
-      gap:3rem;
-      align-items:center;
-      background:var(--deep);
-      border:1px solid var(--gold-line);
-      padding:3rem;
-    }
-    .mg-video-label h3{
-      font-family:'Bebas Neue',sans-serif;
-      font-size:1.8rem;
-      letter-spacing:2px;
-      color:var(--white);
-      margin:0.4rem 0 0.8rem;
-      line-height:1.2;
-    }
-    .mg-video-label p{
-      font-size:0.85rem;
-      color:var(--light);
-      line-height:1.7;
-    }
-    .mg-video-frame{
-      position:relative;
-      aspect-ratio:16/9;
-      background:#000;
-      overflow:hidden;
-      border:1px solid var(--gold-line);
-    }
-    .mg-video{
-      width:100%;
-      height:100%;
-      object-fit:cover;
-      display:block;
-    }
-    .mg-play-overlay{
-      position:absolute;
-      inset:0;
-      background:rgba(8,8,8,0.65);
-      display:flex;
-      flex-direction:column;
-      align-items:center;
-      justify-content:center;
-      cursor:pointer;
-      gap:0.8rem;
-      transition:background 0.3s;
-    }
-    .mg-play-overlay:hover{ background:rgba(8,8,8,0.45); }
-    .mg-play-overlay.hidden{ display:none; }
-    .mg-play-btn{
-      width:64px;height:64px;
-      border-radius:50%;
-      background:var(--gold);
-      display:flex;align-items:center;justify-content:center;
-      font-size:1.4rem;color:var(--black);
-      margin-left:4px;
-      box-shadow:0 0 0 10px rgba(201,168,76,0.2);
-      transition:transform 0.2s,background 0.2s;
-    }
-    .mg-play-overlay:hover .mg-play-btn{ transform:scale(1.1); background:var(--gold-lt); }
-    .mg-play-label{
-      font-size:0.72rem;
-      font-weight:700;
-      letter-spacing:2px;
-      text-transform:uppercase;
-      color:var(--gold);
-    }
-    @media(max-width:900px){
-      .mg-video-wrap{ grid-template-columns:1fr; padding:2rem; gap:1.5rem; }
-    }
-
-    /* PHOTO GRID */
-    .mg-grid-label{
-      margin-bottom:1.5rem;
-    }
-    .mg-grid-label h3{
-      font-family:'Bebas Neue',sans-serif;
-      font-size:1.6rem;
-      letter-spacing:2px;
-      color:var(--white);
-      margin-top:0.4rem;
-    }
-    .mg-photo-grid{
-      display:grid;
-      grid-template-columns:repeat(4, 1fr);
-      grid-auto-rows:220px;
+      grid-template-columns:1fr 1fr 1fr 1fr;
+      grid-template-rows:280px 280px;
       gap:3px;
+      max-width:1300px;
+      margin:0 auto;
     }
-    .mg-photo{
+    .gallery-item{
       position:relative;
       overflow:hidden;
       background:var(--card);
     }
-    .mg-photo.wide{ grid-column:span 2; }
-    .mg-photo.tall{ grid-row:span 2; }
-    .mg-photo img{
+    .gallery-item.tall{
+      grid-row:span 2;
+    }
+    .gallery-item img{
       width:100%;
       height:100%;
       object-fit:cover;
       display:block;
       transition:transform 0.5s ease;
     }
-    .mg-photo:hover img{ transform:scale(1.04); }
-    .mg-photo-cap{
+    .gallery-item:hover img{
+      transform:scale(1.05);
+    }
+    .gallery-caption{
       position:absolute;
       bottom:0;left:0;right:0;
-      background:linear-gradient(transparent,rgba(8,8,8,0.88));
+      background:linear-gradient(transparent, rgba(8,8,8,0.9));
       color:var(--white);
-      font-size:0.68rem;
+      font-size:0.72rem;
       font-weight:700;
       letter-spacing:2px;
       text-transform:uppercase;
-      padding:1.5rem 1rem 0.7rem;
+      padding:1.5rem 1rem 0.8rem;
       opacity:0;
       transition:opacity 0.3s;
     }
-    .mg-photo:hover .mg-photo-cap{ opacity:1; }
+    .gallery-item:hover .gallery-caption{
+      opacity:1;
+    }
     @media(max-width:900px){
-      .mg-photo-grid{ grid-template-columns:1fr 1fr; grid-auto-rows:180px; }
-      .mg-photo.wide{ grid-column:span 2; }
-      .mg-photo.tall{ grid-row:span 1; }
+      .gallery-grid{
+        grid-template-columns:1fr 1fr;
+        grid-template-rows:auto;
+      }
+      .gallery-item.tall{ grid-row:span 1; height:240px; }
+      .gallery-item{ height:240px; }
     }
     @media(max-width:580px){
-      .mg-photo-grid{ grid-template-columns:1fr; grid-auto-rows:200px; }
-      .mg-photo.wide{ grid-column:span 1; }
+      .gallery-grid{ grid-template-columns:1fr; }
+      .gallery-item, .gallery-item.tall{ height:220px; }
     }
 
     /* OFFICER TEAM STRIP */
@@ -676,19 +599,16 @@
     }
 
     /* NAV */
-    nav{position:fixed;top:0;width:100%;z-index:1000;background:rgba(8,8,8,0.97);backdrop-filter:blur(16px);border-bottom:1px solid var(--gold-line);padding:0 4%;display:flex;align-items:center;justify-content:space-between;height:72px;gap:1rem}
-    .logo{font-family:'Bebas Neue',sans-serif;font-size:1.75rem;letter-spacing:4px;color:var(--gold);white-space:nowrap;flex-shrink:0}
+    nav{position:fixed;top:0;width:100%;z-index:1000;background:rgba(8,8,8,0.97);backdrop-filter:blur(16px);border-bottom:1px solid var(--gold-line);padding:0 6%;display:flex;align-items:center;justify-content:space-between;height:68px}
+    .logo{font-family:'Bebas Neue',sans-serif;font-size:1.85rem;letter-spacing:5px;color:var(--gold)}
     .logo span{color:var(--white)}
-    .nav-links{display:flex;gap:1.4rem;list-style:none;align-items:center;flex-wrap:nowrap}
-    .nav-links a{color:var(--light);font-size:0.68rem;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;transition:color 0.2s;white-space:nowrap}
-    .nav-links a:hover,.nav-links a.active{color:var(--gold)}
-    .nav-btn{background:var(--gold);color:var(--black) !important;padding:0.55rem 1.2rem;font-weight:700;font-size:0.68rem;letter-spacing:1.5px;text-transform:uppercase;transition:background 0.2s;white-space:nowrap}
-    .nav-btn:hover{background:var(--gold-lt) !important}
-    .hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:4px;flex-shrink:0}
-    .hamburger span{display:block;width:24px;height:2px;background:var(--gold);transition:transform 0.3s,opacity 0.3s}
-    .hamburger.open span:nth-child(1){transform:translateY(7px) rotate(45deg)}
-    .hamburger.open span:nth-child(2){opacity:0}
-    .hamburger.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+    .nav-links{display:flex;gap:2rem;list-style:none;align-items:center}
+    .nav-links a{color:var(--light);font-size:0.72rem;font-weight:600;letter-spacing:2px;text-transform:uppercase;transition:color 0.2s}
+    .nav-links a:hover{color:var(--gold)}
+    .nav-btn{background:var(--gold);color:var(--black);padding:0.5rem 1.3rem;font-weight:700;font-size:0.72rem;letter-spacing:1.5px;text-transform:uppercase;transition:background 0.2s}
+    .nav-btn:hover{background:var(--gold-lt)}
+    .hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:4px}
+    .hamburger span{display:block;width:24px;height:2px;background:var(--gold)}
 
     /* HERO */
     .hero{min-height:100vh;background:linear-gradient(135deg,rgba(8,8,8,0.94) 0%,rgba(12,24,40,0.88) 60%,rgba(8,8,8,0.96) 100%),url('images/img-01.jpg') center/cover no-repeat;display:flex;align-items:center;padding:130px 6% 80px;position:relative;overflow:hidden}
@@ -1001,23 +921,452 @@
 
 
     /* LEADERSHIP */
-    .leadership{background:var(--deep);padding:6rem 6%;border-top:1px solid var(--gold-line)}
-    .leadership-grid{display:grid;grid-template-columns:1fr 1fr;gap:2.5rem;max-width:1100px;margin:0 auto}
-    .leader-card{background:var(--card);border:1px solid var(--gold-line);padding:2.5rem;display:flex;flex-direction:column;align-items:center;text-align:center;gap:0;transition:transform 0.3s,box-shadow 0.3s;position:relative;overflow:hidden}
-    .leader-card::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(201,168,76,0.04) 0%,transparent 60%);pointer-events:none}
-    .leader-card:hover{transform:translateY(-4px);box-shadow:0 12px 40px rgba(201,168,76,0.15)}
-    .leader-card.featured{border-color:var(--gold)}
-    .leader-avatar{width:130px;height:130px;border-radius:50%;background:linear-gradient(135deg,var(--gold) 0%,#8a6a1e 100%);display:flex;flex-direction:column;align-items:center;justify-content:center;margin:0 auto 1.8rem;position:relative;flex-shrink:0;box-shadow:0 0 0 4px rgba(201,168,76,0.2),0 0 0 8px rgba(201,168,76,0.07)}
-    .leader-card.featured .leader-avatar{box-shadow:0 0 0 4px var(--gold),0 0 0 10px rgba(201,168,76,0.15)}
-    .leader-initials{font-family:'Bebas Neue',sans-serif;font-size:2.6rem;letter-spacing:4px;color:var(--black);line-height:1;margin-bottom:0.1rem}
-    .leader-role-badge{font-size:0.48rem;font-weight:800;letter-spacing:1.5px;text-transform:uppercase;color:var(--black);opacity:0.75;line-height:1}
-    .leader-name{font-family:'Bebas Neue',sans-serif;font-size:1.7rem;letter-spacing:3px;color:var(--white);margin:0 0 0.3rem}
-    .leader-title{font-size:0.7rem;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;color:var(--gold);margin:0 0 1.4rem}
-    .leader-bio{font-size:0.83rem;line-height:1.75;color:var(--light);margin-bottom:1.5rem}
-    .leader-stats{display:flex;gap:1.5rem;justify-content:center;border-top:1px solid var(--gold-line);padding-top:1.5rem;width:100%}
-    .leader-stat-val{font-family:'Bebas Neue',sans-serif;font-size:1.5rem;letter-spacing:2px;color:var(--gold);display:block}
-    .leader-stat-lbl{font-size:0.6rem;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--light)}
-    @media(max-width:700px){.leadership-grid{grid-template-columns:1fr}}
+    .leadership{ background:var(--deep); }
+    .leadership-grid{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:2rem;
+    }
+    .leader-card{
+      background:var(--card);
+      border:1px solid rgba(255,255,255,0.05);
+      display:grid;
+      grid-template-columns:220px 1fr;
+      gap:0;
+      overflow:hidden;
+      transition:border-color 0.3s;
+    }
+    .leader-card:hover{ border-color:var(--gold-line); }
+    .leader-card.featured{ border-top:3px solid var(--gold); }
+    .leader-photo-wrap{
+      background:linear-gradient(180deg, var(--navy) 0%, var(--black) 100%);
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      justify-content:center;
+      padding:2.5rem 1.5rem;
+      position:relative;
+      min-height:280px;
+    }
+    .leader-photo-placeholder{
+      width:110px;
+      height:110px;
+      border-radius:50%;
+      border:2px solid var(--gold-line);
+      background:rgba(201,168,76,0.08);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      margin-bottom:1rem;
+    }
+    .leader-initials{
+      font-family:'Bebas Neue',sans-serif;
+      font-size:2.2rem;
+      letter-spacing:3px;
+      color:var(--gold);
+    }
+    .leader-badge{
+      background:var(--gold);
+      color:var(--black);
+      font-size:0.65rem;
+      font-weight:700;
+      letter-spacing:2px;
+      text-transform:uppercase;
+      padding:0.3rem 0.8rem;
+      text-align:center;
+    }
+    .leader-info{
+      padding:2rem 2rem 2rem 1.8rem;
+    }
+    .leader-tag{
+      font-size:0.65rem;
+      font-weight:700;
+      letter-spacing:3px;
+      text-transform:uppercase;
+      color:var(--gold);
+      margin-bottom:0.4rem;
+    }
+    .leader-name{
+      font-family:'Bebas Neue',sans-serif;
+      font-size:2rem;
+      letter-spacing:2px;
+      color:var(--white);
+      margin-bottom:0.3rem;
+    }
+    .leader-title{
+      font-size:0.82rem;
+      font-weight:600;
+      letter-spacing:1px;
+      color:var(--gray);
+      text-transform:uppercase;
+      margin-bottom:1rem;
+    }
+    .leader-divider{
+      width:40px;
+      height:2px;
+      background:var(--gold);
+      margin-bottom:1rem;
+    }
+    .leader-bio{
+      font-size:0.85rem;
+      color:var(--light);
+      line-height:1.75;
+      font-weight:300;
+      margin-bottom:0.8rem;
+    }
+    .leader-stats{
+      display:flex;
+      gap:1.5rem;
+      margin:1.2rem 0;
+      padding:1rem 0;
+      border-top:1px solid rgba(255,255,255,0.05);
+      border-bottom:1px solid rgba(255,255,255,0.05);
+    }
+    .l-stat-n{
+      font-family:'Bebas Neue',sans-serif;
+      font-size:1.5rem;
+      color:var(--gold);
+      line-height:1;
+    }
+    .l-stat-l{
+      font-size:0.65rem;
+      letter-spacing:1px;
+      text-transform:uppercase;
+      color:var(--gray);
+      margin-top:0.2rem;
+    }
+    .leader-credentials{
+      display:flex;
+      flex-wrap:wrap;
+      gap:0.5rem;
+      margin-top:1rem;
+    }
+    .leader-credentials span{
+      background:rgba(201,168,76,0.08);
+      border:1px solid var(--gold-line);
+      color:var(--gold);
+      font-size:0.65rem;
+      font-weight:600;
+      letter-spacing:1px;
+      padding:0.3rem 0.7rem;
+    }
+    @media(max-width:1100px){
+      .leadership-grid{ grid-template-columns:1fr; }
+      .leader-card{ grid-template-columns:180px 1fr; }
+    }
+    @media(max-width:700px){
+      .leader-card{ grid-template-columns:1fr; }
+      .leader-photo-wrap{ min-height:160px; }
+    }
+
+
+    /* LEADERSHIP */
+    .leadership{ background:var(--navy) }
+    .leadership-grid{ display:flex; flex-direction:column; gap:2rem }
+    .leader-card{
+      background:var(--card);
+      border:1px solid var(--gold-line);
+      display:grid;
+      grid-template-columns:200px 1fr;
+      gap:0;
+      overflow:hidden;
+      transition:transform 0.3s;
+    }
+    .leader-card:hover{ transform:translateY(-3px) }
+    .leader-card.featured{ border-color:var(--gold); border-width:2px }
+    .leader-avatar{
+      background:linear-gradient(135deg,var(--navy) 0%,#0a1520 100%);
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      justify-content:center;
+      padding:2rem 1rem;
+      border-right:1px solid var(--gold-line);
+      gap:1rem;
+      position:relative;
+      min-height:320px;
+      overflow:hidden;
+    }
+    .leader-card.featured .leader-avatar{
+      background:linear-gradient(135deg,rgba(201,168,76,0.15) 0%,rgba(201,168,76,0.05) 100%);
+      border-right-color:var(--gold);
+    }
+    .avatar-initials{
+      width:80px; height:80px;
+      border-radius:50%;
+      background:var(--gold);
+      display:flex; align-items:center; justify-content:center;
+      font-family:'Bebas Neue',sans-serif;
+      font-size:1.8rem; color:var(--black);
+      letter-spacing:2px;
+      border:3px solid rgba(201,168,76,0.3);
+    }
+    .leader-badge-tag{
+      font-size:0.65rem;
+      font-weight:700;
+      letter-spacing:2px;
+      text-transform:uppercase;
+      color:var(--gold);
+      text-align:center;
+      background:var(--gold-dim);
+      border:1px solid var(--gold-line);
+      padding:0.3rem 0.7rem;
+    }
+    .leader-info{ padding:2.5rem }
+    .leader-name{
+      font-family:'Bebas Neue',sans-serif;
+      font-size:2rem; letter-spacing:2px; color:var(--white);
+      margin-bottom:0.2rem;
+    }
+    .leader-title{
+      font-size:0.78rem; font-weight:600;
+      letter-spacing:2px; text-transform:uppercase;
+      color:var(--gold); margin-bottom:1rem;
+    }
+    .leader-divider{
+      width:60px; height:2px;
+      background:var(--gold); margin-bottom:1.2rem;
+    }
+    .leader-bio{
+      font-size:0.88rem; color:var(--light);
+      line-height:1.78; margin-bottom:0.8rem;
+      font-weight:300;
+    }
+    .leader-bio strong{ color:var(--white); font-weight:600 }
+    .leader-stats{
+      display:flex; gap:2rem; margin-top:1.5rem;
+      padding-top:1.5rem;
+      border-top:1px solid rgba(255,255,255,0.06);
+    }
+    .l-stat-n{
+      font-family:'Bebas Neue',sans-serif;
+      font-size:1.8rem; color:var(--gold); line-height:1;
+    }
+    .l-stat-l{
+      font-size:0.65rem; letter-spacing:1.5px;
+      text-transform:uppercase; color:var(--gray);
+      margin-top:0.2rem;
+    }
+    .leader-creds{
+      display:flex; flex-wrap:wrap; gap:0.5rem;
+      margin-top:1.2rem;
+    }
+    .leader-creds span{
+      background:var(--gold-dim);
+      border:1px solid var(--gold-line);
+      color:var(--gold);
+      font-size:0.68rem; font-weight:700;
+      letter-spacing:1.5px; text-transform:uppercase;
+      padding:0.3rem 0.8rem;
+    }
+
+    /* CLIENTS */
+    .clients{ background:var(--black) }
+    .clients-grid{
+      display:grid;
+      grid-template-columns:repeat(6,1fr);
+      gap:1px;
+      background:var(--gold-line);
+      border:1px solid var(--gold-line);
+    }
+    .client-item{
+      background:var(--card);
+      padding:1.2rem 1rem;
+      font-size:0.78rem;
+      font-weight:600;
+      letter-spacing:1px;
+      text-transform:uppercase;
+      color:var(--gray);
+      text-align:center;
+      transition:all 0.25s;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+    }
+    .client-item:hover{
+      background:var(--deep);
+      color:var(--gold);
+    }
+
+    @media(max-width:900px){
+      .leader-card{ grid-template-columns:1fr }
+      .leader-avatar{ flex-direction:row; padding:1.5rem; border-right:none; border-bottom:1px solid var(--gold-line) }
+      .clients-grid{ grid-template-columns:repeat(3,1fr) }
+    }
+    @media(max-width:580px){
+      .clients-grid{ grid-template-columns:repeat(2,1fr) }
+      .leader-stats{ flex-wrap:wrap; gap:1rem }
+    }
+
+    /* BLOG */
+    .blog{background:var(--black)}
+    .blog-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;grid-auto-rows:1fr}
+    .blog-card{background:var(--card);border:1px solid rgba(255,255,255,0.05);overflow:hidden;transition:transform 0.3s,border-color 0.3s;display:flex;flex-direction:column}
+    .blog-card:hover{transform:translateY(-5px);border-color:var(--gold-line)}
+    .blog-img-wrap{position:relative;height:160px;overflow:hidden}
+    .blog-img-placeholder{width:100%;height:100%}
+    .blog-cat{position:absolute;top:1rem;left:1rem;background:var(--gold);color:var(--black);font-size:0.65rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;padding:0.3rem 0.7rem;z-index:1}
+    .blog-body{padding:1.8rem;flex:1;display:flex;flex-direction:column}
+    .blog-meta{display:flex;gap:0.5rem;font-size:0.72rem;color:var(--gray);letter-spacing:1px;margin-bottom:0.8rem}
+    .blog-body h3{font-family:'Bebas Neue',sans-serif;font-size:1.35rem;letter-spacing:1.5px;line-height:1.2;margin-bottom:0.8rem;color:var(--white)}
+    .blog-body p{font-size:0.85rem;color:var(--gray);line-height:1.7;flex:1}
+    .blog-link{display:inline-flex;align-items:center;gap:0.4rem;color:var(--gold);font-size:0.72rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;margin-top:1.2rem;transition:gap 0.2s;text-decoration:none}
+    .blog-link:hover{gap:0.8rem}
+    @media(max-width:900px){.blog-grid{grid-template-columns:1fr}}
+
+
+    /* GOOGLE LIVE REVIEWS WIDGET */
+    .google-widget-wrap{{
+      margin-top:3rem;
+      border:1px solid var(--gold-line);
+      padding:2rem;
+      background:var(--card);
+    }}
+    .google-widget-header{{
+      display:flex;
+      align-items:center;
+      gap:0.8rem;
+      margin-bottom:1.5rem;
+      padding-bottom:1.2rem;
+      border-bottom:1px solid rgba(255,255,255,0.06);
+      font-size:0.85rem;
+      font-weight:600;
+      letter-spacing:1px;
+      color:var(--light);
+    }}
+    .gwh-rating{{
+      color:#FBBC05;
+      font-size:0.9rem;
+      font-weight:700;
+      margin-left:auto;
+    }}
+    .google-live-grid{{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:1.2rem;
+    }}
+    .g-live-card{{
+      background:var(--deep);
+      border:1px solid rgba(255,255,255,0.04);
+      padding:1.5rem;
+      transition:border-color 0.2s;
+    }}
+    .g-live-card:hover{{ border-color:var(--gold-line); }}
+    .g-live-top{{
+      display:flex;
+      align-items:center;
+      gap:0.8rem;
+      margin-bottom:1rem;
+    }}
+    .g-avatar{{
+      width:36px;height:36px;
+      border-radius:50%;
+      background:var(--gold);
+      display:flex;align-items:center;justify-content:center;
+      font-size:0.8rem;font-weight:700;
+      color:var(--black);flex-shrink:0;
+    }}
+    .g-name{{font-size:0.85rem;font-weight:700;color:var(--white)}}
+    .g-date{{font-size:0.7rem;color:var(--gray);margin-top:0.15rem}}
+    .g-stars{{color:#FBBC05;font-size:0.85rem;letter-spacing:2px;margin-bottom:0.7rem}}
+    .g-text{{font-size:0.82rem;color:var(--gray);line-height:1.65;font-style:italic}}
+    .g-loading{{
+      grid-column:1/-1;
+      text-align:center;
+      color:var(--gray);
+      font-size:0.85rem;
+      padding:2rem;
+    }}
+    @media(max-width:900px){{.google-live-grid{{grid-template-columns:1fr 1fr}}}}
+    @media(max-width:580px){{.google-live-grid{{grid-template-columns:1fr}}}}
+
+    /* CHATBOT */
+    #chatbot-bubble{position:fixed;bottom:6rem;right:2rem;z-index:998;width:58px;height:58px;background:var(--gold);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.5rem;cursor:pointer;box-shadow:0 6px 25px rgba(201,168,76,0.45);transition:transform 0.2s,background 0.2s;user-select:none}
+    #chatbot-bubble:hover{transform:scale(1.08);background:var(--gold-lt)}
+    .chat-notif{position:absolute;top:-3px;right:-3px;width:18px;height:18px;background:#e74c3c;border-radius:50%;font-size:0.65rem;font-weight:700;color:#fff;display:flex;align-items:center;justify-content:center;border:2px solid var(--black)}
+    #chatbot-window{position:fixed;bottom:10rem;right:2rem;z-index:997;width:340px;background:var(--deep);border:1px solid var(--gold-line);border-radius:4px;box-shadow:0 20px 60px rgba(0,0,0,0.6);display:none;flex-direction:column;overflow:hidden;max-height:500px}
+    #chatbot-window.open{display:flex}
+    .chat-header{background:var(--navy);padding:1rem 1.2rem;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--gold-line)}
+    .chat-header-info{display:flex;align-items:center;gap:0.8rem}
+    .chat-avatar{width:36px;height:36px;background:var(--gold);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1rem}
+    .chat-name{font-size:0.85rem;font-weight:700;color:var(--white)}
+    .chat-status{font-size:0.7rem;color:var(--gray);display:flex;align-items:center;gap:0.4rem;margin-top:0.15rem}
+    .chat-online{width:7px;height:7px;background:#2ecc71;border-radius:50%;display:inline-block}
+    .chat-close{background:none;border:none;color:var(--gray);font-size:1rem;cursor:pointer;padding:0.2rem;transition:color 0.2s}
+    .chat-close:hover{color:var(--white)}
+    .chat-messages{flex:1;overflow-y:auto;padding:1.2rem;display:flex;flex-direction:column;gap:0.8rem;max-height:300px}
+    .chat-messages::-webkit-scrollbar{width:3px}
+    .chat-messages::-webkit-scrollbar-thumb{background:var(--gold-line)}
+    .chat-msg{display:flex;flex-direction:column}
+    .chat-msg.bot{align-items:flex-start}
+    .chat-msg.user{align-items:flex-end}
+    .chat-bubble{padding:0.8rem 1rem;font-size:0.85rem;line-height:1.55;max-width:85%}
+    .chat-msg.bot .chat-bubble{background:var(--card);color:var(--white);border-radius:0 8px 8px 8px;border:1px solid rgba(255,255,255,0.05)}
+    .chat-msg.user .chat-bubble{background:var(--gold);color:var(--black);font-weight:500;border-radius:8px 0 8px 8px}
+    .chat-time{font-size:0.65rem;color:var(--gray);margin-top:0.3rem}
+    .chat-quick-replies{display:flex;flex-wrap:wrap;gap:0.5rem;margin-top:0.5rem}
+    .chat-quick-replies button{background:transparent;border:1px solid var(--gold-line);color:var(--gold);font-size:0.72rem;font-weight:600;padding:0.4rem 0.7rem;cursor:pointer;transition:all 0.2s;border-radius:3px;white-space:nowrap}
+    .chat-quick-replies button:hover{background:var(--gold-dim)}
+    .chat-input-wrap{display:flex;border-top:1px solid var(--gold-line);background:var(--black)}
+    #chatInput{flex:1;background:transparent;border:none;padding:1rem;color:var(--white);font-family:'Barlow',sans-serif;font-size:0.88rem;outline:none}
+    #chatInput::placeholder{color:var(--gray)}
+    .chat-send{background:var(--gold);border:none;color:var(--black);padding:0 1.2rem;font-size:1rem;cursor:pointer;transition:background 0.2s;font-weight:700}
+    .chat-send:hover{background:var(--gold-lt)}
+    .chat-typing{display:flex;gap:4px;padding:0.8rem 1rem;align-items:center}
+    .chat-typing span{width:7px;height:7px;background:var(--gold);border-radius:50%;animation:typingDot 1.2s infinite}
+    .chat-typing span:nth-child(2){animation-delay:0.2s}
+    .chat-typing span:nth-child(3){animation-delay:0.4s}
+    @keyframes typingDot{0%,60%,100%{transform:translateY(0);opacity:0.4}30%{transform:translateY(-6px);opacity:1}}
+    @media(max-width:580px){#chatbot-window{width:calc(100vw - 2rem);right:1rem;bottom:9rem}#chatbot-bubble{right:1rem}}
+
+
+    /* LEADERSHIP */
+    .leadership{ background:var(--deep); }
+    .leadership-grid{ display:grid; grid-template-columns:1fr 1fr; gap:2rem; margin-bottom:5rem; }
+    .leader-card{ background:var(--card); border:1px solid rgba(255,255,255,0.05); padding:2.5rem; display:flex; flex-direction:column; gap:1.5rem; transition:border-color 0.3s; }
+    .leader-card:hover{ border-color:var(--gold-line); }
+    .leader-card.featured{ border-top:3px solid var(--gold); }
+    .leader-photo-wrap{ position:relative; display:inline-block; }
+    .leader-photo{ width:100px; height:100px; border-radius:50%; overflow:hidden; border:3px solid var(--gold-line); }
+    .leader-photo.placeholder{ background:linear-gradient(135deg,var(--navy),var(--deep)); display:flex; align-items:center; justify-content:center; }
+    .leader-initials{ font-family:'Bebas Neue',sans-serif; font-size:2.2rem; letter-spacing:3px; color:var(--gold); }
+    .leader-photo img{ width:100%; height:100%; object-fit:cover; object-position:center top; }
+    .leader-badge{ position:absolute; bottom:-6px; left:50%; transform:translateX(-50%); background:var(--gold); color:var(--black); font-size:0.6rem; font-weight:700; letter-spacing:1.5px; text-transform:uppercase; padding:0.2rem 0.7rem; white-space:nowrap; }
+    .leader-tag{ font-size:0.65rem; font-weight:700; letter-spacing:3px; text-transform:uppercase; color:var(--gold); margin-bottom:0.3rem; }
+    .leader-name{ font-family:'Bebas Neue',sans-serif; font-size:2rem; letter-spacing:2px; color:var(--white); margin-bottom:0.2rem; }
+    .leader-title{ font-size:0.82rem; font-weight:600; letter-spacing:1px; color:var(--gray); text-transform:uppercase; margin-bottom:1rem; }
+    .leader-bio{ font-size:0.88rem; color:var(--light); line-height:1.75; font-weight:300; margin-bottom:0.8rem; }
+    .leader-stats{ display:flex; gap:2rem; padding-top:1rem; border-top:1px solid rgba(255,255,255,0.05); }
+    .ls-num{ font-family:'Bebas Neue',sans-serif; font-size:1.6rem; color:var(--gold); line-height:1; }
+    .ls-label{ font-size:0.65rem; letter-spacing:1.5px; text-transform:uppercase; color:var(--gray); margin-top:0.2rem; }
+    .leader-credentials{ display:flex; flex-wrap:wrap; gap:0.5rem; margin-top:0.5rem; }
+    .leader-credentials span{ background:var(--gold-dim); border:1px solid var(--gold-line); color:var(--gold); font-size:0.65rem; font-weight:700; letter-spacing:1px; padding:0.3rem 0.7rem; text-transform:uppercase; }
+
+    /* DIVISIONS */
+    .divisions-wrap{ background:var(--black); padding:3rem; border:1px solid var(--gold-line); }
+    .divisions-grid{ display:grid; grid-template-columns:repeat(6,1fr); gap:1.5rem; }
+    .division-item{ text-align:center; padding:1.5rem 1rem; background:var(--card); border:1px solid rgba(255,255,255,0.04); transition:all 0.3s; border-bottom:2px solid transparent; }
+    .division-item:hover{ border-bottom-color:var(--gold); transform:translateY(-3px); }
+    .div-icon{ font-size:1.8rem; margin-bottom:0.8rem; }
+    .division-item h4{ font-family:'Barlow Condensed',sans-serif; font-size:0.88rem; font-weight:700; letter-spacing:1px; text-transform:uppercase; color:var(--white); margin-bottom:0.4rem; }
+    .division-item p{ font-size:0.75rem; color:var(--gray); line-height:1.5; }
+
+    @media(max-width:900px){
+      .leadership-grid{ grid-template-columns:1fr; }
+      .divisions-grid{ grid-template-columns:repeat(3,1fr); }
+    }
+    @media(max-width:580px){
+      .divisions-grid{ grid-template-columns:repeat(2,1fr); }
+    }
+
+
+    /* CLIENTS */
+    .clients{ background:var(--black); }
+    .clients-grid{ display:grid; grid-template-columns:repeat(6,1fr); gap:1px; background:rgba(255,255,255,0.04); }
+    .client-item{ background:var(--card); padding:1.2rem 1rem; text-align:center; font-size:0.78rem; font-weight:600; letter-spacing:1px; color:var(--gray); transition:all 0.2s; text-transform:uppercase; }
+    .client-item:hover{ background:#16191f; color:var(--gold); }
+    @media(max-width:900px){ .clients-grid{ grid-template-columns:repeat(3,1fr); } }
+    @media(max-width:580px){ .clients-grid{ grid-template-columns:repeat(2,1fr); } }
 
     /* REVIEWS */
     .reviews{background:var(--deep)}
@@ -1060,191 +1409,57 @@
       .sticky-call span{display:none}
     }
   
-    /* ── CHATBOT WIDGET ─────────────────────────────────── */
-    #chatbot-bubble{
-      position:fixed;bottom:2rem;left:2rem;z-index:1000;
-      width:56px;height:56px;border-radius:50%;
-      background:var(--gold);
-      display:flex;align-items:center;justify-content:center;
-      cursor:pointer;
-      box-shadow:0 4px 20px rgba(201,168,76,0.45);
-      transition:transform 0.2s,background 0.2s;
-    }
-    #chatbot-bubble:hover{transform:scale(1.08);background:var(--gold-lt)}
-    #chat-bubble-icon{font-size:1.3rem;line-height:1}
-    #chat-bubble-icon::before{content:'💬'}
-    .chat-notif{
-      position:absolute;top:-4px;right:-4px;
-      background:#e63c3c;color:#fff;
-      font-size:0.55rem;font-weight:700;
-      width:18px;height:18px;border-radius:50%;
-      display:flex;align-items:center;justify-content:center;
-      border:2px solid var(--black);
-    }
+    /* URGENCY BANNER */
+    .urgency-bar{background:linear-gradient(90deg,#0a0d14 0%,#13161d 50%,#0a0d14 100%);border-bottom:1px solid rgba(201,168,76,0.3);padding:0.6rem 6%;position:sticky;top:68px;z-index:900;animation:slideDown 0.5s ease}
+    @keyframes slideDown{from{transform:translateY(-100%);opacity:0}to{transform:translateY(0);opacity:1}}
+    .ub-inner{display:flex;align-items:center;gap:1rem;max-width:1300px;margin:0 auto}
+    .ub-pulse{width:8px;height:8px;background:var(--gold);border-radius:50%;flex-shrink:0;animation:pulse 2s infinite}
+    .ub-text{font-size:0.78rem;color:var(--light);flex:1;line-height:1.4}
+    .ub-text strong{color:var(--gold)}
+    .ub-cta{background:var(--gold);color:var(--black);font-size:0.7rem;font-weight:700;letter-spacing:1.5px;padding:0.4rem 1rem;white-space:nowrap;flex-shrink:0;transition:background 0.2s}
+    .ub-cta:hover{background:var(--gold-lt)}
+    .ub-close{background:none;border:none;color:var(--gray);font-size:0.8rem;cursor:pointer;padding:0.2rem 0.4rem;flex-shrink:0;transition:color 0.2s}
+    .ub-close:hover{color:var(--white)}
+    @media(max-width:768px){.ub-cta{display:none}.ub-text{font-size:0.72rem}}
+    /* LOGO SCROLL */
+    .logo-scroll-wrap{overflow:hidden;position:relative;margin-bottom:3rem}
+    .logo-scroll-wrap::before,.logo-scroll-wrap::after{content:'';position:absolute;top:0;bottom:0;width:120px;z-index:2;pointer-events:none}
+    .logo-scroll-wrap::before{left:0;background:linear-gradient(90deg,var(--black),transparent)}
+    .logo-scroll-wrap::after{right:0;background:linear-gradient(-90deg,var(--black),transparent)}
+    .logo-track{display:flex;gap:1px;width:max-content;animation:logoScroll 40s linear infinite}
+    .logo-track:hover{animation-play-state:paused}
+    @keyframes logoScroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+    .logo-card{background:var(--card);border:1px solid rgba(255,255,255,0.04);width:160px;height:100px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:0.3rem;flex-shrink:0;transition:border-color 0.3s,background 0.3s;padding:1rem}
+    .logo-card:hover{border-color:var(--gold-line);background:#16191f}
+    .logo-abbr{font-family:'Bebas Neue',sans-serif;font-size:1.6rem;letter-spacing:3px;color:var(--gold);line-height:1}
+    .logo-name{font-size:0.68rem;font-weight:700;letter-spacing:1px;color:var(--white);text-align:center;text-transform:uppercase}
+    .logo-sector{font-size:0.6rem;color:var(--gray);letter-spacing:0.5px;text-align:center}
+    /* CLIENT TAGS */
+    .client-tags{display:flex;flex-wrap:wrap;gap:0.5rem;justify-content:center;max-width:1100px;margin:0 auto;padding:0 6%}
+    .client-tag{background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.06);color:var(--gray);font-size:0.7rem;font-weight:600;letter-spacing:1px;padding:0.35rem 0.8rem;text-transform:uppercase;transition:all 0.2s}
+    .client-tag:hover{border-color:var(--gold-line);color:var(--gold)}
+    /* PHOTO GALLERY */
+    .photo-gallery{background:var(--deep);padding:6rem 6%;border-top:1px solid var(--gold-line);border-bottom:1px solid var(--gold-line)}
+    .gallery-grid{display:grid;grid-template-columns:1fr 1fr 1fr 1fr;grid-template-rows:280px 280px;gap:3px;max-width:1300px;margin:0 auto}
+    .gallery-item{position:relative;overflow:hidden;background:var(--card)}
+    .gallery-item.tall{grid-row:span 2}
+    .gallery-item img{width:100%;height:100%;object-fit:cover;display:block;transition:transform 0.5s ease}
+    .gallery-item:hover img{transform:scale(1.05)}
+    .gallery-caption{position:absolute;bottom:0;left:0;right:0;background:linear-gradient(transparent,rgba(8,8,8,0.9));color:var(--white);font-size:0.72rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;padding:1.5rem 1rem 0.8rem;opacity:0;transition:opacity 0.3s}
+    .gallery-item:hover .gallery-caption{opacity:1}
+    @media(max-width:900px){.gallery-grid{grid-template-columns:1fr 1fr;grid-template-rows:auto}.gallery-item.tall,.gallery-item{height:240px}}
+    /* OFFICER STRIP */
+    .officer-strip{display:grid;grid-template-columns:1fr 1fr;gap:0;margin-top:3rem;border:1px solid var(--gold-line);overflow:hidden}
+    .officer-strip-img{height:420px;overflow:hidden}
+    .officer-strip-text{background:var(--card);padding:3.5rem;display:flex;flex-direction:column;justify-content:center;border-left:1px solid var(--gold-line)}
+    .officer-strip-text h3{font-family:'Bebas Neue',sans-serif;font-size:2rem;letter-spacing:2px;color:var(--white);margin:0.5rem 0 1rem;line-height:1.15}
+    .officer-strip-text p{font-size:0.88rem;color:var(--light);line-height:1.75}
+    @media(max-width:900px){.officer-strip{grid-template-columns:1fr}.officer-strip-img{height:280px}.officer-strip-text{padding:2rem}}
+    /* ABOUT IMAGE */
+    .about-img-wrap{min-height:420px}
+    @media(max-width:900px){.about-img-wrap{min-height:280px}}
 
-    #chatbot-window{
-      position:fixed;bottom:6.5rem;left:2rem;z-index:1000;
-      width:320px;
-      background:var(--deep);
-      border:1px solid var(--gold-line);
-      box-shadow:0 16px 48px rgba(0,0,0,0.7);
-      display:none;
-      flex-direction:column;
-      overflow:hidden;
-      border-radius:2px;
-    }
-    #chatbot-window.open{display:flex}
-
-    .chat-header{
-      background:var(--card);
-      border-bottom:1px solid var(--gold-line);
-      padding:0.9rem 1rem;
-      display:flex;align-items:center;justify-content:space-between;
-      flex-shrink:0;
-    }
-    .chat-header-info{display:flex;align-items:center;gap:0.75rem}
-    .chat-avatar{
-      width:36px;height:36px;border-radius:50%;
-      background:linear-gradient(135deg,var(--gold),var(--gold-dk));
-      display:flex;align-items:center;justify-content:center;
-      font-family:'Bebas Neue',sans-serif;font-size:0.75rem;
-      letter-spacing:1px;color:var(--black);flex-shrink:0;
-    }
-    .chat-avatar::after{content:'USS'}
-    .chat-name{
-      font-family:'Barlow Condensed',sans-serif;
-      font-size:0.88rem;font-weight:700;
-      letter-spacing:1px;color:var(--white);
-      line-height:1.2;
-    }
-    .chat-status{
-      font-size:0.62rem;color:var(--light);
-      display:flex;align-items:center;gap:0.35rem;
-      margin-top:0.15rem;
-    }
-    .chat-online{
-      width:7px;height:7px;border-radius:50%;
-      background:#4caf76;flex-shrink:0;
-      box-shadow:0 0 0 2px rgba(76,175,118,0.25);
-    }
-    .chat-close{
-      background:none;border:none;
-      color:var(--light);font-size:1rem;
-      cursor:pointer;padding:0.2rem 0.4rem;
-      line-height:1;transition:color 0.2s;
-      flex-shrink:0;
-    }
-    .chat-close:hover{color:var(--gold)}
-
-    .chat-messages{
-      flex:1;overflow-y:auto;
-      padding:1rem;
-      display:flex;flex-direction:column;gap:0.75rem;
-      min-height:200px;max-height:280px;
-      scrollbar-width:thin;
-      scrollbar-color:var(--gold-line) transparent;
-    }
-
-    .chat-msg{display:flex;flex-direction:column;gap:0.2rem}
-    .chat-msg.bot{align-items:flex-start}
-    .chat-msg.user{align-items:flex-end}
-
-    .chat-bubble{
-      max-width:85%;
-      padding:0.65rem 0.9rem;
-      font-size:0.8rem;line-height:1.55;
-      border-radius:2px;
-    }
-    .chat-msg.bot .chat-bubble{
-      background:var(--card);
-      color:var(--white);
-      border:1px solid var(--gold-line);
-      border-top-left-radius:0;
-    }
-    .chat-msg.user .chat-bubble{
-      background:var(--gold);
-      color:var(--black);
-      font-weight:500;
-      border-top-right-radius:0;
-    }
-    .chat-time{
-      font-size:0.58rem;color:var(--light);
-      letter-spacing:0.5px;padding:0 0.2rem;
-    }
-
-    .chat-quick-replies{
-      display:flex;flex-wrap:wrap;gap:0.4rem;
-      padding-top:0.2rem;
-    }
-    .chat-quick-replies button{
-      background:transparent;
-      border:1px solid var(--gold-line);
-      color:var(--gold);
-      font-family:'Barlow',sans-serif;
-      font-size:0.68rem;font-weight:600;
-      letter-spacing:0.5px;
-      padding:0.35rem 0.7rem;
-      cursor:pointer;
-      border-radius:2px;
-      transition:background 0.2s,color 0.2s,border-color 0.2s;
-      white-space:nowrap;
-    }
-    .chat-quick-replies button:hover{
-      background:var(--gold);
-      color:var(--black);
-      border-color:var(--gold);
-    }
-
-    .chat-input-wrap{
-      display:flex;align-items:center;
-      border-top:1px solid var(--gold-line);
-      background:var(--card);
-      padding:0.6rem 0.8rem;
-      gap:0.5rem;
-      flex-shrink:0;
-    }
-    .chat-input-wrap input{
-      flex:1;background:transparent;
-      border:none;outline:none;
-      color:var(--white);
-      font-family:'Barlow',sans-serif;
-      font-size:0.82rem;
-      padding:0.2rem 0;
-    }
-    .chat-input-wrap input::placeholder{color:var(--light);font-size:0.78rem}
-    .chat-send{
-      background:var(--gold);border:none;
-      color:var(--black);
-      width:30px;height:30px;
-      display:flex;align-items:center;justify-content:center;
-      font-size:0.8rem;cursor:pointer;
-      border-radius:50%;flex-shrink:0;
-      transition:background 0.2s;
-    }
-    .chat-send:hover{background:var(--gold-lt)}
-
-    /* FLOATING CTA */
-    .float-cta{position:fixed;bottom:2rem;right:2rem;z-index:900;background:var(--gold);border:2px solid var(--gold-lt);box-shadow:0 8px 32px rgba(201,168,76,0.35);display:flex;align-items:center;gap:0;opacity:0;transform:translateY(20px);transition:opacity 0.4s,transform 0.4s;pointer-events:none}
-    .float-cta.visible{opacity:1;transform:translateY(0);pointer-events:all}
-    .float-cta-inner{display:flex;align-items:center;gap:0.8rem;padding:0.8rem 1rem;text-decoration:none;color:var(--black)}
-    .float-cta-icon{font-size:1.3rem;line-height:1}
-    .float-cta-title{font-family:'Bebas Neue',sans-serif;font-size:0.95rem;letter-spacing:2px;color:var(--black);line-height:1.1}
-    .float-cta-sub{font-size:0.55rem;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:rgba(8,8,8,0.65)}
-    .float-cta-close{background:none;border:none;font-size:1.2rem;color:var(--black);cursor:pointer;padding:0.5rem 0.7rem;line-height:1;border-left:1px solid rgba(8,8,8,0.2);align-self:stretch;display:flex;align-items:center}
-    .float-cta-close:hover{background:rgba(0,0,0,0.1)}
-    @media(max-width:580px){.float-cta{bottom:1rem;right:1rem}}
-
-    /* RESPONSIVE NAV OPEN */
-    @media(max-width:960px){
-      .nav-links{display:none;position:fixed;top:72px;left:0;right:0;background:rgba(8,8,8,0.99);flex-direction:column;padding:2rem;gap:0;border-bottom:1px solid var(--gold-line)}
-      .nav-links.open{display:flex}
-      .nav-links li{border-bottom:1px solid var(--gold-line)}
-      .nav-links a{display:block;padding:0.9rem 0;font-size:0.75rem}
-      .nav-links .nav-btn{margin:1rem 0 0;text-align:center;display:block}
-      .hamburger{display:flex}
-    }
-
-</style>
+  </style>
 </head>
 <body>
 
@@ -1262,18 +1477,28 @@
   </a>
   <ul class="nav-links" id="navLinks">
     <li><a href="#about">About</a></li>
+    <li><a href="#video">▶ Video</a></li>
     <li><a href="#services">Services</a></li>
     <li><a href="#industries">Industries</a></li>
+    <li><a href="#why">Why Us</a></li>
     <li><a href="#team">Leadership</a></li>
     <li><a href="#reviews">Testimonials</a></li>
-    <li><a href="#gallery">▶ Gallery</a></li>
+    <li><a href="#clients">Clients</a></li>
     <li><a href="#faq">FAQ</a></li>
-    <li><a href="#contact" class="nav-btn">Free Consultation</a></li>
+    <li><a href="#contact" class="nav-btn">Get a Quote</a></li>
   </ul>
   <div class="hamburger" onclick="toggleNav()">
     <span></span><span></span><span></span>
   </div>
 </nav>
+<div class="urgency-bar" id="urgencyBar">
+  <div class="ub-inner">
+    <div class="ub-pulse"></div>
+    <span class="ub-text"><strong>Now Accepting New Clients in Central Florida</strong> — Patrol slots are limited. Request your consultation before availability fills.</span>
+    <a href="#contact" class="ub-cta" onclick="document.getElementById('urgencyBar').style.display='none'">Get Your Spot →</a>
+    <button class="ub-close" onclick="document.getElementById('urgencyBar').style.display='none'" aria-label="Close">✕</button>
+  </div>
+</div>
 
 <!-- HERO -->
 <section class="hero" id="home">
@@ -1318,16 +1543,6 @@
 <!-- ABOUT -->
 <section class="about" id="about">
   <div class="about-grid">
-    <div class="about-img-wrap" style="position:relative;overflow:hidden;border:1px solid var(--gold-line);">
-      <img src="images/img-03.jpg" alt="USS Agency officer on gate patrol" style="width:100%;height:100%;object-fit:cover;object-position:center;display:block;min-height:420px;">
-      <div style="position:absolute;bottom:0;left:0;right:0;background:linear-gradient(transparent,rgba(8,8,8,0.85));padding:1.5rem;">
-        <div style="font-size:0.65rem;font-weight:700;letter-spacing:3px;color:var(--gold);text-transform:uppercase;">Live Operations</div>
-        <div style="font-family:'Bebas Neue',sans-serif;font-size:1.2rem;color:var(--white);letter-spacing:2px;">On Post. Every Night.</div>
-      </div>
-    </div>
-    <div class="about-img-wrap">
-      <img src="images/img-04.jpg" alt="USS Agency professional security officer Orlando FL" loading="lazy">
-    </div>
     <div class="about-text">
       <div class="tag">About USS Agency</div>
       <h2 class="sec-title">Your Trusted Security Partner in Florida</h2>
@@ -1364,7 +1579,7 @@
           preload="metadata"
           poster=""
         >
-          <!-- Video coming soon -->
+          <source src="" type="video/mp4">
           Your browser does not support the video tag.
         </video>
         <!-- Custom play overlay -->
@@ -1416,30 +1631,45 @@
     <p class="sec-sub">From unarmed patrol officers to executive protection specialists, USS Agency has the right solution for every security challenge.</p>
   </div>
   <div class="services-grid">
-    <div class="svc-card">
-      <h3>Unarmed Security Services</h3>
-      <p>Professional deterrence with a friendly, approachable presence. Ideal for retail, residential, events, schools, and commercial properties where visibility matters.</p>
-      <a href="#contact" class="svc-more">Learn More →</a>
-    </div>
-    <div class="svc-card">
-        <h3>Armed Security Services</h3>
-        <p>When the stakes are high, our armed officers deliver unmatched force management and emergency response capability. State-certified, highly trained, always ready.</p>
+    <div class="svc-card" style="padding:0;overflow:hidden;">
+      <div style="height:180px;overflow:hidden;">
+        <img src="images/img-03.jpg" alt="USS Agency unarmed officer on gate patrol" style="width:100%;height:100%;object-fit:cover;object-position:center 40%;">
+      </div>
+      <div style="padding:1.8rem;">
+        <h3>Unarmed Security Services</h3>
+        <p>Professional deterrence with a friendly, approachable presence. Ideal for retail, residential, events, schools, and commercial properties where visibility matters.</p>
         <a href="#contact" class="svc-more">Learn More →</a>
       </div>
+    </div>
     <div class="svc-card">
       <h3>Plainclothes Security Guards</h3>
       <p>Discreet protection that blends seamlessly into any environment. Perfect for sensitive corporate events, retail loss prevention, and executive settings.</p>
       <a href="#contact" class="svc-more">Learn More →</a>
+    </div>
+    <div class="svc-card" style="padding:0;overflow:hidden;">
+      <div style="height:180px;overflow:hidden;">
+        <img src="images/img-04.jpg" alt="USS Agency armed officer and patrol truck" style="width:100%;height:100%;object-fit:cover;object-position:center 40%;">
+      </div>
+      <div style="padding:1.8rem;">
+        <h3>Armed Security Services</h3>
+        <p>When the stakes are high, our armed officers deliver unmatched force management and emergency response capability. State-certified, highly trained, always ready.</p>
+        <a href="#contact" class="svc-more">Learn More →</a>
+      </div>
     </div>
     <div class="svc-card">
       <h3>Off-Duty Law Enforcement</h3>
       <p>The authority and training of active law enforcement — available for high-profile events, political functions, crowd control, and executive protection assignments.</p>
       <a href="#contact" class="svc-more">Learn More →</a>
     </div>
-    <div class="svc-card">
-      <h3>Executive Protection</h3>
-      <p>Comprehensive close protection services for executives, dignitaries, and high-net-worth individuals. Threat assessment, secure transportation, and 24/7 coverage.</p>
-      <a href="#contact" class="svc-more">Learn More →</a>
+    <div class="svc-card" style="padding:0;overflow:hidden;">
+      <div style="height:180px;overflow:hidden;">
+        <img src="images/img-05.jpg" alt="USS Agency patrol vehicles" style="width:100%;height:100%;object-fit:cover;object-position:center 40%;">
+      </div>
+      <div style="padding:1.8rem;">
+        <h3>Neighborhood Watch Patrol</h3>
+        <p>Proactive community patrol services that deter criminal activity and give residents and property managers peace of mind around the clock.</p>
+        <a href="#contact" class="svc-more">Learn More →</a>
+      </div>
     </div>
     <div class="svc-card">
       <h3>Security Consulting</h3>
@@ -1457,10 +1687,10 @@
       <a href="#contact" class="svc-more">Learn More →</a>
     </div>
     <div class="svc-card">
-        <h3>Neighborhood Watch Patrol</h3>
-        <p>Proactive community patrol services that deter criminal activity and give residents and property managers peace of mind around the clock.</p>
-        <a href="#contact" class="svc-more">Learn More →</a>
-      </div>
+      <h3>Executive Protection</h3>
+      <p>Comprehensive close protection services for executives, dignitaries, and high-net-worth individuals. Threat assessment, secure transportation, and 24/7 coverage.</p>
+      <a href="#contact" class="svc-more">Learn More →</a>
+    </div>
   </div>
 </section>
 
@@ -1508,16 +1738,13 @@
     <div class="ind-item"><h4>The Bubble / Black Box</h4></div>
     <div class="ind-item"><h4>Consultations & Assessments</h4></div>
     <div class="ind-item"><h4>Health Providers & Clinics</h4></div>
-    <div class="ind-item"><h4>Hall Monitoring / Curfew Enforcement for Student & Athlete Travel Groups</h4></div>
+    <div class="ind-item"><h4>Hall Monitoring / Curfew Enforcement for Student Travel Groups</h4></div>
   </div>
 </section>
 
 <!-- WHY US -->
 <section class="why" id="why">
   <div class="why-grid">
-    <div class="why-photo" style="overflow:hidden;border:1px solid var(--gold-line);">
-      <img src="images/img-05.jpg" alt="USS Agency officers on perimeter patrol" style="width:100%;height:100%;object-fit:cover;display:block;">
-    </div>
     <div>
       <div class="tag">Why USS Agency</div>
       <h2 class="sec-title">The Standard Others Try to Match</h2>
@@ -1586,27 +1813,19 @@
     <h2 class="sec-title">The Team Behind USS Agency</h2>
     <p class="sec-sub" style="margin:0 auto">Experienced. Disciplined. Client-focused. Meet the leadership driving Florida's premier security operation since 2008.</p>
   </div>
-
   <div class="leadership-grid">
-
-    <!-- MIA ROCK -->
     <div class="leader-card featured">
-      <div class="leader-avatar">
-        <div class="leader-initials">MR</div>
-        <div class="leader-role-badge">CEO &amp; Founder</div>
+      <div class="leader-avatar" style="background:#0a0d14;display:flex;align-items:center;justify-content:center;overflow:hidden;min-height:320px;">
+        <img src="images/img-07.jpg" alt="Mia Rock, Founder & CEO" style="width:100%;height:100%;object-fit:contain;object-position:center top;display:block;background:#0a0d14;">
       </div>
       <div class="leader-info">
-        <!-- CREDENTIALS FIRST -->
         <div class="leader-credentials" style="margin-bottom:1.2rem">
-          <span>Executive MBA · Rollins College</span>
-          <span>Founder & CEO</span>
-          <span>15+ Years</span>
-          <span>Licensed & Insured</span>
+          <span>Executive MBA · Rollins College</span><span>Founder &amp; CEO</span><span>15+ Years</span><span>Licensed &amp; Insured</span>
         </div>
         <div class="leader-name">Mia Rock</div>
         <div class="leader-title">Founder &amp; Chief Executive Officer — USS Agency LLC</div>
         <div class="leader-divider"></div>
-        <p class="leader-bio">A visionary leader and trailblazer in the security industry, Mia Rock founded USS Agency in 2008, redefining what premium security looks like. Breaking barriers in a traditionally male-dominated field, she built a brand known for <strong>customized solutions, operational excellence, and client-centered service</strong> — serving everyone from luxury HOA communities to government agencies and major events.</p>
+        <p class="leader-bio">A visionary leader and trailblazer in the security industry, Mia Rock founded USS Agency in 2008, redefining what premium security looks like. Breaking barriers in a traditionally male-dominated field, she built a brand known for <strong>customized solutions, operational excellence, and client-centered service</strong>.</p>
         <p class="leader-bio">Ms. Rock holds an <strong>Executive MBA from the Crummer Graduate School of Business at Rollins College</strong> and has expanded USS Agency into a multifaceted enterprise spanning security services, firearms training, apparel, armory, ammunition, and shooting sports.</p>
         <div class="leader-stats">
           <div class="l-stat"><div class="l-stat-n">127</div><div class="l-stat-l">Simultaneous Contracts</div></div>
@@ -1615,25 +1834,19 @@
         </div>
       </div>
     </div>
-
-    <!-- JOSHUA RODRIGUEZ -->
     <div class="leader-card featured">
-      <div class="leader-avatar">
-        <div class="leader-initials">JR</div>
-        <div class="leader-role-badge">President, Field Ops</div>
+      <div class="leader-avatar" style="background:#0a0d14;display:flex;align-items:center;justify-content:center;overflow:hidden;min-height:320px;">
+        <img src="images/img-08.jpg" alt="Joshua Rodriguez, President of Field Operations" style="width:100%;height:100%;object-fit:contain;object-position:center top;display:block;background:#0a0d14;">
       </div>
       <div class="leader-info">
-        <!-- CREDENTIALS FIRST -->
         <div class="leader-credentials" style="margin-bottom:1.2rem">
-          <span>NRA Law Enforcement Instructor</span>
-          <span>State-Certified K Instructor</span>
-          <span>20 Years Experience</span>
+          <span>NRA Law Enforcement Instructor</span><span>State-Certified K Instructor</span><span>20 Years Experience</span>
         </div>
         <div class="leader-name">Joshua Rodriguez</div>
         <div class="leader-title">President of Field Operations</div>
         <div class="leader-divider"></div>
         <p class="leader-bio">With nearly two decades of field experience, Joshua Rodriguez leads the <strong>Field Operations and Vocational Training divisions</strong> of USS Agency. A founding team member since 2008, he has driven officer education, performance standards, and operational excellence across the organization.</p>
-        <p class="leader-bio">An <strong>NRA Law Enforcement Firearms Instructor</strong> and <strong>State-Certified "K" Instructor</strong>, Mr. Rodriguez develops training programs that prepare officers to perform under pressure while maintaining the highest standards of professionalism. His leadership ensures every USS officer is trained, certified, and field-ready.</p>
+        <p class="leader-bio">An <strong>NRA Law Enforcement Firearms Instructor</strong> and <strong>State-Certified "K" Instructor</strong>, Mr. Rodriguez develops training programs that prepare officers to perform under pressure while maintaining the highest standards of professionalism.</p>
         <div class="leader-stats">
           <div class="l-stat"><div class="l-stat-n">20</div><div class="l-stat-l">Years in Security</div></div>
           <div class="l-stat"><div class="l-stat-n">16</div><div class="l-stat-l">Years in Management</div></div>
@@ -1641,14 +1854,9 @@
         </div>
       </div>
     </div>
-
   </div>
-
-  <!-- OFFICER TEAM PHOTO STRIP -->
   <div class="officer-strip">
-    <div class="officer-strip-img">
-      <img src="images/img-07.jpg" alt="USS Agency officers on night patrol" style="width:100%;height:100%;object-fit:cover;object-position:center;">
-    </div>
+    <div class="officer-strip-img"><img src="images/img-09.jpg" alt="USS Agency officers on night patrol" style="width:100%;height:100%;object-fit:cover;object-position:center;"></div>
     <div class="officer-strip-text">
       <div class="tag">Our People</div>
       <h3>280+ Highly Trained Security Professionals</h3>
@@ -1656,7 +1864,6 @@
       <a href="#contact" class="btn btn-gold" style="margin-top:1.5rem;display:inline-flex">Deploy Our Team →</a>
     </div>
   </div>
-
 </section>
 
 <!-- CLIENTS -->
@@ -1666,102 +1873,55 @@
     <h2 class="sec-title">Our Clients &amp; Partners</h2>
     <p class="sec-sub" style="margin:0 auto">USS Agency proudly serves an elite portfolio of clients across residential, commercial, hospitality, government, and corporate sectors.</p>
   </div>
-  <div class="clients-grid">
-    <div class="client-item">Tavistock — Lakenona</div>
-    <div class="client-item">Isleworth Community</div>
-    <div class="client-item">Pinnacle Properties</div>
-    <div class="client-item">Leland Management</div>
-    <div class="client-item">Avesta Management</div>
-    <div class="client-item">Chase Bank</div>
-    <div class="client-item">Lincoln Properties</div>
-    <div class="client-item">Imperial Dade</div>
-    <div class="client-item">JMG Realty</div>
-    <div class="client-item">GOAA</div>
-    <div class="client-item">Hilton Hotel</div>
-    <div class="client-item">NFL Pro Bowl</div>
-    <div class="client-item">Top Golf</div>
-    <div class="client-item">Cirrus Aircraft</div>
-    <div class="client-item">Catholic Diocese of Orlando</div>
-    <div class="client-item">Windermere Police Dept.</div>
-    <div class="client-item">Girl Scouts of Citrus County</div>
-    <div class="client-item">SMD Properties</div>
-  </div>
+  <div class="logo-scroll-wrap"><div class="logo-track"><div class="logo-card"><div class="logo-abbr">CB</div><div class="logo-name">Chase Bank</div><div class="logo-sector">Banking & Finance</div></div><div class="logo-card"><div class="logo-abbr">H</div><div class="logo-name">Hilton Hotel</div><div class="logo-sector">Hospitality</div></div><div class="logo-card"><div class="logo-abbr">NFL</div><div class="logo-name">NFL Pro Bowl</div><div class="logo-sector">Major Events</div></div><div class="logo-card"><div class="logo-abbr">GOAA</div><div class="logo-name">GOAA</div><div class="logo-sector">Government / Aviation</div></div><div class="logo-card"><div class="logo-abbr">TG</div><div class="logo-name">Top Golf</div><div class="logo-sector">Entertainment</div></div><div class="logo-card"><div class="logo-abbr">CA</div><div class="logo-name">Cirrus Aircraft</div><div class="logo-sector">Aviation</div></div><div class="logo-card"><div class="logo-abbr">T</div><div class="logo-name">Tavistock</div><div class="logo-sector">Luxury Real Estate</div></div><div class="logo-card"><div class="logo-abbr">I</div><div class="logo-name">Isleworth</div><div class="logo-sector">Luxury Community</div></div><div class="logo-card"><div class="logo-abbr">LM</div><div class="logo-name">Leland Management</div><div class="logo-sector">Property Management</div></div><div class="logo-card"><div class="logo-abbr">LP</div><div class="logo-name">Lincoln Properties</div><div class="logo-sector">Property Management</div></div><div class="logo-card"><div class="logo-abbr">AM</div><div class="logo-name">Avesta Management</div><div class="logo-sector">Property Management</div></div><div class="logo-card"><div class="logo-abbr">ID</div><div class="logo-name">Imperial Dade</div><div class="logo-sector">Distribution</div></div><div class="logo-card"><div class="logo-abbr">JMG</div><div class="logo-name">JMG Realty</div><div class="logo-sector">Real Estate</div></div><div class="logo-card"><div class="logo-abbr">PP</div><div class="logo-name">Pinnacle Properties</div><div class="logo-sector">Real Estate</div></div><div class="logo-card"><div class="logo-abbr">WPD</div><div class="logo-name">Windermere PD</div><div class="logo-sector">Law Enforcement</div></div><div class="logo-card"><div class="logo-abbr">CD</div><div class="logo-name">Catholic Diocese</div><div class="logo-sector">Religious Institution</div></div><div class="logo-card"><div class="logo-abbr">GS</div><div class="logo-name">Girl Scouts</div><div class="logo-sector">Non-Profit</div></div><div class="logo-card"><div class="logo-abbr">SMD</div><div class="logo-name">SMD Properties</div><div class="logo-sector">Property Management</div></div><div class="logo-card"><div class="logo-abbr">CB</div><div class="logo-name">Chase Bank</div><div class="logo-sector">Banking & Finance</div></div><div class="logo-card"><div class="logo-abbr">H</div><div class="logo-name">Hilton Hotel</div><div class="logo-sector">Hospitality</div></div><div class="logo-card"><div class="logo-abbr">NFL</div><div class="logo-name">NFL Pro Bowl</div><div class="logo-sector">Major Events</div></div><div class="logo-card"><div class="logo-abbr">GOAA</div><div class="logo-name">GOAA</div><div class="logo-sector">Government / Aviation</div></div><div class="logo-card"><div class="logo-abbr">TG</div><div class="logo-name">Top Golf</div><div class="logo-sector">Entertainment</div></div><div class="logo-card"><div class="logo-abbr">CA</div><div class="logo-name">Cirrus Aircraft</div><div class="logo-sector">Aviation</div></div><div class="logo-card"><div class="logo-abbr">T</div><div class="logo-name">Tavistock</div><div class="logo-sector">Luxury Real Estate</div></div><div class="logo-card"><div class="logo-abbr">I</div><div class="logo-name">Isleworth</div><div class="logo-sector">Luxury Community</div></div><div class="logo-card"><div class="logo-abbr">LM</div><div class="logo-name">Leland Management</div><div class="logo-sector">Property Management</div></div><div class="logo-card"><div class="logo-abbr">LP</div><div class="logo-name">Lincoln Properties</div><div class="logo-sector">Property Management</div></div><div class="logo-card"><div class="logo-abbr">AM</div><div class="logo-name">Avesta Management</div><div class="logo-sector">Property Management</div></div><div class="logo-card"><div class="logo-abbr">ID</div><div class="logo-name">Imperial Dade</div><div class="logo-sector">Distribution</div></div><div class="logo-card"><div class="logo-abbr">JMG</div><div class="logo-name">JMG Realty</div><div class="logo-sector">Real Estate</div></div><div class="logo-card"><div class="logo-abbr">PP</div><div class="logo-name">Pinnacle Properties</div><div class="logo-sector">Real Estate</div></div><div class="logo-card"><div class="logo-abbr">WPD</div><div class="logo-name">Windermere PD</div><div class="logo-sector">Law Enforcement</div></div><div class="logo-card"><div class="logo-abbr">CD</div><div class="logo-name">Catholic Diocese</div><div class="logo-sector">Religious Institution</div></div><div class="logo-card"><div class="logo-abbr">GS</div><div class="logo-name">Girl Scouts</div><div class="logo-sector">Non-Profit</div></div><div class="logo-card"><div class="logo-abbr">SMD</div><div class="logo-name">SMD Properties</div><div class="logo-sector">Property Management</div></div></div></div>
+  <div class="client-tags"><span class="client-tag">Chase Bank</span><span class="client-tag">Hilton Hotel</span><span class="client-tag">NFL Pro Bowl</span><span class="client-tag">GOAA</span><span class="client-tag">Top Golf</span><span class="client-tag">Cirrus Aircraft</span><span class="client-tag">Tavistock</span><span class="client-tag">Isleworth</span><span class="client-tag">Leland Management</span><span class="client-tag">Lincoln Properties</span><span class="client-tag">Avesta Management</span><span class="client-tag">Imperial Dade</span><span class="client-tag">JMG Realty</span><span class="client-tag">Pinnacle Properties</span><span class="client-tag">Windermere PD</span><span class="client-tag">Catholic Diocese</span><span class="client-tag">Girl Scouts</span><span class="client-tag">SMD Properties</span></div></div>
 </section>
 
-<!-- PHOTO & VIDEO GALLERY -->
-<section class="media-gallery" id="gallery">
-  <div class="sec-head" style="text-align:center;max-width:700px;margin:0 auto 3.5rem">
-    <div class="tag">Media Gallery</div>
-    <h2 class="sec-title">USS Agency — In The Field & In Action</h2>
-    <p class="sec-sub" style="margin:0 auto">From retail plazas to luxury estates, warehouses to armed details — our officers deploy across Florida every day. Watch our brand video or browse real field operations below.</p>
+<!-- PHOTO GALLERY -->
+<section class="photo-gallery" id="gallery">
+  <div class="sec-head" style="text-align:center;max-width:700px;margin:0 auto 3rem">
+    <div class="tag">In The Field</div>
+    <h2 class="sec-title">USS Agency — Everywhere You Need Us</h2>
+    <p class="sec-sub" style="margin:0 auto">From retail plazas to luxury communities, warehouses to residential gates — our officers are deployed across Florida every single day.</p>
   </div>
-
-  <!-- VIDEO FEATURE ROW -->
-  <div class="mg-video-row">
-    <div class="mg-video-wrap">
-      <div class="mg-video-label">
-        <div class="tag" style="display:inline-block;margin-bottom:0.5rem">Brand Video</div>
-        <h3>USS Agency — Elite Security In Motion</h3>
-        <p>See our officers, vehicles, and operations firsthand. 15+ years of protection, captured in 40 seconds.</p>
-      </div>
-      <div class="mg-video-frame">
-        <video id="mgVideo" class="mg-video" playsinline preload="metadata">
-          <!-- Video coming soon -->
-        </video>
-        <div class="mg-play-overlay" id="mgOverlay" onclick="playMgVideo()">
-          <div class="mg-play-btn">▶</div>
-          <div class="mg-play-label">Play Brand Video</div>
-        </div>
-      </div>
+  <div class="gallery-grid">
+    <div class="gallery-item tall">
+      <img src="images/img-10.jpg" alt="USS Agency officer on night retail patrol">
+      <div class="gallery-caption">Night Retail Patrol</div>
+    </div>
+    <div class="gallery-item">
+      <img src="images/img-11.jpg" alt="USS Agency officer warehouse security">
+      <div class="gallery-caption">Warehouse Security</div>
+    </div>
+    <div class="gallery-item">
+      <img src="images/img-12.jpg" alt="USS Agency officer gate inspection">
+      <div class="gallery-caption">Residential Gate Patrol</div>
+    </div>
+    <div class="gallery-item tall">
+      <img src="images/img-13.jpg" alt="USS Agency uniformed officer">
+      <div class="gallery-caption">Uniformed Officers</div>
     </div>
   </div>
-
-  <!-- PHOTO GRID -->
-  <div class="mg-grid-label">
-    <div class="tag">Field Operations</div>
-    <h3>Real Officers. Real Deployments.</h3>
-  </div>
-
-  <div class="mg-photo-grid">
-    <div class="mg-photo wide">
-      <img src="images/img-08.jpg" alt="USS Agency officers on night patrol luxury community" loading="lazy">
-      <div class="mg-photo-cap">Night Patrol — Luxury Residential</div>
-    </div>
-    <div class="mg-photo">
-      <img src="images/img-09.jpg" alt="USS Agency officer night retail patrol" loading="lazy">
-      <div class="mg-photo-cap">Retail Security Detail</div>
-    </div>
-    <div class="mg-photo">
-      <img src="images/img-10.jpg" alt="USS Agency uniformed officer" loading="lazy">
-      <div class="mg-photo-cap">Uniformed Officer</div>
-    </div>
-    <div class="mg-photo">
-      <img src="images/img-11.jpg" alt="USS Agency armed officer and patrol truck" loading="lazy">
-      <div class="mg-photo-cap">Armed Officer — Patrol Vehicle</div>
-    </div>
-    <div class="mg-photo">
-      <img src="images/img-12.jpg" alt="USS Agency fleet patrol vehicles" loading="lazy">
-      <div class="mg-photo-cap">Fleet — Patrol Vehicles</div>
-    </div>
-    <div class="mg-photo tall">
-      <img src="images/img-13.jpg" alt="USS Agency officer gate patrol with flashlight" loading="lazy">
-      <div class="mg-photo-cap">Residential Gate Patrol</div>
-    </div>
-    <div class="mg-photo">
-      <img src="images/img-14.jpg" alt="USS Agency warehouse security" loading="lazy">
-      <div class="mg-photo-cap">Warehouse Security</div>
-    </div>
-    <div class="mg-photo">
-      <img src="images/img-05.jpg" alt="USS Agency officers on perimeter patrol" loading="lazy">
-      <div class="mg-photo-cap">Perimeter Patrol</div>
-    </div>
-  </div>
-
-  <div style="text-align:center;margin-top:3.5rem">
+  <div style="text-align:center;margin-top:3rem">
     <a href="#contact" class="btn btn-gold">Deploy Our Team →</a>
   </div>
 </section>
 
+<!-- PHOTO GALLERY -->
+<section class="photo-gallery" id="gallery">
+  <div class="sec-head" style="text-align:center;max-width:700px;margin:0 auto 3rem">
+    <div class="tag">In The Field</div>
+    <h2 class="sec-title">USS Agency — Everywhere You Need Us</h2>
+    <p class="sec-sub" style="margin:0 auto">From retail plazas to luxury communities, warehouses to residential gates — our officers are deployed across Florida every single day.</p>
+  </div>
+  <div class="gallery-grid">
+    <div class="gallery-item tall"><img src="images/img-14.jpg" alt="USS Agency night retail patrol"><div class="gallery-caption">Night Retail Patrol</div></div>
+    <div class="gallery-item"><img src="images/img-15.jpg" alt="USS Agency warehouse security"><div class="gallery-caption">Warehouse Security</div></div>
+    <div class="gallery-item"><img src="images/img-16.jpg" alt="USS Agency gate patrol"><div class="gallery-caption">Residential Gate Patrol</div></div>
+    <div class="gallery-item tall"><img src="images/img-17.jpg" alt="USS Agency uniformed officer"><div class="gallery-caption">Uniformed Officers</div></div>
+  </div>
+  <div style="text-align:center;margin-top:3rem"><a href="#contact" class="btn btn-gold">Deploy Our Team →</a></div>
+</section>
 
 <!-- FAQ -->
 <section class="faq" id="faq">
@@ -2067,21 +2227,21 @@
       <div class="chat-avatar"></div>
       <div>
         <div class="chat-name">USS Agency Support</div>
-        <div class="chat-status"><span class="chat-online"></span>Online — typically replies instantly</div>
+        <div class="chat-status"><span class="chat-online"></span> Online — typically replies instantly</div>
       </div>
     </div>
     <button onclick="toggleChat()" class="chat-close">✕</button>
   </div>
   <div class="chat-messages" id="chatMessages">
     <div class="chat-msg bot">
-      <div class="chat-bubble">Hello! Welcome to USS Agency — Florida's premier licensed security provider. How can I help you today?</div>
+      <div class="chat-bubble"> Hello! Welcome to USS Agency — Florida's premier security services provider. How can I help you today?</div>
       <div class="chat-time">Just now</div>
     </div>
     <div class="chat-quick-replies" id="quickReplies">
-      <button onclick="quickReply('I need a security quote')">Get a Quote</button>
-      <button onclick="quickReply('What services do you offer?')">Our Services</button>
-      <button onclick="quickReply('How do I contact you?')">Contact Us</button>
-      <button onclick="quickReply('Are you available 24/7?')">Availability</button>
+      <button onclick="quickReply('I need a security quote')"> Get a Quote</button>
+      <button onclick="quickReply('What services do you offer?')"> Our Services</button>
+      <button onclick="quickReply('How do I contact you?')"> Contact Us</button>
+      <button onclick="quickReply('Are you available 24/7?')"> Availability</button>
     </div>
   </div>
   <div class="chat-input-wrap">
@@ -2142,99 +2302,7 @@
   </div>
 </footer>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js">
-
-  /* ── SCROLL REVEAL ────────────────────────────────────── */
-  const revealEls = document.querySelectorAll(
-    '.svc-card,.leader-card,.ind-item,.metric-item,.review-card,.client-card,.mg-photo,.why-item'
-  );
-  const revealObs = new IntersectionObserver((entries) => {
-    entries.forEach(e => {
-      if (e.isIntersecting) {
-        e.target.style.opacity = '1';
-        e.target.style.transform = 'translateY(0)';
-        revealObs.unobserve(e.target);
-      }
-    });
-  }, {threshold: 0.1, rootMargin: '0px 0px -40px 0px'});
-
-  revealEls.forEach((el, i) => {
-    el.style.opacity = '0';
-    el.style.transform = 'translateY(28px)';
-    el.style.transition = `opacity 0.6s ease ${(i % 8) * 0.07}s, transform 0.6s ease ${(i % 8) * 0.07}s`;
-    revealObs.observe(el);
-  });
-
-  /* ── ACTIVE NAV HIGHLIGHTING ──────────────────────────── */
-  const sections = document.querySelectorAll('section[id]');
-  const navLinks = document.querySelectorAll('.nav-links a[href^="#"]');
-  const navObs = new IntersectionObserver((entries) => {
-    entries.forEach(e => {
-      if (e.isIntersecting) {
-        navLinks.forEach(a => a.classList.remove('active'));
-        const active = document.querySelector(`.nav-links a[href="#${e.target.id}"]`);
-        if (active) active.classList.add('active');
-      }
-    });
-  }, {threshold: 0.3});
-  sections.forEach(s => navObs.observe(s));
-
-  /* ── SMOOTH SCROLL ────────────────────────────────────── */
-  document.querySelectorAll('a[href^="#"]').forEach(a => {
-    a.addEventListener('click', e => {
-      const target = document.querySelector(a.getAttribute('href'));
-      if (target) {
-        e.preventDefault();
-        target.scrollIntoView({behavior:'smooth', block:'start'});
-        // close mobile nav
-        document.getElementById('navLinks').classList.remove('open');
-        document.querySelector('.hamburger').classList.remove('open');
-      }
-    });
-  });
-
-  /* ── FLOATING CTA ─────────────────────────────────────── */
-  const floatCTA = document.getElementById('floatCTA');
-  if (floatCTA) {
-    setTimeout(() => floatCTA.classList.add('visible'), 8000);
-    window.addEventListener('scroll', () => {
-      if (window.scrollY > 600) floatCTA.classList.add('visible');
-    });
-  }
-
-  /* ── HAMBURGER TOGGLE ─────────────────────────────────── */
-  function toggleNav() {
-    document.getElementById('navLinks').classList.toggle('open');
-    document.querySelector('.hamburger').classList.toggle('open');
-  }
-
-  /* ── SERVICE CARD HOVER LIFT ──────────────────────────── */
-  document.querySelectorAll('.svc-card').forEach(c => {
-    c.addEventListener('mouseenter', () => {
-      c.style.transform = 'translateY(-6px)';
-      c.style.boxShadow = '0 16px 40px rgba(201,168,76,0.18)';
-    });
-    c.addEventListener('mouseleave', () => {
-      c.style.transform = '';
-      c.style.boxShadow = '';
-    });
-  });
-
-  /* ── INDUSTRY ITEM HOVER ──────────────────────────────── */
-  document.querySelectorAll('.ind-item').forEach(item => {
-    item.addEventListener('mouseenter', () => {
-      item.style.borderColor = 'var(--gold)';
-      item.style.color = 'var(--gold)';
-      item.style.background = 'rgba(201,168,76,0.07)';
-    });
-    item.addEventListener('mouseleave', () => {
-      item.style.borderColor = '';
-      item.style.color = '';
-      item.style.background = '';
-    });
-  });
-
-</script><script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
   // NAV TOGGLE
   function toggleNav() {
     document.getElementById('navLinks').classList.toggle('open');
@@ -2371,21 +2439,10 @@
   const heroStatsEl = document.querySelector('.hero-stats');
   if (heroStatsEl) counterObserver.observe(heroStatsEl);
 
-  // BRAND VIDEO (hero section)
+  // BRAND VIDEO
   function playBrandVideo() {
     const video = document.getElementById('brandVideo');
     const overlay = document.getElementById('bvOverlay');
-    if (video && overlay) {
-      overlay.classList.add('hidden');
-      video.controls = true;
-      video.play();
-    }
-  }
-
-  // GALLERY VIDEO
-  function playMgVideo() {
-    const video = document.getElementById('mgVideo');
-    const overlay = document.getElementById('mgOverlay');
     if (video && overlay) {
       overlay.classList.add('hidden');
       video.controls = true;
@@ -2511,6 +2568,41 @@
     }
   }
 
+  window.addEventListener('load', loadGoogleReviews);
+
+
+  // LIVE GOOGLE REVIEWS
+  const GOOGLE_API_KEY  = 'YOUR_API_KEY_HERE';
+  const GOOGLE_PLACE_ID = 'ChIJYwAKBpyD54gRJkw-rXBUj64';
+  const FALLBACK_REVIEWS = [
+    {name:'Ashlynn Baker',rating:5,time:'2 months ago',text:'I have a hands-free and worry-free relationship with my security company because they truly developed an action plan to ensure my tenants feel at ease, and so do I.'},
+    {name:'Jacey Blackwood',rating:5,time:'3 months ago',text:'The one thing I can tell you about USS Agency is that they keep their word. If they tell you they are going to do something, you can count on it.'},
+    {name:'Amiee Johnson',rating:5,time:'4 months ago',text:'I started off with one property with USS Agency and have added them to each property as my portfolio grew. It shows my employees and residents that I care about their safety.'},
+    {name:'Leonard Beils',rating:5,time:'5 months ago',text:'Contracting Ultimate Security Services was one of the best business decisions I have made. I did my homework — and USS Agency stood above the rest.'},
+    {name:'Bailey Kesler',rating:5,time:'6 months ago',text:'When I come home late from work, I feel a sense of safety just knowing the security guard is always on post. I know I can count on them and I feel safe.'},
+    {name:'Verified Client',rating:5,time:'7 months ago',text:'USS Agency is great at making people feel at ease. Their officers are friendly, professional, and confident. That is what makes me feel safe.'},
+  ];
+  function renderReviews(reviews) {
+    const c = document.getElementById('googleReviewsLive'); if(!c) return;
+    c.innerHTML = reviews.map(r => {
+      const init = r.name.split(' ').map(n=>n[0]).join('').substring(0,2).toUpperCase();
+      const stars = '★'.repeat(r.rating)+'☆'.repeat(5-r.rating);
+      const photo = r.photo ? `<img src="${r.photo}" alt="${r.name}" style="width:38px;height:38px;border-radius:50%;object-fit:cover;">` : `<div class="g-avatar">${init}</div>`;
+      return `<div class="g-live-card"><div class="g-live-top">${photo}<div><div class="g-name">${r.name}</div><div class="g-date">${r.time}</div></div><svg width="16" height="16" viewBox="0 0 24 24" style="margin-left:auto;flex-shrink:0"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg></div><div class="g-stars">${stars}</div><div class="g-text">"${r.text}"</div></div>`;
+    }).join('');
+  }
+  async function loadGoogleReviews() {
+    renderReviews(FALLBACK_REVIEWS);
+    if(!GOOGLE_API_KEY || GOOGLE_API_KEY==='YOUR_API_KEY_HERE') return;
+    try {
+      const resp = await fetch(`https://maps.googleapis.com/maps/api/place/details/json?place_id=${GOOGLE_PLACE_ID}&fields=name,rating,reviews,user_ratings_total&key=${GOOGLE_API_KEY}`);
+      const data = await resp.json();
+      if(data.status==='OK' && data.result?.reviews) {
+        const live = data.result.reviews.filter(r=>r.rating>=4).map(r=>({name:r.author_name,rating:r.rating,time:r.relative_time_description,text:r.text,photo:r.profile_photo_url||null}));
+        if(live.length>0) { renderReviews(live); const el=document.querySelector('.gwh-rating'); if(el&&data.result.rating) el.textContent=`★★★★★ ${data.result.rating.toFixed(1)} (${data.result.user_ratings_total}+ reviews)`; }
+      }
+    } catch(e) { console.log('Using fallback reviews.'); }
+  }
   window.addEventListener('load', loadGoogleReviews);
 
   // CHATBOT
