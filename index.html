@@ -1283,43 +1283,6 @@
     @media(max-width:580px){{.google-live-grid{{grid-template-columns:1fr}}}}
 
     /* CHATBOT */
-    #chatbot-bubble{position:fixed;bottom:6rem;right:2rem;z-index:998;width:58px;height:58px;background:var(--gold);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.5rem;cursor:pointer;box-shadow:0 6px 25px rgba(201,168,76,0.45);transition:transform 0.2s,background 0.2s;user-select:none}
-    #chatbot-bubble:hover{transform:scale(1.08);background:var(--gold-lt)}
-    .chat-notif{position:absolute;top:-3px;right:-3px;width:18px;height:18px;background:#e74c3c;border-radius:50%;font-size:0.65rem;font-weight:700;color:#fff;display:flex;align-items:center;justify-content:center;border:2px solid var(--black)}
-    #chatbot-window{position:fixed;bottom:10rem;right:2rem;z-index:997;width:340px;background:var(--deep);border:1px solid var(--gold-line);border-radius:4px;box-shadow:0 20px 60px rgba(0,0,0,0.6);display:none;flex-direction:column;overflow:hidden;max-height:500px}
-    #chatbot-window.open{display:flex}
-    .chat-header{background:var(--navy);padding:1rem 1.2rem;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--gold-line)}
-    .chat-header-info{display:flex;align-items:center;gap:0.8rem}
-    .chat-avatar{width:36px;height:36px;background:var(--gold);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1rem}
-    .chat-name{font-size:0.85rem;font-weight:700;color:var(--white)}
-    .chat-status{font-size:0.7rem;color:var(--gray);display:flex;align-items:center;gap:0.4rem;margin-top:0.15rem}
-    .chat-online{width:7px;height:7px;background:#2ecc71;border-radius:50%;display:inline-block}
-    .chat-close{background:none;border:none;color:var(--gray);font-size:1rem;cursor:pointer;padding:0.2rem;transition:color 0.2s}
-    .chat-close:hover{color:var(--white)}
-    .chat-messages{flex:1;overflow-y:auto;padding:1.2rem;display:flex;flex-direction:column;gap:0.8rem;max-height:300px}
-    .chat-messages::-webkit-scrollbar{width:3px}
-    .chat-messages::-webkit-scrollbar-thumb{background:var(--gold-line)}
-    .chat-msg{display:flex;flex-direction:column}
-    .chat-msg.bot{align-items:flex-start}
-    .chat-msg.user{align-items:flex-end}
-    .chat-bubble{padding:0.8rem 1rem;font-size:0.85rem;line-height:1.55;max-width:85%}
-    .chat-msg.bot .chat-bubble{background:var(--card);color:var(--white);border-radius:0 8px 8px 8px;border:1px solid rgba(255,255,255,0.05)}
-    .chat-msg.user .chat-bubble{background:var(--gold);color:var(--black);font-weight:500;border-radius:8px 0 8px 8px}
-    .chat-time{font-size:0.65rem;color:var(--gray);margin-top:0.3rem}
-    .chat-quick-replies{display:flex;flex-wrap:wrap;gap:0.5rem;margin-top:0.5rem}
-    .chat-quick-replies button{background:transparent;border:1px solid var(--gold-line);color:var(--gold);font-size:0.72rem;font-weight:600;padding:0.4rem 0.7rem;cursor:pointer;transition:all 0.2s;border-radius:3px;white-space:nowrap}
-    .chat-quick-replies button:hover{background:var(--gold-dim)}
-    .chat-input-wrap{display:flex;border-top:1px solid var(--gold-line);background:var(--black)}
-    #chatInput{flex:1;background:transparent;border:none;padding:1rem;color:var(--white);font-family:'Barlow',sans-serif;font-size:0.88rem;outline:none}
-    #chatInput::placeholder{color:var(--gray)}
-    .chat-send{background:var(--gold);border:none;color:var(--black);padding:0 1.2rem;font-size:1rem;cursor:pointer;transition:background 0.2s;font-weight:700}
-    .chat-send:hover{background:var(--gold-lt)}
-    .chat-typing{display:flex;gap:4px;padding:0.8rem 1rem;align-items:center}
-    .chat-typing span{width:7px;height:7px;background:var(--gold);border-radius:50%;animation:typingDot 1.2s infinite}
-    .chat-typing span:nth-child(2){animation-delay:0.2s}
-    .chat-typing span:nth-child(3){animation-delay:0.4s}
-    @keyframes typingDot{0%,60%,100%{transform:translateY(0);opacity:0.4}30%{transform:translateY(-6px);opacity:1}}
-    @media(max-width:580px){#chatbot-window{width:calc(100vw - 2rem);right:1rem;bottom:9rem}#chatbot-bubble{right:1rem}}
 
 
     /* LEADERSHIP */
@@ -2239,40 +2202,6 @@
   </div>
 </section>
 
-<!-- AI CHATBOT WIDGET -->
-<div id="chatbot-bubble" onclick="toggleChat()" title="Chat with U.S.S. Agency">
-  <span id="chat-bubble-icon"></span>
-  <span class="chat-notif">1</span>
-</div>
-
-<div id="chatbot-window">
-  <div class="chat-header">
-    <div class="chat-header-info">
-      <div class="chat-avatar"></div>
-      <div>
-        <div class="chat-name">U.S.S. Agency Support</div>
-        <div class="chat-status"><span class="chat-online"></span> Online — typically replies instantly</div>
-      </div>
-    </div>
-    <button onclick="toggleChat()" class="chat-close">✕</button>
-  </div>
-  <div class="chat-messages" id="chatMessages">
-    <div class="chat-msg bot">
-      <div class="chat-bubble"> Hello! Welcome to U.S.S. Agency — Florida's premier security services provider. How can I help you today?</div>
-      <div class="chat-time">Just now</div>
-    </div>
-    <div class="chat-quick-replies" id="quickReplies">
-      <button onclick="quickReply('I need a security quote')"> Get a Quote</button>
-      <button onclick="quickReply('What services do you offer?')"> Our Services</button>
-      <button onclick="quickReply('How do I contact you?')"> Contact Us</button>
-      <button onclick="quickReply('Are you available 24/7?')"> Availability</button>
-    </div>
-  </div>
-  <div class="chat-input-wrap">
-    <input type="text" id="chatInput" placeholder="Type your message..." onkeydown="if(event.key==='Enter')sendChat()">
-    <button onclick="sendChat()" class="chat-send">➤</button>
-  </div>
-</div>
 
 <!-- FOOTER -->
 <footer>
@@ -2594,98 +2523,6 @@
 
   window.addEventListener('load', loadGoogleReviews);
 
-
-  // LIVE GOOGLE REVIEWS
-  const GOOGLE_API_KEY  = 'YOUR_API_KEY_HERE';
-  const GOOGLE_PLACE_ID = 'ChIJYwAKBpyD54gRJkw-rXBUj64';
-  const FALLBACK_REVIEWS = [
-    {name:'Ashlynn Baker',rating:5,time:'2 months ago',text:'I have a hands-free and worry-free relationship with my security company because they truly developed an action plan to ensure my tenants feel at ease, and so do I.'},
-    {name:'Jacey Blackwood',rating:5,time:'3 months ago',text:'The one thing I can tell you about U.S.S. Agency is that they keep their word. If they tell you they are going to do something, you can count on it.'},
-    {name:'Amiee Johnson',rating:5,time:'4 months ago',text:'I started off with one property with U.S.S. Agency and have added them to each property as my portfolio grew. It shows my employees and residents that I care about their safety.'},
-    {name:'Leonard Beils',rating:5,time:'5 months ago',text:'Contracting Ultimate Security Services was one of the best business decisions I have made. I did my homework — and U.S.S. Agency stood above the rest.'},
-    {name:'Bailey Kesler',rating:5,time:'6 months ago',text:'When I come home late from work, I feel a sense of safety just knowing the security guard is always on post. I know I can count on them and I feel safe.'},
-    {name:'Verified Client',rating:5,time:'7 months ago',text:'U.S.S. Agency is great at making people feel at ease. Their officers are friendly, professional, and confident. That is what makes me feel safe.'},
-  ];
-  function renderReviews(reviews) {
-    const c = document.getElementById('googleReviewsLive'); if(!c) return;
-    c.innerHTML = reviews.map(r => {
-      const init = r.name.split(' ').map(n=>n[0]).join('').substring(0,2).toUpperCase();
-      const stars = '★'.repeat(r.rating)+'☆'.repeat(5-r.rating);
-      const photo = r.photo ? `<img src="${r.photo}" alt="${r.name}" style="width:38px;height:38px;border-radius:50%;object-fit:cover;">` : `<div class="g-avatar">${init}</div>`;
-      return `<div class="g-live-card"><div class="g-live-top">${photo}<div><div class="g-name">${r.name}</div><div class="g-date">${r.time}</div></div><svg width="16" height="16" viewBox="0 0 24 24" style="margin-left:auto;flex-shrink:0"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg></div><div class="g-stars">${stars}</div><div class="g-text">"${r.text}"</div></div>`;
-    }).join('');
-  }
-  async function loadGoogleReviews() {
-    renderReviews(FALLBACK_REVIEWS);
-    if(!GOOGLE_API_KEY || GOOGLE_API_KEY==='YOUR_API_KEY_HERE') return;
-    try {
-      const resp = await fetch(`https://maps.googleapis.com/maps/api/place/details/json?place_id=${GOOGLE_PLACE_ID}&fields=name,rating,reviews,user_ratings_total&key=${GOOGLE_API_KEY}`);
-      const data = await resp.json();
-      if(data.status==='OK' && data.result?.reviews) {
-        const live = data.result.reviews.filter(r=>r.rating>=4).map(r=>({name:r.author_name,rating:r.rating,time:r.relative_time_description,text:r.text,photo:r.profile_photo_url||null}));
-        if(live.length>0) { renderReviews(live); const el=document.querySelector('.gwh-rating'); if(el&&data.result.rating) el.textContent=`★★★★★ ${data.result.rating.toFixed(1)} (${data.result.user_ratings_total}+ reviews)`; }
-      }
-    } catch(e) { console.log('Using fallback reviews.'); }
-  }
-  window.addEventListener('load', loadGoogleReviews);
-
-  // CHATBOT
-  const chatResponses = {
-    'i need a security quote': "Great! We'd love to help protect your business. Please fill out our quick quote form below, or call us directly at 321-304-2430. We typically respond within 24 hours. 👇",
-    'what services do you offer': "U.S.S. Agency offers:  Unarmed Security, 🔫 Armed Security, 👔 Executive Protection, 🕴️ Plainclothes Guards, ⚖️ Off-Duty Law Enforcement, 📡 TSCM Services, 🔍 Security Consulting, 📹 Mobile Surveillance & more. Which service interests you?",
-    'how do i contact you': "You can reach us multiple ways:\n Call: 321-304-2430\n Toll Free: 1-800-508-8772\n Email: support@ussagency.com\n 450 S Orange Ave, 3rd Floor, Orlando FL\n\nOr use our contact form on this page!",
-    'are you available 24/7': "Yes! U.S.S. Agency operates 24 hours a day, 7 days a week, 365 days a year. Security never sleeps — and neither do we.  Would you like to request a consultation?",
-    'default': "Thanks for reaching out to U.S.S. Agency! For the fastest response, please call us at 321-304-2430 or fill out our contact form on this page. A specialist will get back to you shortly. "
-  };
-
-  function toggleChat() {
-    const win = document.getElementById('chatbot-window');
-    const notif = document.querySelector('.chat-notif');
-    win.classList.toggle('open');
-    if (notif) notif.style.display = 'none';
-  }
-
-  function quickReply(msg) {
-    document.getElementById('quickReplies').style.display = 'none';
-    addMessage(msg, 'user');
-    setTimeout(() => showTyping(), 300);
-    setTimeout(() => {
-      removeTyping();
-      const key = msg.toLowerCase();
-      const resp = chatResponses[key] || chatResponses['default'];
-      addMessage(resp, 'bot');
-    }, 1400);
-  }
-
-  function sendChat() {
-    const input = document.getElementById('chatInput');
-    const msg = input.value.trim();
-    if (!msg) return;
-    input.value = '';
-    document.getElementById('quickReplies') && (document.getElementById('quickReplies').style.display = 'none');
-    addMessage(msg, 'user');
-    setTimeout(() => showTyping(), 300);
-    setTimeout(() => {
-      removeTyping();
-      const key = msg.toLowerCase();
-      let resp = chatResponses['default'];
-      for (const [k, v] of Object.entries(chatResponses)) {
-        if (key.includes(k.split(' ')[0]) || key.includes(k)) { resp = v; break; }
-      }
-      addMessage(resp, 'bot');
-    }, 1400);
-  }
-
-  function addMessage(text, type) {
-    const msgs = document.getElementById('chatMessages');
-    const div = document.createElement('div');
-    div.className = `chat-msg ${type}`;
-    const now = new Date().toLocaleTimeString([], {hour:'2-digit',minute:'2-digit'});
-    div.innerHTML = `<div class="chat-bubble">${text.replace(/\n/g,'<br>')}</div><div class="chat-time">${now}</div>`;
-    msgs.appendChild(div);
-    msgs.scrollTop = msgs.scrollHeight;
-  }
-
-  function showTyping() {
-    const msgs = document.getElementById('chatMessages');
-    const div = document.createElement('div');
+</script>
+</body>
+</html>
