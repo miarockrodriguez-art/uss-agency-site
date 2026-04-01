@@ -612,6 +612,8 @@
 
     /* HERO */
     .hero{min-height:100vh;background:linear-gradient(135deg,rgba(8,8,8,0.94) 0%,rgba(12,24,40,0.88) 60%,rgba(8,8,8,0.96) 100%),url('images/img-01.jpg') center/cover no-repeat;display:flex;align-items:center;padding:130px 6% 80px;position:relative;overflow:hidden}
+    .hero-layout{display:flex;align-items:center;justify-content:space-between;gap:4rem;width:100%}
+    .hero-badge-logo{width:300px;height:300px;flex-shrink:0;filter:drop-shadow(0 0 30px rgba(201,168,76,0.4)) drop-shadow(0 0 60px rgba(201,168,76,0.2));animation:fadeUp 0.7s 0.4s ease both}
     .hero::before{content:'';position:absolute;inset:0;background:repeating-linear-gradient(0deg,transparent,transparent 3px,rgba(201,168,76,0.01) 3px,rgba(201,168,76,0.01) 4px);pointer-events:none;z-index:1}
     .hero-badge{display:inline-flex;align-items:center;gap:0.6rem;background:var(--gold-dim);border:1px solid var(--gold-line);color:var(--gold);font-size:0.68rem;font-weight:700;letter-spacing:3px;text-transform:uppercase;padding:0.45rem 1.2rem;margin-bottom:1.8rem;animation:fadeUp 0.7s ease both}
     .live-dot{width:8px;height:8px;border-radius:50%;background:var(--gold)}
@@ -1406,6 +1408,8 @@
       .form-row{grid-template-columns:1fr}
       .footer-grid{grid-template-columns:1fr}
       .hero h1{font-size:3.5rem}
+      .hero-badge-logo{width:200px;height:200px}
+      .hero-layout{flex-direction:column;text-align:center}
       .sticky-call span{display:none}
     }
   
@@ -1502,6 +1506,7 @@
 
 <!-- HERO -->
 <section class="hero" id="home">
+  <div class="hero-layout">
   <div class="hero-content">
     <div class="hero-badge">Serving Florida &amp; Nationwide — 24/7 Operations</div>
     <h1>
@@ -1509,7 +1514,7 @@
       <span class="gold">One Call. One Solution.</span>
     </h1>
     <p style="font-size:1.25rem;margin-bottom:1.8rem;opacity:0.9;">USS Agency delivers certainty when it matters most.</p>
-    <p>Battle-tested security solutions for businesses, organizations, and executives across Florida and nationwide. Backed by 280+ highly trained professionals and a hands-on leadership approach, we combine manpower, technology, and strategy to deliver seamless, scalable security operations.</p>
+    <p style="font-size:1.2rem;font-weight:400;letter-spacing:1px;">280+ professionals. One standard. Yours.</p>
     <div class="hero-btns">
       <a href="#contact" class="btn btn-gold">Request a Consultation →</a>
       <a href="tel:18005088772" class="btn btn-ghost">1-800-508-8772</a>
@@ -1528,6 +1533,8 @@
       <div><div class="stat-n">35+</div><div class="stat-l">States &amp; Nationwide</div></div>
       <div><div class="stat-n">100%</div><div class="stat-l">Licensed & Insured</div></div>
     </div>
+  </div>
+  <img src="images/img-02.png" alt="USS Agency Badge" class="hero-badge-logo">
   </div>
 </section>
 
