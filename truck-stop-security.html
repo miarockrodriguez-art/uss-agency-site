@@ -93,5 +93,15 @@
     <p>Phone: <a href="tel:18005088772">1-800-508-8772</a> | Email: <a href="mailto:support@ussagency.com">support@ussagency.com</a></p>
     <p>&copy; 2026 U.S.S. Agency. All Rights Reserved.</p>
   </footer>
+
+<!-- Floating Call Now Button -->
+<style>
+.sticky-call{position:fixed;top:120px;right:20px;z-index:9999;display:flex;flex-direction:column;align-items:center;gap:2px;background:#C9A84C;color:#0D1B2A;padding:12px 22px;font-family:'Barlow Condensed',sans-serif;text-decoration:none;border-radius:4px;box-shadow:0 8px 30px rgba(201,168,76,0.35);transition:background 0.2s;text-align:center}
+.sticky-call:hover{background:#e2c46a}
+.sticky-call .call-line1{font-size:16px;font-weight:700;line-height:1.2}
+.sticky-call .call-line2{font-size:12px;font-weight:500;line-height:1.2}
+@media(max-width:768px){.sticky-call{top:120px;right:14px;padding:10px 18px;border-radius:8px}.sticky-call .call-line1{font-size:14px}.sticky-call .call-line2{font-size:11px}}
+</style>
+<a href="tel:18005088772" class="sticky-call"><span class="call-line1">📞 Call Now</span><span class="call-line2">1-800-508-8772</span></a>
 </body>
 </html>
