@@ -32,9 +32,20 @@
     .cta-btn{display:inline-block;padding:1rem 2.5rem;background:var(--gold);color:var(--black);font-family:'Bebas Neue',sans-serif;font-size:1.3rem;letter-spacing:2px;border-radius:4px;transition:background 0.3s}
     .cta-btn:hover{background:var(--gold-lt)}
     .back-link{display:inline-block;margin:2rem 5%;color:var(--gold);font-size:0.95rem;border-bottom:1px solid var(--gold-line)}
-    .footer{background:var(--deep);border-top:1px solid var(--gold-line);padding:2.5rem 5%;text-align:center;margin-top:3rem}
-    .footer p{color:var(--gray);font-size:0.9rem;margin:0.3rem 0}
-    .footer a{color:var(--gold)}
+
+    /* FULL FOOTER */
+    footer{background:var(--deep);border-top:1px solid var(--gold-line);padding:4rem 6% 2rem}
+    .footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:3rem;margin-bottom:3rem}
+    .footer-brand p{font-size:0.85rem;color:var(--gray);line-height:1.7;max-width:280px}
+    .footer-brand .license{display:inline-block;background:var(--gold-dim);border:1px solid var(--gold-line);color:var(--gold);font-size:0.68rem;font-weight:700;letter-spacing:2px;padding:0.4rem 0.9rem;margin-top:1rem}
+    .footer-col h5{font-size:0.7rem;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--gold);margin-bottom:1.2rem}
+    .footer-col ul{list-style:none;display:flex;flex-direction:column;gap:0.6rem}
+    .footer-col ul li a{font-size:0.85rem;color:var(--gray);transition:color 0.2s}
+    .footer-col ul li a:hover{color:var(--gold)}
+    .footer-bottom{border-top:1px solid rgba(255,255,255,0.05);padding-top:1.5rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem}
+    .footer-bottom p{font-size:0.78rem;color:var(--gray)}
+    @media(max-width:900px){.footer-grid{grid-template-columns:1fr 1fr}}
+    @media(max-width:580px){.footer-grid{grid-template-columns:1fr}}
     @media(max-width:768px){.hero h1{font-size:2.2rem}.content h2{font-size:1.6rem}.nav{flex-direction:column;gap:0.5rem}}
   </style>
 </head>
@@ -89,12 +100,56 @@
     <a href="index.html#contact" class="cta-btn">Request a Consultation</a>
   </section>
 
-  <footer class="footer">
-    <p style="font-family:'Bebas Neue',sans-serif;font-size:1.3rem;color:var(--gold);letter-spacing:2px;margin-bottom:0.5rem">U.S.S. AGENCY</p>
-    <p>Licensed Security Agency &mdash; FL License #B2800082</p>
-    <p>Phone: <a href="tel:18005088772">1-800-508-8772</a> | Email: <a href="mailto:support@ussagency.com">support@ussagency.com</a></p>
+  <footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <div style="margin-bottom:1rem"><img src="images/img-02.png" alt="USS Agency Logo" style="height:90px;width:auto;object-fit:contain;margin-bottom:1rem"></div>
+      <p>Florida's premier professional security services provider — serving businesses, events, and communities statewide and across the nation since 2008.</p>
+      <span class="license">Florida License # B2800082</span>
+    </div>
+    <div class="footer-col">
+      <h5>Services</h5>
+      <ul>
+        <li><a href="unarmed-security.html">Unarmed Security</a></li>
+        <li><a href="armed-security-guards.html">Armed Security</a></li>
+        <li><a href="executive-protection.html">Executive Protection</a></li>
+        <li><a href="fire-watch.html">Fire Watch</a></li>
+        <li><a href="event-security.html">Event Security</a></li>
+        <li><a href="loss-prevention.html">Loss Prevention</a></li>
+        <li><a href="concierge-security.html">Concierge</a></li>
+        <li><a href="mobile-patrol.html">Mobile Patrol</a></li>
+        <li><a href="access-control.html">Access Control</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h5>Areas Served</h5>
+      <ul>
+        <li><a href="index.html#contact">Orlando, FL</a></li>
+        <li><a href="index.html#contact">Miami, FL</a></li>
+        <li><a href="index.html#contact">Tampa, FL</a></li>
+        <li><a href="index.html#contact">Jacksonville, FL</a></li>
+        <li><a href="index.html#contact">Fort Lauderdale, FL</a></li>
+        <li><a href="index.html#contact">West Palm Beach, FL</a></li>
+        <li><a href="index.html#contact">All of Florida</a></li>
+        <li><a href="index.html#contact">Nationwide Services</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h5>Contact</h5>
+      <ul>
+        <li><a href="tel:3213042430">321-304-2430</a></li>
+        <li><a href="tel:18005088772">1-800-508-8772</a></li>
+        <li><a href="mailto:support@ussagency.com">support@ussagency.com</a></li>
+        <li><a href="index.html#contact">Get a Free Quote</a></li>
+        <li style="color:var(--gray);font-size:0.82rem;margin-top:0.5rem">450 S Orange Ave, 3rd Floor<br>Orlando, FL 32801</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
     <p>&copy; 2026 U.S.S. Agency. All Rights Reserved.</p>
-  </footer>
+    <p>Florida Licensed &amp; Insured Security Services Provider</p>
+  </div>
+</footer>
 
 <!-- Floating Call Now Button -->
 <style>
