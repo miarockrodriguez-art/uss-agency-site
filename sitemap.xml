@@ -51,21 +51,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.ussagency.com/event-security-services.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.ussagency.com/fire-watch-services.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.ussagency.com/loss-prevention-services.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://www.ussagency.com/patrol-services.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -97,11 +82,6 @@
   </url>
   <url>
     <loc>https://www.ussagency.com/workplace-violence-prevention.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.ussagency.com/workplace-violence-security.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
