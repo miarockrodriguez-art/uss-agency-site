@@ -1468,7 +1468,7 @@ function submitExitPopup(){
   var email=document.getElementById('exit-email').value.trim();
   var phone=document.getElementById('exit-phone').value.trim();
   if(!name||!email){alert('Please enter your name and email.');return;}
-  fetch('https://services.leadconnectorhq.com/hooks/REPLACE_WITH_USS_AGENCY_WEBHOOK_ID',{
+  fetch('https://services.leadconnectorhq.com/hooks/A81lGlMBKzeH8gORYYV2/webhook-trigger/13ac4a23-8b95-4f46-8aa8-88d17d5b699d',{
     method:'POST',headers:{'Content-Type':'application/json'},
     body:JSON.stringify({form_type:'exit_intent_assessment',source:'ussagency.com',full_name:name,email:email,phone:phone,tags:['website-form-submission','form: exit_intent_assessment','free-assessment'],submitted_at:new Date().toISOString(),notify:['m.rock@ussagency.com','j.rodriguez@ussagency.com','support@ussagency.com']})
   }).catch(function(){});
@@ -2347,7 +2347,7 @@ function submitExitPopup(){
 <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
   // ── SHARED CRM HELPER ──
   function sendToCRM(payload, formName) {
-    const webhookURL = 'https://services.leadconnectorhq.com/hooks/REPLACE_WITH_USS_AGENCY_WEBHOOK_ID';
+    const webhookURL = 'https://services.leadconnectorhq.com/hooks/A81lGlMBKzeH8gORYYV2/webhook-trigger/13ac4a23-8b95-4f46-8aa8-88d17d5b699d';
     const crmPayload = {
       ...payload,
       source: 'ussagency.com',
