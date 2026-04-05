@@ -1470,7 +1470,7 @@ function submitExitPopup(){
   if(!name||!email){alert('Please enter your name and email.');return;}
   fetch('https://services.leadconnectorhq.com/hooks/A81lGlMBKzeH8gORYYV2/webhook-trigger/13ac4a23-8b95-4f46-8aa8-88d17d5b699d',{
     method:'POST',headers:{'Content-Type':'application/json'},
-    body:JSON.stringify({form_type:'exit_intent_assessment',source:'ussagency.com',full_name:name,email:email,phone:phone,tags:['website-form-submission','form: exit_intent_assessment','free-assessment'],submitted_at:new Date().toISOString(),notify:['m.rock@ussagency.com','j.rodriguez@ussagency.com','support@ussagency.com']})
+    body:JSON.stringify({firstName:name.split(' ')[0]||'',lastName:name.split(' ').slice(1).join(' ')||'',email:email,phone:phone,tags:['website-lead','uss-agency'],source:'ussagency.com'})
   }).catch(function(){});
   document.getElementById('exitPopup').innerHTML='<div style="background:#080808;border:2px solid #c9a84c;border-radius:12px;max-width:440px;width:90%;padding:40px 32px;text-align:center;"><div style="font-size:36px;margin-bottom:12px;">&#10003;</div><h3 style="font-family:Bebas Neue,sans-serif;font-size:24px;color:#f0f0eb;margin-bottom:10px;letter-spacing:2px;">Thank You!</h3><p style="font-size:14px;color:#7a8090;">Our team will contact you within 24 hours with your free security assessment.</p><button onclick="closeExitPopup()" style="margin-top:20px;padding:12px 32px;background:#c9a84c;color:#080808;border:none;font-family:Barlow Condensed,sans-serif;font-size:13px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;cursor:pointer;border-radius:4px;">Continue Browsing</button></div>';
 }
@@ -2348,23 +2348,20 @@ function submitExitPopup(){
   // ── SHARED CRM HELPER ──
   function sendToCRM(payload, formName) {
     const webhookURL = 'https://services.leadconnectorhq.com/hooks/A81lGlMBKzeH8gORYYV2/webhook-trigger/13ac4a23-8b95-4f46-8aa8-88d17d5b699d';
+    var nameParts = (payload.full_name || payload.firstName || '').trim().split(' ');
     const crmPayload = {
-      ...payload,
-      source: 'ussagency.com',
-      formName: formName,
-      tags: ['website-form-submission', formName],
-      notifications: [
-        'm.rock@ussagency.com',
-        'j.rodriguez@ussagency.com',
-        'support@ussagency.com'
-      ]
+      firstName: payload.firstName || nameParts[0] || '',
+      lastName: payload.lastName || nameParts.slice(1).join(' ') || '',
+      email: payload.email || '',
+      phone: payload.phone || '',
+      tags: ['website-lead', 'uss-agency'],
+      source: 'ussagency.com'
     };
     fetch(webhookURL, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(crmPayload)
-    }).catch(function(err) {
-    });
+    }).catch(function(){});
   }
 
   // NAV TOGGLE
