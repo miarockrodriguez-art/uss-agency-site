@@ -1344,6 +1344,7 @@
     @media(max-width:900px){
       .nav-links{display:none}
       .hamburger{display:flex}
+      .nav-phone-mobile{display:inline-block!important;margin-right:12px}
       .nav-links.open{display:flex;flex-direction:column;position:absolute;top:68px;left:0;right:0;background:var(--deep);border-bottom:1px solid var(--gold-line);padding:1.5rem 6%;gap:1.2rem}
       .about-grid,.why-grid,.contact-grid{grid-template-columns:1fr}
       .about-img-wrap{height:320px}
@@ -1500,6 +1501,7 @@ function submitExitPopup(){
     <li><a href="#blog">Blog</a></li>
     <li><a href="tel:18005088772" style="color:#C9A84C;font-weight:900;font-size:0.92rem;letter-spacing:1.5px;text-decoration:none;transition:text-shadow 0.2s;white-space:nowrap" onmouseover="this.style.textShadow='0 0 12px rgba(201,168,76,0.6)'" onmouseout="this.style.textShadow='none'">1-800-508-8772</a></li>
   </ul>
+  <a href="tel:18005088772" class="nav-phone-mobile" style="display:none;color:#c9a84c;font-weight:900;font-size:0.9rem;text-decoration:none;white-space:nowrap;font-family:'Barlow Condensed',sans-serif;">1-800-508-8772</a>
   <div class="hamburger" onclick="toggleNav()">
     <span></span><span></span><span></span>
   </div>
@@ -2167,7 +2169,7 @@ function submitExitPopup(){
           <p style="font-size:11px;font-weight:300;color:var(--silver);opacity:.7;line-height:1.5;">By submitting this form you agree to our <a href="privacy.html" style="color:var(--gold);text-decoration:underline;">Privacy Policy</a> and <a href="terms.html" style="color:var(--gold);text-decoration:underline;">Terms of Service</a>.</p>
         </div>
         <button type="submit" class="btn btn-gold" style="width:100%;justify-content:center">
-          Submit Request — We Respond Within 24 Hours →
+          Request My Assessment
         </button>
         <p class="form-microcopy">🔒 Your information is confidential. No obligations. No spam.</p>
       </form>
@@ -2282,7 +2284,7 @@ function submitExitPopup(){
 
   </div>
   <div style="text-align:center;margin-top:3rem">
-    <a href="#contact" class="btn btn-ghost">Contact Us →</a>
+    <a href="#contact" class="btn btn-ghost">Schedule a Consultation →</a>
   </div>
 </section>
 
@@ -2526,5 +2528,46 @@ function submitExitPopup(){
 
 
 </script>
+
+<!-- Slide-In Lead Capture -->
+<div id="slideForm" style="display:none;position:fixed;bottom:80px;right:20px;z-index:9998;background:#080808;border:2px solid #c9a84c;border-radius:8px;width:320px;max-width:90vw;padding:24px 20px;box-shadow:0 12px 40px rgba(0,0,0,.5);transition:transform .4s ease,opacity .4s ease;transform:translateY(20px);opacity:0;">
+  <button onclick="closeSlideForm()" style="position:absolute;top:8px;right:12px;background:none;border:none;color:#c9a84c;font-size:20px;cursor:pointer;line-height:1;">&times;</button>
+  <div style="font-family:'Barlow Condensed',sans-serif;font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#c9a84c;margin-bottom:8px;">FREE ASSESSMENT</div>
+  <h4 style="font-family:'Bebas Neue',sans-serif;font-size:20px;color:#f0f0eb;margin-bottom:12px;letter-spacing:1px;">Get Your Free Security Assessment</h4>
+  <input id="sf-name" type="text" placeholder="First Name" style="width:100%;padding:10px;margin-bottom:8px;background:rgba(255,255,255,.06);border:1px solid rgba(201,168,76,.3);color:#f0f0eb;font-size:13px;border-radius:4px;">
+  <input id="sf-phone" type="tel" placeholder="Phone Number" style="width:100%;padding:10px;margin-bottom:8px;background:rgba(255,255,255,.06);border:1px solid rgba(201,168,76,.3);color:#f0f0eb;font-size:13px;border-radius:4px;">
+  <input id="sf-email" type="email" placeholder="Email Address" style="width:100%;padding:10px;margin-bottom:10px;background:rgba(255,255,255,.06);border:1px solid rgba(201,168,76,.3);color:#f0f0eb;font-size:13px;border-radius:4px;">
+  <button onclick="submitSlideForm()" style="width:100%;padding:12px;background:#c9a84c;color:#080808;border:none;font-family:'Barlow Condensed',sans-serif;font-size:13px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;cursor:pointer;border-radius:4px;">Request My Assessment</button>
+</div>
+<script>
+(function(){
+  if(sessionStorage.getItem('slideFormShown'))return;
+  var triggered=false;
+  window.addEventListener('scroll',function(){
+    if(triggered)return;
+    var scrollPct=window.scrollY/(document.documentElement.scrollHeight-window.innerHeight);
+    if(scrollPct>0.5){
+      triggered=true;
+      sessionStorage.setItem('slideFormShown','1');
+      var sf=document.getElementById('slideForm');
+      sf.style.display='block';
+      setTimeout(function(){sf.style.transform='translateY(0)';sf.style.opacity='1';},50);
+    }
+  });
+})();
+function closeSlideForm(){var sf=document.getElementById('slideForm');sf.style.transform='translateY(20px)';sf.style.opacity='0';setTimeout(function(){sf.style.display='none';},400);}
+function submitSlideForm(){
+  var n=document.getElementById('sf-name').value.trim();
+  var p=document.getElementById('sf-phone').value.trim();
+  var e=document.getElementById('sf-email').value.trim();
+  if(!n||!e){alert('Please enter your name and email.');return;}
+  fetch('https://services.leadconnectorhq.com/hooks/A81lGlMBKzeH8gORYYV2/webhook-trigger/13ac4a23-8b95-4f46-8aa8-88d17d5b699d',{
+    method:'POST',headers:{'Content-Type':'application/json'},
+    body:JSON.stringify({firstName:n,lastName:'',email:e,phone:p,tags:['website-lead','uss-agency','slide-form'],source:'ussagency.com'})
+  }).catch(function(){});
+  document.getElementById('slideForm').innerHTML='<div style="text-align:center;padding:20px 0;"><div style="font-size:28px;margin-bottom:8px;">&#10003;</div><p style="font-family:Barlow Condensed,sans-serif;font-size:14px;color:#f0f0eb;">Thank you! We will contact you within 24 hours.</p></div>';
+}
+</script>
+
 </body>
 </html>
