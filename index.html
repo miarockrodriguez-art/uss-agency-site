@@ -600,7 +600,7 @@
 
     /* NAV */
     nav{position:fixed;top:0;width:100%;z-index:1000;background:rgba(8,8,8,0.97);backdrop-filter:blur(16px);border-bottom:1px solid var(--gold-line);padding:0 6%;display:flex;align-items:center;justify-content:space-between;height:68px}
-    .logo{font-family:'Bebas Neue',sans-serif;font-size:1.85rem;letter-spacing:5px;color:var(--gold)}
+    .logo{font-family:'Bebas Neue',sans-serif;font-size:1.5rem;letter-spacing:5px;color:var(--gold)}
     .logo span{color:var(--white)}
     .nav-links{display:flex;gap:1.2rem;list-style:none;align-items:center}
     .nav-links a{color:var(--light);font-size:0.72rem;font-weight:600;letter-spacing:2px;text-transform:uppercase;transition:color 0.2s}
@@ -886,7 +886,7 @@
     /* FOOTER */
     footer{background:var(--deep);border-top:1px solid var(--gold-line);padding:4rem 6% 2rem}
     .footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:3rem;margin-bottom:3rem}
-    .footer-brand .logo{font-size:1.6rem;display:block;margin-bottom:1rem}
+    .footer-brand .logo{font-size:1.35rem;display:block;margin-bottom:1rem}
     .footer-brand p{font-size:0.85rem;color:var(--gray);line-height:1.7;max-width:280px}
     .footer-brand .license{display:inline-block;background:var(--gold-dim);border:1px solid var(--gold-line);color:var(--gold);font-size:0.68rem;font-weight:700;letter-spacing:2px;padding:0.4rem 0.9rem;margin-top:1rem}
     .footer-col h5{font-size:0.7rem;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--gold);margin-bottom:1.2rem}
@@ -897,10 +897,10 @@
     .footer-bottom p{font-size:0.78rem;color:var(--gray)}
 
     /* STICKY CALL BUTTON — TOP RIGHT */
-    .sticky-call{position:fixed;top:120px;right:20px;z-index:9999;display:flex;flex-direction:column;align-items:center;gap:2px;background:#C9A84C;color:#0D1B2A;padding:12px 22px;font-family:'Barlow Condensed',sans-serif;text-decoration:none;border-radius:4px;box-shadow:0 8px 30px rgba(201,168,76,0.35);transition:background 0.2s;text-align:center}
-    .sticky-call:hover{background:var(--gold-lt)}
-    .sticky-call .call-line1{font-size:16px;font-weight:700;line-height:1.2}
-    .sticky-call .call-line2{font-size:12px;font-weight:500;line-height:1.2}
+    .sticky-call{position:fixed;top:120px;right:20px;z-index:9999;display:flex;flex-direction:column;align-items:center;gap:4px;background:#C9A84C;color:#0D1B2A;padding:18px 32px;font-family:'Barlow Condensed',sans-serif;text-decoration:none;border-radius:6px;box-shadow:0 8px 30px rgba(201,168,76,0.45);transition:background 0.2s,transform 0.2s;text-align:center}
+    .sticky-call:hover{background:var(--gold-lt);transform:scale(1.05)}
+    .sticky-call .call-line1{font-size:20px;font-weight:700;line-height:1.2}
+    .sticky-call .call-line2{font-size:15px;font-weight:600;line-height:1.2}
 
     /* LOGO */
     .logo-wrap{display:flex;align-items:center}
@@ -1364,9 +1364,9 @@
       .hero-layout{flex-direction:column;text-align:center}
     }
     @media(max-width:768px){
-      .sticky-call{top:120px;right:14px;padding:10px 18px;border-radius:8px}
-      .sticky-call .call-line1{font-size:14px}
-      .sticky-call .call-line2{font-size:11px}
+      .sticky-call{top:auto;bottom:20px;right:16px;padding:16px 28px;border-radius:8px}
+      .sticky-call .call-line1{font-size:18px}
+      .sticky-call .call-line2{font-size:14px}
     }
   
     /* URGENCY BANNER */
@@ -1493,7 +1493,7 @@ function submitExitPopup(){
         <a href="index.html" style="display:flex;align-items:center;gap:0.8rem;text-decoration:none">
     <img src="images/img-02.png" alt="USS Agency - Ultimate Security Services" style="height:62px;width:auto;object-fit:contain;filter:drop-shadow(0 0 8px rgba(201,168,76,0.7)) drop-shadow(0 0 16px rgba(201,168,76,0.4)) drop-shadow(0 0 2px rgba(201,168,76,0.9))">
     <div style="display:flex;flex-direction:column;line-height:1">
-      <span style="font-family:'Bebas Neue',sans-serif;font-size:2.1rem;font-weight:900;letter-spacing:5px;color:#c9a84c">U.S.S.</span>
+      <span style="font-family:'Bebas Neue',sans-serif;font-size:1.7rem;font-weight:900;letter-spacing:5px;color:#c9a84c">U.S.S.</span>
       <span style="font-family:'Bebas Neue',sans-serif;font-size:1.2rem;font-weight:900;letter-spacing:6px;color:#f0f0eb;margin-top:-4px">AGENCY</span>
     </div>
   </a>
