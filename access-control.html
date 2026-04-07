@@ -236,6 +236,7 @@ function submitSlideForm(){
     method:'POST',headers:{'Content-Type':'application/json'},
     body:JSON.stringify({firstName:n,lastName:'',email:e,phone:p,tags:['website-lead','uss-agency','slide-form'],source:'ussagency.com'})
   }).catch(function(){});
+  gtag('event', 'form_submission', { form_name: 'slide_form' });
   document.getElementById('slideForm').innerHTML='<div style="text-align:center;padding:20px 0;"><div style="font-size:28px;margin-bottom:8px;">&#10003;</div><p style="font-family:Barlow Condensed,sans-serif;font-size:14px;color:#f0f0eb;">Thank you! We will contact you within 24 hours.</p></div>';
 }
 </script>
