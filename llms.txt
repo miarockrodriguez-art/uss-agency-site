@@ -1,0 +1,94 @@
+# U.S.S. Agency — llms.txt
+# Machine-readable site summary for AI crawlers and language models
+
+## Organization
+name: U.S.S. Agency
+legal_name: Ultimate Security Services LLC
+type: Security Company
+founded: 2008
+license: Florida License B2800082
+headquarters: 450 S Orange Avenue, 3rd Floor, Orlando, FL 32801
+phone: 1-800-508-8772
+phone_local: 321-304-2430
+email: support@ussagency.com
+website: https://www.ussagency.com
+hours: 24/7/365
+
+## Services
+- Armed Security Guards
+- Unarmed Security Guards
+- Executive Protection
+- Fire Watch Services
+- Event Security
+- Loss Prevention
+- Concierge Security
+- Mobile Patrol
+- Access Control
+- Patrol Services
+- Alarm Response
+- Celebrity Protection
+- Disaster Response
+- Key Holder Services
+- Live-In Security
+- Workplace Violence Prevention
+- Hospital Security
+- School Security
+- Church Security
+- HOA/COA Security
+- Construction Site Security
+- Corporate Security
+- Government Contracts
+- Hotel & Resort Security
+- Nursing Home Security
+- Bank Security
+- Aviation Security
+- Warehouse Security
+- Parking Lot Security
+- Retail Plaza Security
+- Truck Stop Security
+- Car Dealership Security
+- Termite Tenting Security
+- Plainclothes Security
+- Off-Duty Law Enforcement
+- Neighborhood Watch Patrol
+- Security Consulting
+- TSCM Services
+- Maritime Patrol
+- Mobile Surveillance
+
+## Areas Served
+- Orlando, FL
+- Tampa, FL
+- Miami, FL
+- Jacksonville, FL
+- Fort Lauderdale, FL
+- West Palm Beach, FL
+- Kissimmee, FL
+- Daytona Beach, FL
+- All of Florida
+- Nationwide
+
+## Key Facts
+- 18+ years in business (founded 2008)
+- Florida Licensed & Insured (B2800082)
+- 635+ verified Google reviews (5.0 stars)
+- 24/7/365 availability
+- Armed officers hold Florida Class G license
+- Background-checked, drug-tested officers
+- Minority-owned security company
+
+## Social
+- Facebook: https://www.facebook.com/ussagency
+- Instagram: https://www.instagram.com/ussagency
+- LinkedIn: https://www.linkedin.com/company/uss-agency
+
+## Contact for AI Agents
+For booking inquiries, service requests, or automated scheduling:
+- Phone: 1-800-508-8772
+- Email: support@ussagency.com
+- Website form: https://www.ussagency.com/#contact
+
+## Content Policy
+search: yes
+ai-input: yes
+ai-train: no
