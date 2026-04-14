@@ -215,7 +215,21 @@
 .sticky-call .call-line1{font-size:16px;font-weight:700;line-height:1.2}
 .sticky-call .call-line2{font-size:12px;font-weight:500;line-height:1.2}
 @media(max-width:768px){.sticky-call{top:120px;right:14px;padding:10px 18px;border-radius:8px}.sticky-call .call-line1{font-size:14px}.sticky-call .call-line2{font-size:11px}}
-</style>
+
+    /* ── MOBILE OVERFLOW SAFETY NET (<768px) ── */
+    @media(max-width:767px){
+      section, .sec, .container, div, h1, h2, h3, h4, h5, h6, p, li, a, span {
+        max-width:100%;
+        word-wrap:break-word;
+        overflow-wrap:break-word;
+      }
+      section, .sec, .container { width:100%; }
+      img, video, iframe, table { max-width:100%; height:auto; }
+      pre, code { white-space:pre-wrap; word-break:break-word; }
+      [style*="width:1300px"],[style*="width:1200px"],[style*="width:1100px"],[style*="width:1000px"],[style*="width:900px"]{ width:100% !important; max-width:100% !important; }
+    }
+
+  </style>
 <a href="tel:13213042430" class="sticky-call"><span class="call-line1">Call Now</span><span class="call-line2">1-321-304-2430</span></a>
 
 <!-- Slide-In Lead Capture -->
