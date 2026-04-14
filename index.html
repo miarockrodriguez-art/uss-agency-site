@@ -1455,6 +1455,20 @@
     .about-img-wrap{min-height:420px}
     @media(max-width:900px){.about-img-wrap{min-height:280px}}
 
+    /* ── MOBILE OVERFLOW SAFETY NET (<768px) ── */
+    @media(max-width:767px){
+      section, .sec, .container, div, h1, h2, h3, h4, h5, h6, p, li, a, span {
+        max-width:100%;
+        word-wrap:break-word;
+        overflow-wrap:break-word;
+      }
+      section, .sec, .container { width:100%; }
+      img, video, iframe, table { max-width:100%; height:auto; }
+      pre, code { white-space:pre-wrap; word-break:break-word; }
+      /* Disable any desktop fixed widths that exceed viewport */
+      [style*="width:1300px"],[style*="width:1200px"],[style*="width:1100px"],[style*="width:1000px"],[style*="width:900px"]{ width:100% !important; max-width:100% !important; }
+    }
+
   </style>
 <!-- Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-FP14V8HQHJ"></script>
