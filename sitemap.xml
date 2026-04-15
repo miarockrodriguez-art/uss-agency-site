@@ -46,6 +46,21 @@
     <priority>0.85</priority>
   </url>
   <url>
+    <loc>https://www.ussagency.com/armed-security-tampa</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.ussagency.com/armed-security-miami</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.ussagency.com/armed-security-jacksonville</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
     <loc>https://www.ussagency.com/unarmed-security</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
