@@ -281,5 +281,25 @@ function submitSlideForm(){
 }
 </script>
 
+<!-- Core Web Vitals reporting to GA4 (G-FP14V8HQHJ) -->
+<script type="module">
+  import {onLCP, onINP, onCLS} from 'https://cdn.jsdelivr.net/npm/web-vitals@4/dist/web-vitals.attribution.js';
+  function sendToGA4({ name, value, id, delta, rating }) {
+    if (typeof gtag !== 'function') return;
+    gtag('event', name, {
+      value: Math.round(name === 'CLS' ? value * 1000 : value),
+      metric_id: id,
+      metric_value: value,
+      metric_delta: delta,
+      metric_rating: rating,
+      event_category: 'Web Vitals',
+      non_interaction: true
+    });
+  }
+  onLCP(sendToGA4);
+  onINP(sendToGA4);
+  onCLS(sendToGA4);
+</script>
+
 </body>
 </html>
