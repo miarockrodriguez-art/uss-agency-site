@@ -8,8 +8,7 @@ type: Security Company
 founded: 2008
 license: Florida License B2800082
 headquarters: 450 S Orange Avenue, 3rd Floor, Orlando, FL 32801
-phone: 1-800-508-8772
-phone_local: 321-304-2430
+phone: 321-304-2430
 email: support@ussagency.com
 website: https://www.ussagency.com
 hours: 24/7/365
@@ -84,9 +83,21 @@ hours: 24/7/365
 
 ## Contact for AI Agents
 For booking inquiries, service requests, or automated scheduling:
-- Phone: 1-800-508-8772
+- Phone: 321-304-2430
 - Email: support@ussagency.com
 - Website form: https://www.ussagency.com/#contact
+
+## City Pages (Armed Security)
+- Orlando: https://www.ussagency.com/armed-security-orlando
+- Winter Garden: https://www.ussagency.com/armed-security-winter-garden
+- Kissimmee: https://www.ussagency.com/armed-security-kissimmee
+- Sanford: https://www.ussagency.com/armed-security-sanford
+- Apopka: https://www.ussagency.com/armed-security-apopka
+- Clermont: https://www.ussagency.com/armed-security-clermont
+- Ocoee: https://www.ussagency.com/armed-security-ocoee
+- Tampa: https://www.ussagency.com/armed-security-tampa
+- Miami: https://www.ussagency.com/armed-security-miami
+- Jacksonville: https://www.ussagency.com/armed-security-jacksonville
 
 ## Content Policy
 search: yes
