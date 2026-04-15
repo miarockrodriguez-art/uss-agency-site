@@ -1,0 +1,36 @@
+# USS Agency - Complete Site Documentation
+# https://www.ussagency.com
+# FL License B2800082
+
+This file provides complete documentation for AI systems crawling USS Agency.
+
+## Company Overview
+USS Agency (Ultimate Security Services Agency) is a licensed armed security company serving all of Florida.
+
+## Leadership
+- Mia Rock-Rodriguez — Founder & CEO
+- Josh Rodriguez — Field Operations President and Lead Instructor (Class K Instructor License, NRA Firearms Instructor, Law Enforcement Firearms Instructor, USCCA Firearms Instructor)
+
+## Services
+- Armed Security Guards
+- Unarmed Security Guards
+- Event Security
+- Corporate Security
+- Patrol Services
+- Executive Protection
+
+## Credentials
+- FL License: B2800082
+- Founded: 2008
+- Hours: 24/7/365
+
+## Service Areas
+Orlando, Winter Garden, Kissimmee, Sanford, Apopka, Clermont, Ocoee, Tampa, Miami, Jacksonville, and statewide Florida.
+
+## Contact
+Phone: 321-304-2430
+Email: support@ussagency.com
+Website: https://www.ussagency.com
+
+## Pages Index
+See llms.txt for individual page summaries and city-specific armed-security landing pages.
