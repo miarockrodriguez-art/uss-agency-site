@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About U.S.S. Agency | Florida's Premier Security Company</title>
+  <meta name="description" content="Learn about U.S.S. Agency — Central Florida's trusted armed and unarmed security company. 22+ years protecting businesses, events, and properties. FL License B2800082.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.ussagency.com/about">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@300;400;500;600;700&family=Barlow+Condensed:wght@500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{--black:#080808;--deep:#0a0d14;--card:#13161d;--gold:#c9a84c;--gold-lt:#e2c46a;--gold-dim:rgba(201,168,76,0.12);--gold-line:rgba(201,168,76,0.22);--white:#f0f0eb;--gray:#7a8090;--light:#b8bcc8}
+    *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+    html{scroll-behavior:smooth;overflow-x:hidden}
+    body{font-family:'Barlow',sans-serif;background:var(--black);color:var(--white);line-height:1.7;overflow-x:hidden;max-width:100%}
+    a{text-decoration:none;color:inherit}
+    .nav{display:flex;justify-content:space-between;align-items:center;padding:1.2rem 5%;background:var(--deep);border-bottom:1px solid var(--gold-line);position:sticky;top:0;z-index:100}
+    .nav-logo{font-family:'Bebas Neue',sans-serif;font-size:1.8rem;letter-spacing:3px;color:var(--gold)}
+    .nav-phone{font-family:'Barlow Condensed',sans-serif;font-weight:900;color:var(--gold-lt);font-size:1.1rem}
+    .hero{padding:4rem 5% 3rem;text-align:center;background:linear-gradient(180deg,var(--deep),var(--black))}
+    .hero h1{font-family:'Bebas Neue',sans-serif;font-size:3rem;color:var(--gold);letter-spacing:2px;margin-bottom:1rem}
+    .hero p{max-width:700px;margin:0 auto;color:var(--light);font-size:1.1rem}
+    .content{max-width:900px;margin:0 auto;padding:3rem 5%}
+    .content h2{font-family:'Bebas Neue',sans-serif;font-size:2rem;color:var(--gold);letter-spacing:1px;margin:2.5rem 0 1rem;border-left:4px solid var(--gold);padding-left:1rem}
+    .content p{color:var(--light);margin-bottom:1.2rem;font-size:1.05rem}
+    .content ul{list-style:none;padding:0;margin-bottom:1.5rem}
+    .content ul li{padding:0.5rem 0 0.5rem 1.5rem;position:relative;color:var(--light)}
+    .content ul li::before{content:'';position:absolute;left:0;top:50%;transform:translateY(-50%);width:8px;height:8px;background:var(--gold);border-radius:50%}
+    .cta-section{text-align:center;padding:3rem 5%;background:var(--deep);margin-top:2rem}
+    .cta-btn{display:inline-block;padding:1rem 2.5rem;background:var(--gold);color:var(--black);font-family:'Bebas Neue',sans-serif;font-size:1.3rem;letter-spacing:2px;border-radius:4px;transition:background 0.3s}
+    .cta-btn:hover{background:var(--gold-lt)}
+    .back-link{display:inline-block;margin:2rem 5%;color:var(--gold);font-size:0.95rem;border-bottom:1px solid var(--gold-line)}
+    .stats-row{display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem;margin:2.5rem 0;text-align:center}
+    .stat-box{background:var(--card);border:1px solid var(--gold-line);padding:1.5rem 1rem;border-radius:4px}
+    .stat-num{font-family:'Bebas Neue',sans-serif;font-size:2.2rem;color:var(--gold);letter-spacing:1px}
+    .stat-label{font-size:0.82rem;color:var(--gray);text-transform:uppercase;letter-spacing:1px;margin-top:0.3rem}
+    @media(max-width:768px){.stats-row{grid-template-columns:1fr 1fr}}
+    @media(max-width:480px){.stats-row{grid-template-columns:1fr}}
+
+    /* FULL FOOTER */
+    footer{background:var(--deep);border-top:1px solid var(--gold-line);padding:4rem 6% 2rem}
+    .footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:3rem;margin-bottom:3rem}
+    .footer-brand p{font-size:0.85rem;color:var(--gray);line-height:1.7;max-width:280px}
+    .footer-brand .license{display:inline-block;background:var(--gold-dim);border:1px solid var(--gold-line);color:var(--gold);font-size:0.68rem;font-weight:700;letter-spacing:2px;padding:0.4rem 0.9rem;margin-top:1rem}
+    .footer-col h5{font-size:0.7rem;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--gold);margin-bottom:1.2rem}
+    .footer-col ul{list-style:none;display:flex;flex-direction:column;gap:0.6rem}
+    .footer-col ul li a{font-size:0.85rem;color:var(--gray);transition:color 0.2s}
+    .footer-col ul li a:hover{color:var(--gold)}
+    .footer-bottom{border-top:1px solid rgba(255,255,255,0.05);padding-top:1.5rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem}
+    .footer-bottom p{font-size:0.78rem;color:var(--gray)}
+    @media(max-width:900px){.footer-grid{grid-template-columns:1fr 1fr}}
+    @media(max-width:580px){.footer-grid{grid-template-columns:1fr}}
+    @media(max-width:768px){.hero h1{font-size:2.2rem}.content h2{font-size:1.6rem}.nav{flex-direction:column;gap:0.5rem}}
+  </style>
+
+  <!-- OPEN GRAPH -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="About U.S.S. Agency | Florida's Premier Security Company">
+  <meta property="og:description" content="Learn about U.S.S. Agency — Central Florida's trusted armed and unarmed security company. 22+ years protecting businesses, events, and properties. FL License B2800082.">
+  <meta property="og:url" content="https://www.ussagency.com/about">
+  <meta property="og:image" content="https://www.ussagency.com/og-image.jpg">
+  <meta property="og:site_name" content="U.S.S. Agency">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.ussagency.com/"},{"@type":"ListItem","position":2,"name":"About","item":"https://www.ussagency.com/about"}]}</script>
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="About U.S.S. Agency | Florida's Premier Security Company">
+  <meta name="twitter:description" content="Learn about U.S.S. Agency — Central Florida's trusted armed and unarmed security company. 22+ years protecting businesses, events, and properties.">
+  <meta name="twitter:image" content="https://www.ussagency.com/og-image.jpg">
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FP14V8HQHJ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-FP14V8HQHJ');
+
+  // GA4 phone call click tracking
+  document.addEventListener('click', function(e) {
+    var link = e.target.closest('a[href^="tel:"]');
+    if (link) {
+      gtag('event', 'phone_call_click', {
+        phone_number: link.getAttribute('href').replace('tel:', '')
+      });
+    }
+  });
+</script>
+</head>
+<body>
+  <nav class="nav">
+    <a href="/" class="nav-logo">U.S.S. AGENCY</a>
+    <a href="tel:13213042430" class="nav-phone">1-321-304-2430</a>
+  </nav>
+
+  <section class="hero">
+    <h1>About U.S.S. Agency</h1>
+    <p>Central Florida's trusted provider of armed and unarmed security services since 2003 — protecting businesses, events, and communities with elite, licensed professionals.</p>
+  </section>
+
+  <div class="content">
+    <a href="/" class="back-link">Back to Home</a>
+
+    <h2>Our Story</h2>
+    <p>U.S.S. Agency was founded with a singular purpose: to deliver elite protection without compromise. For more than 22 years, our team has provided armed and unarmed security services throughout the state of Florida, building a reputation grounded in professionalism, reliability, and an uncompromising commitment to client safety. What started as a small operation in Central Florida has grown into one of the most trusted names in private security in the state, serving clients that range from Fortune 500 corporations to local businesses, property managers, healthcare facilities, and high-profile individuals.</p>
+    <p>The company was founded by <strong>Mia Rock-Rodriguez, Founder &amp; CEO</strong>, whose vision for the business was shaped by more than two decades of experience in security operations management, business development, and workforce training. Mia brought together the leadership team, the licensing infrastructure, and the operational discipline required to build a security firm that operates at a higher standard than the industry norm. Under her direction, U.S.S. Agency has grown from a small Central Florida security firm into a statewide operation capable of deploying trained officers within hours of a client request.</p>
+    <p>Alongside Mia, <strong>Josh Rodriguez, President of Field Operations</strong>, leads the operational side of the business. Josh is a law enforcement firearms instructor with a Class K Instructor License, NRA Firearms Instructor certification, USCCA Firearms Instructor certification, and extensive field experience in both law enforcement and private security. He personally oversees officer training, field deployments, post-level supervision, and quality assurance for every active contract. His hands-on leadership ensures that the officers deployed under the U.S.S. Agency badge meet the rigorous standards that our clients expect and deserve.</p>
+
+    <h2>Our Mission</h2>
+    <p>Our mission at U.S.S. Agency is simple and nonnegotiable: provide elite protection to every client, every time, without compromise. We believe that security is not a commodity to be purchased at the lowest price — it is a critical operational function that demands trained professionals, proactive planning, and disciplined execution. Every officer we deploy, every post we staff, and every contract we execute reflects this standard.</p>
+    <p>We reject the security industry's race to the bottom. Too many security companies cut costs by deploying undertrained, undersupervised officers who serve as little more than a visual deterrent. U.S.S. Agency takes a fundamentally different approach. Our officers are trained professionals — many with backgrounds in law enforcement and military service — who are equipped to assess threats, de-escalate situations, document incidents, and take appropriate action when the situation demands it. We are not warm bodies in uniforms. We are trained security operators, and the distinction matters.</p>
+
+    <h2>Officer Standards</h2>
+    <p>The quality of a security company is determined entirely by the quality of its officers. At U.S.S. Agency, our officer standards exceed the minimum requirements set by the State of Florida. Every officer in our roster has undergone a rigorous vetting and training process that includes the following:</p>
+    <ul>
+      <li>Background screening including criminal history, employment verification, and reference checks</li>
+      <li>Florida Level 2 fingerprinting through the Florida Department of Law Enforcement (FDLE) and FBI</li>
+      <li>Pre-employment and random drug testing with zero tolerance for violations</li>
+      <li>Verification of valid Florida Class D Security Officer License (unarmed) or Class G Statewide Firearm License (armed)</li>
+      <li>Ongoing performance assessments, post inspections, and supervisory reviews</li>
+      <li>Law enforcement and military background preferred for all armed assignments</li>
+      <li>Situational awareness training, de-escalation techniques, and incident reporting procedures</li>
+    </ul>
+    <p>We do not hire officers who simply meet the minimum licensing requirements and leave it at that. Every officer who wears a U.S.S. Agency uniform has demonstrated the professionalism, discipline, and competence required to represent our clients and protect their interests. Officers who fail to meet our standards at any point during their tenure are removed from active duty immediately.</p>
+
+    <h2>Services We Provide</h2>
+    <p>U.S.S. Agency offers a comprehensive range of security services tailored to the specific needs of each client. Our services are not one-size-fits-all — every contract begins with a thorough security assessment conducted by our operations team to determine the appropriate level of coverage, staffing, and procedures for the assignment. Our core service offerings include:</p>
+    <ul>
+      <li><strong>Armed Security Guards</strong> — Licensed Class G officers for high-risk environments, asset protection, and deterrence</li>
+      <li><strong>Unarmed Security Officers</strong> — Professional uniformed presence for commercial properties, residential communities, and events</li>
+      <li><strong>Executive Protection</strong> — Close protection details for executives, public figures, and high-net-worth individuals</li>
+      <li><strong>Fire Watch Services</strong> — Code-compliant fire watch coverage for construction sites, sprinkler outages, and hot work operations</li>
+      <li><strong>Event Security</strong> — Crowd management, access control, and emergency response for events of all sizes</li>
+      <li><strong>Mobile Patrol</strong> — Marked and unmarked patrol vehicles providing randomized security coverage across multiple locations</li>
+      <li><strong>Loss Prevention</strong> — Retail shrink reduction, organized retail crime deterrence, and asset protection programs</li>
+      <li><strong>Access Control</strong> — Gate management, visitor screening, and credentialing for secured facilities</li>
+    </ul>
+    <p>Every service we offer is backed by our 24/7 operations center, which provides real-time dispatch, emergency response coordination, and client communication around the clock. We are available 365 days a year, including weekends and holidays, because security threats do not respect business hours.</p>
+
+    <h2>Licensed and Compliant</h2>
+    <p>U.S.S. Agency operates under <strong>Florida Security License B2800082</strong>, issued pursuant to <strong>Florida Statute Chapter 493, Section 6301 et seq.</strong>, which governs the licensing and regulation of private security agencies in the State of Florida. Our agency, our managers, and our officers are fully licensed, insured, and compliant with all applicable state and federal regulations. We maintain active workers' compensation coverage, general liability insurance, and professional liability coverage to protect our clients and our officers.</p>
+    <p>Compliance is not optional in our business — it is foundational. Every contract we execute, every officer we deploy, and every service we provide operates within the legal framework established by Florida law. Our clients can verify our license status at any time through the Florida Department of Agriculture and Consumer Services, Division of Licensing.</p>
+
+    <div class="stats-row">
+      <div class="stat-box">
+        <div class="stat-num">22+</div>
+        <div class="stat-label">Years in Operation</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-num">280+</div>
+        <div class="stat-label">Trained Professionals</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-num">24/7</div>
+        <div class="stat-label">Coverage Available</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-num">4.9 &#9733;</div>
+        <div class="stat-label">635+ Google Reviews</div>
+      </div>
+    </div>
+
+    <h2>Service Area</h2>
+    <p>U.S.S. Agency is headquartered in Orlando, Florida, and provides security services throughout Central Florida and statewide. Our primary service area includes Orlando, Winter Garden, Kissimmee, Sanford, Apopka, Clermont, Ocoee, Tampa, Miami, Jacksonville, Fort Lauderdale, and West Palm Beach. We also accept contracts throughout the state of Florida and can coordinate nationwide coverage for clients with multi-state operations or travel security requirements.</p>
+    <p>Our proximity to major metropolitan areas, theme parks, convention centers, and corporate hubs in Central Florida means we can deploy officers rapidly to meet urgent staffing needs. Whether you need a single armed officer for a same-day deployment or a full security detail for a multi-week assignment, our operations team is equipped to respond quickly and professionally.</p>
+
+    <h2>Contact U.S.S. Agency</h2>
+    <p>We welcome the opportunity to discuss your security requirements and provide a customized proposal tailored to your specific needs. Contact our team today to schedule a free security consultation.</p>
+    <p><strong>Phone:</strong> <a href="tel:3213042430" style="color:var(--gold);">321-304-2430</a></p>
+    <p><strong>Email:</strong> <a href="mailto:support@ussagency.com" style="color:var(--gold);">support@ussagency.com</a></p>
+    <p><strong>Address:</strong> 450 S. Orange Ave, 3rd Floor, Orlando, FL 32801</p>
+    <p><strong>Hours:</strong> 24/7/365 — Our operations center never closes.</p>
+  </div>
+
+  <section class="cta-section">
+    <a href="/contact" class="cta-btn">Request a Consultation</a>
+  </section>
+
+  <footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <div style="margin-bottom:1rem"><img src="images/img-02.png" alt="USS Agency Logo" style="height:90px;width:auto;object-fit:contain;margin-bottom:1rem"></div>
+      <p>Florida's premier professional security services provider — serving businesses, events, and communities statewide and across the nation since 2008.</p>
+      <span class="license">Florida License # B2800082 &middot; Florida Statute Chapter 493, Section 6301 et seq.</span>
+    </div>
+    <div class="footer-col">
+      <h5>Services</h5>
+      <ul>
+        <li><a href="/unarmed-security">Unarmed Security</a></li>
+        <li><a href="/armed-security-guards">Armed Security</a></li>
+        <li><a href="/executive-protection">Executive Protection</a></li>
+        <li><a href="/fire-watch">Fire Watch</a></li>
+        <li><a href="/event-security">Event Security</a></li>
+        <li><a href="/loss-prevention">Loss Prevention</a></li>
+        <li><a href="/concierge-security">Concierge</a></li>
+        <li><a href="/mobile-patrol">Mobile Patrol</a></li>
+        <li><a href="/access-control">Access Control</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h5>Areas Served</h5>
+      <ul>
+        <li><a href="/contact">Orlando, FL</a></li>
+        <li><a href="/contact">Miami, FL</a></li>
+        <li><a href="/contact">Tampa, FL</a></li>
+        <li><a href="/contact">Jacksonville, FL</a></li>
+        <li><a href="/contact">Fort Lauderdale, FL</a></li>
+        <li><a href="/contact">West Palm Beach, FL</a></li>
+        <li><a href="/contact">All of Florida</a></li>
+        <li><a href="/contact">Nationwide Services</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h5>Contact</h5>
+      <ul>
+        <li><a href="tel:3213042430">321-304-2430</a></li>
+        <li><a href="tel:13213042430">1-321-304-2430</a></li>
+        <li><a href="mailto:support@ussagency.com">support@ussagency.com</a></li>
+        <li><a href="/contact">Get a Free Quote</a></li>
+        <li style="color:var(--gray);font-size:0.82rem;margin-top:0.5rem">450 S Orange Ave, 3rd Floor<br>Orlando, FL 32801</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div style="display:flex;gap:16px;margin-bottom:8px;">
+      <a href="/privacy" style="color:var(--gray);font-size:0.75rem;text-decoration:none;">Privacy Policy</a>
+      <a href="/terms" style="color:var(--gray);font-size:0.75rem;text-decoration:none;">Terms of Service</a>
+    </div>
+    <p>&copy; 2026 U.S.S. Agency. All Rights Reserved.</p>
+    <div style="display:flex;gap:16px;align-items:center;">
+      <a href="https://www.facebook.com/ussagency" target="_blank" rel="noopener" aria-label="Facebook" style="color:#c9a84c;text-decoration:none;font-size:20px;">FB</a>
+      <a href="https://www.instagram.com/ussagency" target="_blank" rel="noopener" aria-label="Instagram" style="color:#c9a84c;text-decoration:none;font-size:20px;">IG</a>
+      <a href="https://www.linkedin.com/company/ussagency" target="_blank" rel="noopener" aria-label="LinkedIn" style="color:#c9a84c;text-decoration:none;font-size:20px;">IN</a>
+    </div>
+    <p>Florida Licensed &amp; Insured Security Services Provider</p>
+  </div>
+</footer>
+
+<!-- Floating Call Now Button -->
+<style>
+.sticky-call{position:fixed;top:120px;right:20px;z-index:9999;display:flex;flex-direction:column;align-items:center;gap:2px;background:#C9A84C;color:#0D1B2A;padding:12px 22px;font-family:'Barlow Condensed',sans-serif;text-decoration:none;border-radius:4px;box-shadow:0 8px 30px rgba(201,168,76,0.35);transition:background 0.2s;text-align:center}
+.sticky-call:hover{background:#e2c46a}
+.sticky-call .call-line1{font-size:16px;font-weight:700;line-height:1.2}
+.sticky-call .call-line2{font-size:12px;font-weight:500;line-height:1.2}
+@media(max-width:768px){.sticky-call{top:120px;right:14px;padding:10px 18px;border-radius:8px}.sticky-call .call-line1{font-size:14px}.sticky-call .call-line2{font-size:11px}}
+
+    /* MOBILE OVERFLOW SAFETY NET */
+    @media(max-width:767px){
+      section, .sec, .container, div, h1, h2, h3, h4, h5, h6, p, li, a, span {
+        max-width:100%;
+        word-wrap:break-word;
+        overflow-wrap:break-word;
+      }
+      section, .sec, .container { width:100%; }
+      img, video, iframe, table { max-width:100%; height:auto; }
+      pre, code { white-space:pre-wrap; word-break:break-word; }
+    }
+</style>
+<a href="tel:13213042430" class="sticky-call"><span class="call-line1">Call Now</span><span class="call-line2">1-321-304-2430</span></a>
+
+<!-- Core Web Vitals reporting to GA4 (G-FP14V8HQHJ) -->
+<script type="module">
+  import {onLCP, onINP, onCLS} from 'https://cdn.jsdelivr.net/npm/web-vitals@4/dist/web-vitals.attribution.js';
+  function sendToGA4({ name, value, id, delta, rating }) {
+    if (typeof gtag !== 'function') return;
+    gtag('event', name, {
+      value: Math.round(name === 'CLS' ? value * 1000 : value),
+      metric_id: id,
+      metric_value: value,
+      metric_delta: delta,
+      metric_rating: rating,
+      event_category: 'Web Vitals',
+      non_interaction: true
+    });
+  }
+  onLCP(sendToGA4);
+  onINP(sendToGA4);
+  onCLS(sendToGA4);
+</script>
+
+</body>
+</html>

@@ -349,6 +349,24 @@
     <lastmod>2026-04-17</lastmod>
   </url>
   <url>
+    <loc>https://www.ussagency.com/about</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <lastmod>2026-04-17</lastmod>
+  </url>
+  <url>
+    <loc>https://www.ussagency.com/contact</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-04-17</lastmod>
+  </url>
+  <url>
+    <loc>https://www.ussagency.com/careers</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <lastmod>2026-04-17</lastmod>
+  </url>
+  <url>
     <loc>https://www.ussagency.com/privacy</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>

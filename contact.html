@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact U.S.S. Agency | Request a Security Consultation</title>
+  <meta name="description" content="Contact U.S.S. Agency for a free security consultation. Armed and unarmed guards, executive protection, fire watch. Call 321-304-2430 or fill out our form.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.ussagency.com/contact">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@300;400;500;600;700&family=Barlow+Condensed:wght@500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{--black:#080808;--deep:#0a0d14;--card:#13161d;--gold:#c9a84c;--gold-lt:#e2c46a;--gold-dim:rgba(201,168,76,0.12);--gold-line:rgba(201,168,76,0.22);--white:#f0f0eb;--gray:#7a8090;--light:#b8bcc8;--silver:#9da3b0}
+    *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+    html{scroll-behavior:smooth;overflow-x:hidden}
+    body{font-family:'Barlow',sans-serif;background:var(--black);color:var(--white);line-height:1.7;overflow-x:hidden;max-width:100%}
+    a{text-decoration:none;color:inherit}
+    .nav{display:flex;justify-content:space-between;align-items:center;padding:1.2rem 5%;background:var(--deep);border-bottom:1px solid var(--gold-line);position:sticky;top:0;z-index:100}
+    .nav-logo{font-family:'Bebas Neue',sans-serif;font-size:1.8rem;letter-spacing:3px;color:var(--gold)}
+    .nav-phone{font-family:'Barlow Condensed',sans-serif;font-weight:900;color:var(--gold-lt);font-size:1.1rem}
+    .hero{padding:4rem 5% 3rem;text-align:center;background:linear-gradient(180deg,var(--deep),var(--black))}
+    .hero h1{font-family:'Bebas Neue',sans-serif;font-size:3rem;color:var(--gold);letter-spacing:2px;margin-bottom:1rem}
+    .hero p{max-width:700px;margin:0 auto;color:var(--light);font-size:1.1rem}
+    .content{max-width:900px;margin:0 auto;padding:3rem 5%}
+    .content h2{font-family:'Bebas Neue',sans-serif;font-size:2rem;color:var(--gold);letter-spacing:1px;margin:2.5rem 0 1rem;border-left:4px solid var(--gold);padding-left:1rem}
+    .content p{color:var(--light);margin-bottom:1.2rem;font-size:1.05rem}
+
+    /* FORM STYLES */
+    .form-wrap{background:var(--card);border:1px solid var(--gold-line);padding:2.5rem 2rem;border-radius:4px;margin:2rem 0}
+    .form-title{font-family:'Bebas Neue',sans-serif;font-size:1.6rem;color:var(--gold);letter-spacing:2px;margin-bottom:0.5rem}
+    .form-sub{font-size:0.9rem;color:var(--gray);margin-bottom:1.5rem}
+    .form-row{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-bottom:0}
+    .form-group{margin-bottom:1rem}
+    .form-group label{display:block;font-size:0.78rem;font-weight:600;color:var(--light);letter-spacing:1px;text-transform:uppercase;margin-bottom:0.4rem}
+    .form-group input,.form-group select,.form-group textarea{width:100%;padding:0.7rem 1rem;background:rgba(255,255,255,0.04);border:1px solid var(--gold-line);color:var(--white);font-family:'Barlow',sans-serif;font-size:0.95rem;border-radius:4px;transition:border-color 0.2s}
+    .form-group input:focus,.form-group select:focus,.form-group textarea:focus{outline:none;border-color:var(--gold)}
+    .form-group textarea{min-height:120px;resize:vertical}
+    .form-group select{cursor:pointer;-webkit-appearance:none;appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23c9a84c' d='M6 8L1 3h10z'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 12px center}
+    .form-group select option{background:var(--card);color:var(--white)}
+    .btn-submit{width:100%;padding:1rem;background:var(--gold);color:var(--black);border:none;font-family:'Bebas Neue',sans-serif;font-size:1.2rem;letter-spacing:2px;cursor:pointer;border-radius:4px;transition:background 0.3s}
+    .btn-submit:hover{background:var(--gold-lt)}
+    .form-guarantee{display:flex;align-items:center;gap:1rem;background:var(--gold-dim);border:1px solid var(--gold-line);padding:1rem;margin:1.5rem 0;border-radius:4px}
+    .fg-icon{font-size:1.5rem;color:var(--gold);flex-shrink:0}
+    .fg-copy strong{display:block;font-size:0.85rem;color:var(--white);margin-bottom:0.2rem}
+    .fg-copy span{font-size:0.78rem;color:var(--gray);line-height:1.5}
+    .form-success{display:none;text-align:center;padding:2rem}
+    .form-success.show{display:block}
+    .form-success h4{font-family:'Bebas Neue',sans-serif;font-size:1.4rem;color:var(--gold);margin-bottom:0.5rem}
+    .form-success p{color:var(--light)}
+
+    /* CONTACT INFO */
+    .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:3rem;margin:2rem 0}
+    .contact-card{background:var(--card);border:1px solid var(--gold-line);padding:1.5rem;border-radius:4px}
+    .contact-card h3{font-family:'Bebas Neue',sans-serif;font-size:1.2rem;color:var(--gold);letter-spacing:1px;margin-bottom:0.8rem}
+    .contact-card p{color:var(--light);font-size:0.95rem;margin-bottom:0.5rem}
+    .contact-card a{color:var(--gold);transition:color 0.2s}
+    .contact-card a:hover{color:var(--gold-lt)}
+    .trust-strip{display:flex;flex-wrap:wrap;gap:1.5rem;margin:2rem 0;justify-content:center}
+    .trust-item{background:var(--card);border:1px solid var(--gold-line);padding:0.8rem 1.5rem;border-radius:4px;font-size:0.85rem;color:var(--gold);font-weight:600;letter-spacing:1px}
+    @media(max-width:768px){.contact-grid{grid-template-columns:1fr}.form-row{grid-template-columns:1fr}.hero h1{font-size:2.2rem}.nav{flex-direction:column;gap:0.5rem}}
+
+    /* FULL FOOTER */
+    footer{background:var(--deep);border-top:1px solid var(--gold-line);padding:4rem 6% 2rem}
+    .footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:3rem;margin-bottom:3rem}
+    .footer-brand p{font-size:0.85rem;color:var(--gray);line-height:1.7;max-width:280px}
+    .footer-brand .license{display:inline-block;background:var(--gold-dim);border:1px solid var(--gold-line);color:var(--gold);font-size:0.68rem;font-weight:700;letter-spacing:2px;padding:0.4rem 0.9rem;margin-top:1rem}
+    .footer-col h5{font-size:0.7rem;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--gold);margin-bottom:1.2rem}
+    .footer-col ul{list-style:none;display:flex;flex-direction:column;gap:0.6rem}
+    .footer-col ul li a{font-size:0.85rem;color:var(--gray);transition:color 0.2s}
+    .footer-col ul li a:hover{color:var(--gold)}
+    .footer-bottom{border-top:1px solid rgba(255,255,255,0.05);padding-top:1.5rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem}
+    .footer-bottom p{font-size:0.78rem;color:var(--gray)}
+    @media(max-width:900px){.footer-grid{grid-template-columns:1fr 1fr}}
+    @media(max-width:580px){.footer-grid{grid-template-columns:1fr}}
+  </style>
+
+  <!-- OPEN GRAPH -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Contact U.S.S. Agency | Request a Security Consultation">
+  <meta property="og:description" content="Contact U.S.S. Agency for a free security consultation. Armed and unarmed guards, executive protection, fire watch. Call 321-304-2430 or fill out our form.">
+  <meta property="og:url" content="https://www.ussagency.com/contact">
+  <meta property="og:image" content="https://www.ussagency.com/og-image.jpg">
+  <meta property="og:site_name" content="U.S.S. Agency">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.ussagency.com/"},{"@type":"ListItem","position":2,"name":"Contact","item":"https://www.ussagency.com/contact"}]}</script>
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Contact U.S.S. Agency | Request a Security Consultation">
+  <meta name="twitter:description" content="Contact U.S.S. Agency for a free security consultation. Armed and unarmed guards, executive protection, fire watch. Call 321-304-2430.">
+  <meta name="twitter:image" content="https://www.ussagency.com/og-image.jpg">
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FP14V8HQHJ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-FP14V8HQHJ');
+
+  document.addEventListener('click', function(e) {
+    var link = e.target.closest('a[href^="tel:"]');
+    if (link) {
+      gtag('event', 'phone_call_click', {
+        phone_number: link.getAttribute('href').replace('tel:', '')
+      });
+    }
+  });
+</script>
+</head>
+<body>
+  <nav class="nav">
+    <a href="/" class="nav-logo">U.S.S. AGENCY</a>
+    <a href="tel:13213042430" class="nav-phone">1-321-304-2430</a>
+  </nav>
+
+  <section class="hero">
+    <h1>Contact U.S.S. Agency</h1>
+    <p>Ready to protect your business, event, or property? Fill out the form below or call us directly. A U.S.S. Agency specialist will respond within 24 business hours, guaranteed.</p>
+  </section>
+
+  <div class="content">
+
+    <div class="trust-strip">
+      <div class="trust-item">FL License B2800082</div>
+      <div class="trust-item">4.9 Stars / 635+ Reviews</div>
+      <div class="trust-item">24/7/365 Operations</div>
+      <div class="trust-item">22+ Years Experience</div>
+    </div>
+
+    <!-- LEAD CAPTURE FORM -->
+    <div class="form-wrap">
+      <h3 class="form-title">Request a Free Security Consultation</h3>
+      <p class="form-sub">Fill out the form below and a U.S.S. Agency specialist will contact you within 24 business hours.</p>
+      <form id="contactForm" onsubmit="submitContactForm(event)">
+        <div class="form-row">
+          <div class="form-group">
+            <label>First Name *</label>
+            <input type="text" name="firstName" placeholder="John" required>
+          </div>
+          <div class="form-group">
+            <label>Last Name *</label>
+            <input type="text" name="lastName" placeholder="Smith" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Email Address *</label>
+            <input type="email" name="email" placeholder="john@company.com" required>
+          </div>
+          <div class="form-group">
+            <label>Phone Number *</label>
+            <input type="tel" name="phone" placeholder="(407) 555-0100" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Company / Organization</label>
+          <input type="text" name="company" placeholder="Your Company Name">
+        </div>
+        <div class="form-group">
+          <label>Your Title / Position</label>
+          <input type="text" name="title" placeholder="e.g. HR Director, Operations Manager, CEO">
+        </div>
+        <div class="form-group">
+          <label>Service Location Address</label>
+          <input type="text" name="serviceAddress" placeholder="Address where security services will be provided">
+        </div>
+        <div class="form-group">
+          <label>Services Interested In *</label>
+          <select name="service" required>
+            <option value="" disabled selected>Select a service...</option>
+            <option>Armed Security Guards</option>
+            <option>Unarmed Security Officers</option>
+            <option>Executive Protection</option>
+            <option>Fire Watch</option>
+            <option>Event Security</option>
+            <option>Mobile Patrol</option>
+            <option>Access Control</option>
+            <option>Loss Prevention</option>
+            <option>Concierge Security</option>
+            <option>Workplace Violence Prevention</option>
+            <option>Multi-Family &amp; Apartments</option>
+            <option>HOAs &amp; COAs</option>
+            <option>Parking Lots &amp; Garages</option>
+            <option>Retail Business Plazas</option>
+            <option>Churches</option>
+            <option>Schools</option>
+            <option>Warehouses</option>
+            <option>Construction Sites</option>
+            <option>Key Holder Services</option>
+            <option>Alarm Response</option>
+            <option>Banks</option>
+            <option>Hospitals / Health Providers</option>
+            <option>Hotels &amp; Resorts</option>
+            <option>Corporate Security</option>
+            <option>Celebrity &amp; VIP Protection</option>
+            <option>Disaster Response Security</option>
+            <option>Custom Security Solutions</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Tell Us About Your Security Needs</label>
+          <textarea name="message" placeholder="Describe your security requirements — location details, number of officers needed, hours of coverage, and any specific concerns."></textarea>
+        </div>
+        <div class="form-guarantee">
+          <div class="fg-icon">&#10022;</div>
+          <div class="fg-copy">
+            <strong>24-Hour Response Guarantee</strong>
+            <span>A U.S.S. Agency specialist will personally contact you within 24 business hours. No spam. No runaround.</span>
+          </div>
+        </div>
+        <div style="margin:12px 0;display:flex;flex-direction:column;gap:10px;">
+          <label style="display:flex;align-items:flex-start;gap:8px;font-size:11px;font-weight:300;color:var(--silver);line-height:1.5;cursor:pointer;">
+            <input type="checkbox" class="sms-transactional" required style="margin-top:2px;accent-color:#c9a84c;flex-shrink:0;">
+            I consent to receive SMS messages from USS Agency LLC including appointment reminders, service confirmations, and notifications. Message frequency may vary. Msg &amp; data rates may apply. Reply HELP for help or STOP to opt out.
+          </label>
+          <label style="display:flex;align-items:flex-start;gap:8px;font-size:11px;font-weight:300;color:var(--silver);line-height:1.5;cursor:pointer;">
+            <input type="checkbox" class="sms-marketing" style="margin-top:2px;accent-color:#c9a84c;flex-shrink:0;">
+            I consent to receive promotional and marketing SMS messages from USS Agency LLC including special offers and event announcements. This is optional. Msg &amp; data rates may apply. Reply STOP to opt out.
+          </label>
+          <p style="font-size:11px;font-weight:300;color:var(--silver);opacity:.7;line-height:1.5;">By submitting this form you agree to our <a href="/privacy" style="color:var(--gold);text-decoration:underline;">Privacy Policy</a> and <a href="/terms" style="color:var(--gold);text-decoration:underline;">Terms of Service</a>.</p>
+        </div>
+        <button type="submit" class="btn-submit">Request My Consultation</button>
+        <p style="font-size:0.78rem;color:var(--gray);text-align:center;margin-top:0.8rem;">Your information is confidential. No obligations. No spam.</p>
+      </form>
+
+      <div class="form-success" id="formSuccess">
+        <h4>&#10022; Request Received</h4>
+        <p>Thank you! A U.S.S. Agency specialist will contact you within 24 hours to discuss your security needs.</p>
+      </div>
+    </div>
+
+    <h2>Reach Us Directly</h2>
+
+    <div class="contact-grid">
+      <div class="contact-card">
+        <h3>Phone</h3>
+        <p><a href="tel:3213042430">321-304-2430</a></p>
+        <p style="font-size:0.82rem;color:var(--gray);">Available 24/7/365 — including weekends and holidays</p>
+      </div>
+      <div class="contact-card">
+        <h3>Email</h3>
+        <p><a href="mailto:support@ussagency.com">support@ussagency.com</a></p>
+        <p style="font-size:0.82rem;color:var(--gray);">Response within 24 business hours guaranteed</p>
+      </div>
+      <div class="contact-card">
+        <h3>Office Address</h3>
+        <p>450 S. Orange Ave, 3rd Floor<br>Orlando, FL 32801</p>
+        <p style="font-size:0.82rem;color:var(--gray);">Downtown Orlando, Central Florida</p>
+      </div>
+      <div class="contact-card">
+        <h3>Hours of Operation</h3>
+        <p>24 Hours / 7 Days / 365 Days</p>
+        <p style="font-size:0.82rem;color:var(--gray);">Our operations center never closes</p>
+      </div>
+    </div>
+
+  </div>
+
+  <footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <div style="margin-bottom:1rem"><img src="images/img-02.png" alt="USS Agency Logo" style="height:90px;width:auto;object-fit:contain;margin-bottom:1rem"></div>
+      <p>Florida's premier professional security services provider — serving businesses, events, and communities statewide and across the nation since 2008.</p>
+      <span class="license">Florida License # B2800082 &middot; Florida Statute Chapter 493, Section 6301 et seq.</span>
+    </div>
+    <div class="footer-col">
+      <h5>Services</h5>
+      <ul>
+        <li><a href="/unarmed-security">Unarmed Security</a></li>
+        <li><a href="/armed-security-guards">Armed Security</a></li>
+        <li><a href="/executive-protection">Executive Protection</a></li>
+        <li><a href="/fire-watch">Fire Watch</a></li>
+        <li><a href="/event-security">Event Security</a></li>
+        <li><a href="/loss-prevention">Loss Prevention</a></li>
+        <li><a href="/concierge-security">Concierge</a></li>
+        <li><a href="/mobile-patrol">Mobile Patrol</a></li>
+        <li><a href="/access-control">Access Control</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h5>Areas Served</h5>
+      <ul>
+        <li><a href="/contact">Orlando, FL</a></li>
+        <li><a href="/contact">Miami, FL</a></li>
+        <li><a href="/contact">Tampa, FL</a></li>
+        <li><a href="/contact">Jacksonville, FL</a></li>
+        <li><a href="/contact">Fort Lauderdale, FL</a></li>
+        <li><a href="/contact">West Palm Beach, FL</a></li>
+        <li><a href="/contact">All of Florida</a></li>
+        <li><a href="/contact">Nationwide Services</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h5>Contact</h5>
+      <ul>
+        <li><a href="tel:3213042430">321-304-2430</a></li>
+        <li><a href="tel:13213042430">1-321-304-2430</a></li>
+        <li><a href="mailto:support@ussagency.com">support@ussagency.com</a></li>
+        <li><a href="/contact">Get a Free Quote</a></li>
+        <li style="color:var(--gray);font-size:0.82rem;margin-top:0.5rem">450 S Orange Ave, 3rd Floor<br>Orlando, FL 32801</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div style="display:flex;gap:16px;margin-bottom:8px;">
+      <a href="/privacy" style="color:var(--gray);font-size:0.75rem;text-decoration:none;">Privacy Policy</a>
+      <a href="/terms" style="color:var(--gray);font-size:0.75rem;text-decoration:none;">Terms of Service</a>
+    </div>
+    <p>&copy; 2026 U.S.S. Agency. All Rights Reserved.</p>
+    <div style="display:flex;gap:16px;align-items:center;">
+      <a href="https://www.facebook.com/ussagency" target="_blank" rel="noopener" aria-label="Facebook" style="color:#c9a84c;text-decoration:none;font-size:20px;">FB</a>
+      <a href="https://www.instagram.com/ussagency" target="_blank" rel="noopener" aria-label="Instagram" style="color:#c9a84c;text-decoration:none;font-size:20px;">IG</a>
+      <a href="https://www.linkedin.com/company/ussagency" target="_blank" rel="noopener" aria-label="LinkedIn" style="color:#c9a84c;text-decoration:none;font-size:20px;">IN</a>
+    </div>
+    <p>Florida Licensed &amp; Insured Security Services Provider</p>
+  </div>
+</footer>
+
+<!-- Floating Call Now Button -->
+<style>
+.sticky-call{position:fixed;top:120px;right:20px;z-index:9999;display:flex;flex-direction:column;align-items:center;gap:2px;background:#C9A84C;color:#0D1B2A;padding:12px 22px;font-family:'Barlow Condensed',sans-serif;text-decoration:none;border-radius:4px;box-shadow:0 8px 30px rgba(201,168,76,0.35);transition:background 0.2s;text-align:center}
+.sticky-call:hover{background:#e2c46a}
+.sticky-call .call-line1{font-size:16px;font-weight:700;line-height:1.2}
+.sticky-call .call-line2{font-size:12px;font-weight:500;line-height:1.2}
+@media(max-width:768px){.sticky-call{top:120px;right:14px;padding:10px 18px;border-radius:8px}.sticky-call .call-line1{font-size:14px}.sticky-call .call-line2{font-size:11px}}
+
+    @media(max-width:767px){
+      section, .sec, .container, div, h1, h2, h3, h4, h5, h6, p, li, a, span {
+        max-width:100%;
+        word-wrap:break-word;
+        overflow-wrap:break-word;
+      }
+      section, .sec, .container { width:100%; }
+      img, video, iframe, table { max-width:100%; height:auto; }
+      pre, code { white-space:pre-wrap; word-break:break-word; }
+    }
+</style>
+<a href="tel:13213042430" class="sticky-call"><span class="call-line1">Call Now</span><span class="call-line2">1-321-304-2430</span></a>
+
+<script>
+function submitContactForm(e) {
+  e.preventDefault();
+  var form = document.getElementById('contactForm');
+  var fd = new FormData(form);
+  var payload = {
+    firstName: fd.get('firstName'),
+    lastName: fd.get('lastName'),
+    email: fd.get('email'),
+    phone: fd.get('phone'),
+    company: fd.get('company') || '',
+    title: fd.get('title') || '',
+    serviceAddress: fd.get('serviceAddress') || '',
+    service: fd.get('service'),
+    message: fd.get('message') || '',
+    tags: ['website-lead', 'uss-agency', 'contact-page'],
+    source: 'ussagency.com/contact'
+  };
+  fetch('https://services.leadconnectorhq.com/hooks/A81lGlMBKzeH8gORYYV2/webhook-trigger/13ac4a23-8b95-4f46-8aa8-88d17d5b699d', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(payload)
+  }).catch(function(){});
+  if (typeof gtag === 'function') {
+    gtag('event', 'form_submission', { form_name: 'contact_page_form' });
+  }
+  form.style.display = 'none';
+  document.getElementById('formSuccess').classList.add('show');
+}
+</script>
+
+<!-- Core Web Vitals reporting to GA4 (G-FP14V8HQHJ) -->
+<script type="module">
+  import {onLCP, onINP, onCLS} from 'https://cdn.jsdelivr.net/npm/web-vitals@4/dist/web-vitals.attribution.js';
+  function sendToGA4({ name, value, id, delta, rating }) {
+    if (typeof gtag !== 'function') return;
+    gtag('event', name, {
+      value: Math.round(name === 'CLS' ? value * 1000 : value),
+      metric_id: id,
+      metric_value: value,
+      metric_delta: delta,
+      metric_rating: rating,
+      event_category: 'Web Vitals',
+      non_interaction: true
+    });
+  }
+  onLCP(sendToGA4);
+  onINP(sendToGA4);
+  onCLS(sendToGA4);
+</script>
+
+</body>
+</html>
