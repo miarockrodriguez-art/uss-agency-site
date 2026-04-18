@@ -32,7 +32,7 @@
     bodyguard services Miami FL, security company near me Florida
   ">
   <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-  <meta name="theme-color" content="#7a1c22">
+  <meta name="theme-color" content="#080808">
   <meta name="author" content="U.S.S. Agency">
   <meta name="revisit-after" content="7 days">
   <meta name="language" content="English">
@@ -283,10 +283,10 @@
 
   <style>
     :root {
-      --black:#f4eee3; --deep:#fbf7ee; --card:#ffffff;
-      --gold:#1a2340; --gold-lt:#2a3658;
-      --gold-dim:rgba(26,35,64,0.1); --gold-line:rgba(26,35,64,0.18);
-      --white:#1a2340; --gray:#5a6478; --light:#3a4358;
+      --black:#080808; --deep:#0f1117; --card:#13161d;
+      --gold:#c9a84c; --gold-lt:#e2c46a;
+      --gold-dim:rgba(201,168,76,0.12); --gold-line:rgba(201,168,76,0.22);
+      --white:#f0f0eb; --gray:#7a8090; --light:#b8bcc8;
     }
     *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
     html{scroll-behavior:smooth;overflow-x:hidden}
@@ -297,7 +297,7 @@
     ::-webkit-scrollbar-thumb{background:var(--gold)}
 
     @keyframes fadeUp{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:translateY(0)}}
-    @keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(26,35,64,0.5)}50%{box-shadow:0 0 0 10px rgba(26,35,64,0)}}
+    @keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(201,168,76,0.5)}50%{box-shadow:0 0 0 10px rgba(201,168,76,0)}}
 
 
     /* HERO SPLIT LAYOUT */
@@ -312,7 +312,7 @@
 
     /* HERO FORM */
     .hero-form-wrap{
-      background:rgba(255,255,255,0.92);
+      background:rgba(8,8,8,0.85);
       border:1px solid var(--gold-line);
       backdrop-filter:blur(20px);
       animation:fadeUp 0.7s 0.3s ease both;
@@ -355,8 +355,8 @@
     .hf-group input,
     .hf-group select{
       width:100%;
-      background:rgba(26,35,64,0.05);
-      border:1px solid rgba(26,35,64,0.08);
+      background:rgba(255,255,255,0.04);
+      border:1px solid rgba(255,255,255,0.08);
       color:var(--white);
       padding:0.8rem 1rem;
       font-family:'Barlow',sans-serif;
@@ -369,7 +369,7 @@
     .hf-group input:focus,
     .hf-group select:focus{
       border-color:var(--gold);
-      background:rgba(26,35,64,0.05);
+      background:rgba(201,168,76,0.05);
     }
     .hf-group input::placeholder{ color:var(--gray); }
     .hf-group select option{ background:var(--black); color:var(--white); }
@@ -378,7 +378,7 @@
       justify-content:space-between;
       margin-top:1rem;
       padding-top:1rem;
-      border-top:1px solid rgba(26,35,64,0.05);
+      border-top:1px solid rgba(255,255,255,0.05);
       flex-wrap:wrap;
       gap:0.4rem;
     }
@@ -417,8 +417,8 @@
       display:flex;
       align-items:center;
       gap:1rem;
-      background:rgba(26,35,64,0.07);
-      border:1px solid rgba(26,35,64,0.25);
+      background:rgba(201,168,76,0.07);
+      border:1px solid rgba(201,168,76,0.25);
       border-left:3px solid var(--gold);
       padding:0.85rem 1.2rem;
       margin-bottom:2rem;
@@ -463,8 +463,8 @@
       align-items:center;
       justify-content:space-between;
       gap:1rem;
-      background:rgba(26,35,64,0.06);
-      border:1px solid rgba(26,35,64,0.2);
+      background:rgba(201,168,76,0.06);
+      border:1px solid rgba(201,168,76,0.2);
       border-left:3px solid var(--gold);
       padding:1rem 1.2rem;
       margin-bottom:1.2rem;
@@ -507,7 +507,7 @@
       display:flex;
       align-items:center;
       justify-content:center;
-      background:rgba(26,35,64,0.08);
+      background:rgba(201,168,76,0.08);
     }
     .fg-seal-inner{
       text-align:center;
@@ -587,7 +587,7 @@
     .gallery-caption{
       position:absolute;
       bottom:0;left:0;right:0;
-      background:linear-gradient(transparent, rgba(255,255,255,0.9));
+      background:linear-gradient(transparent, rgba(8,8,8,0.9));
       color:var(--white);
       font-size:0.72rem;
       font-weight:700;
@@ -697,7 +697,7 @@
     }
 
     /* NAV */
-    nav{position:fixed;top:0;width:100%;z-index:1000;background:rgba(255,255,255,0.95);backdrop-filter:blur(16px);border-bottom:1px solid var(--gold-line);padding:0 6%;display:flex;align-items:center;justify-content:space-between;height:68px}
+    nav{position:fixed;top:0;width:100%;z-index:1000;background:rgba(8,8,8,0.97);backdrop-filter:blur(16px);border-bottom:1px solid var(--gold-line);padding:0 6%;display:flex;align-items:center;justify-content:space-between;height:68px}
     .logo{font-family:'Bebas Neue',sans-serif;font-size:1.5rem;letter-spacing:5px;color:var(--gold)}
     .logo span{color:var(--white)}
     .nav-links{display:flex;gap:1.2rem;list-style:none;align-items:center}
@@ -709,15 +709,15 @@
     .hamburger span{display:block;width:24px;height:2px;background:var(--gold)}
 
     /* HERO */
-    .hero{min-height:100vh;background:linear-gradient(135deg,rgba(60,12,16,0.98) 0%,rgba(122,28,34,0.85) 40%,rgba(165,42,52,0.75) 55%,rgba(122,28,34,0.9) 70%,rgba(60,12,16,0.98) 100%),url('images/img-01.jpg') center/cover no-repeat;display:flex;align-items:center;padding:130px 6% 80px;position:relative;overflow:hidden}
+    .hero{min-height:100vh;background:linear-gradient(135deg,rgba(8,8,8,0.94) 0%,rgba(12,24,40,0.88) 60%,rgba(8,8,8,0.96) 100%),url('images/img-01.jpg') center/cover no-repeat;display:flex;align-items:center;padding:130px 6% 80px;position:relative;overflow:hidden}
     .hero-layout{display:flex;align-items:center;justify-content:space-between;gap:4rem;width:100%}
-    .hero-badge-logo{width:450px;height:450px;object-fit:contain;flex-shrink:0;margin:0 auto;margin-top:-150px;display:block;background:none;box-shadow:0 0 80px 30px rgba(26,35,64,0.25);border-radius:0;animation:fadeUp 0.7s 0.4s ease both}
-    .hero::before{content:'';position:absolute;inset:0;background:repeating-linear-gradient(0deg,transparent,transparent 3px,rgba(26,35,64,0.01) 3px,rgba(26,35,64,0.01) 4px);pointer-events:none;z-index:1}
-    .hero-badge{display:inline-block;background:none;border:none;color:#1a2340;font-size:0.68rem;font-weight:700;letter-spacing:3px;text-transform:uppercase;padding:0;margin-bottom:1.8rem;animation:fadeUp 0.7s ease both}
+    .hero-badge-logo{width:450px;height:450px;object-fit:contain;flex-shrink:0;margin:0 auto;margin-top:-150px;display:block;background:none;box-shadow:0 0 80px 30px rgba(201,168,76,0.25);border-radius:0;animation:fadeUp 0.7s 0.4s ease both}
+    .hero::before{content:'';position:absolute;inset:0;background:repeating-linear-gradient(0deg,transparent,transparent 3px,rgba(201,168,76,0.01) 3px,rgba(201,168,76,0.01) 4px);pointer-events:none;z-index:1}
+    .hero-badge{display:inline-block;background:none;border:none;color:#C9A84C;font-size:0.68rem;font-weight:700;letter-spacing:3px;text-transform:uppercase;padding:0;margin-bottom:1.8rem;animation:fadeUp 0.7s ease both}
     .live-dot{width:8px;height:8px;border-radius:50%;background:var(--gold)}
     .hero h1{font-family:'Bebas Neue',sans-serif;font-size:clamp(4rem,8.5vw,7.8rem);line-height:0.9;letter-spacing:2px;margin-bottom:1.8rem;animation:fadeUp 0.7s 0.1s ease both}
     .hero h1 .gold{color:var(--gold)}
-    .hero h1 .outline{-webkit-text-stroke:2px rgba(26,35,64,0.45);color:transparent}
+    .hero h1 .outline{-webkit-text-stroke:2px rgba(201,168,76,0.45);color:transparent}
     .hero p{font-size:1.1rem;line-height:1.78;color:var(--light);max-width:580px;margin-bottom:2.8rem;font-weight:300;animation:fadeUp 0.7s 0.2s ease both}
     .hero-btns{display:flex;gap:1rem;flex-wrap:wrap;animation:fadeUp 0.7s 0.3s ease both}
     .hero-stats{display:flex;gap:3rem;margin-top:4rem;padding-top:2.5rem;border-top:1px solid var(--gold-line);animation:fadeUp 0.7s 0.4s ease both}
@@ -727,7 +727,7 @@
     /* BUTTONS */
     .btn{display:inline-flex;align-items:center;gap:0.5rem;font-family:'Barlow Condensed',sans-serif;font-size:0.95rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;padding:0.95rem 2.2rem;transition:all 0.25s;cursor:pointer;border:none}
     .btn-gold{background:var(--gold);color:var(--black)}
-    .btn-gold:hover{background:var(--gold-lt);transform:translateY(-2px);box-shadow:0 10px 35px rgba(26,35,64,0.28)}
+    .btn-gold:hover{background:var(--gold-lt);transform:translateY(-2px);box-shadow:0 10px 35px rgba(201,168,76,0.28)}
     .btn-ghost{background:transparent;border:2px solid var(--gold-line);color:var(--gold)}
     .btn-ghost:hover{border-color:var(--gold);background:var(--gold-dim);transform:translateY(-2px)}
 
@@ -770,22 +770,8 @@
     .sec-sub{font-size:1rem;color:var(--gray);font-weight:300;max-width:580px;line-height:1.75}
     .sec-head{margin-bottom:3.5rem}
 
-    /* ABOUT - with U.S.S. logo watermark across entire section */
-    .about{background:var(--deep);position:relative;overflow:hidden;isolation:isolate}
-    .about::after{
-      content:'';
-      position:absolute;
-      top:50%;left:50%;
-      transform:translate(-50%,-50%);
-      width:min(130%, 1800px);
-      aspect-ratio:3/2;
-      background:url('images/logo-uss.png') center/contain no-repeat;
-      opacity:0.25;
-      pointer-events:none;
-      z-index:0;
-      user-select:none;
-    }
-    .about-grid{position:relative;z-index:2}
+    /* ABOUT */
+    .about{background:var(--deep)}
     .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:stretch}
     .about-img-wrap{position:relative;height:500px;overflow:hidden}
     .about-img-wrap img{width:100%;height:100%;object-fit:cover;object-position:center center;filter:grayscale(10%);display:block}
@@ -802,7 +788,7 @@
     .svc-card{background:var(--card);padding:2.5rem 2rem;transition:all 0.3s;position:relative;overflow:hidden;cursor:pointer}
     .svc-card::after{content:'';position:absolute;bottom:0;left:0;width:0;height:3px;background:var(--gold);transition:width 0.35s ease}
     .svc-card:hover::after{width:100%}
-    .svc-card:hover{background:#ede5d4}
+    .svc-card:hover{background:#171a22}
     
     .svc-card h3{font-family:'Bebas Neue',sans-serif;font-size:1.45rem;letter-spacing:1.5px;margin-bottom:0.8rem}
     .svc-card p{font-size:0.88rem;color:var(--gray);line-height:1.7}
@@ -812,8 +798,8 @@
     /* INDUSTRIES */
     .industries{background:var(--deep)}
     .ind-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem;margin-top:3rem}
-    .ind-item{background:var(--card);border:1px solid #1a2340;box-shadow:0 0 8px #1a2340,inset 0 0 4px rgba(26,35,64,0.2);padding:2rem 1.5rem;text-align:center;transition:all 0.3s;min-height:140px;display:flex;align-items:center;justify-content:center;text-decoration:none;}
-    .ind-item:hover{transform:translateY(-4px);box-shadow:0 0 14px #1a2340,inset 0 0 6px rgba(26,35,64,0.3)}
+    .ind-item{background:var(--card);border:1px solid #C9A84C;box-shadow:0 0 8px #C9A84C,inset 0 0 4px rgba(201,168,76,0.2);padding:2rem 1.5rem;text-align:center;transition:all 0.3s;min-height:140px;display:flex;align-items:center;justify-content:center;text-decoration:none;}
+    .ind-item:hover{transform:translateY(-4px);box-shadow:0 0 14px #C9A84C,inset 0 0 6px rgba(201,168,76,0.3)}
     
     .ind-item h4{font-family:'Barlow Condensed',sans-serif;font-size:1rem;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--light);padding:0.5rem 0}
 
@@ -821,14 +807,14 @@
     .why{background:linear-gradient(135deg,var(--black) 0%,var(--deep) 100%)}
     .why-grid{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center}
     .why-list{display:flex;flex-direction:column;gap:1rem}
-    .why-item{display:flex;gap:1.2rem;align-items:flex-start;padding:1.5rem;background:rgba(26,35,64,0.03);border-left:3px solid var(--gold);transition:background 0.2s}
-    .why-item:hover{background:rgba(26,35,64,0.06)}
-    .why-num{font-family:'Bebas Neue',sans-serif;font-size:2.2rem;color:rgba(26,35,64,0.25);line-height:1;min-width:2.2rem}
+    .why-item{display:flex;gap:1.2rem;align-items:flex-start;padding:1.5rem;background:rgba(255,255,255,0.025);border-left:3px solid var(--gold);transition:background 0.2s}
+    .why-item:hover{background:rgba(201,168,76,0.06)}
+    .why-num{font-family:'Bebas Neue',sans-serif;font-size:2.2rem;color:rgba(201,168,76,0.25);line-height:1;min-width:2.2rem}
     .why-item h4{font-size:0.88rem;font-weight:700;letter-spacing:1px;text-transform:uppercase;margin-bottom:0.4rem}
     .why-item p{font-size:0.85rem;color:var(--gray);line-height:1.65}
     .why-visual{position:relative;background:var(--card);border:1px solid var(--gold-line);padding:3rem;display:flex;flex-direction:column;gap:2rem}
     .why-visual::before{content:'WHY CHOOSE USS';position:absolute;top:-1px;left:2rem;background:var(--gold);color:var(--black);font-size:0.65rem;font-weight:700;letter-spacing:2px;padding:0.3rem 0.8rem}
-    .metric{display:flex;align-items:center;gap:1.5rem;padding-bottom:1.5rem;border-bottom:1px solid rgba(26,35,64,0.05)}
+    .metric{display:flex;align-items:center;gap:1.5rem;padding-bottom:1.5rem;border-bottom:1px solid rgba(255,255,255,0.05)}
     .metric:last-child{border-bottom:none;padding-bottom:0}
     .metric-n{font-family:'Bebas Neue',sans-serif;font-size:3rem;color:var(--gold);line-height:1;min-width:5rem}
     .metric-l{font-size:0.85rem;color:var(--light);line-height:1.5}
@@ -851,22 +837,22 @@
     .form-row{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-bottom:1rem}
     .form-group{display:flex;flex-direction:column;gap:0.4rem;margin-bottom:1rem}
     .form-group label{font-size:0.7rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--gray)}
-    .form-group input,.form-group select,.form-group textarea{background:var(--black);border:1px solid rgba(26,35,64,0.08);color:var(--white);padding:0.85rem 1rem;font-family:'Barlow',sans-serif;font-size:0.95rem;outline:none;transition:border 0.2s;border-radius:0;-webkit-appearance:none}
+    .form-group input,.form-group select,.form-group textarea{background:var(--black);border:1px solid rgba(255,255,255,0.08);color:var(--white);padding:0.85rem 1rem;font-family:'Barlow',sans-serif;font-size:0.95rem;outline:none;transition:border 0.2s;border-radius:0;-webkit-appearance:none}
     .form-group input:focus,.form-group select:focus,.form-group textarea:focus{border-color:var(--gold)}
     .form-group select option{background:var(--black)}
     .form-group textarea{resize:vertical;min-height:120px}
     .form-note{font-size:0.75rem;color:var(--gray);margin-bottom:1.5rem}
     .form-note span{color:var(--gold)}
-    .form-success{display:none;background:rgba(26,35,64,0.1);border:1px solid var(--gold-line);padding:1.5rem;text-align:center;margin-top:1rem}
+    .form-success{display:none;background:rgba(201,168,76,0.1);border:1px solid var(--gold-line);padding:1.5rem;text-align:center;margin-top:1rem}
     .form-success h4{color:var(--gold);font-family:'Bebas Neue',sans-serif;font-size:1.5rem;letter-spacing:2px;margin-bottom:0.4rem}
     .form-success p{font-size:0.85rem;color:var(--light)}
 
     /* FAQ */
     .faq{background:var(--black)}
     .faq-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;margin-top:3rem}
-    .faq-item{background:var(--card);border:1px solid rgba(26,35,64,0.05);overflow:hidden}
+    .faq-item{background:var(--card);border:1px solid rgba(255,255,255,0.04);overflow:hidden}
     .faq-q{display:flex;justify-content:space-between;align-items:center;padding:1.5rem;cursor:pointer;gap:1rem;transition:background 0.2s}
-    .faq-q:hover{background:rgba(26,35,64,0.05)}
+    .faq-q:hover{background:rgba(201,168,76,0.05)}
     .faq-q h4{font-size:0.9rem;font-weight:600;line-height:1.5;color:var(--white)}
     .faq-icon{color:var(--gold);font-size:1.2rem;flex-shrink:0;transition:transform 0.3s}
     .faq-item.open .faq-icon{transform:rotate(45deg)}
@@ -891,7 +877,7 @@
       position:relative;
       width:100%;
       aspect-ratio:16/9;
-      background:#ffffff;
+      background:#000;
       overflow:hidden;
       border:1px solid var(--gold-line);
       border-bottom:none;
@@ -925,7 +911,7 @@
       align-items:center;
       justify-content:center;
       transition:transform 0.2s, background 0.2s;
-      box-shadow:0 0 0 12px rgba(26,35,64,0.2), 0 0 0 24px rgba(26,35,64,0.08);
+      box-shadow:0 0 0 12px rgba(201,168,76,0.2), 0 0 0 24px rgba(201,168,76,0.08);
       margin-bottom:1.5rem;
     }
     .bv-overlay:hover .bv-play-btn{ transform:scale(1.1); background:var(--gold-lt); }
@@ -1005,13 +991,13 @@
     .footer-col ul{list-style:none;display:flex;flex-direction:column;gap:0.6rem}
     .footer-col ul li a{font-size:0.85rem;color:var(--gray);transition:color 0.2s}
     .footer-col ul li a:hover{color:var(--gold)}
-    .footer-bottom{border-top:1px solid rgba(26,35,64,0.05);padding-top:1.5rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem}
+    .footer-bottom{border-top:1px solid rgba(255,255,255,0.05);padding-top:1.5rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem}
     .footer-bottom p{font-size:0.78rem;color:var(--gray)}
 
     /* STICKY CALL BUTTON — TOP RIGHT */
-    @keyframes pulse-glow{0%,100%{box-shadow:0 4px 16px rgba(26,35,64,0.3)}50%{box-shadow:0 4px 24px rgba(26,35,64,0.6),0 0 40px rgba(26,35,64,0.15)}}
-    .sticky-call{position:fixed;top:120px;right:0;z-index:998;display:flex;flex-direction:row;align-items:center;gap:0;background:#1a2340;color:#FFFFFF;padding:18px 32px;font-family:'Barlow Condensed',sans-serif;text-decoration:none;border-radius:0;box-shadow:0 4px 16px rgba(26,35,64,0.3);text-align:center;animation:pulse-glow 3s ease-in-out infinite}
-    .sticky-call:hover{background:#2a3658;box-shadow:0 6px 24px rgba(26,35,64,0.5);animation:none}
+    @keyframes pulse-glow{0%,100%{box-shadow:0 4px 16px rgba(201,168,76,0.3)}50%{box-shadow:0 4px 24px rgba(201,168,76,0.6),0 0 40px rgba(201,168,76,0.15)}}
+    .sticky-call{position:fixed;top:120px;right:0;z-index:998;display:flex;flex-direction:row;align-items:center;gap:0;background:#C9A84C;color:#FFFFFF;padding:18px 32px;font-family:'Barlow Condensed',sans-serif;text-decoration:none;border-radius:0;box-shadow:0 4px 16px rgba(201,168,76,0.3);text-align:center;animation:pulse-glow 3s ease-in-out infinite}
+    .sticky-call:hover{background:#e8c96a;box-shadow:0 6px 24px rgba(201,168,76,0.5);animation:none}
     .sticky-call .call-line1{font-size:17px;font-weight:700;line-height:1.2;letter-spacing:.05em}
     .sticky-call .call-sep{margin:0 8px;opacity:0.6}
     .sticky-call .call-line2{font-size:15px;font-weight:700;line-height:1.2}
@@ -1026,7 +1012,7 @@
       height:220px;
       overflow:hidden;
       margin-bottom:1.5rem;
-      border:1px solid rgba(26,35,64,0.2);
+      border:1px solid rgba(201,168,76,0.2);
     }
     .why-photo img{
       width:100%;
@@ -1047,7 +1033,7 @@
     }
     .leader-card{
       background:var(--card);
-      border:1px solid rgba(26,35,64,0.05);
+      border:1px solid rgba(255,255,255,0.05);
       display:flex;
       flex-direction:column;
       height:auto;
@@ -1072,7 +1058,7 @@
       height:110px;
       border-radius:50%;
       border:2px solid var(--gold-line);
-      background:rgba(26,35,64,0.08);
+      background:rgba(201,168,76,0.08);
       display:flex;
       align-items:center;
       justify-content:center;
@@ -1133,8 +1119,8 @@
       gap:1.5rem;
       margin:1.2rem 0;
       padding:1rem 0;
-      border-top:1px solid rgba(26,35,64,0.05);
-      border-bottom:1px solid rgba(26,35,64,0.05);
+      border-top:1px solid rgba(255,255,255,0.05);
+      border-bottom:1px solid rgba(255,255,255,0.05);
     }
     .l-stat-n{
       font-family:'Bebas Neue',sans-serif;
@@ -1156,7 +1142,7 @@
       margin-top:1rem;
     }
     .leader-credentials span{
-      background:rgba(26,35,64,0.08);
+      background:rgba(201,168,76,0.08);
       border:1px solid var(--gold-line);
       color:var(--gold);
       font-size:0.65rem;
@@ -1208,7 +1194,7 @@
       font-family:'Bebas Neue',sans-serif;
       font-size:1.8rem; color:var(--black);
       letter-spacing:2px;
-      border:3px solid rgba(26,35,64,0.3);
+      border:3px solid rgba(201,168,76,0.3);
     }
     .leader-badge-tag{
       font-size:0.65rem;
@@ -1242,7 +1228,7 @@
     .leader-stats{
       display:flex; gap:2rem; margin-top:1.5rem;
       padding-top:1.5rem;
-      border-top:1px solid rgba(26,35,64,0.05);
+      border-top:1px solid rgba(255,255,255,0.06);
     }
     .l-stat-n{
       font-family:'Bebas Neue',sans-serif;
@@ -1307,7 +1293,7 @@
     /* BLOG */
     .blog{background:var(--black)}
     .blog-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;grid-auto-rows:1fr}
-    .blog-card{background:var(--card);border:1px solid rgba(26,35,64,0.05);overflow:hidden;transition:transform 0.3s,border-color 0.3s;display:flex;flex-direction:column}
+    .blog-card{background:var(--card);border:1px solid rgba(255,255,255,0.05);overflow:hidden;transition:transform 0.3s,border-color 0.3s;display:flex;flex-direction:column}
     .blog-card:hover{transform:translateY(-5px);border-color:var(--gold-line)}
     .blog-img-wrap{position:relative;height:160px;overflow:hidden}
     .blog-img-placeholder{width:100%;height:100%}
@@ -1334,7 +1320,7 @@
       gap:0.8rem;
       margin-bottom:1.5rem;
       padding-bottom:1.2rem;
-      border-bottom:1px solid rgba(26,35,64,0.05);
+      border-bottom:1px solid rgba(255,255,255,0.06);
       font-size:0.85rem;
       font-weight:600;
       letter-spacing:1px;
@@ -1353,7 +1339,7 @@
     }
     .g-live-card{
       background:var(--deep);
-      border:1px solid rgba(26,35,64,0.05);
+      border:1px solid rgba(255,255,255,0.04);
       padding:1.5rem;
       transition:border-color 0.2s;
     }
@@ -1390,7 +1376,7 @@
     /* LEADERSHIP */
     .leadership{ background:var(--deep); }
     .leadership-grid{ display:grid; grid-template-columns:1fr 1fr; gap:2rem; margin-bottom:5rem; }
-    .leader-card{ background:var(--card); border:1px solid rgba(26,35,64,0.05); padding:2.5rem; display:flex; flex-direction:column; gap:1.5rem; transition:border-color 0.3s; }
+    .leader-card{ background:var(--card); border:1px solid rgba(255,255,255,0.05); padding:2.5rem; display:flex; flex-direction:column; gap:1.5rem; transition:border-color 0.3s; }
     .leader-card:hover{ border-color:var(--gold-line); }
     .leader-card.featured{ border-top:3px solid var(--gold); }
     .leader-photo-wrap{ position:relative; display:inline-block; }
@@ -1403,7 +1389,7 @@
     .leader-name{ font-family:'Bebas Neue',sans-serif; font-size:2rem; letter-spacing:2px; color:var(--white); margin-bottom:0.2rem; }
     .leader-title{ font-size:0.82rem; font-weight:600; letter-spacing:1px; color:var(--gray); text-transform:uppercase; margin-bottom:1rem; }
     .leader-bio{ font-size:0.88rem; color:var(--light); line-height:1.75; font-weight:300; margin-bottom:0.8rem; }
-    .leader-stats{ display:flex; gap:2rem; padding-top:1rem; border-top:1px solid rgba(26,35,64,0.05); }
+    .leader-stats{ display:flex; gap:2rem; padding-top:1rem; border-top:1px solid rgba(255,255,255,0.05); }
     .ls-num{ font-family:'Bebas Neue',sans-serif; font-size:1.6rem; color:var(--gold); line-height:1; }
     .ls-label{ font-size:0.65rem; letter-spacing:1.5px; text-transform:uppercase; color:var(--gray); margin-top:0.2rem; }
     .leader-credentials{ display:flex; flex-wrap:wrap; gap:0.5rem; margin-top:0.5rem; }
@@ -1412,7 +1398,7 @@
     /* DIVISIONS */
     .divisions-wrap{ background:var(--black); padding:3rem; border:1px solid var(--gold-line); }
     .divisions-grid{ display:grid; grid-template-columns:repeat(6,1fr); gap:1.5rem; }
-    .division-item{ text-align:center; padding:1.5rem 1rem; background:var(--card); border:1px solid rgba(26,35,64,0.05); transition:all 0.3s; border-bottom:2px solid transparent; }
+    .division-item{ text-align:center; padding:1.5rem 1rem; background:var(--card); border:1px solid rgba(255,255,255,0.04); transition:all 0.3s; border-bottom:2px solid transparent; }
     .division-item:hover{ border-bottom-color:var(--gold); transform:translateY(-3px); }
     .div-icon{ font-size:1.8rem; margin-bottom:0.8rem; }
     .division-item h4{ font-family:'Barlow Condensed',sans-serif; font-size:0.88rem; font-weight:700; letter-spacing:1px; text-transform:uppercase; color:var(--white); margin-bottom:0.4rem; }
@@ -1429,9 +1415,9 @@
 
     /* CLIENTS */
     .clients{ background:var(--black); }
-    .clients-grid{ display:grid; grid-template-columns:repeat(6,1fr); gap:1px; background:rgba(26,35,64,0.05); }
+    .clients-grid{ display:grid; grid-template-columns:repeat(6,1fr); gap:1px; background:rgba(255,255,255,0.04); }
     .client-item{ background:var(--card); padding:1.2rem 1rem; text-align:center; font-size:0.78rem; font-weight:600; letter-spacing:1px; color:var(--gray); transition:all 0.2s; text-transform:uppercase; }
-    .client-item:hover{ background:#ede5d4; color:var(--gold); }
+    .client-item:hover{ background:#16191f; color:var(--gold); }
     @media(max-width:900px){ .clients-grid{ grid-template-columns:repeat(3,1fr); } }
     @media(max-width:580px){ .clients-grid{ grid-template-columns:repeat(2,1fr); } }
 
@@ -1444,7 +1430,7 @@
     .google-link{font-size:0.72rem;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--gold);transition:opacity 0.2s}
     .google-link:hover{opacity:0.7}
     .reviews-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}@media(max-width:1100px){.reviews-grid{grid-template-columns:repeat(2,1fr)}}@media(max-width:600px){.reviews-grid{grid-template-columns:1fr}}
-    .review-card{background:var(--card);border:1px solid rgba(26,35,64,0.05);padding:2rem;transition:transform 0.3s,border-color 0.3s}
+    .review-card{background:var(--card);border:1px solid rgba(255,255,255,0.05);padding:2rem;transition:transform 0.3s,border-color 0.3s}
     .review-card:hover{transform:translateY(-4px);border-color:var(--gold-line)}
     .review-stars{color:#FBBC05;font-size:1rem;letter-spacing:3px;margin-bottom:1rem}
     .review-text{font-size:0.88rem;color:var(--light);line-height:1.75;font-style:italic;margin-bottom:1.5rem;font-weight:300}
@@ -1484,7 +1470,7 @@
     }
   
     /* URGENCY BANNER */
-    .urgency-bar{background:linear-gradient(90deg,#f4eee3 0%,#ffffff 50%,#f4eee3 100%);border-bottom:1px solid rgba(26,35,64,0.3);padding:0.6rem 6%;position:sticky;top:68px;z-index:900;animation:slideDown 0.5s ease}
+    .urgency-bar{background:linear-gradient(90deg,#0a0d14 0%,#13161d 50%,#0a0d14 100%);border-bottom:1px solid rgba(201,168,76,0.3);padding:0.6rem 6%;position:sticky;top:68px;z-index:900;animation:slideDown 0.5s ease}
     @keyframes slideDown{from{transform:translateY(-100%);opacity:0}to{transform:translateY(0);opacity:1}}
     .ub-inner{display:flex;align-items:center;gap:1rem;max-width:1300px;margin:0 auto}
     .ub-pulse{width:8px;height:8px;background:var(--gold);border-radius:50%;flex-shrink:0;animation:pulse 2s infinite}
@@ -1503,16 +1489,16 @@
     .logo-track{display:flex;gap:1px;width:max-content;animation:logoScroll 40s linear infinite}
     .logo-track:hover{animation-play-state:paused}
     @keyframes logoScroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
-    .logo-card{background:var(--card);border:1px solid rgba(26,35,64,0.05);width:160px;height:110px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:0.3rem;flex-shrink:0;transition:border-color 0.3s,background 0.3s;padding:0.6rem 1rem}
-    .logo-card:hover{border-color:var(--gold-line);background:#ede5d4}
-    .logo-card img{max-width:120px;max-height:50px;object-fit:contain;filter:brightness(0) invert(1);opacity:0.9;transition:opacity 0.3s,filter 0.3s}
+    .logo-card{background:var(--card);border:1px solid rgba(255,255,255,0.04);width:160px;height:110px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:0.3rem;flex-shrink:0;transition:border-color 0.3s,background 0.3s;padding:0.6rem 1rem}
+    .logo-card:hover{border-color:var(--gold-line);background:#16191f}
+    .logo-card img{max-width:120px;max-height:50px;object-fit:contain;filter:brightness(0) invert(1);opacity:0.85;transition:opacity 0.3s,filter 0.3s}
     .logo-card:hover img{opacity:1;filter:brightness(0) invert(1) sepia(1) saturate(5) hue-rotate(10deg) brightness(0.85)}
     .logo-abbr{font-family:'Bebas Neue',sans-serif;font-size:1.6rem;letter-spacing:3px;color:var(--gold);line-height:1}
     .logo-name{font-size:0.68rem;font-weight:700;letter-spacing:1px;color:var(--white);text-align:center;text-transform:uppercase}
     .logo-sector{font-size:0.6rem;color:var(--gray);letter-spacing:0.5px;text-align:center}
     /* CLIENT TAGS */
     .client-tags{display:flex;flex-wrap:wrap;gap:0.5rem;justify-content:center;max-width:1100px;margin:0 auto;padding:0 6%}
-    .client-tag{background:rgba(26,35,64,0.04);border:1px solid rgba(26,35,64,0.05);color:var(--gray);font-size:0.7rem;font-weight:600;letter-spacing:1px;padding:0.35rem 0.8rem;text-transform:uppercase;transition:all 0.2s}
+    .client-tag{background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.06);color:var(--gray);font-size:0.7rem;font-weight:600;letter-spacing:1px;padding:0.35rem 0.8rem;text-transform:uppercase;transition:all 0.2s}
     .client-tag:hover{border-color:var(--gold-line);color:var(--gold)}
     /* PHOTO GALLERY */
     .photo-gallery{background:var(--deep);padding:6rem 6%;border-top:1px solid var(--gold-line);border-bottom:1px solid var(--gold-line)}
@@ -1521,7 +1507,7 @@
     .gallery-item.tall{grid-row:span 2}
     .gallery-item img{width:100%;height:100%;object-fit:cover;display:block;transition:transform 0.5s ease}
     .gallery-item:hover img{transform:scale(1.05)}
-    .gallery-caption{position:absolute;bottom:0;left:0;right:0;background:linear-gradient(transparent,rgba(255,255,255,0.9));color:var(--white);font-size:0.72rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;padding:1.5rem 1rem 0.8rem;opacity:0;transition:opacity 0.3s}
+    .gallery-caption{position:absolute;bottom:0;left:0;right:0;background:linear-gradient(transparent,rgba(8,8,8,0.9));color:var(--white);font-size:0.72rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;padding:1.5rem 1rem 0.8rem;opacity:0;transition:opacity 0.3s}
     .gallery-item:hover .gallery-caption{opacity:1}
     @media(max-width:900px){.gallery-grid{grid-template-columns:1fr 1fr;grid-template-rows:auto}.gallery-item.tall,.gallery-item{height:240px}}
     /* OFFICER STRIP */
@@ -1549,138 +1535,7 @@
       [style*="width:1300px"],[style*="width:1200px"],[style*="width:1100px"],[style*="width:1000px"],[style*="width:900px"]{ width:100% !important; max-width:100% !important; }
     }
 
-  
-/* Hero contrast overrides */
-
-      .hero, .hero *{color:#f4eee3}
-      .hero h1, .hero h2, .hero .kicker{color:#ffffff}
-      .hero .gold, .hero [class*="accent"]{color:#f4eee3; border-color:#f4eee3}
-      .nav, header, .header{background:#1a2340 !important; color:#ffffff; border-bottom:3px solid #7a1c22}
-      .nav a, header a, .header a{color:#ffffff !important; font-weight:600}
-      .nav a:hover, header a:hover{color:#e8c46a !important}
-      .nav .logo, header .logo{color:#ffffff !important}
-    
-
-
-/* ============ RED POPS (accent color weaved throughout) ============ */
-:root{ --red:#c8323a; --red-dk:#9e1e26; --red-soft:rgba(200,50,58,0.12); }
-
-.hero::before{
-  content:""; position:absolute; top:0; left:0; right:0; height:3px;
-  background:linear-gradient(90deg, transparent 0%, #c8323a 25%, #c8323a 75%, transparent 100%);
-  z-index:5;
-}
-.hero{ position:relative; }
-
-.hero .btn-primary, .hero a.cta, .hero button[type="submit"],
-.btn-primary, a.btn-primary, button.btn-primary,
-.cta-primary, a.cta-primary,
-input[type="submit"], button[type="submit"]{
-  background:#c8323a !important;
-  border-color:#c8323a !important;
-  color:#ffffff !important;
-  box-shadow:0 4px 16px rgba(200,50,58,0.28) !important;
-  transition:all .2s ease;
-}
-.hero .btn-primary:hover, .hero a.cta:hover, .hero button[type="submit"]:hover,
-.btn-primary:hover, a.btn-primary:hover, button.btn-primary:hover,
-.cta-primary:hover, a.cta-primary:hover,
-input[type="submit"]:hover, button[type="submit"]:hover{
-  background:#9e1e26 !important;
-  border-color:#9e1e26 !important;
-  transform:translateY(-1px);
-  box-shadow:0 6px 22px rgba(200,50,58,0.4) !important;
-}
-
-a[href^="tel:"]{ color:#c8323a !important; font-weight:700; }
-a[href^="tel:"]:hover{ color:#9e1e26 !important; }
-.hero a[href^="tel:"]{ color:#ffffff !important; border-bottom:2px solid #c8323a; padding-bottom:2px; }
-.hero a[href^="tel:"]:hover{ color:#c8323a !important; }
-
-.stencil, [class*="stencil"], .section-num, [class*="section-num"],
-.kicker, [class*="kicker"], .eyebrow, [class*="eyebrow"]{
-  color:#c8323a !important;
-}
-
-[class*="stripe"], .accent-bar, .divider-accent{ background:#c8323a !important; }
-
-h2::after, .section-title::after{ border-color:#c8323a !important; }
-
-main a:not(.btn):not([class*="btn"]):not(.nav a):not(.logo),
-article a:not(.btn):not([class*="btn"]){
-  color:#c8323a;
-  text-decoration-color:rgba(200,50,58,0.4);
-}
-main a:not(.btn):not([class*="btn"]):hover{ color:#9e1e26; }
-
-.stat-number, [class*="stat-num"], .big-number, [class*="big-number"]{
-  color:#c8323a !important;
-}
-
-.service-card:hover, .card:hover, [class*="service"]:hover{
-  border-left:3px solid #c8323a !important;
-}
-
-.marked-list li::before, ul.accent li::before{ background:#c8323a !important; }
-
-input:focus, textarea:focus, select:focus{
-  border-color:#c8323a !important;
-  box-shadow:0 0 0 3px rgba(200,50,58,0.15) !important;
-  outline:none;
-}
-
-footer::before{
-  content:""; display:block; height:2px;
-  background:linear-gradient(90deg, #c8323a 0%, transparent 60%);
-}
-
-[class*="badge"]:not([class*="gold"]):not([class*="navy"]){
-  background:#c8323a !important;
-  color:#ffffff !important;
-}
-
-.nav .btn, header .btn, .nav-cta{
-  background:#c8323a !important;
-  color:#ffffff !important;
-  border-color:#c8323a !important;
-}
-.nav .btn:hover, header .btn:hover, .nav-cta:hover{
-  background:#9e1e26 !important;
-  border-color:#9e1e26 !important;
-}
-
-/* V2 override: hero already red, use gold stripe instead */
-.hero::before{ background:linear-gradient(90deg, transparent 0%, #d4a852 25%, #d4a852 75%, transparent 100%) !important; }
-.hero .btn-primary, .hero a.cta, .hero button[type="submit"]{
-  background:#ffffff !important; color:#7a1c22 !important; border-color:#ffffff !important;
-}
-.hero .btn-primary:hover, .hero a.cta:hover, .hero button[type="submit"]:hover{
-  background:#f4eee3 !important; color:#9e1e26 !important;
-}
-.hero a[href^="tel:"]{ border-bottom-color:#ffffff; }
-
-/* Sticky call button — cream text override */
-a.sticky-call, a.sticky-call *, a.sticky-call:hover, a.sticky-call:hover *{
-  color:#f4eee3 !important;
-  border-bottom:none !important;
-}
-
-/* Red glow behind Google review cards */
-#reviews > div:last-of-type > div{
-  position:relative;
-  box-shadow:
-    0 0 28px 4px rgba(200,50,58,0.22),
-    0 8px 24px rgba(26,35,64,0.06) !important;
-  transition:box-shadow .3s ease, transform .3s ease;
-}
-#reviews > div:last-of-type > div:hover{
-  box-shadow:
-    0 0 42px 8px rgba(200,50,58,0.38),
-    0 12px 32px rgba(26,35,64,0.1) !important;
-  transform:translateY(-2px);
-}
-
-</style>
+  </style>
 <!-- Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-FP14V8HQHJ"></script>
 <script>
@@ -1700,19 +1555,19 @@ a.sticky-call, a.sticky-call *, a.sticky-call:hover, a.sticky-call:hover *{
   });
 </script>
 </head>
-<body><div style="background:#1a1a1a;color:#fff;padding:10px 24px;text-align:center;font:700 11px/1.2 system-ui,sans-serif;letter-spacing:0.14em;text-transform:uppercase;position:sticky;top:0;z-index:99999;border-bottom:2px solid #1a2340">Preview · V2 — Oxblood Hero / Paper Body + Red Pops · Oxblood hero, paper body, red accents throughout</div>
+<body>
 
 <!-- Exit Intent Popup -->
 <div id="exitPopup" style="display:none;position:fixed;inset:0;z-index:99999;background:rgba(0,0,0,.7);align-items:center;justify-content:center;">
-  <div style="background:#f4eee3;border:2px solid #1a2340;border-radius:12px;max-width:440px;width:90%;padding:40px 32px;text-align:center;position:relative;box-shadow:0 20px 60px rgba(0,0,0,.5);">
-    <button onclick="closeExitPopup()" style="position:absolute;top:12px;right:16px;background:none;border:none;color:#1a2340;font-size:24px;cursor:pointer;line-height:1;">&times;</button>
-    <div style="font-family:'Barlow Condensed',sans-serif;font-size:11px;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:#1a2340;margin-bottom:12px;">FREE CONSULTATION</div>
-    <h3 style="font-family:'Bebas Neue',sans-serif;font-size:28px;color:#1a2340;margin-bottom:10px;letter-spacing:2px;">Before You Go...</h3>
-    <p style="font-size:14px;color:#7a8090;margin-bottom:24px;line-height:1.6;">Get a <strong style="color:#1a2340;">FREE Security Assessment</strong> for your property or event. Our experts will evaluate your needs and provide a custom recommendation.</p>
-    <input id="exit-name" type="text" placeholder="Your Name" style="width:100%;padding:14px;background:rgba(26,35,64,0.05);border:1px solid rgba(26,35,64,.3);color:#1a2340;font-family:'Barlow',sans-serif;font-size:14px;border-radius:4px;margin-bottom:10px;text-align:center;">
-    <input id="exit-email" type="email" placeholder="Email Address" style="width:100%;padding:14px;background:rgba(26,35,64,0.05);border:1px solid rgba(26,35,64,.3);color:#1a2340;font-family:'Barlow',sans-serif;font-size:14px;border-radius:4px;margin-bottom:10px;text-align:center;">
-    <input id="exit-phone" type="tel" placeholder="Phone Number" style="width:100%;padding:14px;background:rgba(26,35,64,0.05);border:1px solid rgba(26,35,64,.3);color:#1a2340;font-family:'Barlow',sans-serif;font-size:14px;border-radius:4px;margin-bottom:12px;text-align:center;">
-    <button onclick="submitExitPopup()" style="width:100%;padding:14px;background:#1a2340;color:#f4eee3;border:none;font-family:'Barlow Condensed',sans-serif;font-size:14px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;cursor:pointer;border-radius:4px;">Get My Free Assessment</button>
+  <div style="background:#080808;border:2px solid #c9a84c;border-radius:12px;max-width:440px;width:90%;padding:40px 32px;text-align:center;position:relative;box-shadow:0 20px 60px rgba(0,0,0,.5);">
+    <button onclick="closeExitPopup()" style="position:absolute;top:12px;right:16px;background:none;border:none;color:#c9a84c;font-size:24px;cursor:pointer;line-height:1;">&times;</button>
+    <div style="font-family:'Barlow Condensed',sans-serif;font-size:11px;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:#c9a84c;margin-bottom:12px;">FREE CONSULTATION</div>
+    <h3 style="font-family:'Bebas Neue',sans-serif;font-size:28px;color:#f0f0eb;margin-bottom:10px;letter-spacing:2px;">Before You Go...</h3>
+    <p style="font-size:14px;color:#7a8090;margin-bottom:24px;line-height:1.6;">Get a <strong style="color:#c9a84c;">FREE Security Assessment</strong> for your property or event. Our experts will evaluate your needs and provide a custom recommendation.</p>
+    <input id="exit-name" type="text" placeholder="Your Name" style="width:100%;padding:14px;background:rgba(255,255,255,.06);border:1px solid rgba(201,168,76,.3);color:#f0f0eb;font-family:'Barlow',sans-serif;font-size:14px;border-radius:4px;margin-bottom:10px;text-align:center;">
+    <input id="exit-email" type="email" placeholder="Email Address" style="width:100%;padding:14px;background:rgba(255,255,255,.06);border:1px solid rgba(201,168,76,.3);color:#f0f0eb;font-family:'Barlow',sans-serif;font-size:14px;border-radius:4px;margin-bottom:10px;text-align:center;">
+    <input id="exit-phone" type="tel" placeholder="Phone Number" style="width:100%;padding:14px;background:rgba(255,255,255,.06);border:1px solid rgba(201,168,76,.3);color:#f0f0eb;font-family:'Barlow',sans-serif;font-size:14px;border-radius:4px;margin-bottom:12px;text-align:center;">
+    <button onclick="submitExitPopup()" style="width:100%;padding:14px;background:#c9a84c;color:#080808;border:none;font-family:'Barlow Condensed',sans-serif;font-size:14px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;cursor:pointer;border-radius:4px;">Get My Free Assessment</button>
     <p style="font-size:10px;color:#555;margin-top:12px;">No obligation. Response within 24 hours.</p>
   </div>
 </div>
@@ -1751,7 +1606,7 @@ function submitExitPopup(){
     body:JSON.stringify({firstName:name.split(' ')[0]||'',lastName:name.split(' ').slice(1).join(' ')||'',email:email,phone:phone,tags:['website-lead','uss-agency'],source:'ussagency.com'})
   }).catch(function(){});
   gtag('event', 'form_submission', { form_name: 'exit_popup' });
-  document.getElementById('exitPopup').innerHTML='<div style="background:#f4eee3;border:2px solid #1a2340;border-radius:12px;max-width:440px;width:90%;padding:40px 32px;text-align:center;"><div style="font-size:36px;margin-bottom:12px;">&#10003;</div><h3 style="font-family:Bebas Neue,sans-serif;font-size:24px;color:#1a2340;margin-bottom:10px;letter-spacing:2px;">Thank You!</h3><p style="font-size:14px;color:#7a8090;">Our team will contact you within 24 hours with your free security assessment.</p><button onclick="closeExitPopup()" style="margin-top:20px;padding:12px 32px;background:#1a2340;color:#f4eee3;border:none;font-family:Barlow Condensed,sans-serif;font-size:13px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;cursor:pointer;border-radius:4px;">Continue Browsing</button></div>';
+  document.getElementById('exitPopup').innerHTML='<div style="background:#080808;border:2px solid #c9a84c;border-radius:12px;max-width:440px;width:90%;padding:40px 32px;text-align:center;"><div style="font-size:36px;margin-bottom:12px;">&#10003;</div><h3 style="font-family:Bebas Neue,sans-serif;font-size:24px;color:#f0f0eb;margin-bottom:10px;letter-spacing:2px;">Thank You!</h3><p style="font-size:14px;color:#7a8090;">Our team will contact you within 24 hours with your free security assessment.</p><button onclick="closeExitPopup()" style="margin-top:20px;padding:12px 32px;background:#c9a84c;color:#080808;border:none;font-family:Barlow Condensed,sans-serif;font-size:13px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;cursor:pointer;border-radius:4px;">Continue Browsing</button></div>';
 }
 </script>
 
@@ -1761,10 +1616,10 @@ function submitExitPopup(){
 <!-- NAV -->
 <nav>
         <a href="/" style="display:flex;align-items:center;gap:0.8rem;text-decoration:none">
-    <img src="images/img-02.png" alt="USS Agency - Ultimate Security Services" style="height:62px;width:auto;object-fit:contain;filter:drop-shadow(0 0 8px rgba(26,35,64,0.7)) drop-shadow(0 0 16px rgba(26,35,64,0.4)) drop-shadow(0 0 2px rgba(26,35,64,0.9))">
+    <img src="images/img-02.png" alt="USS Agency - Ultimate Security Services" style="height:62px;width:auto;object-fit:contain;filter:drop-shadow(0 0 8px rgba(201,168,76,0.7)) drop-shadow(0 0 16px rgba(201,168,76,0.4)) drop-shadow(0 0 2px rgba(201,168,76,0.9))">
     <div style="display:flex;flex-direction:column;line-height:1">
-      <span style="font-family:'Bebas Neue',sans-serif;font-size:1.7rem;font-weight:900;letter-spacing:5px;color:#1a2340">U.S.S.</span>
-      <span style="font-family:'Bebas Neue',sans-serif;font-size:1.2rem;font-weight:900;letter-spacing:6px;color:#1a2340;margin-top:-4px">AGENCY</span>
+      <span style="font-family:'Bebas Neue',sans-serif;font-size:1.7rem;font-weight:900;letter-spacing:5px;color:#c9a84c">U.S.S.</span>
+      <span style="font-family:'Bebas Neue',sans-serif;font-size:1.2rem;font-weight:900;letter-spacing:6px;color:#f0f0eb;margin-top:-4px">AGENCY</span>
     </div>
   </a>
   <ul class="nav-links" id="navLinks">
@@ -1800,8 +1655,8 @@ function submitExitPopup(){
       When The Stakes Are Real.<br>
       <span class="gold">One Call. One Solution.</span>
     </h1>
-    <p style="font-size:1.35rem;margin-bottom:1.8rem;color:#f4eee3;font-weight:500;font-style:italic;text-shadow:0 1px 2px rgba(0,0,0,0.3);">U.S.S. Agency delivers certainty when it matters most.</p>
-    <p style="font-size:1.25rem;font-weight:600;letter-spacing:1px;color:#f4eee3;font-style:italic;text-shadow:0 1px 2px rgba(0,0,0,0.3);">280+ professionals. One standard. Yours.</p>
+    <p style="font-size:1.25rem;margin-bottom:1.8rem;opacity:0.9;">U.S.S. Agency delivers certainty when it matters most.</p>
+    <p style="font-size:1.2rem;font-weight:400;letter-spacing:1px;">280+ professionals. One standard. Yours.</p>
     <div class="hero-btns">
       <a href="#contact" class="btn btn-gold">Request a Consultation →</a>
       <a href="tel:13213042430" class="btn btn-ghost">1-321-304-2430</a>
@@ -1853,300 +1708,82 @@ function submitExitPopup(){
       </div>
     </div>
     <div style="display:flex;align-items:center;justify-content:center;">
-      <img loading="lazy" src="images/img-02.png" alt="USS Agency Badge" style="width:550px;height:550px;object-fit:contain;filter:sepia(60%) saturate(200%) hue-rotate(5deg) brightness(95%) drop-shadow(0 0 30px rgba(26,35,64,0.4));">
+      <img loading="lazy" src="images/img-02.png" alt="USS Agency Badge" style="width:550px;height:550px;object-fit:contain;filter:sepia(60%) saturate(200%) hue-rotate(5deg) brightness(95%) drop-shadow(0 0 30px rgba(201,168,76,0.4));">
     </div>
   </div>
 </section>
 
 <!-- CREDIBILITY STATS -->
-<section style="background:linear-gradient(135deg,#f4eee3 0%,#ece4d4 50%,#f4eee3 100%);padding:5rem 6%;border-top:1px solid rgba(26,35,64,0.15);border-bottom:1px solid rgba(26,35,64,0.15);">
+<section style="background:linear-gradient(135deg,#080808 0%,#0c1828 50%,#080808 100%);padding:5rem 6%;border-top:1px solid rgba(201,168,76,0.15);border-bottom:1px solid rgba(201,168,76,0.15);">
   <div style="max-width:1100px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:2.5rem;text-align:center;">
     <div>
-      <div style="font-family:'Bebas Neue',sans-serif;font-size:4rem;color:#1a2340;line-height:1;">22+</div>
-      <div style="font-size:0.75rem;font-weight:600;letter-spacing:2.5px;text-transform:uppercase;color:#1a2340;margin-top:0.4rem;">Years in Operations</div>
+      <div style="font-family:'Bebas Neue',sans-serif;font-size:4rem;color:#c9a84c;line-height:1;">22+</div>
+      <div style="font-size:0.75rem;font-weight:600;letter-spacing:2.5px;text-transform:uppercase;color:#f0f0eb;margin-top:0.4rem;">Years in Operations</div>
     </div>
     <div>
-      <div style="font-family:'Bebas Neue',sans-serif;font-size:4rem;color:#1a2340;line-height:1;">280+</div>
-      <div style="font-size:0.75rem;font-weight:600;letter-spacing:2.5px;text-transform:uppercase;color:#1a2340;margin-top:0.4rem;">Trained Professionals</div>
+      <div style="font-family:'Bebas Neue',sans-serif;font-size:4rem;color:#c9a84c;line-height:1;">280+</div>
+      <div style="font-size:0.75rem;font-weight:600;letter-spacing:2.5px;text-transform:uppercase;color:#f0f0eb;margin-top:0.4rem;">Trained Professionals</div>
     </div>
     <div>
-      <div style="font-family:'Bebas Neue',sans-serif;font-size:4rem;color:#1a2340;line-height:1;">6</div>
-      <div style="font-size:0.75rem;font-weight:600;letter-spacing:2.5px;text-transform:uppercase;color:#1a2340;margin-top:0.4rem;">Business Divisions</div>
+      <div style="font-family:'Bebas Neue',sans-serif;font-size:4rem;color:#c9a84c;line-height:1;">6</div>
+      <div style="font-size:0.75rem;font-weight:600;letter-spacing:2.5px;text-transform:uppercase;color:#f0f0eb;margin-top:0.4rem;">Business Divisions</div>
     </div>
     <div>
-      <div style="font-family:'Bebas Neue',sans-serif;font-size:4rem;color:#1a2340;line-height:1;">24/7</div>
-      <div style="font-size:0.75rem;font-weight:600;letter-spacing:2.5px;text-transform:uppercase;color:#1a2340;margin-top:0.4rem;">Nationwide Coverage</div>
+      <div style="font-family:'Bebas Neue',sans-serif;font-size:4rem;color:#c9a84c;line-height:1;">24/7</div>
+      <div style="font-size:0.75rem;font-weight:600;letter-spacing:2.5px;text-transform:uppercase;color:#f0f0eb;margin-top:0.4rem;">Nationwide Coverage</div>
     </div>
     <div>
-      <div style="font-family:'Bebas Neue',sans-serif;font-size:2.2rem;color:#1a2340;line-height:1;letter-spacing:1px;">FL #B2800082</div>
-      <div style="font-size:0.75rem;font-weight:600;letter-spacing:2.5px;text-transform:uppercase;color:#1a2340;margin-top:0.4rem;">State Licensed</div>
+      <div style="font-family:'Bebas Neue',sans-serif;font-size:2.2rem;color:#c9a84c;line-height:1;letter-spacing:1px;">FL #B2800082</div>
+      <div style="font-size:0.75rem;font-weight:600;letter-spacing:2.5px;text-transform:uppercase;color:#f0f0eb;margin-top:0.4rem;">State Licensed</div>
     </div>
   </div>
 </section>
 
 <!-- REVIEWS / TESTIMONIALS -->
-<section id="reviews" style="padding:5rem 6%;background:linear-gradient(135deg,#f4eee3 0%,#ece4d4 50%,#f4eee3 100%);">
+<section id="reviews" style="padding:5rem 6%;background:linear-gradient(135deg,#080808 0%,#0c1828 50%,#080808 100%);">
   <div style="text-align:center;max-width:700px;margin:0 auto 3rem;">
-    <h2 style="font-family:'Bebas Neue',sans-serif;font-size:clamp(2rem,4vw,3rem);letter-spacing:2px;color:#1a2340;margin-bottom:0.8rem;">What Our Clients Say</h2>
+    <h2 style="font-family:'Bebas Neue',sans-serif;font-size:clamp(2rem,4vw,3rem);letter-spacing:2px;color:#f0f0eb;margin-bottom:0.8rem;">What Our Clients Say</h2>
     <p style="font-size:0.95rem;color:#8a9ab5;font-weight:300;">Verified 5-star reviews from property managers, business owners, and community leaders.</p>
-    <p style="font-size:1.1rem;font-weight:700;color:#1a2340;margin-top:1rem;letter-spacing:1px;">&#11088; 4.9 Stars &middot; 635 Verified Google Reviews</p>
+    <p style="font-size:1.1rem;font-weight:700;color:#C9A84C;margin-top:1rem;letter-spacing:1px;">&#11088; 4.9 Stars &middot; 635 Verified Google Reviews</p>
   </div>
   <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem;max-width:1200px;margin:0 auto;">
-    <div style="background:#f4eee3;border:1px solid rgba(26,35,64,0.3);padding:2rem;display:flex;flex-direction:column;gap:1rem;">
-      <div style="color:#1a2340;font-size:1.1rem;letter-spacing:3px;">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-      <p style="font-size:0.88rem;color:#1a2340;line-height:1.75;font-style:italic;font-weight:300;flex:1;">"I have a hands-free and worry-free relationship with my security company because they truly developed an action plan."</p>
+    <div style="background:#0a0d14;border:1px solid rgba(201,168,76,0.3);padding:2rem;display:flex;flex-direction:column;gap:1rem;">
+      <div style="color:#c9a84c;font-size:1.1rem;letter-spacing:3px;">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+      <p style="font-size:0.88rem;color:#f0f0eb;line-height:1.75;font-style:italic;font-weight:300;flex:1;">"I have a hands-free and worry-free relationship with my security company because they truly developed an action plan."</p>
       <div>
-        <div style="font-size:0.85rem;font-weight:700;color:#1a2340;">Ashlynn Baker</div>
+        <div style="font-size:0.85rem;font-weight:700;color:#c9a84c;">Ashlynn Baker</div>
         <div style="font-size:0.65rem;color:#8a9ab5;letter-spacing:1.5px;text-transform:uppercase;margin-top:0.25rem;">Verified Google Review</div>
       </div>
     </div>
-    <div style="background:#f4eee3;border:1px solid rgba(26,35,64,0.3);padding:2rem;display:flex;flex-direction:column;gap:1rem;">
-      <div style="color:#1a2340;font-size:1.1rem;letter-spacing:3px;">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-      <p style="font-size:0.88rem;color:#1a2340;line-height:1.75;font-style:italic;font-weight:300;flex:1;">"The one thing I can tell you about U.S.S. Agency is that they keep their word. If they tell you they are going to do something they do it."</p>
+    <div style="background:#0a0d14;border:1px solid rgba(201,168,76,0.3);padding:2rem;display:flex;flex-direction:column;gap:1rem;">
+      <div style="color:#c9a84c;font-size:1.1rem;letter-spacing:3px;">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+      <p style="font-size:0.88rem;color:#f0f0eb;line-height:1.75;font-style:italic;font-weight:300;flex:1;">"The one thing I can tell you about U.S.S. Agency is that they keep their word. If they tell you they are going to do something they do it."</p>
       <div>
-        <div style="font-size:0.85rem;font-weight:700;color:#1a2340;">Jacey Blackwood</div>
+        <div style="font-size:0.85rem;font-weight:700;color:#c9a84c;">Jacey Blackwood</div>
         <div style="font-size:0.65rem;color:#8a9ab5;letter-spacing:1.5px;text-transform:uppercase;margin-top:0.25rem;">Verified Google Review</div>
       </div>
     </div>
-    <div style="background:#f4eee3;border:1px solid rgba(26,35,64,0.3);padding:2rem;display:flex;flex-direction:column;gap:1rem;">
-      <div style="color:#1a2340;font-size:1.1rem;letter-spacing:3px;">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-      <p style="font-size:0.88rem;color:#1a2340;line-height:1.75;font-style:italic;font-weight:300;flex:1;">"Contracting Ultimate Security Services was one of the best business decisions I have made. I did my homework and U.S.S. Agency stood above the rest."</p>
+    <div style="background:#0a0d14;border:1px solid rgba(201,168,76,0.3);padding:2rem;display:flex;flex-direction:column;gap:1rem;">
+      <div style="color:#c9a84c;font-size:1.1rem;letter-spacing:3px;">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+      <p style="font-size:0.88rem;color:#f0f0eb;line-height:1.75;font-style:italic;font-weight:300;flex:1;">"Contracting Ultimate Security Services was one of the best business decisions I have made. I did my homework and U.S.S. Agency stood above the rest."</p>
       <div>
-        <div style="font-size:0.85rem;font-weight:700;color:#1a2340;">Leonard Beils</div>
+        <div style="font-size:0.85rem;font-weight:700;color:#c9a84c;">Leonard Beils</div>
         <div style="font-size:0.65rem;color:#8a9ab5;letter-spacing:1.5px;text-transform:uppercase;margin-top:0.25rem;">Verified Google Review</div>
       </div>
     </div>
-    <div style="background:#f4eee3;border:1px solid rgba(26,35,64,0.3);padding:2rem;display:flex;flex-direction:column;gap:1rem;">
-      <div style="color:#1a2340;font-size:1.1rem;letter-spacing:3px;">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-      <p style="font-size:0.88rem;color:#1a2340;line-height:1.75;font-style:italic;font-weight:300;flex:1;">"When I come home late from work, I feel a sense of safety just knowing the security guard is always on post."</p>
+    <div style="background:#0a0d14;border:1px solid rgba(201,168,76,0.3);padding:2rem;display:flex;flex-direction:column;gap:1rem;">
+      <div style="color:#c9a84c;font-size:1.1rem;letter-spacing:3px;">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+      <p style="font-size:0.88rem;color:#f0f0eb;line-height:1.75;font-style:italic;font-weight:300;flex:1;">"When I come home late from work, I feel a sense of safety just knowing the security guard is always on post."</p>
       <div>
-        <div style="font-size:0.85rem;font-weight:700;color:#1a2340;">Bailey Kesler</div>
+        <div style="font-size:0.85rem;font-weight:700;color:#c9a84c;">Bailey Kesler</div>
         <div style="font-size:0.65rem;color:#8a9ab5;letter-spacing:1.5px;text-transform:uppercase;margin-top:0.25rem;">Verified Google Review</div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- SERVICES - Intro Photo + Clean Directory Grid -->
-<style>
-  /* New services layout */
-  .services-new{background:var(--deep);padding:0 0 6rem}
-  .services-hero{
-    position:relative;
-    width:100%;
-    height:min(52vh, 520px);
-    background:linear-gradient(90deg, rgba(26,35,64,0.6) 0%, rgba(26,35,64,0.15) 60%, rgba(26,35,64,0) 100%),
-               url('images/img-04.jpg') center/cover no-repeat;
-    display:flex;
-    align-items:center;
-    overflow:hidden;
-  }
-  .services-hero::before{
-    content:""; position:absolute; bottom:0; left:0; right:0; height:4px;
-    background:linear-gradient(90deg, #c8323a 0%, #c8323a 40%, transparent 100%);
-    z-index:2;
-  }
-  .services-hero-inner{
-    position:relative; z-index:1;
-    padding:3rem 6% 3rem 8%;
-    max-width:720px;
-    color:#fff;
-  }
-  .services-hero-kicker{
-    font-family:'JetBrains Mono','Courier New',monospace;
-    font-size:0.72rem;
-    font-weight:700;
-    letter-spacing:4px;
-    text-transform:uppercase;
-    color:#e8c46a;
-    margin-bottom:1.2rem;
-    display:flex; align-items:center; gap:0.8rem;
-  }
-  .services-hero-kicker::before{
-    content:""; width:40px; height:1px; background:#c8323a;
-  }
-  .services-hero h2{
-    font-family:'IBM Plex Serif','Georgia',serif;
-    font-size:clamp(2rem, 4vw, 3.4rem);
-    font-weight:400;
-    line-height:1.1;
-    color:#fff;
-    margin-bottom:1.4rem;
-    letter-spacing:-0.01em;
-  }
-  .services-hero h2 em{
-    font-style:italic; color:#f4eee3; font-weight:300;
-  }
-  .services-hero p{
-    font-size:1.05rem;
-    line-height:1.65;
-    color:rgba(244,238,227,0.92);
-    max-width:560px;
-    font-weight:300;
-  }
-
-  .services-directory{
-    max-width:1300px; margin:0 auto;
-    padding:4rem 6% 0;
-  }
-  .services-directory-head{
-    display:flex; justify-content:space-between; align-items:flex-end;
-    padding-bottom:1.5rem;
-    border-bottom:2px solid rgba(26,35,64,0.15);
-    margin-bottom:0;
-  }
-  .services-directory-head .count{
-    font-family:'JetBrains Mono',monospace;
-    font-size:0.78rem; font-weight:700;
-    color:#c8323a; letter-spacing:3px; text-transform:uppercase;
-  }
-  .services-directory-head .label{
-    font-family:'IBM Plex Serif',serif;
-    font-size:1.1rem; color:#1a2340; font-weight:500;
-  }
-  .services-directory-grid{
-    display:grid;
-    grid-template-columns:repeat(3, 1fr);
-    gap:0;
-  }
-  .svc-row{
-    display:block;
-    padding:2rem 1.8rem 2rem 0;
-    border-bottom:1px solid rgba(26,35,64,0.12);
-    border-right:1px solid rgba(26,35,64,0.08);
-    text-decoration:none;
-    position:relative;
-    transition:background 0.25s ease, padding 0.25s ease;
-    cursor:pointer;
-  }
-  .svc-row:nth-child(3n){ border-right:none; }
-  .svc-row::before{
-    content:""; position:absolute; left:0; top:0; bottom:0;
-    width:3px; background:#c8323a;
-    transform:scaleY(0); transform-origin:top;
-    transition:transform 0.3s ease;
-  }
-  .svc-row:hover{
-    background:rgba(200,50,58,0.03);
-    padding-left:1.8rem;
-  }
-  .svc-row:hover::before{ transform:scaleY(1); }
-  .svc-num{
-    font-family:'JetBrains Mono',monospace;
-    font-size:0.72rem; font-weight:700; letter-spacing:2px;
-    color:#c8323a; margin-bottom:0.6rem;
-    display:inline-block;
-  }
-  .svc-name{
-    font-family:'IBM Plex Serif',serif;
-    font-size:1.35rem; font-weight:500;
-    color:#1a2340; margin-bottom:0.5rem;
-    line-height:1.25; letter-spacing:-0.01em;
-  }
-  .svc-desc{
-    font-size:0.85rem; line-height:1.55;
-    color:#5a6478; font-weight:400;
-    margin-bottom:0.8rem;
-    padding-right:1rem;
-  }
-  .svc-arrow{
-    font-family:'JetBrains Mono',monospace;
-    font-size:0.72rem; font-weight:700; letter-spacing:2px;
-    color:#1a2340; text-transform:uppercase;
-    display:inline-flex; align-items:center; gap:0.5rem;
-    transition:color 0.2s, gap 0.2s;
-  }
-  .svc-arrow::after{
-    content:"→"; font-size:1rem; transition:transform 0.2s;
-  }
-  .svc-row:hover .svc-arrow{ color:#c8323a; gap:0.8rem; }
-  .svc-row:hover .svc-arrow::after{ transform:translateX(3px); }
-
-  @media(max-width:900px){
-    .services-directory-grid{ grid-template-columns:1fr 1fr; }
-    .svc-row:nth-child(3n){ border-right:1px solid rgba(26,35,64,0.08); }
-    .svc-row:nth-child(2n){ border-right:none; }
-  }
-  @media(max-width:580px){
-    .services-directory-grid{ grid-template-columns:1fr; }
-    .svc-row{ border-right:none !important; }
-  }
-</style>
-<section class="services-new" id="services">
-  <div class="services-hero">
-    <div class="services-hero-inner">
-      <div class="services-hero-kicker">Our Services · FL License B2800082</div>
-      <h2>Every assignment. Every shift. <em>One standard.</em></h2>
-      <p>Precision-deployed, purpose-built security. From unarmed presence to executive protection — every engagement is designed around your specific threat environment.</p>
-    </div>
-  </div>
-
-  <div class="services-directory">
-    <div class="services-directory-head">
-      <span class="count">09 Core Services</span>
-      <span class="label">Click any service for details →</span>
-    </div>
-    <div class="services-directory-grid">
-      <a href="/unarmed-security" class="svc-row">
-        <span class="svc-num">01</span>
-        <div class="svc-name">Unarmed Security Services</div>
-        <div class="svc-desc">Professional deterrence with an approachable presence. Retail, residential, events, schools, commercial properties.</div>
-        <span class="svc-arrow">Learn More</span>
-      </a>
-      <a href="/plainclothes-security" class="svc-row">
-        <span class="svc-num">02</span>
-        <div class="svc-name">Plainclothes Security Guards</div>
-        <div class="svc-desc">Discreet protection that blends into any environment. Corporate events, retail loss prevention, executive settings.</div>
-        <span class="svc-arrow">Learn More</span>
-      </a>
-      <a href="/armed-security-guards" class="svc-row">
-        <span class="svc-num">03</span>
-        <div class="svc-name">Armed Security Services</div>
-        <div class="svc-desc">Unmatched force management and emergency response capability. State-certified, highly trained, always ready.</div>
-        <span class="svc-arrow">Learn More</span>
-      </a>
-      <a href="/off-duty-law-enforcement" class="svc-row">
-        <span class="svc-num">04</span>
-        <div class="svc-name">Off-Duty Law Enforcement</div>
-        <div class="svc-desc">Authority and training of active law enforcement. High-profile events, political functions, executive protection.</div>
-        <span class="svc-arrow">Learn More</span>
-      </a>
-      <a href="/neighborhood-watch-patrol" class="svc-row">
-        <span class="svc-num">05</span>
-        <div class="svc-name">Neighborhood Watch Patrol</div>
-        <div class="svc-desc">Proactive community patrol that deters criminal activity and gives residents peace of mind around the clock.</div>
-        <span class="svc-arrow">Learn More</span>
-      </a>
-      <a href="/security-consulting" class="svc-row">
-        <span class="svc-num">06</span>
-        <div class="svc-name">Security Consulting</div>
-        <div class="svc-desc">Risk assessments, vulnerability analysis, and strategic security planning to eliminate threats before they materialize.</div>
-        <span class="svc-arrow">Learn More</span>
-      </a>
-      <a href="/event-security" class="svc-row">
-        <span class="svc-num">07</span>
-        <div class="svc-name">Event Security</div>
-        <div class="svc-desc">Corporate functions, galas, concerts, sporting events, private gatherings. Crowd management, access control, VIP protection.</div>
-        <span class="svc-arrow">Learn More</span>
-      </a>
-      <a href="/executive-protection" class="svc-row">
-        <span class="svc-num">08</span>
-        <div class="svc-name">Executive Protection</div>
-        <div class="svc-desc">Elite close protection for executives, dignitaries, and celebrities. Advance threat assessment, secure transport, 24/7 detail.</div>
-        <span class="svc-arrow">Learn More</span>
-      </a>
-      <a href="/workplace-violence-prevention" class="svc-row">
-        <span class="svc-num">09</span>
-        <div class="svc-name">Workplace Violence Prevention</div>
-        <div class="svc-desc">Threat assessment, de-escalation training, active threat response planning, and on-site security integration.</div>
-        <span class="svc-arrow">Learn More</span>
-      </a>
-    </div>
-  </div>
-</section>
-
-<!-- Old services section (hidden) -->
-<section class="services" id="services-old" style="display:none;">
+<!-- SERVICES -->
+<section class="services" id="services">
   <div class="sec-head">
     <h2 class="sec-title">What Security Services Does U.S.S. Agency Offer in Florida?</h2>
     <p class="sec-sub">Precision-deployed. Purpose-built. Every engagement is designed around your specific threat environment.</p>
@@ -2235,45 +1872,45 @@ function submitExitPopup(){
   <div class="ind-grid">
     <a href="/multi-family-apartments" class="ind-item" style="position:relative;overflow:hidden;padding:0;"><img loading="lazy" src="images/security-apartments-orlando-florida.jpg" alt="Apartment complex security Orlando FL" style="width:100%;height:100%;object-fit:cover;object-position:50% 25%;position:absolute;inset:0;"><div style="position:absolute;inset:0;background:rgba(10,13,20,0.75);"></div><h4 style="position:relative;z-index:1;padding:2rem 1rem;">Multi-Family &amp; Apartments</h4></a>
     <a href="/hoa-coa-security" class="ind-item" style="position:relative;overflow:hidden;padding:0;"><img loading="lazy" src="images/img-06.jpg" alt="HOA security guard services Orlando Florida" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0;"><div style="position:absolute;inset:0;background:rgba(10,13,20,0.75);"></div><h4 style="position:relative;z-index:1;padding:2rem 1rem;">HOA's / COA's</h4></a>
-    <a href="/#industries" class="ind-item" style="position:relative;overflow:hidden;padding:0;background:#f4eee3;display:flex;align-items:center;justify-content:center;"><img loading="lazy" src="images/img-02.png" alt="USS Agency" style="width:80px;height:80px;object-fit:contain;position:relative;z-index:1;filter:drop-shadow(0 0 15px rgba(26,35,64,0.4));"></a>
+    <a href="/#industries" class="ind-item" style="position:relative;overflow:hidden;padding:0;background:#0D1B2A;display:flex;align-items:center;justify-content:center;"><img loading="lazy" src="images/img-02.png" alt="USS Agency" style="width:80px;height:80px;object-fit:contain;position:relative;z-index:1;filter:drop-shadow(0 0 15px rgba(201,168,76,0.4));"></a>
     <a href="/retail-plaza-security" class="ind-item" style="position:relative;overflow:hidden;padding:0;"><img loading="lazy" src="images/security-retail-plaza-orlando.jpg" alt="Retail plaza security Orlando FL" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0;"><div style="position:absolute;inset:0;background:rgba(10,13,20,0.75);"></div><h4 style="position:relative;z-index:1;padding:2rem 1rem;">Retail Business Plazas</h4></a>
     <a href="/parking-lot-security" class="ind-item" style="position:relative;overflow:hidden;padding:0;"><img loading="lazy" src="images/security-parking-lot-florida.jpg" alt="Parking lot security Florida" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0;"><div style="position:absolute;inset:0;background:rgba(10,13,20,0.75);"></div><h4 style="position:relative;z-index:1;padding:2rem 1rem;">Parking Lots &amp; Garages</h4></a>
-    <a href="/#industries" class="ind-item" style="position:relative;overflow:hidden;padding:0;background:#f4eee3;display:flex;align-items:center;justify-content:center;"><img loading="lazy" src="images/img-02.png" alt="USS Agency" style="width:80px;height:80px;object-fit:contain;position:relative;z-index:1;filter:drop-shadow(0 0 15px rgba(26,35,64,0.4));"></a>
+    <a href="/#industries" class="ind-item" style="position:relative;overflow:hidden;padding:0;background:#0D1B2A;display:flex;align-items:center;justify-content:center;"><img loading="lazy" src="images/img-02.png" alt="USS Agency" style="width:80px;height:80px;object-fit:contain;position:relative;z-index:1;filter:drop-shadow(0 0 15px rgba(201,168,76,0.4));"></a>
     <a href="/school-security" class="ind-item" style="position:relative;overflow:hidden;padding:0;"><img loading="lazy" src="images/security-school-campus-orlando.jpg" alt="School security Orlando FL" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0;"><div style="position:absolute;inset:0;background:rgba(10,13,20,0.75);"></div><h4 style="position:relative;z-index:1;padding:2rem 1rem;">Schools</h4></a>
     <a href="/church-security" class="ind-item" style="position:relative;overflow:hidden;padding:0;"><img loading="lazy" src="images/security-church-florida.jpg" alt="Church security Florida" style="width:100%;height:100%;object-fit:cover;object-position:50% 5%;position:absolute;inset:0;"><div style="position:absolute;inset:0;background:rgba(10,13,20,0.75);"></div><h4 style="position:relative;z-index:1;padding:2rem 1rem;">Churches</h4></a>
-    <a href="/#industries" class="ind-item" style="position:relative;overflow:hidden;padding:0;background:#f4eee3;display:flex;align-items:center;justify-content:center;"><img loading="lazy" src="images/img-02.png" alt="USS Agency" style="width:80px;height:80px;object-fit:contain;position:relative;z-index:1;filter:drop-shadow(0 0 15px rgba(26,35,64,0.4));"></a>
+    <a href="/#industries" class="ind-item" style="position:relative;overflow:hidden;padding:0;background:#0D1B2A;display:flex;align-items:center;justify-content:center;"><img loading="lazy" src="images/img-02.png" alt="USS Agency" style="width:80px;height:80px;object-fit:contain;position:relative;z-index:1;filter:drop-shadow(0 0 15px rgba(201,168,76,0.4));"></a>
     <a href="/warehouse-security" class="ind-item" style="position:relative;overflow:hidden;padding:0;"><img loading="lazy" src="images/security-warehouse-orlando.jpg" alt="Warehouse security Orlando FL" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0;"><div style="position:absolute;inset:0;background:rgba(10,13,20,0.75);"></div><h4 style="position:relative;z-index:1;padding:2rem 1rem;">Warehouses</h4></a>
     <a href="/construction-site-security" class="ind-item" style="position:relative;overflow:hidden;padding:0;"><img loading="lazy" src="images/security-construction-site-florida.jpg" alt="Construction site security Florida" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0;"><div style="position:absolute;inset:0;background:rgba(10,13,20,0.75);"></div><h4 style="position:relative;z-index:1;padding:2rem 1rem;">Construction Sites</h4></a>
-    <a href="/#industries" class="ind-item" style="position:relative;overflow:hidden;padding:0;background:#f4eee3;display:flex;align-items:center;justify-content:center;"><img loading="lazy" src="images/img-02.png" alt="USS Agency" style="width:80px;height:80px;object-fit:contain;position:relative;z-index:1;filter:drop-shadow(0 0 15px rgba(26,35,64,0.4));"></a>
+    <a href="/#industries" class="ind-item" style="position:relative;overflow:hidden;padding:0;background:#0D1B2A;display:flex;align-items:center;justify-content:center;"><img loading="lazy" src="images/img-02.png" alt="USS Agency" style="width:80px;height:80px;object-fit:contain;position:relative;z-index:1;filter:drop-shadow(0 0 15px rgba(201,168,76,0.4));"></a>
 
     <a href="/government-contracts" class="ind-item" style="position:relative;overflow:hidden;padding:0;"><img loading="lazy" src="images/security-government-contract-florida.jpg" alt="Government security contracts Florida" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0;"><div style="position:absolute;inset:0;background:rgba(10,13,20,0.75);"></div><h4 style="position:relative;z-index:1;padding:2rem 1rem;">Government Contracts</h4></a>
-    <a href="/#industries" class="ind-item" style="position:relative;overflow:hidden;padding:0;background:#f4eee3;display:flex;align-items:center;justify-content:center;"><img loading="lazy" src="images/img-02.png" alt="USS Agency" style="width:80px;height:80px;object-fit:contain;position:relative;z-index:1;filter:drop-shadow(0 0 15px rgba(26,35,64,0.4));"></a>
+    <a href="/#industries" class="ind-item" style="position:relative;overflow:hidden;padding:0;background:#0D1B2A;display:flex;align-items:center;justify-content:center;"><img loading="lazy" src="images/img-02.png" alt="USS Agency" style="width:80px;height:80px;object-fit:contain;position:relative;z-index:1;filter:drop-shadow(0 0 15px rgba(201,168,76,0.4));"></a>
     <a href="/car-dealership-security" class="ind-item" style="position:relative;overflow:hidden;padding:0;"><img loading="lazy" src="images/security-car-dealership-orlando.jpg" alt="Car dealership security Orlando" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0;"><div style="position:absolute;inset:0;background:rgba(10,13,20,0.75);"></div><h4 style="position:relative;z-index:1;padding:2rem 1rem;">Car Dealerships</h4></a>
     <a href="/fire-watch" class="ind-item" style="position:relative;overflow:hidden;padding:0;"><img loading="lazy" src="images/security-fire-watch-florida.jpg" alt="Fire watch services Florida" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0;"><div style="position:absolute;inset:0;background:rgba(10,13,20,0.75);"></div><h4 style="position:relative;z-index:1;padding:2rem 1rem;">Fire Watch</h4></a>
-    <a href="/#industries" class="ind-item" style="position:relative;overflow:hidden;padding:0;background:#f4eee3;display:flex;align-items:center;justify-content:center;"><img loading="lazy" src="images/img-02.png" alt="USS Agency" style="width:80px;height:80px;object-fit:contain;position:relative;z-index:1;filter:drop-shadow(0 0 15px rgba(26,35,64,0.4));"></a>
+    <a href="/#industries" class="ind-item" style="position:relative;overflow:hidden;padding:0;background:#0D1B2A;display:flex;align-items:center;justify-content:center;"><img loading="lazy" src="images/img-02.png" alt="USS Agency" style="width:80px;height:80px;object-fit:contain;position:relative;z-index:1;filter:drop-shadow(0 0 15px rgba(201,168,76,0.4));"></a>
     <a href="/event-security" class="ind-item" style="position:relative;overflow:hidden;padding:0;"><img loading="lazy" src="images/event-security-orlando-florida.jpg" alt="Event security Orlando FL" style="width:100%;height:100%;object-fit:cover;object-position:50% 25%;position:absolute;inset:0;"><div style="position:absolute;inset:0;background:rgba(10,13,20,0.75);"></div><h4 style="position:relative;z-index:1;padding:2rem 1rem;">Events</h4></a>
     <a href="/alarm-response" class="ind-item" style="position:relative;overflow:hidden;padding:0;"><img loading="lazy" src="images/security-alarm-response-orlando.jpg" alt="Alarm response security Orlando" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0;"><div style="position:absolute;inset:0;background:rgba(10,13,20,0.75);"></div><h4 style="position:relative;z-index:1;padding:2rem 1rem;">Alarm Responses</h4></a>
-    <a href="/#industries" class="ind-item" style="position:relative;overflow:hidden;padding:0;background:#f4eee3;display:flex;align-items:center;justify-content:center;"><img loading="lazy" src="images/img-02.png" alt="USS Agency" style="width:80px;height:80px;object-fit:contain;position:relative;z-index:1;filter:drop-shadow(0 0 15px rgba(26,35,64,0.4));"></a>
+    <a href="/#industries" class="ind-item" style="position:relative;overflow:hidden;padding:0;background:#0D1B2A;display:flex;align-items:center;justify-content:center;"><img loading="lazy" src="images/img-02.png" alt="USS Agency" style="width:80px;height:80px;object-fit:contain;position:relative;z-index:1;filter:drop-shadow(0 0 15px rgba(201,168,76,0.4));"></a>
     <a href="/patrol-services" class="ind-item" style="position:relative;overflow:hidden;padding:0;"><img loading="lazy" src="images/security-patrol-services-florida.jpg" alt="Patrol services Florida" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0;"><div style="position:absolute;inset:0;background:rgba(10,13,20,0.75);"></div><h4 style="position:relative;z-index:1;padding:2rem 1rem;">Patrol Services</h4></a>
     <a href="/key-holder-services" class="ind-item" style="position:relative;overflow:hidden;padding:0;"><img loading="lazy" src="images/security-hoa-community-florida.jpg" alt="Key holder services Orlando" style="width:100%;height:100%;object-fit:cover;object-position:50% 40%;position:absolute;inset:0;"><div style="position:absolute;inset:0;background:rgba(10,13,20,0.75);"></div><h4 style="position:relative;z-index:1;padding:2rem 1rem;">Key Holder Services</h4></a>
-    <a href="/#industries" class="ind-item" style="position:relative;overflow:hidden;padding:0;background:#f4eee3;display:flex;align-items:center;justify-content:center;"><img loading="lazy" src="images/img-02.png" alt="USS Agency" style="width:80px;height:80px;object-fit:contain;position:relative;z-index:1;filter:drop-shadow(0 0 15px rgba(26,35,64,0.4));"></a>
+    <a href="/#industries" class="ind-item" style="position:relative;overflow:hidden;padding:0;background:#0D1B2A;display:flex;align-items:center;justify-content:center;"><img loading="lazy" src="images/img-02.png" alt="USS Agency" style="width:80px;height:80px;object-fit:contain;position:relative;z-index:1;filter:drop-shadow(0 0 15px rgba(201,168,76,0.4));"></a>
     <a href="/loss-prevention" class="ind-item" style="position:relative;overflow:hidden;padding:0;"><img loading="lazy" src="images/security-retail-plaza-orlando.jpg" alt="Loss prevention Orlando FL" style="width:100%;height:100%;object-fit:cover;object-position:50% 8%;position:absolute;inset:0;"><div style="position:absolute;inset:0;background:rgba(10,13,20,0.75);"></div><h4 style="position:relative;z-index:1;padding:2rem 1rem;">Loss Prevention</h4></a>
     <a href="/hotel-resort-security" class="ind-item" style="position:relative;overflow:hidden;padding:0;"><img loading="lazy" src="images/security-hotels-resorts-orlando.jpg" alt="Hotel resort security Florida" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0;"><div style="position:absolute;inset:0;background:rgba(10,13,20,0.75);"></div><h4 style="position:relative;z-index:1;padding:2rem 1rem;">Hotels &amp; Resorts</h4></a>
-    <a href="/#industries" class="ind-item" style="position:relative;overflow:hidden;padding:0;background:#f4eee3;display:flex;align-items:center;justify-content:center;"><img loading="lazy" src="images/img-02.png" alt="USS Agency" style="width:80px;height:80px;object-fit:contain;position:relative;z-index:1;filter:drop-shadow(0 0 15px rgba(26,35,64,0.4));"></a>
+    <a href="/#industries" class="ind-item" style="position:relative;overflow:hidden;padding:0;background:#0D1B2A;display:flex;align-items:center;justify-content:center;"><img loading="lazy" src="images/img-02.png" alt="USS Agency" style="width:80px;height:80px;object-fit:contain;position:relative;z-index:1;filter:drop-shadow(0 0 15px rgba(201,168,76,0.4));"></a>
     <a href="/bank-security" class="ind-item" style="position:relative;overflow:hidden;padding:0;"><img loading="lazy" src="images/security-banks-financial-florida.jpg" alt="Bank security Florida" style="width:100%;height:100%;object-fit:cover;object-position:50% 30%;position:absolute;inset:0;"><div style="position:absolute;inset:0;background:rgba(10,13,20,0.75);"></div><h4 style="position:relative;z-index:1;padding:2rem 1rem;">Banks</h4></a>
     <a href="/truck-stop-security" class="ind-item" style="position:relative;overflow:hidden;padding:0;"><img loading="lazy" src="images/security-retail-plaza-orlando.jpg" alt="Truck stop security Orlando" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0;"><div style="position:absolute;inset:0;background:rgba(10,13,20,0.75);"></div><h4 style="position:relative;z-index:1;padding:2rem 1rem;">Truck Stops</h4></a>
-    <a href="/#industries" class="ind-item" style="position:relative;overflow:hidden;padding:0;background:#f4eee3;display:flex;align-items:center;justify-content:center;"><img loading="lazy" src="images/img-02.png" alt="USS Agency" style="width:80px;height:80px;object-fit:contain;position:relative;z-index:1;filter:drop-shadow(0 0 15px rgba(26,35,64,0.4));"></a>
+    <a href="/#industries" class="ind-item" style="position:relative;overflow:hidden;padding:0;background:#0D1B2A;display:flex;align-items:center;justify-content:center;"><img loading="lazy" src="images/img-02.png" alt="USS Agency" style="width:80px;height:80px;object-fit:contain;position:relative;z-index:1;filter:drop-shadow(0 0 15px rgba(201,168,76,0.4));"></a>
     <a href="/hospital-security" class="ind-item" style="position:relative;overflow:hidden;padding:0;"><img loading="lazy" src="images/security-hospitals-healthcare-orlando.jpg" alt="Hospital security Orlando FL" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0;"><div style="position:absolute;inset:0;background:rgba(10,13,20,0.75);"></div><h4 style="position:relative;z-index:1;padding:2rem 1rem;">Hospitals / Clinics</h4></a>
     <a href="/nursing-home-security" class="ind-item" style="position:relative;overflow:hidden;padding:0;"><img loading="lazy" src="images/security-nursing-homes-florida.jpg" alt="Nursing home security Florida" style="width:100%;height:100%;object-fit:cover;object-position:50% 25%;position:absolute;inset:0;"><div style="position:absolute;inset:0;background:rgba(10,13,20,0.75);"></div><h4 style="position:relative;z-index:1;padding:2rem 1rem;">Nursing Homes</h4></a>
-    <a href="/#industries" class="ind-item" style="position:relative;overflow:hidden;padding:0;background:#f4eee3;display:flex;align-items:center;justify-content:center;"><img loading="lazy" src="images/img-02.png" alt="USS Agency" style="width:80px;height:80px;object-fit:contain;position:relative;z-index:1;filter:drop-shadow(0 0 15px rgba(26,35,64,0.4));"></a>
+    <a href="/#industries" class="ind-item" style="position:relative;overflow:hidden;padding:0;background:#0D1B2A;display:flex;align-items:center;justify-content:center;"><img loading="lazy" src="images/img-02.png" alt="USS Agency" style="width:80px;height:80px;object-fit:contain;position:relative;z-index:1;filter:drop-shadow(0 0 15px rgba(201,168,76,0.4));"></a>
     <a href="/corporate-security" class="ind-item" style="position:relative;overflow:hidden;padding:0;"><img loading="lazy" src="images/security-church-florida.jpg" alt="Corporate security Orlando FL" style="width:100%;height:100%;object-fit:cover;object-position:50% 5%;position:absolute;inset:0;"><div style="position:absolute;inset:0;background:rgba(10,13,20,0.75);"></div><h4 style="position:relative;z-index:1;padding:2rem 1rem;">Corporate Security</h4></a>
     <a href="/workplace-violence-prevention" class="ind-item" style="position:relative;overflow:hidden;padding:0;"><img loading="lazy" src="images/security-retail-plaza-orlando.jpg" alt="Workplace violence prevention Florida" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0;"><div style="position:absolute;inset:0;background:rgba(10,13,20,0.75);"></div><h4 style="position:relative;z-index:1;padding:2rem 1rem;">Workplace Violence</h4></a>
-    <a href="/#industries" class="ind-item" style="position:relative;overflow:hidden;padding:0;background:#f4eee3;display:flex;align-items:center;justify-content:center;"><img loading="lazy" src="images/img-02.png" alt="USS Agency" style="width:80px;height:80px;object-fit:contain;position:relative;z-index:1;filter:drop-shadow(0 0 15px rgba(26,35,64,0.4));"></a>
+    <a href="/#industries" class="ind-item" style="position:relative;overflow:hidden;padding:0;background:#0D1B2A;display:flex;align-items:center;justify-content:center;"><img loading="lazy" src="images/img-02.png" alt="USS Agency" style="width:80px;height:80px;object-fit:contain;position:relative;z-index:1;filter:drop-shadow(0 0 15px rgba(201,168,76,0.4));"></a>
     <a href="/aviation-security" class="ind-item" style="position:relative;overflow:hidden;padding:0;"><img loading="lazy" src="images/img-06.jpg" alt="Aviation security Florida" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0;"><div style="position:absolute;inset:0;background:rgba(10,13,20,0.75);"></div><h4 style="position:relative;z-index:1;padding:2rem 1rem;">Aviation</h4></a>
     <a href="/termite-tenting-security" class="ind-item" style="position:relative;overflow:hidden;padding:0;"><img loading="lazy" src="images/security-parking-lot-florida.jpg" alt="Termite tenting security Florida" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0;"><div style="position:absolute;inset:0;background:rgba(10,13,20,0.75);"></div><h4 style="position:relative;z-index:1;padding:2rem 1rem;">Termite Tenting</h4></a>
     <a href="/celebrity-protection" class="ind-item" style="position:relative;overflow:hidden;padding:0;"><img loading="lazy" src="images/security-school-campus-orlando.jpg" alt="Celebrity protection Orlando FL" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0;"><div style="position:absolute;inset:0;background:rgba(10,13,20,0.75);"></div><h4 style="position:relative;z-index:1;padding:2rem 1rem;">Celebrity &amp; VIP</h4></a>
     <a href="/disaster-response" class="ind-item" style="position:relative;overflow:hidden;padding:0;"><img loading="lazy" src="images/security-fire-watch-florida.jpg" alt="Disaster response security Florida" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0;"><div style="position:absolute;inset:0;background:rgba(10,13,20,0.75);"></div><h4 style="position:relative;z-index:1;padding:2rem 1rem;">Disaster Response</h4></a>
-    <a href="/#industries" class="ind-item" style="position:relative;overflow:hidden;padding:0;background:#f4eee3;display:flex;align-items:center;justify-content:center;"><img loading="lazy" src="images/img-02.png" alt="USS Agency" style="width:80px;height:80px;object-fit:contain;position:relative;z-index:1;filter:drop-shadow(0 0 15px rgba(26,35,64,0.4));"></a>
+    <a href="/#industries" class="ind-item" style="position:relative;overflow:hidden;padding:0;background:#0D1B2A;display:flex;align-items:center;justify-content:center;"><img loading="lazy" src="images/img-02.png" alt="USS Agency" style="width:80px;height:80px;object-fit:contain;position:relative;z-index:1;filter:drop-shadow(0 0 15px rgba(201,168,76,0.4));"></a>
   </div>
 </section>
 
@@ -2351,7 +1988,7 @@ function submitExitPopup(){
   <div class="leadership-grid">
     <div class="leader-card featured">
       <div class="leader-avatar" style="padding:12px;text-align:center;">
-        <div style="width:120px;height:120px;background:#f4eee3;border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto;border:2px solid #1a2340;"><svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 100 100" fill="#1a2340"><circle cx="50" cy="35" r="20"/><path d="M10 95c0-22.1 17.9-40 40-40s40 17.9 40 40"/></svg></div>
+        <div style="width:120px;height:120px;background:#0D1B2A;border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto;border:2px solid #C9A84C;"><svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 100 100" fill="#C9A84C"><circle cx="50" cy="35" r="20"/><path d="M10 95c0-22.1 17.9-40 40-40s40 17.9 40 40"/></svg></div>
       </div>
       <div class="leader-info">
         <div class="leader-credentials" style="margin-bottom:1.2rem">
@@ -2371,7 +2008,7 @@ function submitExitPopup(){
     </div>
     <div class="leader-card featured">
       <div class="leader-avatar" style="padding:12px;text-align:center;">
-        <div style="width:120px;height:120px;background:#f4eee3;border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto;border:2px solid #1a2340;"><svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 100 100" fill="#1a2340"><circle cx="50" cy="35" r="20"/><path d="M10 95c0-22.1 17.9-40 40-40s40 17.9 40 40"/></svg></div>
+        <div style="width:120px;height:120px;background:#0D1B2A;border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto;border:2px solid #C9A84C;"><svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 100 100" fill="#C9A84C"><circle cx="50" cy="35" r="20"/><path d="M10 95c0-22.1 17.9-40 40-40s40 17.9 40 40"/></svg></div>
       </div>
       <div class="leader-info">
         <div class="leader-credentials" style="margin-bottom:1.2rem">
@@ -2603,11 +2240,11 @@ function submitExitPopup(){
         </div>
         <div style="margin:12px 0;display:flex;flex-direction:column;gap:10px;">
           <label style="display:flex;align-items:flex-start;gap:8px;font-size:11px;font-weight:300;color:var(--silver);line-height:1.5;cursor:pointer;">
-            <input type="checkbox" class="sms-transactional" required style="margin-top:2px;accent-color:#1a2340;flex-shrink:0;">
+            <input type="checkbox" class="sms-transactional" required style="margin-top:2px;accent-color:#c9a84c;flex-shrink:0;">
             I consent to receive SMS messages from USS Agency LLC including appointment reminders, service confirmations, and notifications. Message frequency may vary. Msg &amp; data rates may apply. Reply HELP for help or STOP to opt out.
           </label>
           <label style="display:flex;align-items:flex-start;gap:8px;font-size:11px;font-weight:300;color:var(--silver);line-height:1.5;cursor:pointer;">
-            <input type="checkbox" class="sms-marketing" style="margin-top:2px;accent-color:#1a2340;flex-shrink:0;">
+            <input type="checkbox" class="sms-marketing" style="margin-top:2px;accent-color:#c9a84c;flex-shrink:0;">
             I consent to receive promotional and marketing SMS messages from USS Agency LLC including special offers and event announcements. This is optional and will not affect form submission. Msg &amp; data rates may apply. Reply STOP to opt out.
           </label>
           <p style="font-size:11px;font-weight:300;color:var(--silver);opacity:.7;line-height:1.5;">By submitting this form you agree to our <a href="/privacy" style="color:var(--gold);text-decoration:underline;">Privacy Policy</a> and <a href="/terms" style="color:var(--gold);text-decoration:underline;">Terms of Service</a>.</p>
@@ -2719,7 +2356,7 @@ function submitExitPopup(){
     <article class="blog-card">
       <div class="blog-img-wrap">
         <div class="blog-cat">Armed Security</div>
-        <div class="blog-img-placeholder" style="background:linear-gradient(135deg,#ffffff 0%,#ece4d4 100%);display:flex;align-items:center;justify-content:center;font-size:3rem"></div>
+        <div class="blog-img-placeholder" style="background:linear-gradient(135deg,#13161d 0%,#1a1f2e 100%);display:flex;align-items:center;justify-content:center;font-size:3rem"></div>
       </div>
       <div class="blog-body">
         <div class="blog-meta"><span>April 5, 2026</span><span>·</span><span>By USS Agency Team</span><span>·</span><span>8 min read</span></div>
@@ -2836,10 +2473,10 @@ function submitExitPopup(){
       <span class="license">Florida License # B2800082 &middot; Florida Statute Chapter 493, Section 6301 et seq.</span>
       <div style="margin-top:1rem;display:flex;gap:1rem;align-items:center">
         <a href="https://www.facebook.com/ussagency" target="_blank" rel="noopener noreferrer" aria-label="USS Agency on Facebook">
-          <svg width="28" height="28" viewBox="0 0 24 24" fill="#1a2340"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="#c9a84c"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
         </a>
         <a href="https://www.instagram.com/ussagency" target="_blank" rel="noopener noreferrer" aria-label="USS Agency on Instagram">
-          <svg width="28" height="28" viewBox="0 0 24 24" fill="#1a2340"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="#c9a84c"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
         </a>
       </div>
     </div>
@@ -2884,9 +2521,9 @@ function submitExitPopup(){
   <div class="footer-bottom">
     <p>© 2026 U.S.S. Agency. All Rights Reserved.</p>
     <div style="display:flex;gap:16px;align-items:center;">
-      <a href="https://www.facebook.com/ussagency" target="_blank" rel="noopener" aria-label="Facebook" style="color:#1a2340;text-decoration:none;font-size:20px;">FB</a>
-      <a href="https://www.instagram.com/ussagency" target="_blank" rel="noopener" aria-label="Instagram" style="color:#1a2340;text-decoration:none;font-size:20px;">IG</a>
-      <a href="https://www.linkedin.com/company/ussagency" target="_blank" rel="noopener" aria-label="LinkedIn" style="color:#1a2340;text-decoration:none;font-size:20px;">IN</a>
+      <a href="https://www.facebook.com/ussagency" target="_blank" rel="noopener" aria-label="Facebook" style="color:#c9a84c;text-decoration:none;font-size:20px;">FB</a>
+      <a href="https://www.instagram.com/ussagency" target="_blank" rel="noopener" aria-label="Instagram" style="color:#c9a84c;text-decoration:none;font-size:20px;">IG</a>
+      <a href="https://www.linkedin.com/company/ussagency" target="_blank" rel="noopener" aria-label="LinkedIn" style="color:#c9a84c;text-decoration:none;font-size:20px;">IN</a>
     </div>
     <p>Florida Licensed & Insured Security Services Provider</p>
   </div>
@@ -3078,14 +2715,14 @@ function submitExitPopup(){
 </script>
 
 <!-- Slide-In Lead Capture -->
-<div id="slideForm" style="display:none;position:fixed;bottom:80px;right:20px;z-index:9998;background:#f4eee3;border:2px solid #1a2340;border-radius:8px;width:320px;max-width:90vw;padding:24px 20px;box-shadow:0 12px 40px rgba(0,0,0,.5);transition:transform .4s ease,opacity .4s ease;transform:translateY(20px);opacity:0;">
-  <button onclick="closeSlideForm()" style="position:absolute;top:8px;right:12px;background:none;border:none;color:#1a2340;font-size:20px;cursor:pointer;line-height:1;">&times;</button>
-  <div style="font-family:'Barlow Condensed',sans-serif;font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#1a2340;margin-bottom:8px;">FREE ASSESSMENT</div>
-  <h4 style="font-family:'Bebas Neue',sans-serif;font-size:20px;color:#1a2340;margin-bottom:12px;letter-spacing:1px;">Get Your Free Security Assessment</h4>
-  <input id="sf-name" type="text" placeholder="First Name" style="width:100%;padding:10px;margin-bottom:8px;background:rgba(26,35,64,0.05);border:1px solid rgba(26,35,64,.3);color:#1a2340;font-size:13px;border-radius:4px;">
-  <input id="sf-phone" type="tel" placeholder="Phone Number" style="width:100%;padding:10px;margin-bottom:8px;background:rgba(26,35,64,0.05);border:1px solid rgba(26,35,64,.3);color:#1a2340;font-size:13px;border-radius:4px;">
-  <input id="sf-email" type="email" placeholder="Email Address" style="width:100%;padding:10px;margin-bottom:10px;background:rgba(26,35,64,0.05);border:1px solid rgba(26,35,64,.3);color:#1a2340;font-size:13px;border-radius:4px;">
-  <button onclick="submitSlideForm()" style="width:100%;padding:12px;background:#1a2340;color:#f4eee3;border:none;font-family:'Barlow Condensed',sans-serif;font-size:13px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;cursor:pointer;border-radius:4px;">Request My Assessment</button>
+<div id="slideForm" style="display:none;position:fixed;bottom:80px;right:20px;z-index:9998;background:#080808;border:2px solid #c9a84c;border-radius:8px;width:320px;max-width:90vw;padding:24px 20px;box-shadow:0 12px 40px rgba(0,0,0,.5);transition:transform .4s ease,opacity .4s ease;transform:translateY(20px);opacity:0;">
+  <button onclick="closeSlideForm()" style="position:absolute;top:8px;right:12px;background:none;border:none;color:#c9a84c;font-size:20px;cursor:pointer;line-height:1;">&times;</button>
+  <div style="font-family:'Barlow Condensed',sans-serif;font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#c9a84c;margin-bottom:8px;">FREE ASSESSMENT</div>
+  <h4 style="font-family:'Bebas Neue',sans-serif;font-size:20px;color:#f0f0eb;margin-bottom:12px;letter-spacing:1px;">Get Your Free Security Assessment</h4>
+  <input id="sf-name" type="text" placeholder="First Name" style="width:100%;padding:10px;margin-bottom:8px;background:rgba(255,255,255,.06);border:1px solid rgba(201,168,76,.3);color:#f0f0eb;font-size:13px;border-radius:4px;">
+  <input id="sf-phone" type="tel" placeholder="Phone Number" style="width:100%;padding:10px;margin-bottom:8px;background:rgba(255,255,255,.06);border:1px solid rgba(201,168,76,.3);color:#f0f0eb;font-size:13px;border-radius:4px;">
+  <input id="sf-email" type="email" placeholder="Email Address" style="width:100%;padding:10px;margin-bottom:10px;background:rgba(255,255,255,.06);border:1px solid rgba(201,168,76,.3);color:#f0f0eb;font-size:13px;border-radius:4px;">
+  <button onclick="submitSlideForm()" style="width:100%;padding:12px;background:#c9a84c;color:#080808;border:none;font-family:'Barlow Condensed',sans-serif;font-size:13px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;cursor:pointer;border-radius:4px;">Request My Assessment</button>
 </div>
 <script>
 (function(){
@@ -3114,7 +2751,7 @@ function submitSlideForm(){
     body:JSON.stringify({firstName:n,lastName:'',email:e,phone:p,tags:['website-lead','uss-agency','slide-form'],source:'ussagency.com'})
   }).catch(function(){});
   gtag('event', 'form_submission', { form_name: 'slide_form' });
-  document.getElementById('slideForm').innerHTML='<div style="text-align:center;padding:20px 0;"><div style="font-size:28px;margin-bottom:8px;">&#10003;</div><p style="font-family:Barlow Condensed,sans-serif;font-size:14px;color:#1a2340;">Thank you! We will contact you within 24 hours.</p></div>';
+  document.getElementById('slideForm').innerHTML='<div style="text-align:center;padding:20px 0;"><div style="font-size:28px;margin-bottom:8px;">&#10003;</div><p style="font-family:Barlow Condensed,sans-serif;font-size:14px;color:#f0f0eb;">Thank you! We will contact you within 24 hours.</p></div>';
 }
 </script>
 
