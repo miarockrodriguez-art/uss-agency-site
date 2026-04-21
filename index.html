@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="icon" type="image/png" href="/images/logo-uss.png">
+  <link rel="apple-touch-icon" href="/images/logo-uss.png">
 
   <!-- PRIMARY SEO -->
   <title>U.S.S. Agency | Armed & Unarmed Security Guards Orlando FL</title>
@@ -108,7 +110,7 @@
             {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Unarmed Security Guards"}},
             {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Executive Protection"}},
             {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Fire Watch Security"}},
-            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Patrol Services"}},
+            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Mobile Patrol"}},
             {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Loss Prevention"}},
             {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Alarm Response"}},
             {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Event Security"}},
@@ -996,7 +998,7 @@
 
     /* STICKY CALL BUTTON — TOP RIGHT */
     @keyframes pulse-glow{0%,100%{box-shadow:0 4px 16px rgba(201,168,76,0.3)}50%{box-shadow:0 4px 24px rgba(201,168,76,0.6),0 0 40px rgba(201,168,76,0.15)}}
-    .sticky-call{position:fixed;top:120px;right:0;z-index:998;display:flex;flex-direction:row;align-items:center;gap:0;background:#C9A84C;color:#FFFFFF;padding:18px 32px;font-family:'Barlow Condensed',sans-serif;text-decoration:none;border-radius:0;box-shadow:0 4px 16px rgba(201,168,76,0.3);text-align:center;animation:pulse-glow 3s ease-in-out infinite}
+    .sticky-call{position:fixed;top:120px;right:0;z-index:998;display:flex;flex-direction:row;align-items:center;gap:0;background:#C9A84C;color:#000000;padding:18px 32px;font-family:'Barlow Condensed',sans-serif;text-decoration:none;border-radius:0;box-shadow:0 4px 16px rgba(201,168,76,0.3);text-align:center;animation:pulse-glow 3s ease-in-out infinite}
     .sticky-call:hover{background:#e8c96a;box-shadow:0 6px 24px rgba(201,168,76,0.5);animation:none}
     .sticky-call .call-line1{font-size:17px;font-weight:700;line-height:1.2;letter-spacing:.05em}
     .sticky-call .call-sep{margin:0 8px;opacity:0.6}
@@ -1562,17 +1564,19 @@
 <body>
 
 <!-- Exit Intent Popup -->
-<div id="exitPopup" style="display:none;position:fixed;inset:0;z-index:99999;background:rgba(0,0,0,.7);align-items:center;justify-content:center;">
-  <div style="background:#080808;border:2px solid #c9a84c;border-radius:12px;max-width:440px;width:90%;padding:40px 32px;text-align:center;position:relative;box-shadow:0 20px 60px rgba(0,0,0,.5);">
-    <button onclick="closeExitPopup()" style="position:absolute;top:12px;right:16px;background:none;border:none;color:#c9a84c;font-size:24px;cursor:pointer;line-height:1;">&times;</button>
-    <div style="font-family:'Barlow Condensed',sans-serif;font-size:11px;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:#c9a84c;margin-bottom:12px;">FREE CONSULTATION</div>
-    <h3 style="font-family:'Bebas Neue',sans-serif;font-size:28px;color:#f0f0eb;margin-bottom:10px;letter-spacing:2px;">Before You Go...</h3>
-    <p style="font-size:14px;color:#7a8090;margin-bottom:24px;line-height:1.6;">Get a <strong style="color:#c9a84c;">FREE Security Assessment</strong> for your property or event. Our experts will evaluate your needs and provide a custom recommendation.</p>
-    <input id="exit-name" type="text" placeholder="Your Name" style="width:100%;padding:14px;background:rgba(255,255,255,.06);border:1px solid rgba(201,168,76,.3);color:#f0f0eb;font-family:'Barlow',sans-serif;font-size:14px;border-radius:4px;margin-bottom:10px;text-align:center;">
-    <input id="exit-email" type="email" placeholder="Email Address" style="width:100%;padding:14px;background:rgba(255,255,255,.06);border:1px solid rgba(201,168,76,.3);color:#f0f0eb;font-family:'Barlow',sans-serif;font-size:14px;border-radius:4px;margin-bottom:10px;text-align:center;">
-    <input id="exit-phone" type="tel" placeholder="Phone Number" style="width:100%;padding:14px;background:rgba(255,255,255,.06);border:1px solid rgba(201,168,76,.3);color:#f0f0eb;font-family:'Barlow',sans-serif;font-size:14px;border-radius:4px;margin-bottom:12px;text-align:center;">
-    <button onclick="submitExitPopup()" style="width:100%;padding:14px;background:#c9a84c;color:#080808;border:none;font-family:'Barlow Condensed',sans-serif;font-size:14px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;cursor:pointer;border-radius:4px;">Get My Free Assessment</button>
-    <p style="font-size:10px;color:#555;margin-top:12px;">No obligation. Response within 24 hours.</p>
+<div id="exitPopup" style="display:none;position:fixed;inset:0;z-index:99999;background:rgba(0,0,0,.75);align-items:center;justify-content:center;font-family:'Barlow',sans-serif;">
+  <div style="background:#111827;border:2px solid #C9A84C;border-radius:8px;max-width:460px;width:90%;padding:40px 32px;text-align:center;position:relative;box-shadow:0 20px 60px rgba(0,0,0,.6),0 0 24px rgba(201,168,76,0.25);">
+    <button onclick="closeExitPopup()" aria-label="Close" style="position:absolute;top:12px;right:16px;background:none;border:none;color:#C9A84C;font-size:26px;cursor:pointer;line-height:1;">&times;</button>
+    <div style="font-family:'Barlow Condensed',sans-serif;font-size:11px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:#C9A84C;margin-bottom:12px;">Free Consultation</div>
+    <h3 style="font-family:'Bebas Neue',sans-serif;font-size:30px;color:#F0F0EB;margin-bottom:10px;letter-spacing:2px;">Before You Go...</h3>
+    <p style="font-size:14px;color:#B8BCC8;margin-bottom:22px;line-height:1.6;">Get a <strong style="color:#C9A84C;">FREE Security Assessment</strong> for your property, event, or organization. Our team will evaluate your needs and send a custom recommendation within 24 hours.</p>
+    <input id="exit-name" type="text" placeholder="Your Name" style="width:100%;padding:13px 14px;background:rgba(255,255,255,.05);border:1px solid rgba(201,168,76,.35);color:#F0F0EB;font-family:'Barlow',sans-serif;font-size:14px;border-radius:4px;margin-bottom:10px;">
+    <input id="exit-email" type="email" placeholder="Email Address" style="width:100%;padding:13px 14px;background:rgba(255,255,255,.05);border:1px solid rgba(201,168,76,.35);color:#F0F0EB;font-family:'Barlow',sans-serif;font-size:14px;border-radius:4px;margin-bottom:10px;">
+    <input id="exit-phone" type="tel" placeholder="Phone Number" style="width:100%;padding:13px 14px;background:rgba(255,255,255,.05);border:1px solid rgba(201,168,76,.35);color:#F0F0EB;font-family:'Barlow',sans-serif;font-size:14px;border-radius:4px;margin-bottom:10px;">
+    <label for="exit-scope" style="display:block;text-align:left;font-family:'Barlow Condensed',sans-serif;font-size:11px;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:#C9A84C;margin-bottom:6px;">Scope of Services / Comments</label>
+    <textarea id="exit-scope" rows="3" placeholder="Briefly describe what you need — site, hours, threats, timeline..." style="width:100%;padding:12px 14px;background:rgba(255,255,255,.05);border:1px solid rgba(201,168,76,.35);color:#F0F0EB;font-family:'Barlow',sans-serif;font-size:14px;border-radius:4px;margin-bottom:14px;resize:vertical;"></textarea>
+    <button onclick="submitExitPopup()" style="width:100%;padding:14px;background:#C9A84C;color:#080808;border:none;font-family:'Barlow Condensed',sans-serif;font-size:14px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;cursor:pointer;border-radius:4px;">Get My Free Assessment</button>
+    <p style="font-size:10px;color:#7a8090;margin-top:12px;letter-spacing:.08em;">No obligation. Response within 24 business hours.</p>
   </div>
 </div>
 <script>
@@ -1604,13 +1608,14 @@ function submitExitPopup(){
   var name=document.getElementById('exit-name').value.trim();
   var email=document.getElementById('exit-email').value.trim();
   var phone=document.getElementById('exit-phone').value.trim();
+  var scope=document.getElementById('exit-scope').value.trim();
   if(!name||!email){alert('Please enter your name and email.');return;}
   fetch('https://services.leadconnectorhq.com/hooks/A81lGlMBKzeH8gORYYV2/webhook-trigger/13ac4a23-8b95-4f46-8aa8-88d17d5b699d',{
     method:'POST',headers:{'Content-Type':'application/json'},
-    body:JSON.stringify({firstName:name.split(' ')[0]||'',lastName:name.split(' ').slice(1).join(' ')||'',email:email,phone:phone,tags:['website-lead','uss-agency'],source:'ussagency.com'})
+    body:JSON.stringify({firstName:name.split(' ')[0]||'',lastName:name.split(' ').slice(1).join(' ')||'',email:email,phone:phone,message:scope,tags:['website-lead','uss-agency','exit-popup'],source:'ussagency.com'})
   }).catch(function(){});
   gtag('event', 'form_submission', { form_name: 'exit_popup' });
-  document.getElementById('exitPopup').innerHTML='<div style="background:#080808;border:2px solid #c9a84c;border-radius:12px;max-width:440px;width:90%;padding:40px 32px;text-align:center;"><div style="font-size:36px;margin-bottom:12px;">&#10003;</div><h3 style="font-family:Bebas Neue,sans-serif;font-size:24px;color:#f0f0eb;margin-bottom:10px;letter-spacing:2px;">Thank You!</h3><p style="font-size:14px;color:#7a8090;">Our team will contact you within 24 hours with your free security assessment.</p><button onclick="closeExitPopup()" style="margin-top:20px;padding:12px 32px;background:#c9a84c;color:#080808;border:none;font-family:Barlow Condensed,sans-serif;font-size:13px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;cursor:pointer;border-radius:4px;">Continue Browsing</button></div>';
+  document.getElementById('exitPopup').innerHTML='<div style="background:#111827;border:2px solid #C9A84C;border-radius:8px;max-width:460px;width:90%;padding:40px 32px;text-align:center;box-shadow:0 20px 60px rgba(0,0,0,.6),0 0 24px rgba(201,168,76,0.25);"><div style="font-size:40px;color:#C9A84C;margin-bottom:12px;">&#10003;</div><h3 style="font-family:Bebas Neue,sans-serif;font-size:26px;color:#F0F0EB;margin-bottom:10px;letter-spacing:2px;">Thank You!</h3><p style="font-family:Barlow,sans-serif;font-size:14px;color:#B8BCC8;">Our team will contact you within 24 business hours with your free security assessment.</p><button onclick="closeExitPopup()" style="margin-top:20px;padding:12px 32px;background:#C9A84C;color:#080808;border:none;font-family:Barlow Condensed,sans-serif;font-size:13px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;cursor:pointer;border-radius:4px;">Continue Browsing</button></div>';
 }
 </script>
 
@@ -1645,7 +1650,7 @@ function submitExitPopup(){
   <div class="ub-inner">
     <div class="ub-pulse"></div>
     <span class="ub-text"><strong>Now Accepting New Clients</strong> — Slots are limited. Request your consultation before availability fills.</span>
-    <a href="#contact" class="ub-cta">Request a Consultation →</a>
+    <a href="#contact" class="ub-cta">Request a Quote →</a>
   </div>
 </div>
 
@@ -1661,7 +1666,7 @@ function submitExitPopup(){
     <p style="font-size:1.25rem;margin-bottom:1.8rem;opacity:0.9;">U.S.S. Agency delivers certainty when it matters most.</p>
     <p style="font-size:1.2rem;font-weight:400;letter-spacing:1px;">280+ professionals. One standard. Yours.</p>
     <div class="hero-btns">
-      <a href="#contact" class="btn btn-gold">Request a Consultation →</a>
+      <a href="#contact" class="btn btn-gold">Request a Quote →</a>
       <a href="tel:13213042430" class="btn btn-ghost">1-321-304-2430</a>
     </div>
     <div class="hero-guarantee">
@@ -2124,6 +2129,19 @@ function submitExitPopup(){
       </div>
     </article>
 
+    <article class="blog-card">
+      <div class="blog-img-wrap">
+        <div class="blog-cat">Market Trends</div>
+        <div class="blog-img-placeholder" style="background:linear-gradient(135deg,#1a1208 0%,#2a1f0a 100%);display:flex;align-items:center;justify-content:center;font-size:3rem"></div>
+      </div>
+      <div class="blog-body">
+        <div class="blog-meta"><span>April 20, 2026</span><span>·</span><span>By USS Agency Team</span><span>·</span><span>9 min read</span></div>
+        <h3>Why Florida Businesses Are Investing in Professional Security Services in 2026</h3>
+        <p>From Orlando corporate campuses to Tampa logistics hubs, Florida businesses are shifting from reactive alarms to proactive, manned security. Here's what's driving the 2026 surge and how smart operators are budgeting for it...</p>
+        <a href="/blog/florida-businesses-investing-security-2026" class="blog-link">Read Article →</a>
+      </div>
+    </article>
+
   </div>
   <div style="text-align:center;margin-top:3rem">
     <a href="#contact" class="btn btn-ghost">Schedule a Consultation →</a>
@@ -2224,10 +2242,8 @@ function submitExitPopup(){
             <option>Events</option>
             <option>Key Holder Services</option>
             <option>Alarm Response</option>
-            <option>Banks</option>
-            <option>Hospitals / Health Providers / Clinics</option>
-            <option>Nursing Homes</option>
-            <option>Corporate Security</option>
+            <option>Travel Group Curfew Enforcement (Student / Athlete)</option>
+            <option>Executive Bodyguard</option>
             <option>Hotels &amp; Resorts</option>
             <option>Aviation</option>
             <option>Truck Stops</option>
@@ -2335,7 +2351,7 @@ function submitExitPopup(){
 
     <!-- GOOGLE MAPS EMBED -->
     <div style="margin-top:2rem;border-radius:4px;overflow:hidden;">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3505.5!2d-81.3792!3d28.5383!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88e77b0555555555%3A0x0!2zMjjCsDMyJzE3LjkiTiA4McKwMjInNDUuMSJX!5e0!3m2!1sen!2sus!4v1" width="100%" height="300" style="border:0;display:block;" allowfullscreen="" loading="lazy" title="U.S.S. Agency — 450 S Orange Avenue, Orlando FL 32801"></iframe>
+      <iframe src="https://www.google.com/maps?q=450+S+Orange+Avenue+3rd+Floor,+Orlando,+FL+32801&output=embed" width="100%" height="300" style="border:0;display:block;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="U.S.S. Agency — 450 S Orange Avenue, 3rd Floor, Orlando FL 32801"></iframe>
     </div>
   </div>
 </section>
@@ -2629,14 +2645,16 @@ function submitExitPopup(){
 </script>
 
 <!-- Slide-In Lead Capture -->
-<div id="slideForm" style="display:none;position:fixed;bottom:80px;right:20px;z-index:9998;background:#080808;border:2px solid #c9a84c;border-radius:8px;width:320px;max-width:90vw;padding:24px 20px;box-shadow:0 12px 40px rgba(0,0,0,.5);transition:transform .4s ease,opacity .4s ease;transform:translateY(20px);opacity:0;">
-  <button onclick="closeSlideForm()" style="position:absolute;top:8px;right:12px;background:none;border:none;color:#c9a84c;font-size:20px;cursor:pointer;line-height:1;">&times;</button>
-  <div style="font-family:'Barlow Condensed',sans-serif;font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#c9a84c;margin-bottom:8px;">FREE ASSESSMENT</div>
-  <h4 style="font-family:'Bebas Neue',sans-serif;font-size:20px;color:#f0f0eb;margin-bottom:12px;letter-spacing:1px;">Get Your Free Security Assessment</h4>
-  <input id="sf-name" type="text" placeholder="First Name" style="width:100%;padding:10px;margin-bottom:8px;background:rgba(255,255,255,.06);border:1px solid rgba(201,168,76,.3);color:#f0f0eb;font-size:13px;border-radius:4px;">
-  <input id="sf-phone" type="tel" placeholder="Phone Number" style="width:100%;padding:10px;margin-bottom:8px;background:rgba(255,255,255,.06);border:1px solid rgba(201,168,76,.3);color:#f0f0eb;font-size:13px;border-radius:4px;">
-  <input id="sf-email" type="email" placeholder="Email Address" style="width:100%;padding:10px;margin-bottom:10px;background:rgba(255,255,255,.06);border:1px solid rgba(201,168,76,.3);color:#f0f0eb;font-size:13px;border-radius:4px;">
-  <button onclick="submitSlideForm()" style="width:100%;padding:12px;background:#c9a84c;color:#080808;border:none;font-family:'Barlow Condensed',sans-serif;font-size:13px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;cursor:pointer;border-radius:4px;">Request My Assessment</button>
+<div id="slideForm" style="display:none;position:fixed;bottom:80px;right:20px;z-index:9998;background:#111827;border:2px solid #C9A84C;border-radius:8px;width:340px;max-width:90vw;padding:24px 22px;box-shadow:0 12px 40px rgba(0,0,0,.55),0 0 20px rgba(201,168,76,0.2);transition:transform .4s ease,opacity .4s ease;transform:translateY(20px);opacity:0;font-family:'Barlow',sans-serif;">
+  <button onclick="closeSlideForm()" aria-label="Close" style="position:absolute;top:8px;right:12px;background:none;border:none;color:#C9A84C;font-size:22px;cursor:pointer;line-height:1;">&times;</button>
+  <div style="font-family:'Barlow Condensed',sans-serif;font-size:11px;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:#C9A84C;margin-bottom:8px;">Free Assessment</div>
+  <h4 style="font-family:'Bebas Neue',sans-serif;font-size:22px;color:#F0F0EB;margin-bottom:12px;letter-spacing:1.5px;">Get Your Free Security Assessment</h4>
+  <input id="sf-name" type="text" placeholder="First Name" style="width:100%;padding:10px 12px;margin-bottom:8px;background:rgba(255,255,255,.05);border:1px solid rgba(201,168,76,.35);color:#F0F0EB;font-family:'Barlow',sans-serif;font-size:13px;border-radius:4px;">
+  <input id="sf-phone" type="tel" placeholder="Phone Number" style="width:100%;padding:10px 12px;margin-bottom:8px;background:rgba(255,255,255,.05);border:1px solid rgba(201,168,76,.35);color:#F0F0EB;font-family:'Barlow',sans-serif;font-size:13px;border-radius:4px;">
+  <input id="sf-email" type="email" placeholder="Email Address" style="width:100%;padding:10px 12px;margin-bottom:8px;background:rgba(255,255,255,.05);border:1px solid rgba(201,168,76,.35);color:#F0F0EB;font-family:'Barlow',sans-serif;font-size:13px;border-radius:4px;">
+  <label for="sf-scope" style="display:block;font-family:'Barlow Condensed',sans-serif;font-size:10px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#C9A84C;margin-bottom:5px;">Scope of Services / Comments</label>
+  <textarea id="sf-scope" rows="2" placeholder="What do you need?" style="width:100%;padding:10px 12px;margin-bottom:12px;background:rgba(255,255,255,.05);border:1px solid rgba(201,168,76,.35);color:#F0F0EB;font-family:'Barlow',sans-serif;font-size:13px;border-radius:4px;resize:vertical;"></textarea>
+  <button onclick="submitSlideForm()" style="width:100%;padding:12px;background:#C9A84C;color:#080808;border:none;font-family:'Barlow Condensed',sans-serif;font-size:13px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;cursor:pointer;border-radius:4px;">Request My Assessment</button>
 </div>
 <script>
 (function(){
@@ -2659,13 +2677,14 @@ function submitSlideForm(){
   var n=document.getElementById('sf-name').value.trim();
   var p=document.getElementById('sf-phone').value.trim();
   var e=document.getElementById('sf-email').value.trim();
+  var sc=document.getElementById('sf-scope').value.trim();
   if(!n||!e){alert('Please enter your name and email.');return;}
   fetch('https://services.leadconnectorhq.com/hooks/A81lGlMBKzeH8gORYYV2/webhook-trigger/13ac4a23-8b95-4f46-8aa8-88d17d5b699d',{
     method:'POST',headers:{'Content-Type':'application/json'},
-    body:JSON.stringify({firstName:n,lastName:'',email:e,phone:p,tags:['website-lead','uss-agency','slide-form'],source:'ussagency.com'})
+    body:JSON.stringify({firstName:n,lastName:'',email:e,phone:p,message:sc,tags:['website-lead','uss-agency','slide-form'],source:'ussagency.com'})
   }).catch(function(){});
   gtag('event', 'form_submission', { form_name: 'slide_form' });
-  document.getElementById('slideForm').innerHTML='<div style="text-align:center;padding:20px 0;"><div style="font-size:28px;margin-bottom:8px;">&#10003;</div><p style="font-family:Barlow Condensed,sans-serif;font-size:14px;color:#f0f0eb;">Thank you! We will contact you within 24 hours.</p></div>';
+  document.getElementById('slideForm').innerHTML='<div style="text-align:center;padding:22px 0;"><div style="font-size:32px;color:#C9A84C;margin-bottom:8px;">&#10003;</div><p style="font-family:Barlow,sans-serif;font-size:14px;color:#F0F0EB;line-height:1.6;">Thank you! A U.S.S. Agency specialist will contact you within 24 business hours.</p></div>';
 }
 </script>
 
