@@ -84,12 +84,76 @@
     }
   });
 </script>
+
+<style id="uss-brand-block">
+  :root{--uss-gold:#C9A84C;--uss-gold-lt:#e2c46a;--uss-slate:#111827;--uss-dark:#080808;--uss-light:#b8bcc8;--uss-white:#f0f0eb;--uss-gray:#7a8090;--uss-gold-line:rgba(201,168,76,0.22);--uss-gold-dim:rgba(201,168,76,0.12)}
+  body{background:var(--uss-slate)!important;color:var(--uss-white)!important}
+  /* Canonical NAV */
+  .uss-nav{position:sticky;top:0;z-index:999;display:flex;justify-content:space-between;align-items:center;padding:1rem 4%;background:rgba(8,8,8,0.95);backdrop-filter:blur(8px);border-bottom:1px solid var(--uss-gold-line);font-family:'Barlow Condensed',sans-serif}
+  .uss-nav a.uss-logo{display:flex;align-items:center;gap:0.8rem;text-decoration:none}
+  .uss-nav a.uss-logo img{height:56px;width:auto;object-fit:contain;filter:drop-shadow(0 0 8px rgba(201,168,76,0.55))}
+  .uss-nav ul{list-style:none;display:flex;gap:1.8rem;margin:0;padding:0}
+  .uss-nav ul li a{color:var(--uss-white);font-size:0.88rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;text-decoration:none;transition:color 0.2s}
+  .uss-nav ul li a:hover{color:var(--uss-gold)}
+  .uss-hamb{display:none;flex-direction:column;gap:5px;cursor:pointer}
+  .uss-hamb span{width:26px;height:2px;background:var(--uss-gold);display:block}
+  @media(max-width:900px){
+    .uss-nav ul{display:none;position:absolute;top:100%;left:0;right:0;background:#080808;flex-direction:column;gap:0;border-bottom:1px solid var(--uss-gold-line)}
+    .uss-nav ul.open{display:flex}
+    .uss-nav ul li{padding:1rem 2rem;border-top:1px solid rgba(201,168,76,0.1)}
+    .uss-hamb{display:flex}
+  }
+  /* Urgency bar */
+  .uss-urgency{background:linear-gradient(90deg,rgba(201,168,76,0.15),rgba(201,168,76,0.05));border-bottom:1px solid var(--uss-gold-line);padding:0.7rem 4%;text-align:center;font-family:'Barlow Condensed',sans-serif;font-size:0.85rem;letter-spacing:0.1em;color:var(--uss-white)}
+  .uss-urgency strong{color:var(--uss-gold);font-weight:700}
+  .uss-urgency a{color:var(--uss-gold);text-decoration:none;font-weight:700;margin-left:0.6rem;border-bottom:1px solid var(--uss-gold)}
+  /* Sticky call */
+  .sticky-call,.uss-sticky-call{position:fixed;top:120px;right:0;z-index:998;display:flex;align-items:center;background:#C9A84C;color:#000!important;padding:14px 26px;font-family:'Barlow Condensed',sans-serif;text-decoration:none;box-shadow:0 4px 16px rgba(201,168,76,0.35);letter-spacing:0.04em}
+  .sticky-call:hover,.uss-sticky-call:hover{background:#e2c46a}
+  .sticky-call .call-line1,.uss-sticky-call .call-line1{font-size:15px;font-weight:700;line-height:1.2}
+  .sticky-call .call-sep,.uss-sticky-call .call-sep{margin:0 8px;opacity:0.6}
+  .sticky-call .call-line2,.uss-sticky-call .call-line2{font-size:13px;font-weight:700;line-height:1.2}
+  @media(max-width:768px){.sticky-call,.uss-sticky-call{top:115px;padding:10px 18px}.sticky-call .call-line1,.uss-sticky-call .call-line1{font-size:13px}.sticky-call .call-line2,.uss-sticky-call .call-line2{font-size:12px}}
+  /* Canonical FOOTER */
+  .uss-footer{background:var(--uss-dark);border-top:1px solid var(--uss-gold-line);padding:4rem 6% 2rem;font-family:'Barlow',sans-serif}
+  .uss-footer .footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:3rem;margin-bottom:3rem;max-width:1400px;margin-left:auto;margin-right:auto}
+  .uss-footer .footer-brand img{height:80px;width:auto;object-fit:contain;margin-bottom:1rem;filter:drop-shadow(0 0 6px rgba(201,168,76,0.4))}
+  .uss-footer .footer-brand p{font-size:0.85rem;color:var(--uss-gray);line-height:1.7;max-width:320px;margin-bottom:0.8rem}
+  .uss-footer .footer-brand .license{display:inline-block;background:var(--uss-gold-dim);border:1px solid var(--uss-gold-line);color:var(--uss-gold);font-size:0.68rem;font-weight:700;letter-spacing:2px;padding:0.4rem 0.9rem;margin-top:0.6rem}
+  .uss-footer .footer-social{display:flex;gap:0.9rem;margin-top:1rem}
+  .uss-footer .footer-social a{color:var(--uss-gold);text-decoration:none}
+  .uss-footer .footer-col h5{font-size:0.72rem;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--uss-gold);margin-bottom:1.2rem}
+  .uss-footer .footer-col ul{list-style:none;display:flex;flex-direction:column;gap:0.6rem;padding:0;margin:0}
+  .uss-footer .footer-col ul li a{font-size:0.85rem;color:var(--uss-gray);text-decoration:none;transition:color 0.2s}
+  .uss-footer .footer-col ul li a:hover{color:var(--uss-gold)}
+  .uss-footer .footer-bottom{border-top:1px solid rgba(255,255,255,0.05);padding-top:1.5rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem;max-width:1400px;margin:0 auto}
+  .uss-footer .footer-bottom p{font-size:0.78rem;color:var(--uss-gray);margin:0}
+  @media(max-width:900px){.uss-footer .footer-grid{grid-template-columns:1fr 1fr}}
+  @media(max-width:580px){.uss-footer .footer-grid{grid-template-columns:1fr}}
+</style>
+
 </head>
 <body>
-  <nav class="nav">
-    <a href="/" class="nav-logo">U.S.S. AGENCY</a>
-    <a href="tel:13213042430" class="nav-phone">1-321-304-2430</a>
-  </nav>
+  <nav class="uss-nav">
+  <a href="/" class="uss-logo" aria-label="U.S.S. Agency Home">
+    <img src="/images/img-02.png" alt="USS Agency - Ultimate Security Services">
+  </a>
+  <ul id="ussNavLinks">
+    <li><a href="/#about">About</a></li>
+    <li><a href="/#services">Services</a></li>
+    <li><a href="/#industries">Industries</a></li>
+    <li><a href="/#reviews">Testimonials</a></li>
+    <li><a href="/#team">Leadership</a></li>
+    <li><a href="/#why">Why Us</a></li>
+    <li><a href="/#faq">FAQ</a></li>
+    <li><a href="/blog.html">Blog</a></li>
+    <li><a href="/#contact">Contact Us</a></li>
+  </ul>
+  <div class="uss-hamb" onclick="document.getElementById('ussNavLinks').classList.toggle('open')">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+<div class="uss-urgency"><strong>Now Accepting New Clients</strong> &mdash; Slots are limited. Request your consultation before availability fills.<a href="/#contact">Request a Quote &rarr;</a></div>
 
   <section class="hero">
     <h1>Armed Security Guard Services in Ocoee, Florida</h1>
@@ -151,36 +215,41 @@
     <a href="/#contact" class="cta-btn">Request a Consultation</a>
   </section>
 
-  <footer>
+  <footer class="uss-footer">
   <div class="footer-grid">
     <div class="footer-brand">
-      <div style="margin-bottom:1rem"><img src="images/img-02.png" alt="USS Agency Logo" style="height:90px;width:auto;object-fit:contain;margin-bottom:1rem"></div>
-      <p>Florida's premier professional security services provider — serving businesses, events, and communities statewide and across the nation since 2008.</p>
-      <span class="license">Florida License # B2800082 &middot; Florida Statute Chapter 493, Section 6301 et seq.</span>
+      <img src="/images/img-02.png" alt="USS Agency Logo">
+      <p>Florida's premier professional security services provider &mdash; serving businesses, events, and communities statewide and across the nation since 2008.</p>
+      <span class="license">Florida License # B2800082 &middot; FL Statute Ch. 493, Sec. 6301 et seq.</span>
+      <div class="footer-social">
+        <a href="https://www.facebook.com/ussagency" target="_blank" rel="noopener" aria-label="Facebook"><svg width="24" height="24" viewBox="0 0 24 24" fill="#C9A84C"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+        <a href="https://www.instagram.com/ussagency" target="_blank" rel="noopener" aria-label="Instagram"><svg width="24" height="24" viewBox="0 0 24 24" fill="#C9A84C"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></a>
+        <a href="https://www.linkedin.com/company/ussagency" target="_blank" rel="noopener" aria-label="LinkedIn"><svg width="24" height="24" viewBox="0 0 24 24" fill="#C9A84C"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.063 2.063 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+      </div>
     </div>
     <div class="footer-col">
       <h5>Services</h5>
       <ul>
-        <li><a href="/unarmed-security">Unarmed Security</a></li>
         <li><a href="/armed-security-guards">Armed Security</a></li>
+        <li><a href="/unarmed-security">Unarmed Security</a></li>
         <li><a href="/executive-protection">Executive Protection</a></li>
         <li><a href="/fire-watch">Fire Watch</a></li>
         <li><a href="/event-security">Event Security</a></li>
+        <li><a href="/mobile-patrol">Mobile Patrol</a></li>
         <li><a href="/loss-prevention">Loss Prevention</a></li>
         <li><a href="/concierge-security">Concierge</a></li>
-        <li><a href="/mobile-patrol">Mobile Patrol</a></li>
-        <li><a href="/access-control">Access Control</a></li>
+        <li><a href="/security-consulting">Security Consulting</a></li>
       </ul>
     </div>
     <div class="footer-col">
       <h5>Areas Served</h5>
       <ul>
-        <li><a href="/#contact">Ocoee, FL</a></li>
-        <li><a href="/#contact">Miami, FL</a></li>
-        <li><a href="/#contact">Tampa, FL</a></li>
-        <li><a href="/#contact">Jacksonville, FL</a></li>
-        <li><a href="/#contact">Fort Lauderdale, FL</a></li>
-        <li><a href="/#contact">West Palm Beach, FL</a></li>
+        <li><a href="/armed-security-orlando">Orlando, FL</a></li>
+        <li><a href="/armed-security-miami">Miami, FL</a></li>
+        <li><a href="/armed-security-tampa">Tampa, FL</a></li>
+        <li><a href="/armed-security-jacksonville">Jacksonville, FL</a></li>
+        <li><a href="/armed-security-kissimmee">Kissimmee, FL</a></li>
+        <li><a href="/armed-security-winter-garden">Winter Garden, FL</a></li>
         <li><a href="/#contact">All of Florida</a></li>
         <li><a href="/#contact">Nationwide Services</a></li>
       </ul>
@@ -188,25 +257,19 @@
     <div class="footer-col">
       <h5>Contact</h5>
       <ul>
-        <li><a href="tel:3213042430">321-304-2430</a></li>
         <li><a href="tel:13213042430">1-321-304-2430</a></li>
         <li><a href="mailto:support@ussagency.com">support@ussagency.com</a></li>
         <li><a href="/#contact">Get a Free Quote</a></li>
-        <li style="color:var(--gray);font-size:0.82rem;margin-top:0.5rem">450 S Orange Ave, 3rd Floor<br>Orlando, FL 32801</li>
+        <li style="color:var(--uss-gray);font-size:0.82rem;margin-top:0.5rem">450 S Orange Ave, 3rd Floor<br>Orlando, FL 32801</li>
       </ul>
     </div>
   </div>
   <div class="footer-bottom">
-    <div style="display:flex;gap:16px;margin-bottom:8px;">
-      <a href="/privacy" style="color:var(--gray);font-size:0.75rem;text-decoration:none;">Privacy Policy</a>
-      <a href="/terms" style="color:var(--gray);font-size:0.75rem;text-decoration:none;">Terms of Service</a>
+    <div style="display:flex;gap:16px;">
+      <a href="/privacy" style="color:var(--uss-gray);font-size:0.75rem;text-decoration:none;">Privacy Policy</a>
+      <a href="/terms" style="color:var(--uss-gray);font-size:0.75rem;text-decoration:none;">Terms of Service</a>
     </div>
     <p>&copy; 2026 U.S.S. Agency. All Rights Reserved.</p>
-    <div style="display:flex;gap:16px;align-items:center;">
-      <a href="https://www.facebook.com/ussagency" target="_blank" rel="noopener" aria-label="Facebook" style="color:#c9a84c;text-decoration:none;font-size:20px;">FB</a>
-      <a href="https://www.instagram.com/ussagency" target="_blank" rel="noopener" aria-label="Instagram" style="color:#c9a84c;text-decoration:none;font-size:20px;">IG</a>
-      <a href="https://www.linkedin.com/company/ussagency" target="_blank" rel="noopener" aria-label="LinkedIn" style="color:#c9a84c;text-decoration:none;font-size:20px;">IN</a>
-    </div>
     <p>Florida Licensed &amp; Insured Security Services Provider</p>
   </div>
 </footer>
@@ -233,7 +296,7 @@
     }
 
   </style>
-<a href="tel:13213042430" class="sticky-call"><span class="call-line1">📞 Call Now</span><span class="call-line2">1-321-304-2430</span></a>
+<a href="tel:13213042430" class="sticky-call uss-sticky-call"><span class="call-line1">Call Now</span><span class="call-sep">|</span><span class="call-line2">1-321-304-2430</span></a>
 
 <!-- Slide-In Lead Capture -->
 <div id="slideForm" style="display:none;position:fixed;bottom:80px;right:20px;z-index:9998;background:#080808;border:2px solid #c9a84c;border-radius:8px;width:320px;max-width:90vw;padding:24px 20px;box-shadow:0 12px 40px rgba(0,0,0,.5);transition:transform .4s ease,opacity .4s ease;transform:translateY(20px);opacity:0;">
