@@ -187,8 +187,22 @@
   @media(max-width:580px){.uss-footer .footer-grid{grid-template-columns:1fr}}
 </style>
 
+  <style id="uss-sticky-call-canonical">
+    @keyframes pulse-glow{0%,100%{box-shadow:0 4px 16px rgba(201,168,76,0.3)}50%{box-shadow:0 4px 24px rgba(201,168,76,0.6),0 0 40px rgba(201,168,76,0.15)}}
+    .sticky-call{position:fixed;top:120px;right:0;z-index:998;display:flex;flex-direction:row;align-items:center;gap:0;background:#C9A84C;color:#000000;padding:18px 32px;font-family:'Barlow Condensed',sans-serif;text-decoration:none;border-radius:0;box-shadow:0 4px 16px rgba(201,168,76,0.3);text-align:center;animation:pulse-glow 3s ease-in-out infinite}
+    .sticky-call:hover{background:#e8c96a;box-shadow:0 6px 24px rgba(201,168,76,0.5);animation:none}
+    .sticky-call .call-line1{font-size:17px;font-weight:700;line-height:1.2;letter-spacing:.05em}
+    .sticky-call .call-sep{margin:0 8px;opacity:0.6}
+    .sticky-call .call-line2{font-size:15px;font-weight:700;line-height:1.2}
+    @media(max-width:768px){
+      .sticky-call{top:115px;right:0;padding:14px 24px;border-radius:0}
+      .sticky-call .call-line1{font-size:15px}
+      .sticky-call .call-line2{font-size:13px}
+    }
+  </style>
 </head>
 <body>
+<a href="tel:13213042430" class="sticky-call"><span class="call-line1">Call Now</span><span class="call-sep">|</span><span class="call-line2">1-321-304-2430</span></a>
   <nav class="uss-nav">
   <a href="/" class="uss-logo" aria-label="U.S.S. Agency Home">
     <img src="/images/img-02.png" alt="USS Agency - Ultimate Security Services">
@@ -361,7 +375,7 @@
     }
 
   </style>
-<a href="tel:13213042430" class="sticky-call uss-sticky-call"><span class="call-line1">Call Now</span><span class="call-sep">|</span><span class="call-line2">1-321-304-2430</span></a>
+
 
 <!-- Slide-In Lead Capture -->
 <div id="slideForm" style="display:none;position:fixed;bottom:80px;right:20px;z-index:9998;background:#080808;border:2px solid #c9a84c;border-radius:8px;width:320px;max-width:90vw;padding:24px 20px;box-shadow:0 12px 40px rgba(0,0,0,.5);transition:transform .4s ease,opacity .4s ease;transform:translateY(20px);opacity:0;">
