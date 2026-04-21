@@ -85,6 +85,26 @@
 </script>
 
 <style id="uss-brand-block">
+  /* USS Agency canonical button — matches index.html */
+  .uss-btn{display:inline-flex;align-items:center;gap:0.5rem;font-family:'Barlow Condensed',sans-serif;font-size:0.95rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;padding:0.95rem 2.2rem;transition:all 0.25s;cursor:pointer;border:none;text-decoration:none;background:#C9A84C;color:#080808;border-radius:2px}
+  .uss-btn:hover{background:#e2c46a;transform:translateY(-2px);box-shadow:0 10px 35px rgba(201,168,76,0.28)}
+  .uss-btn-ghost{background:transparent;border:2px solid rgba(201,168,76,0.35);color:#C9A84C;padding:0.85rem 2rem;font-family:'Barlow Condensed',sans-serif;font-size:0.9rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;text-decoration:none;display:inline-flex;align-items:center;gap:0.5rem;transition:all 0.25s}
+  .uss-btn-ghost:hover{border-color:#C9A84C;background:rgba(201,168,76,0.12);transform:translateY(-2px)}
+  /* Alternating gradient sections — DARK and LIGHT */
+  .uss-section-dark{background:linear-gradient(135deg,#080808 0%,#111827 50%,#080808 100%)!important}
+  .uss-section-light{background:linear-gradient(135deg,#0F0F0F 0%,#1A2744 50%,#0F0F0F 100%)!important}
+  /* Hero proportions matching index.html */
+  .hero{min-height:80vh!important;padding:130px 6% 80px!important;display:flex!important;flex-direction:column;align-items:center;justify-content:center;background:linear-gradient(135deg,rgba(8,8,8,0.94) 0%,rgba(17,24,39,0.88) 50%,rgba(8,8,8,0.96) 100%),url('/images/img-01.jpg') center/cover no-repeat!important;position:relative;overflow:hidden;text-align:center}
+  .hero h1{font-family:'Bebas Neue',sans-serif!important;font-size:clamp(2.5rem,5vw,4.2rem)!important;color:#F0F0EB!important;letter-spacing:3px!important;line-height:1.1!important;margin-bottom:1.2rem!important;text-shadow:0 4px 20px rgba(0,0,0,0.6)}
+  .hero p{font-size:clamp(1rem,1.6vw,1.2rem)!important;color:#b8bcc8!important;max-width:780px;margin:0 auto 1.5rem!important;line-height:1.7}
+  .hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at center,transparent 40%,rgba(0,0,0,0.5) 100%);pointer-events:none}
+  .hero > *{position:relative;z-index:1}
+  /* Content section — LIGHT alt gradient applied via class */
+  .content{padding:5rem 6%!important;max-width:1100px!important;margin:0 auto!important}
+  .content h2{font-family:'Bebas Neue',sans-serif!important;color:#C9A84C!important;letter-spacing:1.5px!important}
+  /* CTA section */
+  .cta-section{padding:5rem 6%!important;text-align:center;border-top:1px solid rgba(201,168,76,0.18);border-bottom:1px solid rgba(201,168,76,0.18)}
+
   :root{--uss-gold:#C9A84C;--uss-gold-lt:#e2c46a;--uss-slate:#111827;--uss-dark:#080808;--uss-light:#b8bcc8;--uss-white:#f0f0eb;--uss-gray:#7a8090;--uss-gold-line:rgba(201,168,76,0.22);--uss-gold-dim:rgba(201,168,76,0.12)}
   body{background:var(--uss-slate)!important;color:var(--uss-white)!important}
   /* Canonical NAV */
@@ -222,8 +242,8 @@
     <p>U.S.S. Agency has protected banks and financial institutions since 2008. Our armed security guards bring the training, discipline, and tactical readiness that the banking industry demands. We understand that bank security is not just about deterrence -- it is about creating an environment where customers feel safe conducting business and employees can focus on serving them. Contact us today to discuss armed security for your financial institution.</p>
   </div>
 
-  <section class="cta-section">
-    <a href="/#contact" class="cta-btn">Request a Consultation</a>
+  <section class="cta-section uss-section-dark">
+    <a href="/#contact" class="cta-btn uss-btn">Request a Quote &rarr;</a>
   </section>
 
   <footer class="uss-footer">
@@ -270,7 +290,7 @@
       <ul>
         <li><a href="tel:13213042430">1-321-304-2430</a></li>
         <li><a href="mailto:support@ussagency.com">support@ussagency.com</a></li>
-        <li><a href="/#contact">Get a Free Quote</a></li>
+        <li><a href="/#contact">Request a Quote &rarr;</a></li>
         <li style="color:var(--uss-gray);font-size:0.82rem;margin-top:0.5rem">450 S Orange Ave, 3rd Floor<br>Orlando, FL 32801</li>
       </ul>
     </div>
