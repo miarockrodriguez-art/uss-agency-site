@@ -2310,50 +2310,62 @@ function submitExitPopup(){
 <div style="width:100%;height:2px;background:#C9A84C;"></div>
 
 <!-- CONTACT US -->
-<section class="contact" id="contact-us" style="padding-top:4rem;border-top:1px solid var(--gold-line);">
-  <div class="contact-grid">
-    <div>
-      <div class="tag">Reach Us Directly</div>
-      <h2 class="sec-title">Contact Us</h2>
-      <p class="sec-sub" style="margin-bottom:1.5rem">Have a question or need immediate assistance? Reach our team by phone, email, or visit our office in downtown Orlando.</p>
+<section class="contact" id="contact-us" style="padding:5rem 6%;border-top:1px solid var(--gold-line);">
+  <div style="max-width:1300px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:stretch;">
+
+    <!-- LEFT: Contact info -->
+    <div style="display:flex;flex-direction:column;justify-content:center;">
+      <div class="tag" style="margin-bottom:1rem;">Reach Us Directly</div>
+      <h2 class="sec-title" style="margin-bottom:1rem;">Contact Us</h2>
+      <p class="sec-sub" style="margin-bottom:2.2rem;max-width:520px;">Have a question or need immediate assistance? Reach our team by phone, email, or visit our office in downtown Orlando.</p>
+
+      <div style="display:flex;flex-direction:column;gap:1.4rem;margin-bottom:2.2rem;">
+        <div style="display:flex;gap:1rem;align-items:flex-start;">
+          <div style="width:3px;min-height:42px;background:#C9A84C;flex-shrink:0;"></div>
+          <div>
+            <h4 style="font-family:'Barlow Condensed',sans-serif;font-size:0.78rem;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#C9A84C;margin-bottom:0.35rem;">Phone</h4>
+            <a href="tel:3213042430" style="font-family:'Bebas Neue',sans-serif;font-size:1.6rem;color:#F0F0EB;letter-spacing:2px;text-decoration:none;">321-304-2430</a>
+          </div>
+        </div>
+        <div style="display:flex;gap:1rem;align-items:flex-start;">
+          <div style="width:3px;min-height:42px;background:#C9A84C;flex-shrink:0;"></div>
+          <div>
+            <h4 style="font-family:'Barlow Condensed',sans-serif;font-size:0.78rem;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#C9A84C;margin-bottom:0.35rem;">Toll Free</h4>
+            <a href="tel:13213042430" style="font-family:'Bebas Neue',sans-serif;font-size:1.6rem;color:#F0F0EB;letter-spacing:2px;text-decoration:none;">1-800-508-USSA (8772)</a>
+          </div>
+        </div>
+        <div style="display:flex;gap:1rem;align-items:flex-start;">
+          <div style="width:3px;min-height:42px;background:#C9A84C;flex-shrink:0;"></div>
+          <div>
+            <h4 style="font-family:'Barlow Condensed',sans-serif;font-size:0.78rem;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#C9A84C;margin-bottom:0.35rem;">Email</h4>
+            <a href="mailto:support@ussagency.com" style="font-family:'Bebas Neue',sans-serif;font-size:1.4rem;color:#F0F0EB;letter-spacing:1.5px;text-decoration:none;">support@ussagency.com</a>
+          </div>
+        </div>
+        <div style="display:flex;gap:1rem;align-items:flex-start;">
+          <div style="width:3px;min-height:42px;background:#C9A84C;flex-shrink:0;"></div>
+          <div>
+            <h4 style="font-family:'Barlow Condensed',sans-serif;font-size:0.78rem;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#C9A84C;margin-bottom:0.35rem;">Address</h4>
+            <p style="font-family:'Barlow',sans-serif;font-size:1.05rem;color:#F0F0EB;line-height:1.5;margin:0;">450 S Orange Avenue, 3rd Floor<br>Orlando, Florida 32801</p>
+          </div>
+        </div>
+      </div>
+
+      <a href="#contact" class="btn btn-gold" style="align-self:flex-start;">Request a Quote &rarr;</a>
     </div>
 
-    <div class="contact-info">
-      <div class="contact-item">
-        <div class="contact-icon-bar"></div>
-        <div>
-          <h4>Phone</h4>
-          <a href="tel:3213042430" class="contact-link">321-304-2430</a>
-        </div>
-      </div>
-      <div class="contact-item">
-        <div class="contact-icon-bar"></div>
-        <div>
-          <h4>Toll Free</h4>
-          <a href="tel:13213042430" class="contact-link">1-800-508-USSA (8772)</a>
-        </div>
-      </div>
-      <div class="contact-item">
-        <div class="contact-icon-bar"></div>
-        <div>
-          <h4>Email</h4>
-          <a href="mailto:support@ussagency.com" class="contact-link">support@ussagency.com</a>
-        </div>
-      </div>
-      <div class="contact-item">
-        <div class="contact-icon-bar"></div>
-        <div>
-          <h4>Address</h4>
-          <p>450 S Orange Avenue, 3rd Floor<br>Orlando, Florida 32801</p>
-        </div>
-      </div>
+    <!-- RIGHT: Large Google Maps embed, full column height -->
+    <div style="min-height:520px;border:1px solid rgba(201,168,76,0.25);overflow:hidden;box-shadow:0 10px 40px rgba(0,0,0,0.4);">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3503.1!2d-81.3792!3d28.5383!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88e77afe49bb01a3%3A0xe3e63c1b1c0b0019!2s450%20S%20Orange%20Ave%203rd%20Floor%2C%20Orlando%2C%20FL%2032801!5e0!3m2!1sen!2sus!4v1713600000000!5m2!1sen!2sus" width="100%" height="100%" style="border:0;display:block;min-height:520px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="U.S.S. Agency — 450 S Orange Avenue, 3rd Floor, Orlando FL 32801"></iframe>
     </div>
 
-    <!-- GOOGLE MAPS EMBED -->
-    <div style="margin-top:2rem;border-radius:4px;overflow:hidden;">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3503.1!2d-81.3792!3d28.5383!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88e77afe49bb01a3%3A0xe3e63c1b1c0b0019!2s450%20S%20Orange%20Ave%203rd%20Floor%2C%20Orlando%2C%20FL%2032801!5e0!3m2!1sen!2sus!4v1713600000000!5m2!1sen!2sus" width="100%" height="300" style="border:0;display:block;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="U.S.S. Agency — 450 S Orange Avenue, 3rd Floor, Orlando FL 32801"></iframe>
-    </div>
   </div>
+
+  <style>
+    @media(max-width:900px){
+      #contact-us > div{grid-template-columns:1fr !important;}
+      #contact-us iframe{min-height:420px !important;}
+    }
+  </style>
 </section>
 <div style="width:100%;height:2px;background:#C9A84C;"></div>
 
