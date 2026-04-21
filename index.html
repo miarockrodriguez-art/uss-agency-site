@@ -1673,10 +1673,12 @@ function submitExitPopup(){
       <div class="hg-badge">GUARANTEED</div>
     </div>
     <div class="hero-stats">
-      <div><div class="stat-n">17+</div><div class="stat-l">Years of Excellence</div></div>
+      <div><div class="stat-n">22+</div><div class="stat-l">Years of Excellence</div></div>
       <div><div class="stat-n">24/7</div><div class="stat-l">Around the Clock</div></div>
       <div><div class="stat-n">35+</div><div class="stat-l">States &amp; Nationwide</div></div>
       <div><div class="stat-n">100%</div><div class="stat-l">Licensed & Insured</div></div>
+      <div><div class="stat-n">280+</div><div class="stat-l">Trained Professionals</div></div>
+      <div><div class="stat-n">6</div><div class="stat-l">Business Divisions</div></div>
     </div>
   </div>
   </div>
@@ -2539,8 +2541,8 @@ function submitExitPopup(){
 
   // STATS COUNTER ANIMATION
   const statsData = [
-    { selector: '.hero-stats .stat-n', values: ['17+', '24/7', '35+', '100%'], 
-      numeric: [15, null, 35, 100], suffix: ['+', '/7', '+', '%'], prefix: ['', '24', '', ''] },
+    { selector: '.hero-stats .stat-n', values: ['22+', '24/7', '35+', '100%', '280+', '6'],
+      numeric: [22, null, 35, 100, 280, 6], suffix: ['+', '/7', '+', '%', '+', ''], prefix: ['', '24', '', '', '', ''] },
   ];
 
   function animateCounter(el, target, suffix, prefix, duration = 1800) {
@@ -2571,10 +2573,12 @@ function submitExitPopup(){
     // Hero stats
     const heroStats = document.querySelectorAll('.hero-stats .stat-n');
     const heroData = [
-      { target: 15, suffix: '+', prefix: '' },
+      { target: 22, suffix: '+', prefix: '' },
       { target: null, suffix: '/7', prefix: '24' },
       { target: 35, suffix: '+', prefix: '' },
       { target: 100, suffix: '%', prefix: '' },
+      { target: 280, suffix: '+', prefix: '' },
+      { target: 6, suffix: '', prefix: '' },
     ];
 
     heroStats.forEach((el, i) => {
