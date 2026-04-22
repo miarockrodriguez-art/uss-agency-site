@@ -2473,13 +2473,31 @@ function submitExitPopup(){
   function sendToCRM(payload, formName) {
     const webhookURL = 'https://services.leadconnectorhq.com/hooks/A81lGlMBKzeH8gORYYV2/webhook-trigger/13ac4a23-8b95-4f46-8aa8-88d17d5b699d';
     var nameParts = (payload.full_name || payload.firstName || '').trim().split(' ');
+    var messageParts = [];
+    if (payload.message) messageParts.push(payload.message);
+    if (payload.service) messageParts.push('Service interested: ' + payload.service);
+    if (payload.title) messageParts.push('Title: ' + payload.title);
+    if (payload.serviceAddress) messageParts.push('Service address: ' + payload.serviceAddress);
+    if (payload.location) messageParts.push('Location: ' + payload.location);
+    if (payload.startDate) messageParts.push('Est. start: ' + payload.startDate);
     const crmPayload = {
       firstName: payload.firstName || nameParts[0] || '',
       lastName: payload.lastName || nameParts.slice(1).join(' ') || '',
       email: payload.email || '',
       phone: payload.phone || '',
-      tags: ['website-lead', 'uss-agency'],
-      source: 'ussagency.com'
+      companyName: payload.company || payload.companyName || '',
+      message: messageParts.join('\n'),
+      tags: ['website-lead', 'uss-agency', formName || 'contact-form'],
+      source: 'ussagency.com',
+      customField: {
+        company: payload.company || '',
+        title: payload.title || '',
+        service_interested: payload.service || '',
+        service_address: payload.serviceAddress || '',
+        service_city: payload.location || '',
+        estimated_start_date: payload.startDate || '',
+        form_name: formName || ''
+      }
     };
     fetch(webhookURL, {
       method: 'POST',
