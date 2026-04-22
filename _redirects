@@ -1,12 +1,17 @@
-/disaster-response-security /disaster-response.html 301
-/fire-watch-services.html /fire-watch.html 301
-/event-security-services.html /event-security.html 301
-/loss-prevention-services.html /loss-prevention.html 301
-/workplace-violence-security.html /workplace-violence-prevention.html 301
-/plainclothes-security /plainclothes-security.html 301
-/off-duty-law-enforcement /off-duty-law-enforcement.html 301
-/neighborhood-watch-patrol /neighborhood-watch-patrol.html 301
-/security-consulting /security-consulting.html 301
-/about /about.html 200
-/contact /contact.html 200
-/careers /careers.html 200
+# Legacy URL redirects (old site → current pages)
+/disaster-response-security /disaster-response 301
+/fire-watch-services.html /fire-watch 301
+/event-security-services.html /event-security 301
+/loss-prevention-services.html /loss-prevention 301
+/workplace-violence-security.html /workplace-violence-prevention 301
+
+# External/indexed nested paths from old listings → closest current page
+/tscm-services/gainesville-fl /security-consulting 301
+/armed-security-services/ocala-fl /armed-security-guards 301
+/unarmed-security-services/naples-fl /unarmed-security 301
+/security-consulting-services/gainesville-fl /security-consulting 301
+/armed-security-services/miami-fl /armed-security-miami 301
+/executive-protection-services/gainesville-fl /executive-protection 301
+/unarmed-security-services/tampa-fl /unarmed-security 301
+/unarmed-security-services/palm-coast-fl /unarmed-security 301
+/off-duty-law-enforcement-services/palm-harbor-fl /off-duty-law-enforcement 301
