@@ -6,7 +6,6 @@
   <link rel="icon" type="image/png" href="/images/logo-uss.png">
   <link rel="apple-touch-icon" href="/images/logo-uss.png">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- BACKEND SEO: city keyword lives in title, meta, schema, and hidden keywords. Front-facing copy stays national-premium per USS Agency brand rule. -->
   <title>Security Company Orlando | U.S.S. Agency — Florida Licensed</title>
   <meta name="description" content="Security company Orlando — U.S.S. Agency delivers elite armed and unarmed protection, executive security, and corporate patrols. Licensed. Insured. Answered 24/7.">
   <meta name="keywords" content="security company Orlando, security company Orlando FL, Orlando security, Central Florida security, private security Orlando, licensed security company Orlando, insured security company Florida">
@@ -16,149 +15,1493 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@300;400;500;600;700&family=Barlow+Condensed:wght@500;600;700&display=swap" rel="stylesheet">
   <style>
-    :root{--black:#080808;--deep:#0a0d14;--card:#13161d;--gold:#c9a84c;--gold-lt:#e2c46a;--gold-dim:rgba(201,168,76,0.12);--gold-line:rgba(201,168,76,0.22);--white:#f0f0eb;--gray:#7a8090;--light:#b8bcc8}
+    :root {
+      --black:#080808; --deep:#0f1117; --card:#13161d;
+      --gold:#c9a84c; --gold-lt:#e2c46a;
+      --gold-dim:rgba(201,168,76,0.12); --gold-line:rgba(201,168,76,0.22);
+      --white:#f0f0eb; --gray:#7a8090; --light:#b8bcc8;
+    }
     *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
     html{scroll-behavior:smooth;overflow-x:hidden}
-    body{font-family:'Barlow',sans-serif;background:var(--black);color:var(--white);line-height:1.7;overflow-x:hidden;max-width:100%}
+    body{font-family:'Barlow',sans-serif;background:var(--black);color:var(--white);overflow-x:hidden;max-width:100%;line-height:1.6}
     a{text-decoration:none;color:inherit}
-    .nav{display:flex;justify-content:space-between;align-items:center;padding:1.2rem 5%;background:var(--deep);border-bottom:1px solid var(--gold-line);position:sticky;top:0;z-index:100}
-    .nav-logo{font-family:'Bebas Neue',sans-serif;font-size:1.8rem;letter-spacing:3px;color:var(--gold)}
-    .nav-phone{font-family:'Barlow Condensed',sans-serif;font-weight:900;color:var(--gold-lt);font-size:1.1rem}
-    .hero{padding:4.5rem 5% 3.5rem;text-align:center;background:linear-gradient(180deg,var(--deep),var(--black))}
-    .hero h1{font-family:'Bebas Neue',sans-serif;font-size:3.2rem;color:var(--gold);letter-spacing:3px;margin-bottom:1.25rem}
-    .hero p{max-width:780px;margin:0 auto;color:var(--light);font-size:1.15rem;line-height:1.75}
-    .badge-row{display:flex;justify-content:center;gap:.75rem;margin-bottom:1.5rem;flex-wrap:wrap}
-    .badge{display:inline-block;padding:.4rem 1rem;background:rgba(201,168,76,.12);border:1px solid var(--gold-line);color:var(--gold);font-size:.7rem;letter-spacing:3px;text-transform:uppercase;font-weight:700}
-    .content{max-width:920px;margin:0 auto;padding:3rem 5%}
-    .content h2{font-family:'Bebas Neue',sans-serif;font-size:2rem;color:var(--gold);letter-spacing:1px;margin:2.75rem 0 1rem;border-left:4px solid var(--gold);padding-left:1rem}
-    .content h3{font-family:'Bebas Neue',sans-serif;font-size:1.4rem;color:var(--gold-lt);letter-spacing:1px;margin:1.75rem 0 .75rem}
-    .content p{color:var(--light);margin-bottom:1.2rem;font-size:1.05rem}
-    .content ul{list-style:none;padding:0;margin-bottom:1.5rem}
-    .content ul li{padding:.5rem 0 .5rem 1.5rem;position:relative;color:var(--light)}
-    .content ul li::before{content:'';position:absolute;left:0;top:50%;transform:translateY(-50%);width:8px;height:8px;background:var(--gold);border-radius:50%}
-    .content a{color:var(--gold-lt);border-bottom:1px solid var(--gold-line)}
-    .services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem;margin:2rem 0}
-    .service-card{background:var(--card);border:1px solid var(--gold-line);padding:1.25rem;border-radius:4px}
-    .service-card h4{font-family:'Bebas Neue',sans-serif;color:var(--gold);font-size:1.15rem;letter-spacing:1px;margin-bottom:.5rem}
-    .service-card p{font-size:.9rem;color:var(--light)}
-    .standard-block{background:linear-gradient(135deg,rgba(201,168,76,0.06) 0%,rgba(10,13,20,0.85) 100%);border-left:5px solid var(--gold);padding:2rem 2.25rem;margin:2.5rem 0;box-shadow:0 4px 24px rgba(201,168,76,.1)}
-    .standard-block .label{font-family:'Barlow Condensed',sans-serif;font-size:.72rem;letter-spacing:.28em;text-transform:uppercase;color:var(--gold);margin-bottom:.75rem;font-weight:700}
-    .standard-block p{font-family:'Bebas Neue',sans-serif;font-size:1.3rem;color:var(--white);line-height:1.6;letter-spacing:.5px;margin:0}
-    .cta-section{text-align:center;padding:3.5rem 5%;background:var(--deep);margin-top:2rem;border-top:1px solid var(--gold-line)}
-    .cta-btn{display:inline-block;padding:1rem 2.5rem;background:var(--gold);color:var(--black);font-family:'Bebas Neue',sans-serif;font-size:1.3rem;letter-spacing:2px;border-radius:4px;transition:background 0.3s}
-    .cta-btn:hover{background:var(--gold-lt)}
-    .cta-ghost{display:inline-block;padding:1rem 2.5rem;border:1px solid var(--gold);color:var(--gold);font-family:'Bebas Neue',sans-serif;font-size:1.15rem;letter-spacing:2px;border-radius:4px;margin-left:.75rem;transition:background 0.3s}
-    .cta-ghost:hover{background:var(--gold-dim)}
-    @media(max-width:768px){.services-grid{grid-template-columns:1fr}.hero h1{font-size:2.2rem}.content h2{font-size:1.6rem}.nav{flex-direction:column;gap:0.5rem}.cta-ghost{margin-left:0;margin-top:.75rem;display:block}}
+    ::-webkit-scrollbar{width:5px}
+    ::-webkit-scrollbar-track{background:var(--black)}
+    ::-webkit-scrollbar-thumb{background:var(--gold)}
+
+    @keyframes fadeUp{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:translateY(0)}}
+    @keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(201,168,76,0.5)}50%{box-shadow:0 0 0 10px rgba(201,168,76,0)}}
+
+
+    /* HERO SPLIT LAYOUT */
+    .hero-split{
+      display:grid;
+      grid-template-columns:1fr 420px;
+      gap:4rem;
+      align-items:center;
+      width:100%;
+      max-width:1300px;
+    }
+
+    /* HERO FORM */
+    .hero-form-wrap{
+      background:rgba(8,8,8,0.85);
+      border:1px solid var(--gold-line);
+      backdrop-filter:blur(20px);
+      animation:fadeUp 0.7s 0.3s ease both;
+      position:relative;
+    }
+    .hero-form-wrap::before{
+      content:'';
+      position:absolute;
+      top:0;left:0;right:0;
+      height:3px;
+      background:linear-gradient(90deg,var(--gold),var(--gold-lt),var(--gold));
+    }
+    .hero-form-inner{
+      padding:2.2rem 2rem;
+    }
+    .hero-form-tag{
+      font-size:0.65rem;
+      font-weight:700;
+      letter-spacing:3px;
+      text-transform:uppercase;
+      color:var(--gold);
+      margin-bottom:0.5rem;
+    }
+    .hero-form-title{
+      font-family:'Bebas Neue',sans-serif;
+      font-size:1.8rem;
+      letter-spacing:2px;
+      color:var(--white);
+      margin-bottom:0.4rem;
+    }
+    .hero-form-sub{
+      font-size:0.82rem;
+      color:var(--gray);
+      margin-bottom:1.5rem;
+      line-height:1.5;
+    }
+    .hf-group{
+      margin-bottom:0.75rem;
+    }
+    .hf-group input,
+    .hf-group select{
+      width:100%;
+      background:rgba(255,255,255,0.04);
+      border:1px solid rgba(255,255,255,0.08);
+      color:var(--white);
+      padding:0.8rem 1rem;
+      font-family:'Barlow',sans-serif;
+      font-size:0.9rem;
+      outline:none;
+      transition:border 0.2s;
+      -webkit-appearance:none;
+      border-radius:0;
+    }
+    .hf-group input:focus,
+    .hf-group select:focus{
+      border-color:var(--gold);
+      background:rgba(201,168,76,0.05);
+    }
+    .hf-group input::placeholder{ color:var(--gray); }
+    .hf-group select option{ background:var(--black); color:var(--white); }
+    .hero-form-footer{
+      display:flex;
+      justify-content:space-between;
+      margin-top:1rem;
+      padding-top:1rem;
+      border-top:1px solid rgba(255,255,255,0.05);
+      flex-wrap:wrap;
+      gap:0.4rem;
+    }
+    .hero-form-footer span{
+      font-size:0.65rem;
+      color:var(--gray);
+      letter-spacing:1px;
+      font-weight:600;
+    }
+    .hero-form-success{
+      display:none;
+      text-align:center;
+      padding:2rem 1rem;
+    }
+    .hero-form-success.show{ display:block; }
+    .hfs-icon{
+      font-size:2rem;
+      color:var(--gold);
+      margin-bottom:0.8rem;
+    }
+    .hero-form-success h4{
+      font-family:'Bebas Neue',sans-serif;
+      font-size:1.8rem;
+      letter-spacing:2px;
+      color:var(--gold);
+      margin-bottom:0.5rem;
+    }
+    .hero-form-success p{
+      font-size:0.85rem;
+      color:var(--light);
+      margin-bottom:1rem;
+    }
+
+    /* HERO GUARANTEE BAR */
+    .hero-guarantee{
+      display:flex;
+      align-items:center;
+      gap:1rem;
+      background:rgba(201,168,76,0.07);
+      border:1px solid rgba(201,168,76,0.25);
+      border-left:3px solid var(--gold);
+      padding:0.85rem 1.2rem;
+      margin-bottom:2rem;
+      animation:fadeUp 0.7s 0.5s ease both;
+    }
+    .hg-icon{
+      font-size:1.4rem;
+      flex-shrink:0;
+    }
+    .hg-text{
+      display:flex;
+      flex-direction:column;
+      gap:0.15rem;
+      flex:1;
+    }
+    .hg-text strong{
+      font-size:0.82rem;
+      font-weight:700;
+      letter-spacing:1px;
+      color:var(--gold);
+      text-transform:uppercase;
+    }
+    .hg-text span{
+      font-size:0.78rem;
+      color:var(--light);
+      line-height:1.4;
+    }
+    .hg-badge{
+      background:var(--gold);
+      color:var(--black);
+      font-size:0.6rem;
+      font-weight:800;
+      letter-spacing:2px;
+      padding:0.35rem 0.7rem;
+      white-space:nowrap;
+      flex-shrink:0;
+    }
+
+    /* FORM GUARANTEE BADGE */
+    .form-guarantee{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:1rem;
+      background:rgba(201,168,76,0.06);
+      border:1px solid rgba(201,168,76,0.2);
+      border-left:3px solid var(--gold);
+      padding:1rem 1.2rem;
+      margin-bottom:1.2rem;
+    }
+    .fg-left{
+      display:flex;
+      align-items:flex-start;
+      gap:0.8rem;
+      flex:1;
+    }
+    .fg-icon{
+      font-size:1.1rem;
+      color:var(--gold);
+      flex-shrink:0;
+      margin-top:0.1rem;
+    }
+    .fg-copy{
+      display:flex;
+      flex-direction:column;
+      gap:0.25rem;
+    }
+    .fg-copy strong{
+      font-size:0.78rem;
+      font-weight:700;
+      letter-spacing:1px;
+      text-transform:uppercase;
+      color:var(--gold);
+    }
+    .fg-copy span{
+      font-size:0.76rem;
+      color:var(--light);
+      line-height:1.5;
+    }
+    .fg-seal{
+      flex-shrink:0;
+      width:64px;
+      height:64px;
+      border:2px solid var(--gold);
+      border-radius:50%;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      background:rgba(201,168,76,0.08);
+    }
+    .fg-seal-inner{
+      text-align:center;
+      line-height:1;
+    }
+    .fg-seal-top{
+      font-size:0.42rem;
+      font-weight:800;
+      letter-spacing:1.5px;
+      color:var(--gold);
+      text-transform:uppercase;
+      margin-bottom:0.1rem;
+    }
+    .fg-seal-num{
+      font-family:'Bebas Neue',sans-serif;
+      font-size:1.3rem;
+      color:var(--gold);
+      line-height:1;
+    }
+    .fg-seal-bot{
+      font-size:0.4rem;
+      font-weight:800;
+      letter-spacing:1.5px;
+      color:var(--gold);
+      text-transform:uppercase;
+      margin-top:0.1rem;
+    }
+    .form-microcopy{
+      text-align:center;
+      font-size:0.72rem;
+      color:var(--gray);
+      margin-top:0.7rem;
+      letter-spacing:0.5px;
+    }
+
+    /* ABOUT IMAGE */
+    .about-img-wrap{
+      min-height:420px;
+    }
+    @media(max-width:900px){
+      .about-img-wrap{ min-height:280px; }
+    }
+
+    /* PHOTO GALLERY */
+    .photo-gallery{
+      background:var(--deep);
+      padding:6rem 6%;
+      border-top:1px solid var(--gold-line);
+      border-bottom:1px solid var(--gold-line);
+    }
+    .gallery-grid{
+      display:grid;
+      grid-template-columns:1fr 1fr 1fr 1fr;
+      grid-template-rows:280px 280px;
+      gap:3px;
+      max-width:1300px;
+      margin:0 auto;
+    }
+    .gallery-item{
+      position:relative;
+      overflow:hidden;
+      background:var(--card);
+    }
+    .gallery-item.tall{
+      grid-row:span 2;
+    }
+    .gallery-item img{
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      display:block;
+      transition:transform 0.5s ease;
+    }
+    .gallery-item:hover img{
+      transform:scale(1.05);
+    }
+    .gallery-caption{
+      position:absolute;
+      bottom:0;left:0;right:0;
+      background:linear-gradient(transparent, rgba(8,8,8,0.9));
+      color:var(--white);
+      font-size:0.72rem;
+      font-weight:700;
+      letter-spacing:2px;
+      text-transform:uppercase;
+      padding:1.5rem 1rem 0.8rem;
+      opacity:0;
+      transition:opacity 0.3s;
+    }
+    .gallery-item:hover .gallery-caption{
+      opacity:1;
+    }
+    @media(max-width:900px){
+      .gallery-grid{
+        grid-template-columns:1fr 1fr;
+        grid-template-rows:auto;
+      }
+      .gallery-item.tall{ grid-row:span 1; height:240px; }
+      .gallery-item{ height:240px; }
+    }
+    @media(max-width:580px){
+      .gallery-grid{ grid-template-columns:1fr; }
+      .gallery-item, .gallery-item.tall{ height:220px; }
+    }
+
+    /* OFFICER TEAM STRIP */
+    .officer-strip{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:0;
+      margin-top:3rem;
+      border:1px solid var(--gold-line);
+      overflow:hidden;
+    }
+    .officer-strip-img{
+      height:420px;
+      overflow:hidden;
+    }
+    .officer-strip-text{
+      background:var(--card);
+      padding:3.5rem;
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+      border-left:1px solid var(--gold-line);
+    }
+    .officer-strip-text h3{
+      font-family:'Bebas Neue',sans-serif;
+      font-size:2rem;
+      letter-spacing:2px;
+      color:var(--white);
+      margin:0.5rem 0 1rem;
+      line-height:1.15;
+    }
+    .officer-strip-text p{
+      font-size:0.88rem;
+      color:var(--light);
+      line-height:1.75;
+    }
+    @media(max-width:900px){
+      .officer-strip{ grid-template-columns:1fr; }
+      .officer-strip-img{ height:280px; }
+      .officer-strip-text{ padding:2rem; }
+    }
+
+    /* CONTACT GUARANTEE STRIP */
+    .contact-guarantee-strip{
+      display:flex;
+      flex-direction:column;
+      gap:0.6rem;
+      margin-bottom:2.5rem;
+    }
+    .cg-item{
+      display:flex;
+      align-items:center;
+      gap:0.7rem;
+      font-size:0.85rem;
+      color:var(--light);
+      font-weight:500;
+    }
+    .cg-check{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      width:20px;
+      height:20px;
+      background:var(--gold);
+      color:var(--black);
+      font-size:0.7rem;
+      font-weight:800;
+      flex-shrink:0;
+    }
+
+    /* RESPONSIVE HERO SPLIT */
+    @media(max-width:1100px){
+      .hero-split{
+        grid-template-columns:1fr;
+        gap:3rem;
+      }
+      .hero-form-wrap{ max-width:520px; }
+    }
+    @media(max-width:580px){
+      .hero-form-wrap{ max-width:100%; }
+      .hero-form-inner{ padding:1.8rem 1.5rem; }
+      .hg-badge{ display:none; }
+      .fg-seal{ display:none; }
+    }
+
+    /* NAV */
+    nav{position:fixed;top:0;width:100%;z-index:1000;background:rgba(8,8,8,0.97);backdrop-filter:blur(16px);border-bottom:1px solid var(--gold-line);padding:0 6%;display:flex;align-items:center;justify-content:space-between;height:68px}
+    .logo{font-family:'Bebas Neue',sans-serif;font-size:1.5rem;letter-spacing:5px;color:var(--gold)}
+    .logo span{color:var(--white)}
+    .nav-links{display:flex;gap:1.2rem;list-style:none;align-items:center}
+    .nav-links a{color:var(--light);font-size:0.72rem;font-weight:600;letter-spacing:2px;text-transform:uppercase;transition:color 0.2s}
+    .nav-links a:hover{color:var(--gold)}
+    .nav-btn{background:var(--gold);color:var(--black);padding:0.45rem 1rem;font-weight:700;font-size:0.68rem;letter-spacing:1.2px;text-transform:uppercase;transition:background 0.2s;white-space:nowrap}
+    .nav-btn:hover{background:var(--gold-lt)}
+    .hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:4px}
+    .hamburger span{display:block;width:24px;height:2px;background:var(--gold)}
+
+    /* HERO */
+    .hero{min-height:100vh;background:linear-gradient(135deg,rgba(8,8,8,0.94) 0%,rgba(17,24,39,0.88) 50%,rgba(8,8,8,0.96) 100%),url('images/img-01.jpg') center/cover no-repeat;display:flex;align-items:center;padding:130px 6% 80px;position:relative;overflow:hidden}
+    .hero-layout{display:flex;align-items:center;justify-content:space-between;gap:4rem;width:100%}
+    .hero-badge-logo{width:450px;height:450px;object-fit:contain;flex-shrink:0;margin:0 auto;margin-top:-150px;display:block;background:none;box-shadow:0 0 80px 30px rgba(201,168,76,0.25);border-radius:0;animation:fadeUp 0.7s 0.4s ease both}
+    .hero::before{content:'';position:absolute;inset:0;background:repeating-linear-gradient(0deg,transparent,transparent 3px,rgba(201,168,76,0.01) 3px,rgba(201,168,76,0.01) 4px);pointer-events:none;z-index:1}
+    .hero-badge{display:inline-block;background:none;border:none;color:#C9A84C;font-size:0.68rem;font-weight:700;letter-spacing:3px;text-transform:uppercase;padding:0;margin-bottom:1.8rem;animation:fadeUp 0.7s ease both}
+    .live-dot{width:8px;height:8px;border-radius:50%;background:var(--gold)}
+    .hero h1{font-family:'Bebas Neue',sans-serif;font-size:clamp(4rem,8.5vw,7.8rem);line-height:0.9;letter-spacing:2px;margin-bottom:1.8rem;animation:fadeUp 0.7s 0.1s ease both}
+    .hero h1 .gold{color:var(--gold)}
+    .hero h1 .outline{-webkit-text-stroke:2px rgba(201,168,76,0.45);color:transparent}
+    .hero p{font-size:1.1rem;line-height:1.78;color:var(--light);max-width:580px;margin-bottom:2.8rem;font-weight:300;animation:fadeUp 0.7s 0.2s ease both}
+    .hero-btns{display:flex;gap:1rem;flex-wrap:wrap;animation:fadeUp 0.7s 0.3s ease both}
+    .hero-stats{display:flex;gap:3rem;margin-top:4rem;padding-top:2.5rem;border-top:1px solid var(--gold-line);animation:fadeUp 0.7s 0.4s ease both}
+    .stat-n{font-family:'Bebas Neue',sans-serif;font-size:2.8rem;color:var(--gold);line-height:1}
+    .stat-l{font-size:0.67rem;letter-spacing:2px;text-transform:uppercase;color:var(--gray);margin-top:0.25rem}
+
+    /* BUTTONS */
+    .btn{display:inline-flex;align-items:center;gap:0.5rem;font-family:'Barlow Condensed',sans-serif;font-size:0.95rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;padding:0.95rem 2.2rem;transition:all 0.25s;cursor:pointer;border:none}
+    .btn-gold{background:var(--gold);color:var(--black)}
+    .btn-gold:hover{background:var(--gold-lt);transform:translateY(-2px);box-shadow:0 10px 35px rgba(201,168,76,0.28)}
+    .btn-ghost{background:transparent;border:2px solid var(--gold-line);color:var(--gold)}
+    .btn-ghost:hover{border-color:var(--gold);background:var(--gold-dim);transform:translateY(-2px)}
+
+
+    /* STATS COUNTER ANIMATION */
+    @keyframes countUp {
+      from { opacity:0; transform:translateY(10px); }
+      to   { opacity:1; transform:translateY(0); }
+    }
+    .stat-n{
+      font-family:'Bebas Neue',sans-serif;
+      font-size:2.8rem;
+      color:var(--gold);
+      line-height:1;
+      transition:all 0.3s;
+    }
+    .stat-n.counting {
+      animation: countUp 0.4s ease both;
+    }
+
+    /* METRIC COUNTER */
+    .metric-n {
+      font-family:'Bebas Neue',sans-serif;
+      font-size:3rem;
+      color:var(--gold);
+      line-height:1;
+      min-width:5rem;
+      transition: all 0.3s;
+    }
+
+    /* TRUST BAR */
+    .trust{background:var(--deep);border-top:1px solid var(--gold-line);border-bottom:1px solid var(--gold-line);padding:1rem 6%;display:flex;align-items:center;justify-content:center;gap:3rem;flex-wrap:wrap}
+    .trust-item{display:flex;align-items:center;gap:0.6rem;font-size:0.72rem;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:var(--gray)}
+    .trust-item .dot{color:var(--gold);font-size:1rem}
+
+    /* SECTIONS */
+    section{padding:6rem 6%}
+    .tag{font-size:0.68rem;font-weight:700;letter-spacing:4px;text-transform:uppercase;color:var(--gold);margin-bottom:0.7rem}
+    .sec-title{font-family:'Bebas Neue',sans-serif;font-size:clamp(2.5rem,5vw,4rem);letter-spacing:2px;line-height:1;margin-bottom:1rem}
+    .sec-sub{font-size:1rem;color:var(--gray);font-weight:300;max-width:580px;line-height:1.75}
+    .sec-head{margin-bottom:3.5rem}
+
+    /* ABOUT */
+    .about{background:linear-gradient(135deg,#0F0F0F 0%,#1A2744 50%,#0F0F0F 100%)}
+    .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:stretch}
+    .about-img-wrap{position:relative;height:500px;overflow:hidden}
+    .about-img-wrap img{width:100%;height:100%;object-fit:cover;object-position:center center;filter:grayscale(10%);display:block}
+    .about-img-wrap::after{content:'';position:absolute;bottom:-18px;right:-18px;width:55%;height:55%;border:2px solid var(--gold);z-index:0;pointer-events:none}
+    .about-img-wrap::before{content:'Florida License # B2800082';position:absolute;bottom:20px;left:0;background:var(--gold);color:var(--black);font-size:0.68rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;padding:0.5rem 1rem;z-index:2}
+    .about-text p{color:var(--light);font-weight:300;line-height:1.8;margin-bottom:1.2rem}
+    .check-list{list-style:none;margin-top:1.5rem;display:flex;flex-direction:column;gap:0.8rem}
+    .check-list li{display:flex;align-items:flex-start;gap:0.8rem;font-size:0.9rem;color:var(--light)}
+    .check-list li::before{content:'✦';color:var(--gold);font-size:0.7rem;margin-top:0.3rem;flex-shrink:0}
+
+    /* SERVICES */
+    .services{background:linear-gradient(135deg,#080808 0%,#111827 50%,#080808 100%)}
+    .services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;background:var(--gold-line)}
+    .svc-card{background:var(--card);padding:2.5rem 2rem;transition:all 0.3s;position:relative;overflow:hidden;cursor:pointer}
+    .svc-card::after{content:'';position:absolute;bottom:0;left:0;width:0;height:3px;background:var(--gold);transition:width 0.35s ease}
+    .svc-card:hover::after{width:100%}
+    .svc-card:hover{background:#171a22}
+    
+    .svc-card h3{font-family:'Bebas Neue',sans-serif;font-size:1.45rem;letter-spacing:1.5px;margin-bottom:0.8rem}
+    .svc-card p{font-size:0.88rem;color:var(--gray);line-height:1.7}
+    .svc-more{display:inline-flex;align-items:center;gap:0.4rem;color:var(--gold);font-size:0.7rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;margin-top:1.2rem;transition:gap 0.2s}
+    .svc-more:hover{gap:0.8rem}
+
+    /* INDUSTRIES */
+    .industries{background:linear-gradient(135deg,#0F0F0F 0%,#1A2744 50%,#0F0F0F 100%)}
+    .ind-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem;margin-top:3rem}
+    .ind-item{background:var(--card);border:1px solid #C9A84C;box-shadow:0 0 8px #C9A84C,inset 0 0 4px rgba(201,168,76,0.2);padding:2rem 1.5rem;text-align:center;transition:all 0.3s;aspect-ratio:1/1;display:flex;align-items:center;justify-content:center;text-decoration:none;}
+    .ind-item:hover{transform:translateY(-4px);box-shadow:0 0 14px #C9A84C,inset 0 0 6px rgba(201,168,76,0.3)}
+    
+    .ind-item h4{font-family:'Barlow Condensed',sans-serif;font-size:1rem;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--light);padding:0.5rem 0}
+
+    /* WHY US */
+    .why{background:linear-gradient(135deg,#080808 0%,#111827 50%,#080808 100%)}
+    .why-grid{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center}
+    .why-list{display:flex;flex-direction:column;gap:1rem}
+    .why-item{display:flex;gap:1.2rem;align-items:flex-start;padding:1.5rem;background:rgba(255,255,255,0.025);border-left:3px solid var(--gold);transition:background 0.2s}
+    .why-item:hover{background:rgba(201,168,76,0.06)}
+    .why-num{font-family:'Bebas Neue',sans-serif;font-size:2.2rem;color:rgba(201,168,76,0.25);line-height:1;min-width:2.2rem}
+    .why-item h4{font-size:0.88rem;font-weight:700;letter-spacing:1px;text-transform:uppercase;margin-bottom:0.4rem}
+    .why-item p{font-size:0.85rem;color:var(--gray);line-height:1.65}
+    .why-visual{position:relative;background:var(--card);border:1px solid var(--gold-line);padding:3rem;display:flex;flex-direction:column;gap:2rem}
+    .why-visual::before{content:'WHY CHOOSE USS';position:absolute;top:-1px;left:2rem;background:var(--gold);color:var(--black);font-size:0.65rem;font-weight:700;letter-spacing:2px;padding:0.3rem 0.8rem}
+    .metric{display:flex;align-items:center;gap:1.5rem;padding-bottom:1.5rem;border-bottom:1px solid rgba(255,255,255,0.05)}
+    .metric:last-child{border-bottom:none;padding-bottom:0}
+    .metric-n{font-family:'Bebas Neue',sans-serif;font-size:3rem;color:var(--gold);line-height:1;min-width:5rem}
+    .metric-l{font-size:0.85rem;color:var(--light);line-height:1.5}
+    .metric-sub{font-size:0.75rem;color:var(--gray)}
+
+    /* CONTACT */
+    .contact{background:linear-gradient(135deg,#0F0F0F 0%,#1A2744 50%,#0F0F0F 100%)}
+    .contact-grid{display:grid;grid-template-columns:1fr 1.4fr;gap:5rem;align-items:start}
+    .contact-info{display:flex;flex-direction:column;gap:2rem;padding-top:1rem}
+    .contact-item{display:flex;gap:1rem;align-items:flex-start}
+    .contact-icon-bar{width:4px;height:44px;background:var(--gold);flex-shrink:0;margin-top:2px}
+    .contact-item h4{font-size:0.75rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--gray);margin-bottom:0.3rem}
+    .contact-item p,.contact-item a{font-size:1rem;font-weight:500;color:var(--white);transition:color 0.2s}
+    .contact-item a:hover{color:var(--gold)}
+
+    /* FORM */
+    .form-wrap{background:var(--card);border:1px solid var(--gold-line);padding:2.5rem}
+    .form-title{font-family:'Bebas Neue',sans-serif;font-size:1.8rem;letter-spacing:2px;margin-bottom:0.4rem}
+    .form-sub{font-size:0.85rem;color:var(--gray);margin-bottom:2rem}
+    .form-row{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-bottom:1rem}
+    .form-group{display:flex;flex-direction:column;gap:0.4rem;margin-bottom:1rem}
+    .form-group label{font-size:0.7rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--gray)}
+    .form-group input,.form-group select,.form-group textarea{background:var(--black);border:1px solid rgba(255,255,255,0.08);color:var(--white);padding:0.85rem 1rem;font-family:'Barlow',sans-serif;font-size:0.95rem;outline:none;transition:border 0.2s;border-radius:0;-webkit-appearance:none}
+    .form-group input:focus,.form-group select:focus,.form-group textarea:focus{border-color:var(--gold)}
+    .form-group select option{background:var(--black)}
+    .form-group textarea{resize:vertical;min-height:120px}
+    .form-note{font-size:0.75rem;color:var(--gray);margin-bottom:1.5rem}
+    .form-note span{color:var(--gold)}
+    .form-success{display:none;background:rgba(201,168,76,0.1);border:1px solid var(--gold-line);padding:1.5rem;text-align:center;margin-top:1rem}
+    .form-success h4{color:var(--gold);font-family:'Bebas Neue',sans-serif;font-size:1.5rem;letter-spacing:2px;margin-bottom:0.4rem}
+    .form-success p{font-size:0.85rem;color:var(--light)}
+
+    /* FAQ */
+    .faq{background:linear-gradient(135deg,#0F0F0F 0%,#1A2744 50%,#0F0F0F 100%)}
+    .faq-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;margin-top:3rem}
+    .faq-item{background:var(--card);border:1px solid rgba(255,255,255,0.04);overflow:hidden}
+    .faq-q{display:flex;justify-content:space-between;align-items:center;padding:1.5rem;cursor:pointer;gap:1rem;transition:background 0.2s}
+    .faq-q:hover{background:rgba(201,168,76,0.05)}
+    .faq-q h4{font-size:0.9rem;font-weight:600;line-height:1.5;color:var(--white)}
+    .faq-icon{color:var(--gold);font-size:1.2rem;flex-shrink:0;transition:transform 0.3s}
+    .faq-item.open .faq-icon{transform:rotate(45deg)}
+    .faq-a{max-height:0;overflow:hidden;transition:max-height 0.35s ease}
+    .faq-item.open .faq-a{max-height:300px}
+    .faq-a p{padding:0 1.5rem 1.5rem;font-size:0.88rem;color:var(--gray);line-height:1.7}
+
+    /* BRAND VIDEO SECTION */
+    .brand-video-section{
+      background:var(--black);
+      padding:6rem 6%;
+      border-top:1px solid var(--gold-line);
+      border-bottom:1px solid var(--gold-line);
+    }
+    .bv-inner{ max-width:1100px; margin:0 auto; }
+    .bv-frame-wrap{
+      display:flex;
+      flex-direction:column;
+      gap:0;
+    }
+    .bv-frame{
+      position:relative;
+      width:100%;
+      aspect-ratio:16/9;
+      background:#000;
+      overflow:hidden;
+      border:1px solid var(--gold-line);
+      border-bottom:none;
+    }
+    .bv-video{
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      display:block;
+    }
+    .bv-overlay{
+      position:absolute;
+      inset:0;
+      background:linear-gradient(135deg, rgba(8,8,8,0.7) 0%, rgba(8,8,8,0.4) 100%);
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      justify-content:center;
+      cursor:pointer;
+      transition:background 0.3s;
+      z-index:2;
+    }
+    .bv-overlay:hover{ background:linear-gradient(135deg, rgba(8,8,8,0.55) 0%, rgba(8,8,8,0.25) 100%); }
+    .bv-overlay.hidden{ display:none; }
+    .bv-play-btn{
+      width:80px;
+      height:80px;
+      border-radius:50%;
+      background:var(--gold);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      transition:transform 0.2s, background 0.2s;
+      box-shadow:0 0 0 12px rgba(201,168,76,0.2), 0 0 0 24px rgba(201,168,76,0.08);
+      margin-bottom:1.5rem;
+    }
+    .bv-overlay:hover .bv-play-btn{ transform:scale(1.1); background:var(--gold-lt); }
+    .bv-play-icon{
+      font-size:1.6rem;
+      color:var(--black);
+      margin-left:5px;
+    }
+    .bv-overlay-text{ text-align:center; }
+    .bv-ot-tag{
+      font-size:0.62rem;
+      font-weight:700;
+      letter-spacing:4px;
+      color:var(--gold);
+      text-transform:uppercase;
+      margin-bottom:0.4rem;
+    }
+    .bv-ot-title{
+      font-family:'Bebas Neue',sans-serif;
+      font-size:1.6rem;
+      letter-spacing:2px;
+      color:var(--white);
+    }
+    .bv-trust-strip{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      background:var(--deep);
+      border:1px solid var(--gold-line);
+      padding:1.5rem 2.5rem;
+      gap:1rem;
+    }
+    .bv-trust-item{
+      text-align:center;
+    }
+    .bv-trust-n{
+      font-family:'Bebas Neue',sans-serif;
+      font-size:1.8rem;
+      color:var(--gold);
+      line-height:1;
+    }
+    .bv-trust-l{
+      font-size:0.65rem;
+      font-weight:600;
+      letter-spacing:1.5px;
+      text-transform:uppercase;
+      color:var(--gray);
+      margin-top:0.2rem;
+    }
+    .bv-divider{
+      width:1px;
+      height:40px;
+      background:var(--gold-line);
+      flex-shrink:0;
+    }
+    .bv-trust-cta{ flex-shrink:0; }
+    @media(max-width:768px){
+      .bv-trust-strip{
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:1.5rem;
+        padding:1.5rem;
+      }
+      .bv-divider{ display:none; }
+      .bv-ot-title{ font-size:1.2rem; }
+      .bv-play-btn{ width:64px; height:64px; }
+      .bv-play-icon{ font-size:1.2rem; }
+    }
+
+    /* FOOTER */
+    footer{background:var(--deep);border-top:1px solid var(--gold-line);padding:4rem 6% 2rem}
+    .footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:3rem;margin-bottom:3rem}
+    .footer-brand .logo{font-size:1.35rem;display:block;margin-bottom:1rem}
+    .footer-brand p{font-size:0.85rem;color:var(--gray);line-height:1.7;max-width:280px}
+    .footer-brand .license{display:inline-block;background:var(--gold-dim);border:1px solid var(--gold-line);color:var(--gold);font-size:0.68rem;font-weight:700;letter-spacing:2px;padding:0.4rem 0.9rem;margin-top:1rem}
+    .footer-col h5{font-size:0.7rem;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--gold);margin-bottom:1.2rem}
+    .footer-col ul{list-style:none;display:flex;flex-direction:column;gap:0.6rem}
+    .footer-col ul li a{font-size:0.85rem;color:var(--gray);transition:color 0.2s}
+    .footer-col ul li a:hover{color:var(--gold)}
+    .footer-bottom{border-top:1px solid rgba(255,255,255,0.05);padding-top:1.5rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem}
+    .footer-bottom p{font-size:0.78rem;color:var(--gray)}
+
+    /* STICKY CALL BUTTON — TOP RIGHT */
+    @keyframes pulse-glow{0%,100%{box-shadow:0 4px 16px rgba(201,168,76,0.3)}50%{box-shadow:0 4px 24px rgba(201,168,76,0.6),0 0 40px rgba(201,168,76,0.15)}}
+    .sticky-call{position:fixed;top:120px;right:0;z-index:998;display:flex;flex-direction:row;align-items:center;gap:0;background:#C9A84C;color:#000000;padding:18px 32px;font-family:'Barlow Condensed',sans-serif;text-decoration:none;border-radius:0;box-shadow:0 4px 16px rgba(201,168,76,0.3);text-align:center;animation:pulse-glow 3s ease-in-out infinite}
+    .sticky-call:hover{background:#e8c96a;box-shadow:0 6px 24px rgba(201,168,76,0.5);animation:none}
+    .sticky-call .call-line1{font-size:17px;font-weight:700;line-height:1.2;letter-spacing:.05em}
+    .sticky-call .call-sep{margin:0 8px;opacity:0.6}
+    .sticky-call .call-line2{font-size:15px;font-weight:700;line-height:1.2}
+
+    /* LOGO */
+    .logo-wrap{display:flex;align-items:center}
+    .logo-wrap svg{height:44px;width:auto}
+
+    /* WHY PHOTO */
+    .why-photo{
+      width:100%;
+      height:220px;
+      overflow:hidden;
+      margin-bottom:1.5rem;
+      border:1px solid rgba(201,168,76,0.2);
+    }
+    .why-photo img{
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      object-position:center 20%;
+      display:block;
+    }
+
+
+
+    /* LEADERSHIP */
+    .leadership{ background:linear-gradient(135deg,#0F0F0F 0%,#1A2744 50%,#0F0F0F 100%);height:auto;padding:24px 0; }
+    .leadership-grid{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:1rem;
+    }
+    .leader-card{
+      background:var(--card);
+      border:1px solid rgba(255,255,255,0.05);
+      display:flex;
+      flex-direction:row;
+      align-items:center;
+      height:auto;
+      padding:12px 16px;
+      overflow:hidden;
+      transition:border-color 0.3s;
+    }
+    .leader-card:hover{ border-color:var(--gold-line); }
+    .leader-card.featured{ border-top:2px solid var(--gold); }
+    .leader-photo-wrap{
+      background:linear-gradient(180deg, var(--navy) 0%, var(--black) 100%);
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      justify-content:center;
+      padding:0.8rem;
+      position:relative;
+      min-height:auto;
+      flex-shrink:0;
+    }
+    .leader-photo-placeholder{
+      width:48px;
+      height:48px;
+      border-radius:50%;
+      border:2px solid var(--gold-line);
+      background:rgba(201,168,76,0.08);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      margin-bottom:0;
+    }
+    .leader-initials{
+      font-family:'Bebas Neue',sans-serif;
+      font-size:1.1rem;
+      letter-spacing:3px;
+      color:var(--gold);
+    }
+    .leader-badge{
+      background:var(--gold);
+      color:var(--black);
+      font-size:0.55rem;
+      font-weight:700;
+      letter-spacing:1.5px;
+      text-transform:uppercase;
+      padding:0.2rem 0.5rem;
+      text-align:center;
+    }
+    .leader-info{
+      padding:0.8rem 1.2rem;
+    }
+    .leader-tag{
+      font-size:0.55rem;
+      font-weight:700;
+      letter-spacing:2px;
+      text-transform:uppercase;
+      color:var(--gold);
+      margin-bottom:0.2rem;
+    }
+    .leader-name{
+      font-family:'Bebas Neue',sans-serif;
+      font-size:1.2rem;
+      letter-spacing:1px;
+      color:var(--white);
+      margin-bottom:0.1rem;
+    }
+    .leader-title{
+      font-size:0.68rem;
+      font-weight:600;
+      letter-spacing:1px;
+      color:var(--gray);
+      text-transform:uppercase;
+      margin-bottom:0.5rem;
+    }
+    .leader-divider{display:none;}
+    .leader-bio{
+      font-size:0.78rem;
+      color:var(--light);
+      line-height:1.6;
+      font-weight:300;
+      margin-bottom:0.4rem;
+    }
+    .leader-stats{
+      display:flex;
+      gap:1rem;
+      margin:0.5rem 0;
+      padding:0.5rem 0;
+      border-top:1px solid rgba(255,255,255,0.05);
+      border-bottom:1px solid rgba(255,255,255,0.05);
+    }
+    .l-stat-n{
+      font-family:'Bebas Neue',sans-serif;
+      font-size:1.1rem;
+      color:var(--gold);
+      line-height:1;
+    }
+    .l-stat-l{
+      font-size:0.55rem;
+      letter-spacing:1px;
+      text-transform:uppercase;
+      color:var(--gray);
+      margin-top:0.1rem;
+    }
+    .leader-credentials{
+      display:flex;
+      flex-wrap:wrap;
+      gap:0.3rem;
+      margin-top:0.5rem;
+    }
+    .leader-credentials span{
+      background:rgba(201,168,76,0.08);
+      border:1px solid var(--gold-line);
+      color:var(--gold);
+      font-size:0.55rem;
+      font-weight:600;
+      letter-spacing:1px;
+      padding:0.2rem 0.5rem;
+    }
+    @media(max-width:1100px){
+      .leadership-grid{ grid-template-columns:1fr; }
+      .leader-card{ grid-template-columns:180px 1fr; }
+    }
+    @media(max-width:700px){
+      .leader-card{ grid-template-columns:1fr; }
+      .leader-photo-wrap{ min-height:160px; }
+    }
+
+
+    /* LEADERSHIP */
+    .leadership{ background:linear-gradient(135deg,#0F0F0F 0%,#1A2744 50%,#0F0F0F 100%);padding:24px 0; }
+    .leadership-grid{ display:flex; flex-direction:column; gap:1rem }
+    .leader-card{
+      background:var(--card);
+      border:1px solid var(--gold-line);
+      display:flex;
+      flex-direction:row;
+      align-items:center;
+      overflow:hidden;
+      transition:transform 0.3s;
+      height:auto;
+      padding:12px 16px;
+    }
+    .leader-card:hover{ transform:translateY(-2px) }
+    .leader-card.featured{ border-color:var(--gold); border-width:2px }
+    .leader-avatar{
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:0;
+      border-right:none;
+      overflow:hidden;
+      flex-shrink:0;
+    }
+    .leader-card.featured .leader-avatar{
+      border-right:none;
+    }
+    .avatar-initials{
+      width:48px; height:48px;
+      border-radius:50%;
+      background:var(--gold);
+      display:flex; align-items:center; justify-content:center;
+      font-family:'Bebas Neue',sans-serif;
+      font-size:1rem; color:var(--black);
+      letter-spacing:1px;
+      border:2px solid rgba(201,168,76,0.3);
+    }
+    .leader-badge-tag{
+      font-size:0.55rem;
+      font-weight:700;
+      letter-spacing:1.5px;
+      text-transform:uppercase;
+      color:var(--gold);
+      text-align:center;
+      background:var(--gold-dim);
+      border:1px solid var(--gold-line);
+      padding:0.2rem 0.5rem;
+    }
+    .leader-info{ padding:0.8rem 1.2rem }
+    .leader-name{
+      font-family:'Bebas Neue',sans-serif;
+      font-size:1.2rem; letter-spacing:1px; color:var(--white);
+      margin-bottom:0.1rem;
+    }
+    .leader-title{
+      font-size:0.68rem; font-weight:600;
+      letter-spacing:1.5px; text-transform:uppercase;
+      color:var(--gold); margin-bottom:0.5rem;
+    }
+    .leader-divider{display:none;}
+    .leader-bio{
+      font-size:0.78rem; color:var(--light);
+      line-height:1.6; margin-bottom:0.4rem;
+      font-weight:300;
+    }
+    .leader-bio strong{ color:var(--white); font-weight:600 }
+    .leader-stats{
+      display:flex; gap:1.2rem; margin-top:0.6rem;
+      padding-top:0.6rem;
+      border-top:1px solid rgba(255,255,255,0.06);
+    }
+    .l-stat-n{
+      font-family:'Bebas Neue',sans-serif;
+      font-size:1.1rem; color:var(--gold); line-height:1;
+    }
+    .l-stat-l{
+      font-size:0.55rem; letter-spacing:1px;
+      text-transform:uppercase; color:var(--gray);
+      margin-top:0.1rem;
+    }
+    .leader-creds{
+      display:flex; flex-wrap:wrap; gap:0.4rem;
+      margin-top:0.6rem;
+    }
+    .leader-creds span{
+      background:var(--gold-dim);
+      border:1px solid var(--gold-line);
+      color:var(--gold);
+      font-size:0.55rem; font-weight:700;
+      letter-spacing:1px; text-transform:uppercase;
+      padding:0.2rem 0.5rem;
+    }
+
+    /* CLIENTS */
+    .clients{ background:#111827 }
+    .clients-grid{
+      display:grid;
+      grid-template-columns:repeat(6,1fr);
+      gap:1px;
+      background:var(--gold-line);
+      border:1px solid var(--gold-line);
+    }
+    .client-item{
+      background:var(--card);
+      padding:1.2rem 1rem;
+      font-size:0.78rem;
+      font-weight:600;
+      letter-spacing:1px;
+      text-transform:uppercase;
+      color:var(--gray);
+      text-align:center;
+      transition:all 0.25s;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+    }
+    .client-item:hover{
+      background:var(--deep);
+      color:var(--gold);
+    }
+
+    @media(max-width:900px){
+      .leader-card{ grid-template-columns:1fr }
+      .leader-avatar{ flex-direction:row; padding:1.5rem; border-right:none; border-bottom:1px solid var(--gold-line) }
+      .clients-grid{ grid-template-columns:repeat(3,1fr) }
+    }
+    @media(max-width:580px){
+      .clients-grid{ grid-template-columns:repeat(2,1fr) }
+      .leader-stats{ flex-wrap:wrap; gap:1rem }
+    }
+
+    /* BLOG */
+    .blog{background:linear-gradient(135deg,#080808 0%,#111827 50%,#080808 100%)}
+    .blog-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;grid-auto-rows:1fr}
+    .blog-card{background:var(--card);border:1px solid rgba(255,255,255,0.05);overflow:hidden;transition:transform 0.3s,border-color 0.3s;display:flex;flex-direction:column}
+    .blog-card:hover{transform:translateY(-5px);border-color:var(--gold-line)}
+    .blog-img-wrap{position:relative;height:160px;overflow:hidden}
+    .blog-img-placeholder{width:100%;height:100%}
+    .blog-cat{position:absolute;top:1rem;left:1rem;background:var(--gold);color:var(--black);font-size:0.65rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;padding:0.3rem 0.7rem;z-index:1}
+    .blog-body{padding:1.8rem;flex:1;display:flex;flex-direction:column}
+    .blog-meta{display:flex;gap:0.5rem;font-size:0.72rem;color:var(--gray);letter-spacing:1px;margin-bottom:0.8rem}
+    .blog-body h3{font-family:'Bebas Neue',sans-serif;font-size:1.35rem;letter-spacing:1.5px;line-height:1.2;margin-bottom:0.8rem;color:var(--white)}
+    .blog-body p{font-size:0.85rem;color:var(--gray);line-height:1.7;flex:1}
+    .blog-link{display:inline-flex;align-items:center;gap:0.4rem;color:var(--gold);font-size:0.72rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;margin-top:1.2rem;transition:gap 0.2s;text-decoration:none}
+    .blog-link:hover{gap:0.8rem}
+    @media(max-width:900px){.blog-grid{grid-template-columns:1fr}}
+
+
+    /* GOOGLE LIVE REVIEWS WIDGET */
+    .google-widget-wrap{
+      margin-top:3rem;
+      border:1px solid var(--gold-line);
+      padding:2rem;
+      background:var(--card);
+    }
+    .google-widget-header{
+      display:flex;
+      align-items:center;
+      gap:0.8rem;
+      margin-bottom:1.5rem;
+      padding-bottom:1.2rem;
+      border-bottom:1px solid rgba(255,255,255,0.06);
+      font-size:0.85rem;
+      font-weight:600;
+      letter-spacing:1px;
+      color:var(--light);
+    }
+    .gwh-rating{
+      color:#FBBC05;
+      font-size:0.9rem;
+      font-weight:700;
+      margin-left:auto;
+    }
+    .google-live-grid{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:1.2rem;
+    }
+    .g-live-card{
+      background:var(--deep);
+      border:1px solid rgba(255,255,255,0.04);
+      padding:1.5rem;
+      transition:border-color 0.2s;
+    }
+    .g-live-card:hover{ border-color:var(--gold-line); }
+    .g-live-top{
+      display:flex;
+      align-items:center;
+      gap:0.8rem;
+      margin-bottom:1rem;
+    }
+    .g-avatar{
+      width:36px;height:36px;
+      border-radius:50%;
+      background:var(--gold);
+      display:flex;align-items:center;justify-content:center;
+      font-size:0.8rem;font-weight:700;
+      color:var(--black);flex-shrink:0;
+    }
+    .g-name{font-size:0.85rem;font-weight:700;color:var(--white)}
+    .g-date{font-size:0.7rem;color:var(--gray);margin-top:0.15rem}
+    .g-stars{color:#FBBC05;font-size:0.85rem;letter-spacing:2px;margin-bottom:0.7rem}
+    .g-text{font-size:0.82rem;color:var(--gray);line-height:1.65;font-style:italic}
+    .g-loading{
+      grid-column:1/-1;
+      text-align:center;
+      color:var(--gray);
+      font-size:0.85rem;
+      padding:2rem;
+    }
+    @media(max-width:900px){.google-live-grid{grid-template-columns:1fr 1fr}}
+    @media(max-width:580px){.google-live-grid{grid-template-columns:1fr}}
+
+
+    /* LEADERSHIP */
+    .leadership{ background:linear-gradient(135deg,#0F0F0F 0%,#1A2744 50%,#0F0F0F 100%); }
+    .leadership-grid{ display:grid; grid-template-columns:1fr 1fr; gap:2rem; margin-bottom:5rem; }
+    .leader-card{ background:var(--card); border:1px solid rgba(255,255,255,0.05); padding:2.5rem; display:flex; flex-direction:column; gap:1.5rem; transition:border-color 0.3s; }
+    .leader-card:hover{ border-color:var(--gold-line); }
+    .leader-card.featured{ border-top:3px solid var(--gold); }
+    .leader-photo-wrap{ position:relative; display:inline-block; }
+    .leader-photo{ width:100px; height:100px; border-radius:50%; overflow:hidden; border:3px solid var(--gold-line); }
+    .leader-photo.placeholder{ background:linear-gradient(135deg,var(--navy),var(--deep)); display:flex; align-items:center; justify-content:center; }
+    .leader-initials{ font-family:'Bebas Neue',sans-serif; font-size:2.2rem; letter-spacing:3px; color:var(--gold); }
+    .leader-photo img{ width:100%; height:100%; object-fit:cover; object-position:center top; }
+    .leader-badge{ position:absolute; bottom:-6px; left:50%; transform:translateX(-50%); background:var(--gold); color:var(--black); font-size:0.6rem; font-weight:700; letter-spacing:1.5px; text-transform:uppercase; padding:0.2rem 0.7rem; white-space:nowrap; }
+    .leader-tag{ font-size:0.65rem; font-weight:700; letter-spacing:3px; text-transform:uppercase; color:var(--gold); margin-bottom:0.3rem; }
+    .leader-name{ font-family:'Bebas Neue',sans-serif; font-size:2rem; letter-spacing:2px; color:var(--white); margin-bottom:0.2rem; }
+    .leader-title{ font-size:0.82rem; font-weight:600; letter-spacing:1px; color:var(--gray); text-transform:uppercase; margin-bottom:1rem; }
+    .leader-bio{ font-size:0.88rem; color:var(--light); line-height:1.75; font-weight:300; margin-bottom:0.8rem; }
+    .leader-stats{ display:flex; gap:2rem; padding-top:1rem; border-top:1px solid rgba(255,255,255,0.05); }
+    .ls-num{ font-family:'Bebas Neue',sans-serif; font-size:1.6rem; color:var(--gold); line-height:1; }
+    .ls-label{ font-size:0.65rem; letter-spacing:1.5px; text-transform:uppercase; color:var(--gray); margin-top:0.2rem; }
+    .leader-credentials{ display:flex; flex-wrap:wrap; gap:0.5rem; margin-top:0.5rem; }
+    .leader-credentials span{ background:var(--gold-dim); border:1px solid var(--gold-line); color:var(--gold); font-size:0.65rem; font-weight:700; letter-spacing:1px; padding:0.3rem 0.7rem; text-transform:uppercase; }
+
+    /* DIVISIONS */
+    .divisions-wrap{ background:var(--black); padding:3rem; border:1px solid var(--gold-line); }
+    .divisions-grid{ display:grid; grid-template-columns:repeat(6,1fr); gap:1.5rem; }
+    .division-item{ text-align:center; padding:1.5rem 1rem; background:var(--card); border:1px solid rgba(255,255,255,0.04); transition:all 0.3s; border-bottom:2px solid transparent; }
+    .division-item:hover{ border-bottom-color:var(--gold); transform:translateY(-3px); }
+    .div-icon{ font-size:1.8rem; margin-bottom:0.8rem; }
+    .division-item h4{ font-family:'Barlow Condensed',sans-serif; font-size:0.88rem; font-weight:700; letter-spacing:1px; text-transform:uppercase; color:var(--white); margin-bottom:0.4rem; }
+    .division-item p{ font-size:0.75rem; color:var(--gray); line-height:1.5; }
+
+    @media(max-width:900px){
+      .leadership-grid{ grid-template-columns:1fr; }
+      .divisions-grid{ grid-template-columns:repeat(3,1fr); }
+    }
+    @media(max-width:580px){
+      .divisions-grid{ grid-template-columns:repeat(2,1fr); }
+    }
+
+
+    /* CLIENTS */
+    .clients{ background:#111827; }
+    .clients-grid{ display:grid; grid-template-columns:repeat(6,1fr); gap:1px; background:rgba(255,255,255,0.04); }
+    .client-item{ background:var(--card); padding:1.2rem 1rem; text-align:center; font-size:0.78rem; font-weight:600; letter-spacing:1px; color:var(--gray); transition:all 0.2s; text-transform:uppercase; }
+    .client-item:hover{ background:#16191f; color:var(--gold); }
+    @media(max-width:900px){ .clients-grid{ grid-template-columns:repeat(3,1fr); } }
+    @media(max-width:580px){ .clients-grid{ grid-template-columns:repeat(2,1fr); } }
+
+    /* REVIEWS */
+    .reviews{background:var(--deep)}
+    .google-rating{display:flex;align-items:center;justify-content:center;gap:0.8rem;flex-wrap:wrap;margin-top:1.2rem;padding:1rem 1.5rem;background:var(--gold-dim);border:1px solid var(--gold-line);display:inline-flex}
+    .stars{color:#FBBC05;font-size:1.2rem;letter-spacing:2px}
+    .rating-num{font-family:'Bebas Neue',sans-serif;font-size:1.8rem;color:var(--white);line-height:1}
+    .rating-label{font-size:0.72rem;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:var(--gray)}
+    .google-link{font-size:0.72rem;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--gold);transition:opacity 0.2s}
+    .google-link:hover{opacity:0.7}
+    .reviews-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}@media(max-width:1100px){.reviews-grid{grid-template-columns:repeat(2,1fr)}}@media(max-width:600px){.reviews-grid{grid-template-columns:1fr}}
+    .review-card{background:var(--card);border:1px solid rgba(255,255,255,0.05);padding:2rem;transition:transform 0.3s,border-color 0.3s}
+    .review-card:hover{transform:translateY(-4px);border-color:var(--gold-line)}
+    .review-stars{color:#FBBC05;font-size:1rem;letter-spacing:3px;margin-bottom:1rem}
+    .review-text{font-size:0.88rem;color:var(--light);line-height:1.75;font-style:italic;margin-bottom:1.5rem;font-weight:300}
+    .review-author{display:flex;align-items:center;gap:0.8rem}
+    .review-avatar{width:38px;height:38px;border-radius:50%;background:var(--gold);display:flex;align-items:center;justify-content:center;font-size:0.75rem;font-weight:700;color:var(--black);flex-shrink:0}
+    .review-name{font-size:0.88rem;font-weight:700;color:var(--white)}
+    .review-meta{font-size:0.72rem;color:var(--gray);margin-top:0.15rem}
+    @media(max-width:900px){.reviews-grid{grid-template-columns:1fr}}
+
+    
+    @media(max-width:900px){
+      .nav-links{display:none}
+      .hamburger{display:flex}
+      .nav-phone-mobile{display:inline-block!important;margin-right:12px}
+      .nav-links.open{display:flex;flex-direction:column;position:absolute;top:68px;left:0;right:0;background:var(--deep);border-bottom:1px solid var(--gold-line);padding:1.5rem 6%;gap:1.2rem}
+      .about-grid,.why-grid,.contact-grid{grid-template-columns:1fr}
+      .about-img-wrap{height:320px}
+      .services-grid{grid-template-columns:1fr 1fr}
+      .ind-grid{grid-template-columns:repeat(2,1fr)}
+      .faq-grid{grid-template-columns:1fr}
+      .footer-grid{grid-template-columns:1fr 1fr}
+      .hero-stats{gap:1.8rem}
+    }
+    @media(max-width:580px){
+      .services-grid{grid-template-columns:1fr}
+      .ind-grid{grid-template-columns:1fr 1fr}
+      .form-row{grid-template-columns:1fr}
+      .footer-grid{grid-template-columns:1fr}
+      .hero h1{font-size:3.5rem}
+      .hero-badge-logo{width:280px;height:280px;margin-top:0}
+      .hero-layout{flex-direction:column;text-align:center}
+    }
+    @media(max-width:768px){
+      .sticky-call{top:115px;right:0;padding:14px 24px;border-radius:0}
+      .sticky-call .call-line1{font-size:15px}
+      .sticky-call .call-line2{font-size:13px}
+    }
+  
+    /* URGENCY BANNER */
+    .urgency-bar{background:linear-gradient(90deg,#0a0d14 0%,#13161d 50%,#0a0d14 100%);border-bottom:1px solid rgba(201,168,76,0.3);padding:0.6rem 6%;position:sticky;top:68px;z-index:900;animation:slideDown 0.5s ease}
+    @keyframes slideDown{from{transform:translateY(-100%);opacity:0}to{transform:translateY(0);opacity:1}}
+    .ub-inner{display:flex;align-items:center;gap:1rem;max-width:1300px;margin:0 auto}
+    .ub-pulse{width:8px;height:8px;background:var(--gold);border-radius:50%;flex-shrink:0;animation:pulse 2s infinite}
+    .ub-text{font-size:0.78rem;color:var(--light);flex:1;line-height:1.4}
+    .ub-text strong{color:var(--gold)}
+    .ub-cta{background:var(--gold);color:var(--black);font-size:0.7rem;font-weight:700;letter-spacing:1.5px;padding:0.4rem 1rem;white-space:nowrap;flex-shrink:0;transition:background 0.2s}
+    .ub-cta:hover{background:var(--gold-lt)}
+    .ub-close{background:none;border:none;color:var(--gray);font-size:0.8rem;cursor:pointer;padding:0.2rem 0.4rem;flex-shrink:0;transition:color 0.2s}
+    .ub-close:hover{color:var(--white)}
+    @media(max-width:768px){.ub-cta{display:none}.ub-text{font-size:0.72rem}}
+    /* LOGO SCROLL */
+    .logo-scroll-wrap{overflow:hidden;position:relative;margin-bottom:3rem}
+    .logo-scroll-wrap::before,.logo-scroll-wrap::after{content:'';position:absolute;top:0;bottom:0;width:120px;z-index:2;pointer-events:none}
+    .logo-scroll-wrap::before{left:0;background:linear-gradient(90deg,var(--black),transparent)}
+    .logo-scroll-wrap::after{right:0;background:linear-gradient(-90deg,var(--black),transparent)}
+    .logo-track{display:flex;gap:1px;width:max-content;animation:logoScroll 40s linear infinite}
+    .logo-track:hover{animation-play-state:paused}
+    @keyframes logoScroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+    .logo-card{background:var(--card);border:1px solid rgba(255,255,255,0.04);width:160px;height:110px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:0.3rem;flex-shrink:0;transition:border-color 0.3s,background 0.3s;padding:0.6rem 1rem}
+    .logo-card:hover{border-color:var(--gold-line);background:#16191f}
+    .logo-card img{max-width:120px;max-height:50px;object-fit:contain;filter:brightness(0) invert(1);opacity:0.85;transition:opacity 0.3s,filter 0.3s}
+    .logo-card:hover img{opacity:1;filter:brightness(0) invert(1) sepia(1) saturate(5) hue-rotate(10deg) brightness(0.85)}
+    .logo-abbr{font-family:'Bebas Neue',sans-serif;font-size:1.6rem;letter-spacing:3px;color:var(--gold);line-height:1}
+    .logo-name{font-size:0.68rem;font-weight:700;letter-spacing:1px;color:var(--white);text-align:center;text-transform:uppercase}
+    .logo-sector{font-size:0.6rem;color:var(--gray);letter-spacing:0.5px;text-align:center}
+    /* CLIENT TAGS */
+    .client-tags{display:flex;flex-wrap:wrap;gap:0.5rem;justify-content:center;max-width:1100px;margin:0 auto;padding:0 6%}
+    .client-tag{background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.06);color:var(--gray);font-size:0.7rem;font-weight:600;letter-spacing:1px;padding:0.35rem 0.8rem;text-transform:uppercase;transition:all 0.2s}
+    .client-tag:hover{border-color:var(--gold-line);color:var(--gold)}
+    /* PHOTO GALLERY */
+    .photo-gallery{background:#111827;padding:6rem 6%;border-top:1px solid var(--gold-line);border-bottom:1px solid var(--gold-line)}
+    .gallery-grid{display:grid;grid-template-columns:1fr 1fr 1fr 1fr;grid-template-rows:280px 280px;gap:3px;max-width:1300px;margin:0 auto}
+    .gallery-item{position:relative;overflow:hidden;background:var(--card)}
+    .gallery-item.tall{grid-row:span 2}
+    .gallery-item img{width:100%;height:100%;object-fit:cover;display:block;transition:transform 0.5s ease}
+    .gallery-item:hover img{transform:scale(1.05)}
+    .gallery-caption{position:absolute;bottom:0;left:0;right:0;background:linear-gradient(transparent,rgba(8,8,8,0.9));color:var(--white);font-size:0.72rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;padding:1.5rem 1rem 0.8rem;opacity:0;transition:opacity 0.3s}
+    .gallery-item:hover .gallery-caption{opacity:1}
+    @media(max-width:900px){.gallery-grid{grid-template-columns:1fr 1fr;grid-template-rows:auto}.gallery-item.tall,.gallery-item{height:240px}}
+    /* OFFICER STRIP */
+    .officer-strip{display:grid;grid-template-columns:1fr 1fr;gap:0;margin-top:3rem;border:1px solid var(--gold-line);overflow:hidden}
+    .officer-strip-img{height:420px;overflow:hidden}
+    .officer-strip-text{background:var(--card);padding:3.5rem;display:flex;flex-direction:column;justify-content:center;border-left:1px solid var(--gold-line)}
+    .officer-strip-text h3{font-family:'Bebas Neue',sans-serif;font-size:2rem;letter-spacing:2px;color:var(--white);margin:0.5rem 0 1rem;line-height:1.15}
+    .officer-strip-text p{font-size:0.88rem;color:var(--light);line-height:1.75}
+    @media(max-width:900px){.officer-strip{grid-template-columns:1fr}.officer-strip-img{height:280px}.officer-strip-text{padding:2rem}}
+    /* ABOUT IMAGE */
+    .about-img-wrap{min-height:420px}
+    @media(max-width:900px){.about-img-wrap{min-height:280px}}
+
+    /* ── MOBILE OVERFLOW SAFETY NET (<768px) ── */
+    @media(max-width:767px){
+      section, .sec, .container, div, h1, h2, h3, h4, h5, h6, p, li, a, span {
+        max-width:100%;
+        word-wrap:break-word;
+        overflow-wrap:break-word;
+      }
+      section, .sec, .container { width:100%; }
+      img, video, iframe, table { max-width:100%; height:auto; }
+      pre, code { white-space:pre-wrap; word-break:break-word; }
+      /* Disable any desktop fixed widths that exceed viewport */
+      [style*="width:1300px"],[style*="width:1200px"],[style*="width:1100px"],[style*="width:1000px"],[style*="width:900px"]{ width:100% !important; max-width:100% !important; }
+    }
+
   </style>
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Security Company Orlando | U.S.S. Agency">
+  <meta property="og:description" content="Elite security company. Licensed, insured, 22+ years. Armed and unarmed officers, executive protection, HOA, fire watch, mobile patrol.">
+  <meta property="og:url" content="https://www.ussagency.com/security-company-orlando">
+  <meta property="og:site_name" content="U.S.S. Agency">
+  <meta property="og:image" content="https://www.ussagency.com/og-image.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FP14V8HQHJ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-FP14V8HQHJ');
+
+  // GA4 phone call click tracking
+  document.addEventListener('click', function(e) {
+    var link = e.target.closest('a[href^="tel:"]');
+    if (link) {
+      gtag('event', 'phone_call_click', {
+        phone_number: link.getAttribute('href').replace('tel:', '')
+      });
+    }
+  });
+</script>
 </head>
 <body>
 
+<!-- STICKY CALL BUTTON -->
+<a href="tel:13213042430" class="sticky-call"><span class="call-line1">Call Now</span><span class="call-sep">|</span><span class="call-line2">1-321-304-2430</span></a>
 
-<nav class="nav">
-  <a href="/" class="nav-logo">U.S.S. AGENCY</a>
-  <a href="tel:3213042430" class="nav-phone">321-304-2430</a>
-</nav>
-
-<section class="hero">
-  <div class="badge-row">
-    <span class="badge">Licensed</span>
-    <span class="badge">Insured</span>
-    <span class="badge">22+ Years</span>
-    <span class="badge">Answered 24/7</span>
+<!-- NAV -->
+<nav>
+        <a href="/" style="display:flex;align-items:center;gap:0.8rem;text-decoration:none">
+    <img src="images/img-02.png" alt="USS Agency - Ultimate Security Services" style="height:62px;width:auto;object-fit:contain;filter:drop-shadow(0 0 8px rgba(201,168,76,0.7)) drop-shadow(0 0 16px rgba(201,168,76,0.4)) drop-shadow(0 0 2px rgba(201,168,76,0.9))">
+    <div style="display:flex;flex-direction:column;line-height:1">
+      <span style="font-family:'Bebas Neue',sans-serif;font-size:1.7rem;font-weight:900;letter-spacing:5px;color:#c9a84c">U.S.S.</span>
+      <span style="font-family:'Bebas Neue',sans-serif;font-size:1.2rem;font-weight:900;letter-spacing:6px;color:#f0f0eb;margin-top:-4px">AGENCY</span>
+    </div>
+  </a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#about">About</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#industries">Industries</a></li>
+    <li><a href="#reviews">Testimonials</a></li>
+    <li><a href="#team">Leadership</a></li>
+    <li><a href="#why">Why Us</a></li>
+    <li><a href="#faq">FAQ</a></li>
+    <li><a href="#blog">Blog</a></li>
+    <li><a href="#contact">Contact Us</a></li>
+  </ul>
+  <div class="hamburger" onclick="toggleNav()">
+    <span></span><span></span><span></span>
   </div>
-  <h1>Elite Security. Built by Professionals.</h1>
-  <p>U.S.S. Agency is a full-service private security company delivering armed and unarmed protection, executive security, residential patrols, and corporate coverage to clients who refuse to compromise on who stands between them and risk. Field operations led by law enforcement firearms instructors and military veterans. No call centers. No rotating staff. Just the standard your protection detail is supposed to meet.</p>
+</nav>
+<div class="urgency-bar" id="urgencyBar">
+  <div class="ub-inner">
+    <div class="ub-pulse"></div>
+    <span class="ub-text"><strong>Now Accepting New Clients</strong> — Slots are limited. Request your consultation before availability fills.</span>
+    <a href="#contact" class="ub-cta">Request a Quote →</a>
+  </div>
+</div>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-layout">
+    <div class="hero-content">
+      <div class="hero-badge">Elite Protection — 24/7 Operations</div>
+      <h1>
+        Elite Security.<br>
+        <span class="gold">Built by Professionals.</span>
+      </h1>
+      <p style="font-size:1.25rem;margin-bottom:1.8rem;opacity:0.9;">U.S.S. Agency delivers armed and unarmed protection, executive security, residential patrols, and corporate coverage to clients who refuse to compromise.</p>
+      <p style="font-size:1.2rem;font-weight:400;letter-spacing:1px;">Field operations led by law enforcement firearms instructors and military veterans.</p>
+      <div class="hero-btns">
+        <a href="#contact" class="btn btn-gold">Request a Quote &rarr;</a>
+        <a href="tel:13213042430" class="btn btn-ghost">1-321-304-2430</a>
+      </div>
+      <div class="hero-guarantee">
+        <div class="hg-icon">&#9889;</div>
+        <div class="hg-text">
+          <strong>Answered 24/7</strong>
+          <span>Phones and field operations are live around the clock. A specialist contacts you within 24 business hours of request.</span>
+        </div>
+        <div class="hg-badge">ANSWERED 24/7</div>
+      </div>
+      <div class="hero-stats">
+        <div><div class="stat-n">22+</div><div class="stat-l">Years of Excellence</div></div>
+        <div><div class="stat-n">24/7</div><div class="stat-l">Around the Clock</div></div>
+        <div><div class="stat-n">280+</div><div class="stat-l">Trained Professionals</div></div>
+        <div><div class="stat-n">100%</div><div class="stat-l">Licensed &amp; Insured</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+<div style="width:100%;height:2px;background:#C9A84C;"></div>
+
+<!-- TRUST BAR -->
+<div class="trust">
+  <div class="trust-item"><span class="dot">&#10022;</span> Florida License # B2800082</div>
+  <div class="trust-item"><span class="dot">&#10022;</span> Fully Licensed &amp; Insured</div>
+  <div class="trust-item"><span class="dot">&#10022;</span> Background-Checked Officers</div>
+  <div class="trust-item"><span class="dot">&#10022;</span> State-Certified Training</div>
+  <div class="trust-item"><span class="dot">&#10022;</span> Florida &amp; Nationwide Coverage</div>
+</div>
+
+<!-- ABOUT / WHO WE ARE -->
+<section class="about" id="about" style="padding:5rem 6%;">
+  <div style="max-width:1100px;margin:0 auto;">
+    <h2 style="font-family:'Bebas Neue',sans-serif;font-size:2.4rem;color:var(--gold);letter-spacing:2px;margin-bottom:1.5rem;border-left:4px solid var(--gold);padding-left:1rem;">Protection Without Compromise</h2>
+    <p style="color:var(--light);font-size:1.08rem;line-height:1.85;margin-bottom:1.3rem;">The difference between a security company you hire and a security company you trust comes down to one question: who is actually on the post when something happens? U.S.S. Agency was built around the answer. Every officer on our roster is individually vetted, licensed, trained to standard, and accountable to a field lead who knows their name.</p>
+    <p style="color:var(--light);font-size:1.08rem;line-height:1.85;margin-bottom:1.3rem;">We serve businesses, residential communities, executives, events, and sensitive environments. Our clients include corporate headquarters, multi-family apartment complexes, homeowners associations, private schools, hospitals, places of worship, construction sites, retail plazas, and hospitality properties. Every engagement is scoped with written post orders, defined shift structure, and written escalation protocols &mdash; never a cookie-cutter proposal.</p>
+
+    <div style="background:linear-gradient(135deg,rgba(201,168,76,0.06) 0%,rgba(10,13,20,0.85) 100%);border-left:5px solid var(--gold);padding:1.75rem 2rem;margin:2.25rem 0;box-shadow:0 4px 24px rgba(201,168,76,.1)">
+      <div style="font-family:'Barlow Condensed',sans-serif;font-size:.72rem;letter-spacing:.28em;text-transform:uppercase;color:var(--gold);margin-bottom:.6rem;font-weight:700">The U.S.S. Agency Standard</div>
+      <p style="font-family:'Bebas Neue',sans-serif;font-size:1.3rem;color:var(--white);line-height:1.55;letter-spacing:.5px;margin:0;">Every officer we deploy is licensed, vetted, and trained to a standard measurably higher than the state minimum. Armed officers hold an active Class G Statewide Firearms License. Unarmed officers hold an active Class D Security Officer License. Field leadership includes certified Law Enforcement Firearms Instructors and personnel with active-duty military experience.</p>
+    </div>
+  </div>
+</section>
+<div style="width:100%;height:2px;background:#C9A84C;"></div>
+
+<!-- SERVICES / WHO WE PROTECT -->
+<section class="services" id="services" style="padding:5rem 6%;">
+  <div style="max-width:1200px;margin:0 auto;">
+    <h2 style="font-family:'Bebas Neue',sans-serif;font-size:2.4rem;color:var(--gold);letter-spacing:2px;margin-bottom:2rem;text-align:center;">Who We Protect</h2>
+    <div class="services-grid" style="grid-template-columns:repeat(3,1fr);">
+      <div class="svc-card"><h3 style="font-family:'Bebas Neue',sans-serif;color:var(--gold);font-size:1.25rem;letter-spacing:1.5px;margin-bottom:.6rem;">Corporations</h3><p style="color:var(--light);font-size:.95rem;">Executive suites, corporate headquarters, workplace violence deployments, sensitive project security.</p></div>
+      <div class="svc-card"><h3 style="font-family:'Bebas Neue',sans-serif;color:var(--gold);font-size:1.25rem;letter-spacing:1.5px;margin-bottom:.6rem;">Residential Communities</h3><p style="color:var(--light);font-size:.95rem;">HOA and COA patrols, gated communities, luxury multi-family, concierge desk coverage.</p></div>
+      <div class="svc-card"><h3 style="font-family:'Bebas Neue',sans-serif;color:var(--gold);font-size:1.25rem;letter-spacing:1.5px;margin-bottom:.6rem;">Hospitality</h3><p style="color:var(--light);font-size:.95rem;">Hotels, resorts, entertainment properties requiring discreet, guest-forward security.</p></div>
+      <div class="svc-card"><h3 style="font-family:'Bebas Neue',sans-serif;color:var(--gold);font-size:1.25rem;letter-spacing:1.5px;margin-bottom:.6rem;">Events</h3><p style="color:var(--light);font-size:.95rem;">Galas, conventions, sports, weddings, corporate gatherings &mdash; scalable officer teams with event leadership.</p></div>
+      <div class="svc-card"><h3 style="font-family:'Bebas Neue',sans-serif;color:var(--gold);font-size:1.25rem;letter-spacing:1.5px;margin-bottom:.6rem;">Executives &amp; Principals</h3><p style="color:var(--light);font-size:.95rem;">Single-principal EP details, family security, travel logistics, threat-based coverage models.</p></div>
+      <div class="svc-card"><h3 style="font-family:'Bebas Neue',sans-serif;color:var(--gold);font-size:1.25rem;letter-spacing:1.5px;margin-bottom:.6rem;">Construction &amp; Industrial</h3><p style="color:var(--light);font-size:.95rem;">Job site theft deterrence, equipment protection, fire watch, after-hours coverage.</p></div>
+      <div class="svc-card"><h3 style="font-family:'Bebas Neue',sans-serif;color:var(--gold);font-size:1.25rem;letter-spacing:1.5px;margin-bottom:.6rem;">Retail</h3><p style="color:var(--light);font-size:.95rem;">Loss prevention, plainclothes surveillance, customer-safety patrols, anchored retail and plazas.</p></div>
+      <div class="svc-card"><h3 style="font-family:'Bebas Neue',sans-serif;color:var(--gold);font-size:1.25rem;letter-spacing:1.5px;margin-bottom:.6rem;">Healthcare</h3><p style="color:var(--light);font-size:.95rem;">Hospital emergency-department de-escalation, patient safety, nursing-home security.</p></div>
+      <div class="svc-card"><h3 style="font-family:'Bebas Neue',sans-serif;color:var(--gold);font-size:1.25rem;letter-spacing:1.5px;margin-bottom:.6rem;">Schools &amp; Houses of Worship</h3><p style="color:var(--light);font-size:.95rem;">Private schools, day care centers, church security teams, community-sensitive deployments.</p></div>
+    </div>
+  </div>
+</section>
+<div style="width:100%;height:2px;background:#C9A84C;"></div>
+
+<!-- WHY / STANDARDS -->
+<section class="why" id="why" style="padding:5rem 6%;">
+  <div style="max-width:1100px;margin:0 auto;">
+    <h2 style="font-family:'Bebas Neue',sans-serif;font-size:2.4rem;color:var(--gold);letter-spacing:2px;margin-bottom:2rem;border-left:4px solid var(--gold);padding-left:1rem;">Every Officer. Every Shift. Every Site.</h2>
+
+    <h3 style="font-family:'Bebas Neue',sans-serif;color:var(--gold);font-size:1.4rem;letter-spacing:1.5px;margin:1.5rem 0 .75rem;">Vetting and licensing</h3>
+    <p style="color:var(--light);font-size:1.05rem;line-height:1.8;margin-bottom:1.1rem;">Every officer passes a multi-stage background check, drug screen, and credential verification before placement. Armed officers complete annual firearms requalification. Every license is kept current and on person. If an officer's license lapses, they are off the roster the same day &mdash; no exceptions.</p>
+
+    <h3 style="font-family:'Bebas Neue',sans-serif;color:var(--gold);font-size:1.4rem;letter-spacing:1.5px;margin:1.5rem 0 .75rem;">Training led by real instructors</h3>
+    <p style="color:var(--light);font-size:1.05rem;line-height:1.8;margin-bottom:1.1rem;">Our training is led by certified Law Enforcement Firearms Instructors and seasoned field leadership with active-duty military backgrounds. We reinforce baseline training continually with de-escalation, legal use-of-force training, incident documentation, emergency response protocols, and client-specific site procedures. Most security companies stop at the state minimum. We start there.</p>
+
+    <h3 style="font-family:'Bebas Neue',sans-serif;color:var(--gold);font-size:1.4rem;letter-spacing:1.5px;margin:1.5rem 0 .75rem;">Technology you can actually see</h3>
+    <p style="color:var(--light);font-size:1.05rem;line-height:1.8;margin-bottom:1.1rem;">Every deployment includes GPS check-in and check-out, digital Daily Activity Reports with photo evidence, real-time incident alerts to the client and account manager, and a client-facing dashboard.</p>
+
+    <h3 style="font-family:'Bebas Neue',sans-serif;color:var(--gold);font-size:1.4rem;letter-spacing:1.5px;margin:1.5rem 0 .75rem;">Local field operations</h3>
+    <p style="color:var(--light);font-size:1.05rem;line-height:1.8;margin-bottom:1.1rem;">When something happens on your property, the person handling it is local. You don't get routed to a regional call center. You get a field lead who can be on your site in the time it takes to make a coffee.</p>
+  </div>
+</section>
+<div style="width:100%;height:2px;background:#C9A84C;"></div>
+
+<!-- SERVICES LIST / INTERNAL LINKS -->
+<section id="services-list" style="background:linear-gradient(135deg,#0F0F0F 0%,#1A2744 50%,#0F0F0F 100%);padding:5rem 6%;">
+  <div style="max-width:1100px;margin:0 auto;">
+    <h2 style="font-family:'Bebas Neue',sans-serif;font-size:2.4rem;color:var(--gold);letter-spacing:2px;margin-bottom:1.5rem;border-left:4px solid var(--gold);padding-left:1rem;">Services We Offer</h2>
+    <ul style="list-style:none;padding:0;columns:2;column-gap:3rem;color:var(--light);font-size:1.02rem;line-height:2;">
+      <li><a href="/armed-security-guards" style="color:var(--gold-lt);">Armed security officers</a></li>
+      <li><a href="/unarmed-security" style="color:var(--gold-lt);">Unarmed security officers</a></li>
+      <li><a href="/executive-protection" style="color:var(--gold-lt);">Executive protection</a></li>
+      <li><a href="/hoa-coa-security" style="color:var(--gold-lt);">HOA and COA security</a></li>
+      <li><a href="/event-security" style="color:var(--gold-lt);">Event security</a></li>
+      <li><a href="/fire-watch" style="color:var(--gold-lt);">Fire watch</a></li>
+      <li><a href="/mobile-patrol" style="color:var(--gold-lt);">Mobile patrol</a></li>
+      <li><a href="/plainclothes-security" style="color:var(--gold-lt);">Plainclothes security</a></li>
+      <li><a href="/off-duty-law-enforcement" style="color:var(--gold-lt);">Off-duty law enforcement</a></li>
+      <li><a href="/access-control" style="color:var(--gold-lt);">Access control</a></li>
+      <li><a href="/workplace-violence-prevention" style="color:var(--gold-lt);">Workplace violence prevention</a></li>
+      <li><a href="/construction-site-security" style="color:var(--gold-lt);">Construction site security</a></li>
+      <li><a href="/retail-plaza-security" style="color:var(--gold-lt);">Retail security</a></li>
+      <li><a href="/parking-lot-security" style="color:var(--gold-lt);">Parking lot security</a></li>
+      <li><a href="/school-security" style="color:var(--gold-lt);">School security</a></li>
+      <li><a href="/church-security" style="color:var(--gold-lt);">Church security</a></li>
+      <li><a href="/hotel-resort-security" style="color:var(--gold-lt);">Hotel and resort security</a></li>
+      <li><a href="/hospital-security" style="color:var(--gold-lt);">Hospital security</a></li>
+    </ul>
+  </div>
+</section>
+<div style="width:100%;height:2px;background:#C9A84C;"></div>
+
+<!-- LICENSING -->
+<section style="background:linear-gradient(135deg,#080808 0%,#111827 50%,#080808 100%);padding:5rem 6%;">
+  <div style="max-width:900px;margin:0 auto;">
+    <h2 style="font-family:'Bebas Neue',sans-serif;font-size:2.4rem;color:var(--gold);letter-spacing:2px;margin-bottom:1.5rem;border-left:4px solid var(--gold);padding-left:1rem;">Licensing and Compliance</h2>
+    <p style="color:var(--light);font-size:1.05rem;line-height:1.85;margin-bottom:1.2rem;">U.S.S. Agency operates under Florida Statute Chapter 493, Section 6301 et seq. &mdash; the Florida Private Security Services Act &mdash; with our Class B Agency License on file with the Florida Department of Agriculture and Consumer Services, Division of Licensing. We carry commercial general liability coverage above the statutory minimum. Certificates of insurance are available to every client on request and are updated annually. Every officer carries their individual Class D and Class G license on person while on duty, verifiable through FDACS at any time.</p>
+  </div>
+</section>
+<div style="width:100%;height:2px;background:#C9A84C;"></div>
+
+<!-- CONTACT / FORM -->
+<section class="contact" id="contact" style="padding:5rem 6%;border-top:1px solid var(--gold-line);">
+  <div style="max-width:1300px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:stretch;">
+
+    <div>
+      <h2 style="font-family:'Bebas Neue',sans-serif;font-size:2.4rem;color:var(--gold);letter-spacing:2px;margin-bottom:1.25rem;">Request a Consultation</h2>
+      <p style="color:var(--light);font-size:1.05rem;line-height:1.85;margin-bottom:1.2rem;">U.S.S. Agency is answered 24 hours a day, seven days a week. Complete the form and a specialist will personally contact you within 24 business hours.</p>
+      <p style="color:var(--light);font-size:1.05rem;line-height:1.85;">Or call direct: <a href="tel:13213042430" style="color:var(--gold-lt);font-weight:700;">1-321-304-2430</a></p>
+    </div>
+
+    <!-- LEAD CAPTURE FORM -->
+    <div class="form-wrap">
+      <h3 class="form-title">Get Your Free Quote</h3>
+      <p class="form-sub">Fill out the form below and a U.S.S. Agency specialist will contact you within 24 hours.</p>
+      <form id="leadFormScp" onsubmit="submitFormScp(event)">
+        <div class="form-row">
+          <div class="form-group">
+            <label>First Name *</label>
+            <input type="text" name="firstName" placeholder="John" required>
+          </div>
+          <div class="form-group">
+            <label>Last Name *</label>
+            <input type="text" name="lastName" placeholder="Smith" required>
+          </div>
+        </div>
+
+  </div>
 </section>
 
-<div class="content">
-
-<h2>Protection Without Compromise</h2>
-<p>The difference between a security company you hire and a security company you trust comes down to one question: who is actually on the post when something happens? U.S.S. Agency was built around the answer. Every officer on our roster is individually vetted, licensed, trained to standard, and accountable to a field lead who knows their name. Every deployment has written post orders, GPS-verified check-ins, digital incident reporting, and a direct line to a supervisor who answers on the first ring — because the moment you need security is never a moment to be on hold.</p>
-<p>We serve businesses, residential communities, executives, events, and sensitive environments across our operating area. Our clients include corporate headquarters, multi-family apartment complexes, homeowners associations, private schools, hospitals, places of worship, construction sites, retail plazas, and hospitality properties. Each engagement begins the same way: a field lead walks your site, understands your exposure profile, and returns a written scope of work and a proposal you can compare against any other offer in the market. We have never sent a cookie-cutter proposal and we never will.</p>
-
-<div class="standard-block">
-  <div class="label">The U.S.S. Agency Standard</div>
-  <p>Every officer we deploy is licensed, vetted, and trained to a standard measurably higher than the state minimum. Armed officers hold an active Class G Statewide Firearms License. Unarmed officers hold an active Class D Security Officer License. Field leadership includes certified law enforcement firearms instructors and personnel with active-duty military experience. No simulations. No corners cut. No second-rate officers in our uniform.</p>
-</div>
-
-<h2>Who We Protect</h2>
-<div class="services-grid">
-  <div class="service-card"><h4>Corporations</h4><p>Executive suites, corporate headquarters, workplace violence deployments, sensitive project security.</p></div>
-  <div class="service-card"><h4>Residential Communities</h4><p>HOA and COA patrols, gated communities, luxury multi-family, concierge desk coverage.</p></div>
-  <div class="service-card"><h4>Hospitality</h4><p>Hotels, resorts, and entertainment properties requiring discreet, guest-forward security.</p></div>
-  <div class="service-card"><h4>Events</h4><p>Galas, conventions, sports, weddings, corporate gatherings — scalable officer teams with event leadership.</p></div>
-  <div class="service-card"><h4>Executives & Principals</h4><p>Single-principal EP details, family security, travel logistics, threat-based coverage models.</p></div>
-  <div class="service-card"><h4>Construction & Industrial</h4><p>Job site theft deterrence, equipment protection, fire watch, after-hours coverage.</p></div>
-  <div class="service-card"><h4>Retail</h4><p>Loss prevention, plainclothes surveillance, customer-safety patrols, anchored retail and plazas.</p></div>
-  <div class="service-card"><h4>Healthcare</h4><p>Hospital emergency-department de-escalation, patient safety, nursing-home security.</p></div>
-  <div class="service-card"><h4>Schools & Houses of Worship</h4><p>Private schools, day care centers, church security teams, community-sensitive deployments.</p></div>
-</div>
-
-<h2>Services We Offer</h2>
-<ul>
-  <li><a href="/armed-security-guards">Armed security officers</a> — Class D and G licensed, uniformed or plainclothes, short-term or contracted</li>
-  <li><a href="/unarmed-security">Unarmed security officers</a> — concierge-style and low-risk deployments</li>
-  <li><a href="/executive-protection">Executive protection</a> — single-principal and family security, travel coverage, threat-based EP</li>
-  <li><a href="/hoa-coa-security">HOA and COA security</a> — roving patrols, gate staffing, incident response, reporting for community management</li>
-  <li><a href="/event-security">Event security</a> — planning, coordination, crowd management, VIP protection</li>
-  <li><a href="/fire-watch">Fire watch</a> — NFPA 241 compliant fire watch for construction, post-inspection coverage, sprinkler downtime</li>
-  <li><a href="/mobile-patrol">Mobile patrol</a> — marked-vehicle patrols for properties that don't require full-time on-site</li>
-  <li><a href="/plainclothes-security">Plainclothes security</a> — loss prevention, discreet surveillance, undercover operations</li>
-  <li><a href="/off-duty-law-enforcement">Off-duty law enforcement</a> — certified active and retired LEOs for elevated-risk assignments</li>
-  <li><a href="/access-control">Access control</a> — visitor management, gate control, credential verification</li>
-  <li><a href="/workplace-violence-prevention">Workplace violence prevention</a> — threat response, suspension deployments, ongoing posture</li>
-  <li><a href="/construction-site-security">Construction site security</a> — theft deterrence, equipment protection, after-hours coverage</li>
-  <li><a href="/retail-plaza-security">Retail security</a> — plaza and mall coverage, shoplifting prevention, customer safety</li>
-  <li><a href="/parking-lot-security">Parking lot security</a> — vehicle-theft prevention, customer-safety patrols, overnight coverage</li>
-  <li><a href="/school-security">School security</a> — private schools, day care centers, tutoring facilities</li>
-  <li><a href="/church-security">Church security</a> — worship services, special events, and ministry protection</li>
-  <li><a href="/hotel-resort-security">Hotel and resort security</a> — discreet, hospitality-trained deployments</li>
-  <li><a href="/hospital-security">Hospital security</a> — healthcare de-escalation, ER response, patient-safety coverage</li>
-</ul>
-
-<h2>Every Officer. Every Shift. Every Site.</h2>
-<h3>Vetting and licensing</h3>
-<p>Every officer passes a multi-stage background check, drug screen, and credential verification before they are placed on a client site. Armed officers complete annual firearms requalification. Every license is kept current and on person. If an officer's license lapses, they are off the roster the same day — no exceptions.</p>
-
-<h3>Training led by real instructors</h3>
-<p>Our training is led by certified Law Enforcement Firearms Instructors and seasoned field leadership with active-duty military backgrounds. We reinforce baseline training continually with de-escalation, legal use-of-force training, incident documentation, emergency response protocols, and client-specific site procedures. Most security companies stop at the state minimum. We start there.</p>
-
-<h3>Technology you can actually see</h3>
-<p>Every deployment includes GPS check-in and check-out, digital Daily Activity Reports with photo evidence, real-time incident alerts to the client and account manager, and a client-facing dashboard. If your site isn't covered in the way we promised, you know it before the sun comes up — not at the end of the billing cycle.</p>
-
-<h3>Local field operations</h3>
-<p>When something happens on your property, the person handling it lives here. You don't get routed to a regional call center three time zones away. You get a field lead who can be on your site in the time it takes to make a coffee. Our account managers answer their phones, their emails, and their texts — because that is the job.</p>
-
-<h2>Our Licensing and Compliance</h2>
-<p>U.S.S. Agency operates under Florida Statute Chapter 493, Section 6301 et seq. — the Florida Private Security Services Act — with our Class B Agency License on file with the Florida Department of Agriculture and Consumer Services, Division of Licensing. We carry commercial general liability coverage above the statutory minimum. Certificates of insurance are available to every client on request and are updated annually. Every officer and every armed officer carries their individual Class D and Class G license on person while on duty, and every license is verifiable through FDACS at any time.</p>
-
-<h2>What Elite Security Actually Costs</h2>
-<p>Security pricing is driven by license type (armed vs unarmed), schedule profile (single shift, 24/7, weekend-only, event-based), threat level, and duration. Unarmed officer engagements typically run in the $22 to $35 per hour range. Armed officer engagements run $35 to $55 per hour or above based on risk profile. Executive protection is scoped individually. We do not underbid to win work — the cheapest security company on the market is almost always the most expensive decision a client can make after an incident they paid too little to prevent.</p>
-<p>Every engagement starts with a no-cost site assessment. A field lead walks your property (in person or virtually depending on scope), reviews your exposure points and operating environment, and returns a written proposal with recommended officer posture, shift structure, coverage schedule, and total monthly investment. Most clients see officers deployed within 72 hours of proposal signature.</p>
-
-<h2>What Makes U.S.S. Agency Different</h2>
-<ul>
-  <li><strong>Field leadership that knows the work.</strong> Our leadership includes certified law enforcement firearms instructors and military veterans with active-duty operational experience.</li>
-  <li><strong>Real technology, not marketing slides.</strong> GPS check-ins, digital DARs, real-time alerts, and client dashboards are baseline — not premium add-ons.</li>
-  <li><strong>Officers who stay.</strong> Our retention is a direct result of how we pay, train, and respect the people who wear our uniform. A returning officer on your site knows your gates, your staff, and your routines — and that is protection you can't buy from a rotating roster.</li>
-  <li><strong>Client service with a pulse.</strong> You get a direct line to a field lead and an account manager. Both answer. Both show up. Both own the outcome.</li>
-  <li><strong>Proposals without fog.</strong> Written scope, written post orders, written escalation protocols. No surprises in month two.</li>
-</ul>
-
-<h2>Start With a Site Assessment</h2>
-<p>If you have a site, an event, an executive detail, or a security concern — a 20-minute phone call with U.S.S. Agency is free, and it gives you a clear picture of what the right protection actually looks like. Call <a href="tel:3213042430">321-304-2430</a> or complete the <a href="/contact">contact form</a>. Phones are answered 24 hours a day, 7 days a week. We will meet you on your property when you're ready.</p>
-
-</div>
-
-<section class="cta-section">
-  <h2 style="font-family:'Bebas Neue',sans-serif;color:var(--gold);font-size:2.2rem;letter-spacing:2px;margin-bottom:.75rem">Request a Security Consultation</h2>
-  <p style="color:var(--light);margin-bottom:1.5rem;max-width:620px;margin-left:auto;margin-right:auto">No-cost assessment. Written proposal within 48 hours of walkthrough. Deployment within 72 hours of signature.</p>
-  <a href="tel:3213042430" class="cta-btn">Call 321-304-2430</a>
-  <a href="/contact" class="cta-ghost">Contact Form</a>
-</section>
-
-<!-- Schema: city targeting lives HERE in areaServed, not in visible hero copy -->
+<!-- Schema -->
 <script type="application/ld+json">
 {
   "@context":"https://schema.org",
@@ -206,6 +1549,866 @@
     {"@type":"ListItem","position":2,"name":"Security Company Orlando","item":"https://www.ussagency.com/security-company-orlando"}
   ]
 }
+</script>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <div style="margin-bottom:1rem"><img loading="lazy" src="images/img-02.png" alt="USS Agency Logo" style="height:90px;width:auto;object-fit:contain;margin-bottom:1rem"></div>
+      <p>Florida's premier professional security services provider — serving businesses, events, and communities statewide and across the nation since 2008.</p>
+      <span class="license">Florida License # B2800082 &middot; Florida Statute Chapter 493, Section 6301 et seq.</span>
+      <div style="margin-top:1rem;display:flex;gap:1rem;align-items:center">
+        <a href="https://www.facebook.com/ussagency" target="_blank" rel="noopener noreferrer" aria-label="USS Agency on Facebook">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="#c9a84c"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+        </a>
+        <a href="https://www.instagram.com/ussagency" target="_blank" rel="noopener noreferrer" aria-label="USS Agency on Instagram">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="#c9a84c"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h5>Services</h5>
+      <ul>
+        <li><a href="/unarmed-security">Unarmed Security</a></li>
+        <li><a href="/armed-security-guards">Armed Security</a></li>
+        <li><a href="/executive-protection">Executive Protection</a></li>
+        <li><a href="#services">Plainclothes Guards</a></li>
+        <li><a href="#services">Off-Duty Law Enforcement</a></li>
+        <li><a href="#services">TSCM Services</a></li>
+        <li><a href="#services">Maritime Patrol</a></li>
+        <li><a href="#services">Mobile Surveillance</a></li>
+        <li><a href="#services">Security Consulting</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h5>Areas Served</h5>
+      <ul>
+        <li><a href="#contact">Orlando, FL</a></li>
+        <li><a href="#contact">Miami, FL</a></li>
+        <li><a href="#contact">Tampa, FL</a></li>
+        <li><a href="#contact">Jacksonville, FL</a></li>
+        <li><a href="#contact">Fort Lauderdale, FL</a></li>
+        <li><a href="#contact">West Palm Beach, FL</a></li>
+        <li><a href="#contact">All of Florida</a></li>
+        <li><a href="#contact">Nationwide Services</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h5>Contact</h5>
+      <ul>
+        <li><a href="tel:3213042430">321-304-2430</a></li>
+        <li><a href="tel:13213042430">1-321-304-2430</a></li>
+        <li><a href="/cdn-cgi/l/email-protection#f4878184849b8680b48187879593919a978dda979b99"><span class="__cf_email__" data-cfemail="483b3d3838273a3c083d3b3b292f2d262b31662b2725">[email&#160;protected]</span></a></li>
+        <li><a href="#contact">Get a Free Quote</a></li>
+        <li style="color:var(--gray);font-size:0.82rem;margin-top:0.5rem">450 S Orange Ave, 3rd Floor<br>Orlando, FL 32801</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 U.S.S. Agency. All Rights Reserved.</p>
+    <div style="display:flex;gap:16px;align-items:center;">
+      <a href="https://www.facebook.com/ussagency" target="_blank" rel="noopener" aria-label="Facebook" style="color:#c9a84c;text-decoration:none;font-size:20px;">FB</a>
+      <a href="https://www.instagram.com/ussagency" target="_blank" rel="noopener" aria-label="Instagram" style="color:#c9a84c;text-decoration:none;font-size:20px;">IG</a>
+      <a href="https://www.linkedin.com/company/ussagency" target="_blank" rel="noopener" aria-label="LinkedIn" style="color:#c9a84c;text-decoration:none;font-size:20px;">IN</a>
+    </div>
+    <p>Florida Licensed & Insured Security Services Provider</p>
+  </div>
+</footer>
+
+</blockquote>
+
+    <p style="font-style:italic;color:#B8B8B8;font-size:1rem;margin:0 auto;max-width:700px;letter-spacing:0.02em;">&ldquo;Our credentials speak. Our record confirms. Our presence protects.&rdquo;</p>
+
+  </div>
+</section>
+<div style="width:100%;height:2px;background:#C9A84C;"></div>
+
+<!-- WHY US -->
+<section class="why" id="why">
+  <div class="why-grid">
+    <div>
+      <div class="tag">Why U.S.S. Agency</div>
+      <h2 class="sec-title">What Makes U.S.S. Agency Different From Other Florida Security Companies?</h2>
+      <p class="sec-sub" style="margin-bottom:2.5rem">We don't just respond to threats — we prevent them. Here's what separates U.S.S. Agency from every other security provider in Florida.</p>
+      <div class="why-list">
+        <div class="why-item">
+          <div class="why-num">01</div>
+          <div>
+            <h4>Prevention-First Philosophy</h4>
+            <p>Our officers are trained to identify and neutralize threats before they escalate — keeping your environment safe proactively, not reactively.</p>
+          </div>
+        </div>
+        <div class="why-item">
+          <div class="why-num">02</div>
+          <div>
+            <h4>Fully Vetted & Certified Officers</h4>
+            <p>Every officer undergoes comprehensive background checks, fingerprinting, state-approved training, and regular assessments — no shortcuts, ever.</p>
+          </div>
+        </div>
+        <div class="why-item">
+          <div class="why-num">03</div>
+          <div>
+            <h4>Tailored Security Plans</h4>
+            <p>No two clients are the same. We design custom security strategies that fit your environment, budget, and risk profile precisely.</p>
+          </div>
+        </div>
+        <div class="why-item">
+          <div class="why-num">04</div>
+          <div>
+            <h4>Full Transparency & Coverage Proof</h4>
+            <p>We provide complete documentation of licensing, insurance, and coverage — so you always know exactly what you're getting.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="why-visual">
+      <div class="why-photo"><img src="images/img-06.jpg" alt="USS Agency Officer at Air Force event" loading="lazy"></div>
+      <div class="metric">
+        <div class="metric-n">17+</div>
+        <div><div class="metric-l">Years Serving Florida &amp; Beyond</div><div class="metric-sub">Serving Florida &amp; clients nationwide since 2008</div></div>
+      </div>
+      <div class="metric">
+        <div class="metric-n">280+</div>
+        <div><div class="metric-l">Security Professionals</div><div class="metric-sub">Highly trained, licensed & insured officers</div></div>
+      </div>
+      <div class="metric">
+        <div class="metric-n">35+</div>
+        <div><div class="metric-l">Cities Covered</div><div class="metric-sub">Orlando, Miami, Tampa, Jacksonville &amp; beyond</div></div>
+      </div>
+      <div class="metric">
+        <div class="metric-n">24/7</div>
+        <div><div class="metric-l">Always On Duty</div><div class="metric-sub">Round-the-clock availability, 365 days a year</div></div>
+      </div>
+      <div class="metric">
+        <div class="metric-n">100%</div>
+        <div><div class="metric-l">Licensed & Insured</div><div class="metric-sub">Florida License # B2800082 — fully verified</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+<div style="width:100%;height:2px;background:#C9A84C;"></div>
+
+<!-- FAQ -->
+<section class="faq" id="faq">
+  <div class="sec-head">
+    <div class="tag">Common Questions</div>
+    <h2 class="sec-title">Frequently Asked Questions</h2>
+  </div>
+  <div class="faq-grid">
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">
+        <h4>Why is U.S.S. Agency the top choice for security in Orlando?</h4>
+        <span class="faq-icon">+</span>
+      </div>
+      <div class="faq-a"><p>U.S.S. Agency is Orlando's top-choice security provider because we operate under Florida License B2800082 with more than 17 years of continuous operation since 2008. Our officers are fully licensed, insured, and drawn from active and retired law enforcement, military veterans, and experienced career security professionals. We take a prevention-first approach — deterring incidents before they escalate — and every engagement is built around the client's specific site, threat profile, and operational hours. U.S.S. Agency serves Orlando businesses, executive clients, HOAs, construction sites, hotels, retail plazas, hospitals, schools, and events, backed by 24/7/365 dispatch, direct client-to-supervisor communication, and documented post orders. Clients choose U.S.S. Agency because they receive the professionalism of a national firm with the accountability and response speed of a local Florida company. Call 321-304-2430 for a free Orlando security consultation.</p></div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">
+        <h4>What qualifications do your armed officers have?</h4>
+        <span class="faq-icon">+</span>
+      </div>
+      <div class="faq-a"><p>Every armed officer deployed by U.S.S. Agency holds an active Florida Class G Statewide Firearms License, issued by the Florida Department of Agriculture and Consumer Services after completion of a state-approved 28-hour firearms training program and live-fire qualification. Before they are scheduled for post, each officer also passes FDLE-level fingerprinting, a multi-state criminal background check, drug screening, and an internal interview. Many of our armed officers bring additional credentials — active or retired law enforcement, military police, or federal protective service experience. U.S.S. Agency maintains ongoing training in use-of-force decision-making, de-escalation, emergency medical response, crowd control, and annual firearms re-qualification. License numbers, training records, and insurance certificates are available on request for any corporate or government client who requires vendor compliance documentation. Agency License: B2800082 (Florida).</p></div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">
+        <h4>How are security service rates determined?</h4>
+        <span class="faq-icon">+</span>
+      </div>
+      <div class="faq-a"><p>U.S.S. Agency security rates are quoted per assignment rather than a flat list price, because the real cost depends on variables specific to each site. The main rate drivers are: armed versus unarmed officer classification, number of hours and officers required per shift, whether coverage is a one-time event or an ongoing contract, total weekly hours (which often qualify for volume discounts), patrol vehicle or GPS tour requirements, on-site supervisor or dispatch needs, location and travel time, overnight or holiday premium hours, and any specialty credentials required such as off-duty law enforcement or executive-protection-trained personnel. Event security and short-notice deployments typically carry a minimum-hour commitment. Every quote is transparent, itemized, and delivered in writing. Call 321-304-2430 or request a free consultation for a written rate specific to your Florida property, event, or corporate site.</p></div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">
+        <h4>What are plainclothes security guards and when are they needed?</h4>
+        <span class="faq-icon">+</span>
+      </div>
+      <div class="faq-a"><p>Plainclothes security guards are licensed officers who provide protection in everyday civilian attire instead of a visible uniform, allowing them to blend into a location without drawing attention. U.S.S. Agency deploys plainclothes officers for executive protection assignments, corporate and family office security, retail loss prevention and organized-theft surveillance, high-net-worth residential coverage, sensitive workplace investigations, hotel and resort VIP details, and discreet event security where a uniformed presence would disrupt the atmosphere or tip off a threat. Plainclothes officers still carry full legal authority — armed when required under Florida Class G license — and coordinate with on-site management, local law enforcement, and uniformed perimeter officers when combined coverage is needed. This option is especially common for tech companies, financial firms, VIP clients, and clients managing internal investigations. Available statewide throughout Florida.</p></div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">
+        <h4>Why hire off-duty law enforcement?</h4>
+        <span class="faq-icon">+</span>
+      </div>
+      <div class="faq-a"><p>Hiring off-duty law enforcement through U.S.S. Agency gives clients a level of authority and credibility that standard armed security cannot match. Off-duty officers are actively sworn peace officers with arrest authority, current agency training, and direct radio coordination with local police when needed. They are especially valuable for high-profile corporate events, political fundraisers and campaign appearances, crowd-control scenarios, VIP travel, entertainment industry shoots, civil-dispute standbys, and any situation where the visible presence of law enforcement immediately de-escalates risk. U.S.S. Agency coordinates off-duty assignments through each officer's employing agency to ensure full compliance with their department's moonlighting policy, and we carry general liability coverage on every engagement. Clients receive officer selection based on assignment fit — tactical, protective, or uniformed presence — throughout Orlando, Miami, Tampa, Jacksonville, and statewide Florida.</p></div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">
+        <h4>Do you serve areas outside of Orlando?</h4>
+        <span class="faq-icon">+</span>
+      </div>
+      <div class="faq-a"><p>Yes — U.S.S. Agency is a statewide Florida security provider licensed under FL Agency License B2800082, with active coverage in more than 35 Florida cities. Our Central Florida service footprint includes Orlando, Winter Garden, Kissimmee, Sanford, Apopka, Clermont, Ocoee, Lake Mary, Altamonte Springs, Oviedo, Winter Park, and Lake Nona. Beyond Central Florida we also serve Tampa, St. Petersburg, Clearwater, Miami, Fort Lauderdale, West Palm Beach, Boca Raton, Jacksonville, Daytona Beach, Gainesville, Tallahassee, Pensacola, and Florida's east and west coasts. Dispatch is available 24/7/365 with supervisor escalation for emergency response. We frequently support clients with multi-location portfolios (HOA management groups, hospitality operators, retail chains) across several Florida metros under a single contract. If your property is in Florida, call 321-304-2430 and we will confirm availability within the hour.</p></div>
+    </div>
+  </div>
+</section>
+
+
+<!-- BLOG -->
+<section class="blog" id="blog">
+  <div class="sec-head" style="text-align:center;max-width:700px;margin:0 auto 3.5rem">
+    <div class="tag">Security Insights</div>
+    <h2 class="sec-title">From The U.S.S. Agency Blog</h2>
+    <p class="sec-sub" style="margin:0 auto">Expert knowledge, industry insights, and security tips from Florida's most trusted security professionals.</p>
+  </div>
+  <div class="blog-grid">
+
+    <article class="blog-card">
+      <div class="blog-img-wrap">
+        <div class="blog-cat">Armed Security</div>
+        <div class="blog-img-placeholder" style="background:linear-gradient(135deg,#13161d 0%,#1a1f2e 100%);display:flex;align-items:center;justify-content:center;font-size:3rem"></div>
+      </div>
+      <div class="blog-body">
+        <div class="blog-meta"><span>April 5, 2026</span><span>·</span><span>By USS Agency Team</span><span>·</span><span>8 min read</span></div>
+        <h3>Armed Security Guards in Orlando: What Every Business Owner Needs to Know</h3>
+        <p>Orlando businesses are turning to armed security at record rates. G-License requirements, industry applications, and how to hire qualified armed officers in Central Florida...</p>
+        <a href="/blog/armed-security-guards-orlando" class="blog-link">Read Article →</a>
+      </div>
+    </article>
+
+    <article class="blog-card">
+      <div class="blog-img-wrap">
+        <div class="blog-cat">Hiring Guide</div>
+        <div class="blog-img-placeholder" style="background:linear-gradient(135deg,#1a1208 0%,#2a1f0a 100%);display:flex;align-items:center;justify-content:center;font-size:3rem"></div>
+      </div>
+      <div class="blog-body">
+        <div class="blog-meta"><span>April 5, 2026</span><span>·</span><span>By USS Agency Team</span><span>·</span><span>8 min read</span></div>
+        <h3>How to Choose a Licensed Security Company in Florida</h3>
+        <p>What to verify, red flags to avoid, and why Florida License B2800082 matters. Your complete guide to hiring a licensed security company in Florida...</p>
+        <a href="/blog/licensed-security-company-florida" class="blog-link">Read Article →</a>
+      </div>
+    </article>
+
+    <article class="blog-card">
+      <div class="blog-img-wrap">
+        <div class="blog-cat">Comparison</div>
+        <div class="blog-img-placeholder" style="background:linear-gradient(135deg,#0d1828 0%,#0c1f35 100%);display:flex;align-items:center;justify-content:center;font-size:3rem"></div>
+      </div>
+      <div class="blog-body">
+        <div class="blog-meta"><span>April 5, 2026</span><span>·</span><span>By USS Agency Team</span><span>·</span><span>9 min read</span></div>
+        <h3>The Difference Between Armed and Unarmed Security Guards</h3>
+        <p>Training requirements, cost differences, liability considerations, and how to decide which type of security your business needs...</p>
+        <a href="/blog/armed-vs-unarmed-security" class="blog-link">Read Article →</a>
+      </div>
+    </article>
+
+    <article class="blog-card">
+      <div class="blog-img-wrap">
+        <div class="blog-cat">Executive Protection</div>
+        <div class="blog-img-placeholder" style="background:linear-gradient(135deg,#1f0e08 0%,#2e1508 100%);display:flex;align-items:center;justify-content:center;font-size:3rem"></div>
+      </div>
+      <div class="blog-body">
+        <div class="blog-meta"><span>April 5, 2026</span><span>·</span><span>By USS Agency Team</span><span>·</span><span>9 min read</span></div>
+        <h3>What to Look for in an Executive Protection Service in Central Florida</h3>
+        <p>Executive protection demands elite training, advance work, and secure transport. What to expect, what to demand, and what separates competent providers...</p>
+        <a href="/blog/executive-protection-central-florida" class="blog-link">Read Article →</a>
+      </div>
+    </article>
+
+    <article class="blog-card">
+      <div class="blog-img-wrap">
+        <div class="blog-cat">Residential Security</div>
+        <div class="blog-img-placeholder" style="background:linear-gradient(135deg,#0f1a10 0%,#142215 100%);display:flex;align-items:center;justify-content:center;font-size:3rem"></div>
+      </div>
+      <div class="blog-body">
+        <div class="blog-meta"><span>April 5, 2026</span><span>·</span><span>By USS Agency Team</span><span>·</span><span>9 min read</span></div>
+        <h3>How Neighborhood Watch Patrol Reduces Crime in HOA Communities</h3>
+        <p>Patrolled communities see 30-50% less property crime. Data, implementation, and how professional patrol transforms HOA security...</p>
+        <a href="/blog/neighborhood-watch-patrol-hoa" class="blog-link">Read Article →</a>
+      </div>
+    </article>
+
+    <article class="blog-card">
+      <div class="blog-img-wrap">
+        <div class="blog-cat">Industry Guide</div>
+        <div class="blog-img-placeholder" style="background:linear-gradient(135deg,#1a0f1f 0%,#231228 100%);display:flex;align-items:center;justify-content:center;font-size:3rem"></div>
+      </div>
+      <div class="blog-body">
+        <div class="blog-meta"><span>April 5, 2026</span><span>·</span><span>By USS Agency Team</span><span>·</span><span>8 min read</span></div>
+        <h3>Top Industries That Need Private Security in Central Florida</h3>
+        <p>Healthcare, retail, construction, HOAs, events, hospitality, schools, and warehouses — which industries need security most and why...</p>
+        <a href="/blog/industries-need-security-central-florida" class="blog-link">Read Article →</a>
+      </div>
+    </article>
+
+    <article class="blog-card">
+      <div class="blog-img-wrap">
+        <div class="blog-cat">Law Enforcement</div>
+        <div class="blog-img-placeholder" style="background:linear-gradient(135deg,#1a1208 0%,#0f0e18 100%);display:flex;align-items:center;justify-content:center;font-size:3rem"></div>
+      </div>
+      <div class="blog-body">
+        <div class="blog-meta"><span>April 5, 2026</span><span>·</span><span>By USS Agency Team</span><span>·</span><span>9 min read</span></div>
+        <h3>What Is Off-Duty Law Enforcement Security and When Do You Need It?</h3>
+        <p>Sworn officer authority, arrest powers, traffic control — when private security is not enough and you need off-duty LE...</p>
+        <a href="/blog/off-duty-law-enforcement-security" class="blog-link">Read Article →</a>
+      </div>
+    </article>
+
+    <article class="blog-card">
+      <div class="blog-img-wrap">
+        <div class="blog-cat">Consulting</div>
+        <div class="blog-img-placeholder" style="background:linear-gradient(135deg,#0d1520 0%,#1a2030 100%);display:flex;align-items:center;justify-content:center;font-size:3rem"></div>
+      </div>
+      <div class="blog-body">
+        <div class="blog-meta"><span>April 5, 2026</span><span>·</span><span>By USS Agency Team</span><span>·</span><span>10 min read</span></div>
+        <h3>Security Consulting: How to Assess Your Business Vulnerabilities</h3>
+        <p>Identify access control gaps, camera deficiencies, lighting failures, and employee training weaknesses before criminals exploit them...</p>
+        <a href="/blog/security-consulting-business-vulnerabilities" class="blog-link">Read Article →</a>
+      </div>
+    </article>
+
+    <article class="blog-card">
+      <div class="blog-img-wrap">
+        <div class="blog-cat">Market Trends</div>
+        <div class="blog-img-placeholder" style="background:linear-gradient(135deg,#1a1208 0%,#2a1f0a 100%);display:flex;align-items:center;justify-content:center;font-size:3rem"></div>
+      </div>
+      <div class="blog-body">
+        <div class="blog-meta"><span>April 20, 2026</span><span>·</span><span>By USS Agency Team</span><span>·</span><span>9 min read</span></div>
+        <h3>Why Florida Businesses Are Investing in Professional Security Services in 2026</h3>
+        <p>From Orlando corporate campuses to Tampa logistics hubs, Florida businesses are shifting from reactive alarms to proactive, manned security. Here's what's driving the 2026 surge and how smart operators are budgeting for it...</p>
+        <a href="/blog/florida-businesses-investing-security-2026" class="blog-link">Read Article →</a>
+      </div>
+    </article>
+
+  </div>
+  <div style="text-align:center;margin-top:3rem">
+    <a href="#contact" class="btn btn-ghost">Schedule a Consultation →</a>
+  </div>
+</section>
+
+
+<!-- CONTACT / LEAD FORM -->
+<section class="contact" id="contact">
+  <div class="contact-grid">
+    <div>
+      <div class="tag">Get In Touch</div>
+      <h2 class="sec-title">Request a Free Security Consultation</h2>
+      <p class="sec-sub" style="margin-bottom:1.5rem">Ready to protect your business, event, or property? Fill out the form and a U.S.S. Agency specialist will reach out personally — within 24 business hours, guaranteed.</p>
+      <div class="contact-guarantee-strip">
+        <div class="cg-item"><span class="cg-check">✓</span> Response within 24 business hours</div>
+        <div class="cg-item"><span class="cg-check">✓</span> No obligation, 100% free consultation</div>
+        <div class="cg-item"><span class="cg-check">✓</span> Speak directly with a security specialist</div>
+      </div>
+
+      <div style="margin-top:2.5rem;padding-top:2rem;border-top:1px solid var(--gold-line);">
+        <h3 style="font-family:'Bebas Neue',sans-serif;font-size:1.4rem;letter-spacing:3px;color:var(--gold);margin-bottom:1rem;">Why U.S.S. Agency</h3>
+        <p style="font-size:0.95rem;color:var(--light);line-height:1.85;margin-bottom:1.2rem;">Over 18 years protecting businesses, events, and properties across Central Florida and beyond.</p>
+        <p style="font-size:0.85rem;font-weight:600;color:var(--white);letter-spacing:1px;margin-bottom:0.4rem;">Licensed. Insured. Background-checked.</p>
+        <p style="font-size:0.78rem;color:var(--gold);letter-spacing:2px;font-weight:700;margin-bottom:1.5rem;">FLORIDA LICENSE B2800082</p>
+        <p style="font-size:0.95rem;color:var(--light);line-height:1.85;margin-bottom:1.2rem;font-style:italic;">Our clients don't settle for presence. They demand protection.</p>
+        <div style="margin-bottom:1.5rem;padding-left:0;">
+          <p style="font-size:0.88rem;color:var(--light);line-height:2;margin-bottom:0;">
+            <span style="color:var(--gold);margin-right:8px;">&mdash;</span>Armed &amp; unarmed security officers<br>
+            <span style="color:var(--gold);margin-right:8px;">&mdash;</span>Executive protection<br>
+            <span style="color:var(--gold);margin-right:8px;">&mdash;</span>Event security<br>
+            <span style="color:var(--gold);margin-right:8px;">&mdash;</span>Mobile patrol<br>
+            <span style="color:var(--gold);margin-right:8px;">&mdash;</span>Loss prevention
+          </p>
+        </div>
+        <p style="font-size:1rem;color:var(--white);font-weight:600;line-height:1.6;">When the threat is real, the response has to be too.</p>
+      </div>
+    </div>
+
+    <!-- LEAD CAPTURE FORM -->
+    <div class="form-wrap">
+      <h3 class="form-title">Get Your Free Quote</h3>
+      <p class="form-sub">Fill out the form below and a U.S.S. Agency specialist will contact you within 24 hours.</p>
+      <form id="leadForm" onsubmit="submitForm(event)">
+        <div class="form-row">
+          <div class="form-group">
+            <label>First Name *</label>
+            <input type="text" name="firstName" placeholder="John" required>
+          </div>
+          <div class="form-group">
+            <label>Last Name *</label>
+            <input type="text" name="lastName" placeholder="Smith" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Email Address *</label>
+            <input type="email" name="email" placeholder="john@company.com" required>
+          </div>
+          <div class="form-group">
+            <label>Phone Number *</label>
+            <input type="tel" name="phone" placeholder="(407) 555-0100" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Company / Organization</label>
+          <input type="text" name="company" placeholder="Your Company Name">
+        </div>
+        <div class="form-group">
+          <label>Your Title / Position</label>
+          <input type="text" name="title" placeholder="e.g. HR Director, Operations Manager, CEO">
+        </div>
+        <div class="form-group">
+          <label>Service Location Address</label>
+          <input type="text" name="serviceAddress" placeholder="Address where security services will be provided">
+        </div>
+        <div class="form-group">
+          <label>Services Interested In *</label>
+          <select name="service" required>
+            <option value="" disabled selected>Select a service...</option>
+            <option>Armed Security Guards</option>
+            <option>Mobile Patrol</option>
+            <option>Access Control</option>
+            <option>Fire Watch</option>
+            <option>Concierge Security</option>
+            <option>Loss Prevention</option>
+            <option>Event Security</option>
+            <option>Executive Protection</option>
+            <option>Workplace Violence Prevention</option>
+            <option>Multi-Family &amp; Apartments</option>
+            <option>HOAs &amp; COAs</option>
+            <option>Parking Lots &amp; Garages</option>
+            <option>Retail Business Plazas</option>
+            <option>Churches</option>
+            <option>Schools</option>
+            <option>Warehouses</option>
+            <option>Construction Sites</option>
+            <option>Events</option>
+            <option>Key Holder Services</option>
+            <option>Alarm Response</option>
+            <option>Travel Group Curfew Enforcement (Student / Athlete)</option>
+            <option>Executive Bodyguard</option>
+            <option>Hotels &amp; Resorts</option>
+            <option>Aviation</option>
+            <option>Truck Stops</option>
+            <option>Celebrity &amp; VIP</option>
+            <option>Disaster Response Security</option>
+            <option>Custom Security Solutions</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Location / City</label>
+            <input type="text" name="location" placeholder="Orlando, FL">
+          </div>
+          <div class="form-group">
+            <label>Estimated Start Date</label>
+            <input type="date" name="startDate">
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Tell Us About Your Security Needs</label>
+          <textarea name="message" placeholder="Tell us about your security needs — describe your requirements, location, number of officers needed, hours of coverage, and any specific concerns."></textarea>
+        </div>
+        <div class="form-guarantee">
+          <div class="fg-left">
+            <div class="fg-icon">✦</div>
+            <div class="fg-copy">
+              <strong>24-Hour Response Guarantee</strong>
+              <span>A U.S.S. Agency specialist will personally contact you within 24 business hours — or we'll follow up with priority service. No spam. No runaround.</span>
+            </div>
+          </div>
+          <div class="fg-seal">
+            <div class="fg-seal-inner">
+              <div class="fg-seal-top">RESPONSE</div>
+              <div class="fg-seal-num">24H</div>
+              <div class="fg-seal-bot">GUARANTEED</div>
+            </div>
+          </div>
+        </div>
+        <div style="margin:12px 0;display:flex;flex-direction:column;gap:10px;">
+          <label style="display:flex;align-items:flex-start;gap:8px;font-size:11px;font-weight:300;color:var(--silver);line-height:1.5;cursor:pointer;">
+            <input type="checkbox" class="sms-transactional" required style="margin-top:2px;accent-color:#c9a84c;flex-shrink:0;">
+            I consent to receive SMS messages from USS Agency LLC including appointment reminders, service confirmations, and notifications. Message frequency may vary. Msg &amp; data rates may apply. Reply HELP for help or STOP to opt out.
+          </label>
+          <label style="display:flex;align-items:flex-start;gap:8px;font-size:11px;font-weight:300;color:var(--silver);line-height:1.5;cursor:pointer;">
+            <input type="checkbox" class="sms-marketing" style="margin-top:2px;accent-color:#c9a84c;flex-shrink:0;">
+            I consent to receive promotional and marketing SMS messages from USS Agency LLC including special offers and event announcements. This is optional and will not affect form submission. Msg &amp; data rates may apply. Reply STOP to opt out.
+          </label>
+          <p style="font-size:11px;font-weight:300;color:var(--silver);opacity:.7;line-height:1.5;">By submitting this form you agree to our <a href="/privacy" style="color:var(--gold);text-decoration:underline;">Privacy Policy</a> and <a href="/terms" style="color:var(--gold);text-decoration:underline;">Terms of Service</a>.</p>
+        </div>
+        <button type="submit" class="btn btn-gold" style="width:100%;justify-content:center">
+          Request My Assessment
+        </button>
+        <p class="form-microcopy">🔒 Your information is confidential. No obligations. No spam.</p>
+      </form>
+
+      <div class="form-success" id="formSuccess">
+        <h4>✦ Request Received</h4>
+        <p>Thank you! A U.S.S. Agency specialist will contact you within 24 hours to discuss your security needs.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<div style="width:100%;height:2px;background:#C9A84C;"></div>
+
+<!-- CONTACT US -->
+<section class="contact" id="contact-us" style="padding:5rem 6%;border-top:1px solid var(--gold-line);">
+  <div style="max-width:1300px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:stretch;">
+
+    <!-- LEFT: Contact info -->
+    <div style="display:flex;flex-direction:column;justify-content:center;">
+      <div class="tag" style="margin-bottom:1rem;">Reach Us Directly</div>
+      <h2 class="sec-title" style="margin-bottom:1rem;">Contact Us</h2>
+      <p class="sec-sub" style="margin-bottom:2.2rem;max-width:520px;">Have a question or need immediate assistance? Reach our team by phone, email, or visit our office in downtown Orlando.</p>
+
+      <div style="display:flex;flex-direction:column;gap:1.4rem;margin-bottom:2.2rem;">
+        <div style="display:flex;gap:1rem;align-items:flex-start;">
+          <div style="width:3px;min-height:42px;background:#C9A84C;flex-shrink:0;"></div>
+          <div>
+            <h4 style="font-family:'Barlow Condensed',sans-serif;font-size:0.78rem;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#C9A84C;margin-bottom:0.35rem;">Phone</h4>
+            <a href="tel:3213042430" style="font-family:'Bebas Neue',sans-serif;font-size:1.6rem;color:#F0F0EB;letter-spacing:2px;text-decoration:none;">321-304-2430</a>
+          </div>
+        </div>
+        <div style="display:flex;gap:1rem;align-items:flex-start;">
+          <div style="width:3px;min-height:42px;background:#C9A84C;flex-shrink:0;"></div>
+          <div>
+            <h4 style="font-family:'Barlow Condensed',sans-serif;font-size:0.78rem;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#C9A84C;margin-bottom:0.35rem;">Toll Free</h4>
+            <a href="tel:13213042430" style="font-family:'Bebas Neue',sans-serif;font-size:1.6rem;color:#F0F0EB;letter-spacing:2px;text-decoration:none;">1-800-508-USSA (8772)</a>
+          </div>
+        </div>
+        <div style="display:flex;gap:1rem;align-items:flex-start;">
+          <div style="width:3px;min-height:42px;background:#C9A84C;flex-shrink:0;"></div>
+          <div>
+            <h4 style="font-family:'Barlow Condensed',sans-serif;font-size:0.78rem;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#C9A84C;margin-bottom:0.35rem;">Email</h4>
+            <a href="mailto:support@ussagency.com" style="font-family:'Bebas Neue',sans-serif;font-size:1.4rem;color:#F0F0EB;letter-spacing:1.5px;text-decoration:none;">support@ussagency.com</a>
+          </div>
+        </div>
+        <div style="display:flex;gap:1rem;align-items:flex-start;">
+          <div style="width:3px;min-height:42px;background:#C9A84C;flex-shrink:0;"></div>
+          <div>
+            <h4 style="font-family:'Barlow Condensed',sans-serif;font-size:0.78rem;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#C9A84C;margin-bottom:0.35rem;">Address</h4>
+            <p style="font-family:'Barlow',sans-serif;font-size:1.05rem;color:#F0F0EB;line-height:1.5;margin:0;">450 S Orange Avenue, 3rd Floor<br>Orlando, Florida 32801</p>
+          </div>
+        </div>
+      </div>
+
+      <a href="#contact" class="btn btn-gold" style="align-self:flex-start;">Request a Quote &rarr;</a>
+    </div>
+
+    <!-- RIGHT: Large Google Maps embed, full column height -->
+    <div style="min-height:520px;border:1px solid rgba(201,168,76,0.25);overflow:hidden;box-shadow:0 10px 40px rgba(0,0,0,0.4);">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3503.1!2d-81.3792!3d28.5383!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88e77afe49bb01a3%3A0xe3e63c1b1c0b0019!2s450%20S%20Orange%20Ave%203rd%20Floor%2C%20Orlando%2C%20FL%2032801!5e0!3m2!1sen!2sus!4v1713600000000!5m2!1sen!2sus" width="100%" height="100%" style="border:0;display:block;min-height:520px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="U.S.S. Agency — 450 S Orange Avenue, 3rd Floor, Orlando FL 32801"></iframe>
+    </div>
+
+  </div>
+
+  <style>
+    @media(max-width:900px){
+      #contact-us > div{grid-template-columns:1fr !important;}
+      #contact-us iframe{min-height:420px !important;}
+    }
+  </style>
+</section>
+<div style="width:100%;height:2px;background:#C9A84C;"></div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <div style="margin-bottom:1rem"><img loading="lazy" src="images/img-02.png" alt="USS Agency Logo" style="height:90px;width:auto;object-fit:contain;margin-bottom:1rem"></div>
+      <p>Florida's premier professional security services provider — serving businesses, events, and communities statewide and across the nation since 2008.</p>
+      <span class="license">Florida License # B2800082 &middot; Florida Statute Chapter 493, Section 6301 et seq.</span>
+      <div style="margin-top:1rem;display:flex;gap:1rem;align-items:center">
+        <a href="https://www.facebook.com/ussagency" target="_blank" rel="noopener noreferrer" aria-label="USS Agency on Facebook">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="#c9a84c"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+        </a>
+        <a href="https://www.instagram.com/ussagency" target="_blank" rel="noopener noreferrer" aria-label="USS Agency on Instagram">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="#c9a84c"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h5>Services</h5>
+      <ul>
+        <li><a href="/unarmed-security">Unarmed Security</a></li>
+        <li><a href="/armed-security-guards">Armed Security</a></li>
+        <li><a href="/executive-protection">Executive Protection</a></li>
+        <li><a href="#services">Plainclothes Guards</a></li>
+        <li><a href="#services">Off-Duty Law Enforcement</a></li>
+        <li><a href="#services">TSCM Services</a></li>
+        <li><a href="#services">Maritime Patrol</a></li>
+        <li><a href="#services">Mobile Surveillance</a></li>
+        <li><a href="#services">Security Consulting</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h5>Areas Served</h5>
+      <ul>
+        <li><a href="#contact">Orlando, FL</a></li>
+        <li><a href="#contact">Miami, FL</a></li>
+        <li><a href="#contact">Tampa, FL</a></li>
+        <li><a href="#contact">Jacksonville, FL</a></li>
+        <li><a href="#contact">Fort Lauderdale, FL</a></li>
+        <li><a href="#contact">West Palm Beach, FL</a></li>
+        <li><a href="#contact">All of Florida</a></li>
+        <li><a href="#contact">Nationwide Services</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h5>Contact</h5>
+      <ul>
+        <li><a href="tel:3213042430">321-304-2430</a></li>
+        <li><a href="tel:13213042430">1-321-304-2430</a></li>
+        <li><a href="/cdn-cgi/l/email-protection#f4878184849b8680b48187879593919a978dda979b99"><span class="__cf_email__" data-cfemail="483b3d3838273a3c083d3b3b292f2d262b31662b2725">[email&#160;protected]</span></a></li>
+        <li><a href="#contact">Get a Free Quote</a></li>
+        <li style="color:var(--gray);font-size:0.82rem;margin-top:0.5rem">450 S Orange Ave, 3rd Floor<br>Orlando, FL 32801</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 U.S.S. Agency. All Rights Reserved.</p>
+    <div style="display:flex;gap:16px;align-items:center;">
+      <a href="https://www.facebook.com/ussagency" target="_blank" rel="noopener" aria-label="Facebook" style="color:#c9a84c;text-decoration:none;font-size:20px;">FB</a>
+      <a href="https://www.instagram.com/ussagency" target="_blank" rel="noopener" aria-label="Instagram" style="color:#c9a84c;text-decoration:none;font-size:20px;">IG</a>
+      <a href="https://www.linkedin.com/company/ussagency" target="_blank" rel="noopener" aria-label="LinkedIn" style="color:#c9a84c;text-decoration:none;font-size:20px;">IN</a>
+    </div>
+    <p>Florida Licensed & Insured Security Services Provider</p>
+  </div>
+</footer>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+  // ── SHARED CRM HELPER ──
+  function sendToCRM(payload, formName) {
+    const webhookURL = 'https://services.leadconnectorhq.com/hooks/A81lGlMBKzeH8gORYYV2/webhook-trigger/13ac4a23-8b95-4f46-8aa8-88d17d5b699d';
+    var nameParts = (payload.full_name || payload.firstName || '').trim().split(' ');
+    const crmPayload = {
+      firstName: payload.firstName || nameParts[0] || '',
+      lastName: payload.lastName || nameParts.slice(1).join(' ') || '',
+      email: payload.email || '',
+      phone: payload.phone || '',
+      tags: ['website-lead', 'uss-agency'],
+      source: 'ussagency.com'
+    };
+    fetch(webhookURL, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(crmPayload)
+    }).catch(function(){});
+  }
+
+  // NAV TOGGLE
+  function toggleNav() {
+    document.getElementById('navLinks').classList.toggle('open');
+  }
+
+  // SMOOTH NAV HIGHLIGHT
+  window.addEventListener('scroll', () => {
+    const nav = document.querySelector('nav');
+    nav.style.boxShadow = window.scrollY > 50 ? '0 4px 30px rgba(0,0,0,0.5)' : 'none';
+  });
+
+  // FAQ ACCORDION
+  function toggleFaq(el) {
+    const item = el.parentElement;
+    const allItems = document.querySelectorAll('.faq-item');
+    allItems.forEach(i => { if (i !== item) i.classList.remove('open'); });
+    item.classList.toggle('open');
+  }
+
+  // FORM SUBMIT (GHL CONNECTED)
+  function submitFormScp(e) {
+    e.preventDefault();
+    const form = document.getElementById('leadFormScp');
+    const data = new FormData(form);
+    const payload = Object.fromEntries(data.entries());
+
+    sendToCRM(payload, 'uss-agency-lead-form');
+
+    // Show success state
+    form.style.display = 'none';
+    document.getElementById('formSuccessScp').style.display = 'block';
+    gtag('event', 'form_submission', { form_name: 'lead_form' });
+  }
+
+  // SCROLL ANIMATIONS
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.style.animation = 'fadeUp 0.7s ease both';
+        entry.target.style.opacity = '1';
+      }
+    });
+  }, { threshold: 0.1 });
+
+  document.querySelectorAll('.svc-card, .ind-item, .why-item, .faq-item').forEach(el => {
+    el.style.opacity = '0';
+    observer.observe(el);
+  });
+
+
+
+  // STATS COUNTER ANIMATION
+  const statsData = [
+    { selector: '.hero-stats .stat-n', values: ['22+', '24/7', '35+', '100%', '280+', '6'],
+      numeric: [22, null, 35, 100, 280, 6], suffix: ['+', '/7', '+', '%', '+', ''], prefix: ['', '24', '', '', '', ''] },
+  ];
+
+  function animateCounter(el, target, suffix, prefix, duration = 1800) {
+    // Handle non-numeric like 24/7
+    if (target === null) return;
+    
+    let start = 0;
+    const step = target / (duration / 16);
+    const startTime = performance.now();
+
+    function update(currentTime) {
+      const elapsed = currentTime - startTime;
+      const progress = Math.min(elapsed / duration, 1);
+      // Ease out cubic
+      const eased = 1 - Math.pow(1 - progress, 3);
+      const current = Math.floor(eased * target);
+      el.textContent = prefix + current + suffix;
+      if (progress < 1) {
+        requestAnimationFrame(update);
+      } else {
+        el.textContent = prefix + target + suffix;
+      }
+    }
+    requestAnimationFrame(update);
+  }
+
+  function initCounters() {
+    // Hero stats
+    const heroStats = document.querySelectorAll('.hero-stats .stat-n');
+    const heroData = [
+      { target: 22, suffix: '+', prefix: '' },
+      { target: null, suffix: '/7', prefix: '24' },
+      { target: 35, suffix: '+', prefix: '' },
+      { target: 100, suffix: '%', prefix: '' },
+      { target: 280, suffix: '+', prefix: '' },
+      { target: 6, suffix: '', prefix: '' },
+    ];
+
+    heroStats.forEach((el, i) => {
+      el.classList.add('counting');
+      if (heroData[i].target !== null) {
+        el.textContent = heroData[i].prefix + '0' + heroData[i].suffix;
+        animateCounter(el, heroData[i].target, heroData[i].suffix, heroData[i].prefix);
+      }
+    });
+
+    // Why Us metrics
+    const metricEls = document.querySelectorAll('.metric-n');
+    const metricData = [
+      { target: 15, suffix: '+', prefix: '' },
+      { target: 35, suffix: '+', prefix: '' },
+      { target: null, suffix: '/7', prefix: '24' },
+      { target: 100, suffix: '%', prefix: '' },
+    ];
+
+    metricEls.forEach((el, i) => {
+      if (metricData[i] && metricData[i].target !== null) {
+        el.textContent = metricData[i].prefix + '0' + metricData[i].suffix;
+        animateCounter(el, metricData[i].target, metricData[i].suffix, metricData[i].prefix, 2000);
+      }
+    });
+  }
+
+  // Trigger counters when hero stats come into view
+  const counterObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        initCounters();
+        counterObserver.disconnect(); // Only run once
+      }
+    });
+  }, { threshold: 0.3 });
+
+  const heroStatsEl = document.querySelector('.hero-stats');
+  if (heroStatsEl) counterObserver.observe(heroStatsEl);
+
+  // HERO FORM SUBMIT
+  function submitHeroForm(e) {
+    e.preventDefault();
+    const form = document.getElementById('heroLeadForm');
+    const data = new FormData(form);
+    const payload = Object.fromEntries(data.entries());
+
+    sendToCRM(payload, 'uss-agency-hero-form');
+
+    form.style.display = 'none';
+    document.getElementById('heroFormSuccess').classList.add('show');
+    gtag('event', 'form_submission', { form_name: 'hero_form' });
+  }
+
+
+  // ─────────────────────────────────────────────────────────────────
+  // LIVE GOOGLE REVIEWS — Place ID: ChIJYwAKBpyD54gRJkw-rXBUj64
+  // STEP 1: Paste your Google Maps API key below (replace YOUR_API_KEY_HERE)
+  // STEP 2: Make sure Places API is enabled in Google Cloud Console
+  // ─────────────────────────────────────────────────────────────────
+  const GOOGLE_API_KEY   = 'YOUR_API_KEY_HERE';
+  const GOOGLE_PLACE_ID  = 'ChIJYwAKBpyD54gRJkw-rXBUj64';
+
+  // Verified fallback reviews shown while loading or if API unavailable
+  const FALLBACK_REVIEWS = [
+    { name: 'Ashlynn Baker',   rating: 5, time: '2 months ago',  text: 'I have a hands-free and worry-free relationship with my security company because they truly developed an action plan to ensure my tenants feel at ease, and so do I.' },
+    { name: 'Jacey Blackwood', rating: 5, time: '3 months ago',  text: 'The one thing I can tell you about U.S.S. Agency is that they keep their word. If they tell you they are going to do something, you can count on it.' },
+    { name: 'Amiee Johnson',   rating: 5, time: '4 months ago',  text: 'I started off with one property with U.S.S. Agency and have added them to each property as my portfolio grew. It shows my employees and residents that I care about their safety.' },
+    { name: 'Leonard Beils',   rating: 5, time: '5 months ago',  text: 'Contracting Ultimate Security Services was one of the best business decisions I have made. I did my homework — and U.S.S. Agency stood above the rest.' },
+    { name: 'Bailey Kesler',   rating: 5, time: '6 months ago',  text: 'When I come home late from work, I feel a sense of safety just knowing the security guard is always on post. I know I can count on them and I feel safe.' },
+    { name: 'Verified Client', rating: 5, time: '7 months ago',  text: 'U.S.S. Agency is great at making people feel at ease. Their officers are friendly, professional, and confident. That is what makes me feel safe.' },
+  ];
+
+
+</script>
+
+<!-- Slide-In Lead Capture -->
+<div id="slideForm" style="display:none;position:fixed;bottom:80px;right:20px;z-index:9998;background:#111827;border:2px solid #C9A84C;border-radius:8px;width:340px;max-width:90vw;padding:24px 22px;box-shadow:0 12px 40px rgba(0,0,0,.55),0 0 20px rgba(201,168,76,0.2);transition:transform .4s ease,opacity .4s ease;transform:translateY(20px);opacity:0;font-family:'Barlow',sans-serif;">
+  <button onclick="closeSlideForm()" aria-label="Close" style="position:absolute;top:8px;right:12px;background:none;border:none;color:#C9A84C;font-size:22px;cursor:pointer;line-height:1;">&times;</button>
+  <div style="font-family:'Barlow Condensed',sans-serif;font-size:11px;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:#C9A84C;margin-bottom:8px;">Free Assessment</div>
+  <h4 style="font-family:'Bebas Neue',sans-serif;font-size:22px;color:#F0F0EB;margin-bottom:12px;letter-spacing:1.5px;">Get Your Free Security Assessment</h4>
+  <input id="sf-name" type="text" placeholder="First Name" style="width:100%;padding:10px 12px;margin-bottom:8px;background:rgba(255,255,255,.05);border:1px solid rgba(201,168,76,.35);color:#F0F0EB;font-family:'Barlow',sans-serif;font-size:13px;border-radius:4px;">
+  <input id="sf-phone" type="tel" placeholder="Phone Number" style="width:100%;padding:10px 12px;margin-bottom:8px;background:rgba(255,255,255,.05);border:1px solid rgba(201,168,76,.35);color:#F0F0EB;font-family:'Barlow',sans-serif;font-size:13px;border-radius:4px;">
+  <input id="sf-email" type="email" placeholder="Email Address" style="width:100%;padding:10px 12px;margin-bottom:8px;background:rgba(255,255,255,.05);border:1px solid rgba(201,168,76,.35);color:#F0F0EB;font-family:'Barlow',sans-serif;font-size:13px;border-radius:4px;">
+  <label for="sf-scope" style="display:block;font-family:'Barlow Condensed',sans-serif;font-size:10px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#C9A84C;margin-bottom:5px;">Scope of Services / Comments</label>
+  <textarea id="sf-scope" rows="2" placeholder="What do you need?" style="width:100%;padding:10px 12px;margin-bottom:12px;background:rgba(255,255,255,.05);border:1px solid rgba(201,168,76,.35);color:#F0F0EB;font-family:'Barlow',sans-serif;font-size:13px;border-radius:4px;resize:vertical;"></textarea>
+  <button onclick="submitSlideForm()" style="width:100%;padding:12px;background:#C9A84C;color:#080808;border:none;font-family:'Barlow Condensed',sans-serif;font-size:13px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;cursor:pointer;border-radius:4px;">Request My Assessment</button>
+</div>
+<script>
+(function(){
+  if(sessionStorage.getItem('slideFormShown'))return;
+  var triggered=false;
+  window.addEventListener('scroll',function(){
+    if(triggered)return;
+    var scrollPct=window.scrollY/(document.documentElement.scrollHeight-window.innerHeight);
+    if(scrollPct>0.5){
+      triggered=true;
+      sessionStorage.setItem('slideFormShown','1');
+      var sf=document.getElementById('slideForm');
+      sf.style.display='block';
+      setTimeout(function(){sf.style.transform='translateY(0)';sf.style.opacity='1';},50);
+    }
+  });
+})();
+function closeSlideForm(){var sf=document.getElementById('slideForm');sf.style.transform='translateY(20px)';sf.style.opacity='0';setTimeout(function(){sf.style.display='none';},400);}
+function submitSlideForm(){
+  var n=document.getElementById('sf-name').value.trim();
+  var p=document.getElementById('sf-phone').value.trim();
+  var e=document.getElementById('sf-email').value.trim();
+  var sc=document.getElementById('sf-scope').value.trim();
+  if(!n||!e){alert('Please enter your name and email.');return;}
+  fetch('https://services.leadconnectorhq.com/hooks/A81lGlMBKzeH8gORYYV2/webhook-trigger/13ac4a23-8b95-4f46-8aa8-88d17d5b699d',{
+    method:'POST',headers:{'Content-Type':'application/json'},
+    body:JSON.stringify({firstName:n,lastName:'',email:e,phone:p,message:sc,tags:['website-lead','uss-agency','slide-form'],source:'ussagency.com'})
+  }).catch(function(){});
+  gtag('event', 'form_submission', { form_name: 'slide_form' });
+  document.getElementById('slideForm').innerHTML='<div style="text-align:center;padding:22px 0;"><div style="font-size:32px;color:#C9A84C;margin-bottom:8px;">&#10003;</div><p style="font-family:Barlow,sans-serif;font-size:14px;color:#F0F0EB;line-height:1.6;">Thank you! A U.S.S. Agency specialist will contact you within 24 business hours.</p></div>';
+}
+</script>
+
+<!-- Core Web Vitals reporting to GA4 (G-FP14V8HQHJ) -->
+<script type="module">
+  import {onLCP, onINP, onCLS} from 'https://cdn.jsdelivr.net/npm/web-vitals@4/dist/web-vitals.attribution.js';
+  function sendToGA4({ name, value, id, delta, rating }) {
+    if (typeof gtag !== 'function') return;
+    gtag('event', name, {
+      value: Math.round(name === 'CLS' ? value * 1000 : value),
+      metric_id: id,
+      metric_value: value,
+      metric_delta: delta,
+      metric_rating: rating,
+      event_category: 'Web Vitals',
+      non_interaction: true
+    });
+  }
+  onLCP(sendToGA4);
+  onINP(sendToGA4);
+  onCLS(sendToGA4);
 </script>
 
 </body>
