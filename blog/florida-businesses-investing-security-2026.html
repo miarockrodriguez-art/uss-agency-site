@@ -93,7 +93,7 @@
     }
     *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
     html{scroll-behavior:smooth;overflow-x:hidden}
-    body{font-family:'Barlow',sans-serif;background:#0a0d14;color:var(--white);overflow-x:hidden;max-width:100%;line-height:1.6}
+    body{font-family:'Barlow',sans-serif;background:var(--black);color:var(--white);overflow-x:hidden;max-width:100%;line-height:1.6}
     a{text-decoration:none;color:inherit}
     ::-webkit-scrollbar{width:5px}
     ::-webkit-scrollbar-track{background:var(--black)}
@@ -175,7 +175,7 @@
       background:rgba(201,168,76,0.05);
     }
     .hf-group input::placeholder{ color:var(--gray); }
-    .hf-group select option{ background:#0a0d14; color:var(--white); }
+    .hf-group select option{ background:var(--black); color:var(--white); }
     .hero-form-footer{
       display:flex;
       justify-content:space-between;
@@ -640,7 +640,7 @@
     .form-row{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-bottom:1rem}
     .form-group{display:flex;flex-direction:column;gap:0.4rem;margin-bottom:1rem}
     .form-group label{font-size:0.7rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--gray)}
-    .form-group input,.form-group select,.form-group textarea{background:#0a0d14;border:1px solid rgba(255,255,255,0.08);color:var(--white);padding:0.85rem 1rem;font-family:'Barlow',sans-serif;font-size:0.95rem;outline:none;transition:border 0.2s;border-radius:0;-webkit-appearance:none}
+    .form-group input,.form-group select,.form-group textarea{background:var(--black);border:1px solid rgba(255,255,255,0.08);color:var(--white);padding:0.85rem 1rem;font-family:'Barlow',sans-serif;font-size:0.95rem;outline:none;transition:border 0.2s;border-radius:0;-webkit-appearance:none}
     .form-group input:focus,.form-group select:focus,.form-group textarea:focus{border-color:var(--gold)}
     .form-group select option{background:var(--black)}
     .form-group textarea{resize:vertical;min-height:120px}
@@ -665,7 +665,7 @@
 
     /* BRAND VIDEO SECTION */
     .brand-video-section{
-      background:#0a0d14;
+      background:var(--black);
       padding:6rem 6%;
       border-top:1px solid var(--gold-line);
       border-bottom:1px solid var(--gold-line);
@@ -1203,7 +1203,7 @@
     .leader-credentials span{ background:var(--gold-dim); border:1px solid var(--gold-line); color:var(--gold); font-size:0.65rem; font-weight:700; letter-spacing:1px; padding:0.3rem 0.7rem; text-transform:uppercase; }
 
     /* DIVISIONS */
-    .divisions-wrap{ background:#0a0d14; padding:3rem; border:1px solid var(--gold-line); }
+    .divisions-wrap{ background:var(--black); padding:3rem; border:1px solid var(--gold-line); }
     .divisions-grid{ display:grid; grid-template-columns:repeat(6,1fr); gap:1.5rem; }
     .division-item{ text-align:center; padding:1.5rem 1rem; background:var(--card); border:1px solid rgba(255,255,255,0.04); transition:all 0.3s; border-bottom:2px solid transparent; }
     .division-item:hover{ border-bottom-color:var(--gold); transform:translateY(-3px); }
@@ -1414,22 +1414,22 @@ body.agency-blog-index > section[style*="#080808"] { background:#0a0d14 !importa
 <!-- AGENCY BLOG TOP BLOCK -->
 <nav>
         <a href="/" style="display:flex;align-items:center;gap:0.8rem;text-decoration:none">
-    <img src="images/img-02.png" alt="USS Agency - Ultimate Security Services" style="height:62px;width:auto;object-fit:contain;filter:drop-shadow(0 0 8px rgba(201,168,76,0.7)) drop-shadow(0 0 16px rgba(201,168,76,0.4)) drop-shadow(0 0 2px rgba(201,168,76,0.9))">
+    <img src="/images/img-02.png" alt="USS Agency - Ultimate Security Services" style="height:62px;width:auto;object-fit:contain;filter:drop-shadow(0 0 8px rgba(201,168,76,0.7)) drop-shadow(0 0 16px rgba(201,168,76,0.4)) drop-shadow(0 0 2px rgba(201,168,76,0.9))">
     <div style="display:flex;flex-direction:column;line-height:1">
       <span style="font-family:'Bebas Neue',sans-serif;font-size:1.7rem;font-weight:900;letter-spacing:5px;color:#c9a84c">U.S.S.</span>
       <span style="font-family:'Bebas Neue',sans-serif;font-size:1.2rem;font-weight:900;letter-spacing:6px;color:#f0f0eb;margin-top:-4px">AGENCY</span>
     </div>
   </a>
   <ul class="nav-links" id="navLinks">
-    <li><a href="#about">About</a></li>
-    <li><a href="#services">Services</a></li>
-    <li><a href="#industries">Industries</a></li>
-    <li><a href="#reviews">Testimonials</a></li>
-    <li><a href="#team">Leadership</a></li>
-    <li><a href="#why">Why Us</a></li>
-    <li><a href="#faq">FAQ</a></li>
+    <li><a href="/#about">About</a></li>
+    <li><a href="/#services">Services</a></li>
+    <li><a href="/#industries">Industries</a></li>
+    <li><a href="/#reviews">Testimonials</a></li>
+    <li><a href="/#team">Leadership</a></li>
+    <li><a href="/#why">Why Us</a></li>
+    <li><a href="/#faq">FAQ</a></li>
     <li><a href="/blog.html">Blog</a></li>
-    <li><a href="#contact">Contact Us</a></li>
+    <li><a href="/#contact">Contact Us</a></li>
   </ul>
   <div class="hamburger" onclick="toggleNav()">
     <span></span><span></span><span></span>
