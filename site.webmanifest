@@ -1,0 +1,13 @@
+{
+  "name": "U.S.S. Agency",
+  "short_name": "USS Agency",
+  "description": "Florida's premier armed and unarmed security company. Licensed. Insured. Established 2008.",
+  "icons": [
+    {"src": "/favicon-192.png", "sizes": "192x192", "type": "image/png"},
+    {"src": "/favicon-512.png", "sizes": "512x512", "type": "image/png"}
+  ],
+  "theme_color": "#080808",
+  "background_color": "#080808",
+  "display": "browser",
+  "start_url": "/"
+}
