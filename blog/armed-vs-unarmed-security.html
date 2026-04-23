@@ -130,7 +130,7 @@
     }
     *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
     html{scroll-behavior:smooth;overflow-x:hidden}
-    body{font-family:'Barlow',sans-serif;background:var(--black);color:var(--white);overflow-x:hidden;max-width:100%;line-height:1.6}
+    body{font-family:'Barlow',sans-serif;background:#0a0d14;color:var(--white);overflow-x:hidden;max-width:100%;line-height:1.6}
     a{text-decoration:none;color:inherit}
     ::-webkit-scrollbar{width:5px}
     ::-webkit-scrollbar-track{background:var(--black)}
@@ -1379,18 +1379,7 @@
       [style*="width:1300px"],[style*="width:1200px"],[style*="width:1100px"],[style*="width:1000px"],[style*="width:900px"]{ width:100% !important; max-width:100% !important; }
     }
 
-  
-/* Hero-section gradient — mirrors homepage .hero */
-.agency-top-hero{min-height:60vh;display:flex;align-items:center;justify-content:center;padding:100px 6% 80px;position:relative;overflow:hidden;background:linear-gradient(135deg,rgba(8,8,8,0.94) 0%,rgba(17,24,39,0.88) 50%,rgba(8,8,8,0.96) 100%),url('/images/img-01.jpg') center/cover no-repeat;}
-.agency-top-hero::before{content:'';position:absolute;inset:0;background:repeating-linear-gradient(0deg,transparent,transparent 3px,rgba(201,168,76,0.01) 3px,rgba(201,168,76,0.01) 4px);pointer-events:none;z-index:1;}
-.agency-top-hero > *{position:relative;z-index:2;}
-.agency-blog-hero{min-height:60vh;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:100px 6% 80px;position:relative;overflow:hidden;background:linear-gradient(135deg,rgba(8,8,8,0.94) 0%,rgba(17,24,39,0.88) 50%,rgba(8,8,8,0.96) 100%),url('/images/img-01.jpg') center/cover no-repeat;}
-.agency-blog-hero::before{content:'';position:absolute;inset:0;background:repeating-linear-gradient(0deg,transparent,transparent 3px,rgba(201,168,76,0.01) 3px,rgba(201,168,76,0.01) 4px);pointer-events:none;z-index:1;}
-.agency-blog-hero > *{position:relative;z-index:2;}
-.agency-top-hero-inner{max-width:900px;text-align:center;}
-.agency-top-hero-inner .meta{font-family:'Barlow Condensed',sans-serif;font-size:12px;font-weight:700;letter-spacing:.25em;text-transform:uppercase;color:#c9a84c;margin-bottom:18px;}
-.agency-top-hero-inner h1{font-family:'Bebas Neue',sans-serif;font-weight:400;color:#c9a84c;letter-spacing:3px;line-height:1.08;font-size:clamp(30px,5vw,56px);text-transform:uppercase;margin:0;}
-</style>
+  </style>
 
 <style>
 /* ── Agency blog chrome bars ── */
@@ -1438,7 +1427,7 @@
 .agency-blog-hero p{max-width:720px;margin:0 auto;font-family:'Barlow',sans-serif;font-size:15px;font-weight:400;color:#b8bcc8;line-height:1.75;}
 
 /* ── Bottom CTA card ── */
-.agency-bottom-cta{background:var(--black);padding:40px 4% 60px;}
+.agency-bottom-cta{background:#0a0d14;padding:40px 4% 60px;}
 .agency-bottom-cta .card-inner{max-width:900px;margin:0 auto;text-align:center;padding:40px 28px;background:rgba(201,168,76,.06);border:1px solid rgba(201,168,76,.3);}
 .agency-bottom-cta .card-inner .label{font-family:'Barlow Condensed',sans-serif;font-size:11px;font-weight:700;letter-spacing:.28em;text-transform:uppercase;color:#c9a84c;margin-bottom:12px;}
 .agency-bottom-cta .card-inner h3{font-family:'Bebas Neue',sans-serif;font-size:clamp(1.6rem,3vw,2rem);color:#f0f0eb;margin-bottom:12px;letter-spacing:3px;text-transform:uppercase;}
@@ -1449,6 +1438,13 @@
 /* Push chrome bars below the 68px fixed nav */
 body.agency-blog-post-body,body.agency-blog-index{padding-top:80px;}
 
+/* Navy blue background — match homepage visible sections (not body #080808) */
+html body, html body.agency-blog-post-body, html body.agency-blog-index { background:#0a0d14 !important; }
+body.agency-blog-post-body .agency-bottom-cta { background:#0a0d14; }
+/* Sections that previously had #080808 in our blog CSS and related blocks */
+body.agency-blog-post-body > section[style*="#080808"],
+body.agency-blog-index > section[style*="#080808"] { background:#0a0d14 !important; }
+</style>
 
 </head>
 <body class="agency-blog-post-body">
@@ -1482,11 +1478,10 @@ body.agency-blog-post-body,body.agency-blog-index{padding-top:80px;}
 <div class="agency-cred-bar">17+ Years &nbsp;·&nbsp; FL License B2800082 &nbsp;·&nbsp; 280+ Licensed Officers &nbsp;·&nbsp; 4.9 ⭐ 638 Reviews</div>
 <a href="/#contact" class="agency-quote-bar">Request a Quote Now</a>
 <!-- / AGENCY BLOG TOP BLOCK -->
-<section class="agency-top-hero"><div class="agency-top-hero-inner"><h1>The Difference Between Armed and Unarmed Security Guards</h1>
-
-  <div class="meta">Published April 5, 2026 &bull; U.S.S. Agency</div></div></section>
 <div class="agency-article">
+<h1>The Difference Between Armed and Unarmed Security Guards</h1>
 
+  <div class="meta">Published April 5, 2026 &bull; U.S.S. Agency</div>
 
   <p>The decision between armed vs unarmed security guards is one of the most important choices a business owner or property manager will make. It is not a matter of opinion or preference&mdash;it is a matter of threat assessment, risk tolerance, legal responsibility, and operational requirements. Both armed and unarmed security guards serve critical functions, but they serve different functions, and deploying the wrong type for your situation either wastes money or leaves you dangerously exposed. USS Agency, operating under Florida License B2800082 for over 15 years, deploys both armed and unarmed officers across Central Florida. We make this distinction clear to every client because getting it right is the foundation of effective security.</p>
 
@@ -1661,7 +1656,7 @@ body.agency-blog-post-body,body.agency-blog-index{padding-top:80px;}
   </div>
 </section>
 
-<section style="background:var(--black);padding:40px 4% 80px;">
+<section style="background:#0a0d14;padding:40px 4% 80px;">
   <div style="max-width:1200px;margin:0 auto;">
     <div style="text-align:center;margin-bottom:28px;">
       <div style="font-family:'Barlow Condensed',sans-serif;font-size:11px;font-weight:700;letter-spacing:.28em;text-transform:uppercase;color:#c9a84c;margin-bottom:10px;">Keep Reading</div>
